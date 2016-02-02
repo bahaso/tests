@@ -4,7 +4,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import mz.page.web.WebApplication;
 
-public class Footer extends WebApplication{
+public class Footer{
+	WebApplication webApplication = WebApplication.getInstance();
 	public Footer(){
 	}
 	public void ClickLinkAbout(){}

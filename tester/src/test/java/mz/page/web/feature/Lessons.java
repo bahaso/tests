@@ -2,7 +2,8 @@ package mz.page.web.feature;
 
 import mz.page.web.WebApplication;
 
-public class Lessons extends WebApplication {
+public class Lessons{
+	WebApplication webApplication = WebApplication.getInstance();
 	public Lessons(){}
 	
 	public void ClickTabLevel(String level){}

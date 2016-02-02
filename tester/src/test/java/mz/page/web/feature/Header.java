@@ -4,7 +4,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import mz.page.web.WebApplication;
 
-public class Header extends WebApplication{
+public class Header{
+	WebApplication webApplication = WebApplication.getInstance();
 	public Header(){
 	}
 	

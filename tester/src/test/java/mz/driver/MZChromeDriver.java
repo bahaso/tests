@@ -1,21 +1,17 @@
 package mz.driver;
 
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class MZChromeDriver extends MZWebDriver {
 
 	public MZChromeDriver(){}
 	
-	@Override
-	protected void setDriver() {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public RemoteWebDriver getDriver() {
-		// TODO Auto-generated method stub
-		return null;
+		System.setProperty("webdriver.chrome.driver", "src/chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		
+	    return driver;
 	}
 
 }

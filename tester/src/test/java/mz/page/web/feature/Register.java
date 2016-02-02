@@ -4,7 +4,8 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 import mz.page.web.WebApplication;
 
-public class Register extends WebApplication{
+public class Register{
+	WebApplication webApplication = WebApplication.getInstance();
 	public Register(){}
 	
 	public void SetTextFirstName(String firstname){

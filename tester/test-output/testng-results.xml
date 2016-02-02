@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="7345" started-at="2016-02-02T10:01:59Z" finished-at="2016-02-02T10:02:07Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="7345" started-at="2016-02-02T10:01:59Z" finished-at="2016-02-02T10:02:07Z">
+      <class name="mz.bahaso.testing.web.LoginTest">
+        <test-method status="FAIL" signature="loginWithExistingEmailWithTruePassword()[pri:0, instance:mz.bahaso.testing.web.LoginTest@6a5fc7f7]" name="loginWithExistingEmailWithTruePassword" duration-ms="7319" started-at="2016-02-02T17:01:59Z" finished-at="2016-02-02T17:02:07Z">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA[com.google.common.util.concurrent.MoreExecutors.directExecutor()Ljava/util/concurrent/Executor;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: com.google.common.util.concurrent.MoreExecutors.directExecutor()Ljava/util/concurrent/Executor;
+	at org.openqa.selenium.safari.WebSocketConnection.send(WebSocketConnection.java:139)
+	at org.openqa.selenium.safari.SafariDriverCommandExecutor.execute(SafariDriverCommandExecutor.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:62)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:42)
+	at mz.driver.MZSafariDriver.getDriver(MZSafariDriver.java:13)
+	at mz.driver.MZWebDriver.switchDriver(MZWebDriver.java:40)
+	at mz.driver.MZWebDriver.getDriver(MZWebDriver.java:17)
+	at mz.page.web.WebApplication.initializeDriver(WebApplication.java:27)
+	at mz.page.web.WebApplication.getDriver(WebApplication.java:20)
+	at mz.page.web.LandingPage.ClickButtonLogin(LandingPage.java:17)
+	at mz.bahaso.testing.web.LoginTest.loginWithExistingEmailWithTruePassword(LoginTest.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithExistingEmailWithTruePassword -->
+      </class> <!-- mz.bahaso.testing.web.LoginTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

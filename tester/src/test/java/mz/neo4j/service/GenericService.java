@@ -11,25 +11,21 @@ public abstract class GenericService<T> implements Service<T> {
 	private static final int DEPTH_ENTITY = 1;
 	private Session session = Neo4JSessionFactory.getInstance().getNeo4jSession();
 	
-	@Override
 	public Iterable<T> findAll()
 	{
 		return session.loadAll(getEntityType(),DEPTH_LIST);
 	}
 	
-	@Override
 	public T find(Long _id)
 	{
 		return session.load(getEntityType(), _id, DEPTH_ENTITY);
 	}
 	
-	@Override
 	public void delete(Long _id)
 	{
 		session.delete(session.load(getEntityType(), _id));
 	}
 	
-	@Override
 	public T createOrUpdate(T entity)
 	{
 		session.save(entity, DEPTH_ENTITY);

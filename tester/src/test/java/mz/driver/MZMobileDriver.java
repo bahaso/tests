@@ -1,22 +1,34 @@
 package mz.driver;
 
-import java.io.File;
-import java.net.MalformedURLException;
-
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-abstract class MZMobileDriver extends MZPlatformDriver {
-	
-	protected File app;
+import mz.config.Configuration;
+
+public class MZMobileDriver extends MZPlatformDriver {
+	protected RemoteWebDriver driver = null;
 	
 	public MZMobileDriver(){}
 
 	@Override
-	protected abstract void setDriver() throws MalformedURLException;
+	public RemoteWebDriver getDriver() {
+		if(this.driver == null)
+		{
+			this.switchDriver();
+		}
+		return this.driver;
+	}
 
 	@Override
-	public abstract RemoteWebDriver getDriver() throws MalformedURLException;
-	
-	protected abstract void setApplicationPath();
+	protected void switchDriver() {
+		switch(Configuration.MOBILE_DRIVER)
+		{
+		case ANDROID:
+			MZAndroidDriver android = new MZAndroidDriver();
+			this.driver = android.getDriver();
+			break;
+		case IOS:
+			break;
+		}
+	}
 
 }

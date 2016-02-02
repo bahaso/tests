@@ -2,7 +2,8 @@ package mz.page.web.feature;
 
 import mz.page.web.WebApplication;
 
-public class LearningStatus extends WebApplication {
+public class LearningStatus{
+	WebApplication webApplication = WebApplication.getInstance();
 	public LearningStatus(){}
 	
 	public String GetTextCourse(){return "";}

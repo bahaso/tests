@@ -1,21 +1,17 @@
 package mz.driver;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class MZSafariDriver extends MZWebDriver {
 
 	public MZSafariDriver(){}
-	
-	@Override
-	protected void setDriver() {
-		// TODO Auto-generated method stub
-
-	}
 
 	@Override
 	public RemoteWebDriver getDriver() {
-		// TODO Auto-generated method stub
-		return null;
+		System.setProperty("webdriver.safari.noinstall", "true");
+		SafariDriver driver = new SafariDriver();
+		return driver;
 	}
 
 }

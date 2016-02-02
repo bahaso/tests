@@ -1,27 +1,17 @@
 package mz.driver;
 
-import java.net.MalformedURLException;
-
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class MZiOSDriver extends MZMobileDriver {
+public class MZiOSDriver{
 
 	public MZiOSDriver(){}
-	
-	@Override
-	protected void setDriver() throws MalformedURLException {
-		// TODO Auto-generated method stub
 
-	}
-
-	@Override
-	public RemoteWebDriver getDriver() throws MalformedURLException {
-		// TODO Auto-generated method stub
+	public RemoteWebDriver getDriver(){
+		setApplicationPath();
 		return null;
 	}
 
-	@Override
-	protected void setApplicationPath() {
+	private void setApplicationPath() {
 		// TODO Auto-generated method stub
 
 	}

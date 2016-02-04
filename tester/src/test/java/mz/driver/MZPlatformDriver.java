@@ -6,5 +6,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 abstract class MZPlatformDriver{
 	
 	public abstract RemoteWebDriver getDriver() throws MalformedURLException;
+	
 	protected abstract void switchDriver();
+	
 }

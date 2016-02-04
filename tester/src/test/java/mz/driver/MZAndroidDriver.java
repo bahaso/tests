@@ -14,7 +14,9 @@ import mz.enumeration.DeviceType;
 public class MZAndroidDriver{
 	
 	private AndroidDriver<MobileElement> driver = null;
+	
 	private File app;
+	
 	private DesiredCapabilities capabilities;
 	
 	public MZAndroidDriver() {}
@@ -63,4 +65,5 @@ public class MZAndroidDriver{
 			capabilities.setCapability(MobileCapabilityType.APP, app);
 		}
 	}
+	
 }

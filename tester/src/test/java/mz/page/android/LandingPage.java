@@ -1,15 +1,19 @@
 package mz.page.android;
 
-import io.appium.java_client.AppiumDriver;
+import mz.page.general.AbstractAndroid;
 
-public class LandingPage{
-	AndroidApplication mobileApplication = AndroidApplication.getInstance();
+public class LandingPage extends AbstractAndroid {
+	
+	private String btnRegister = "com.bahaso:id/btn_front_register";
+	
+	private String btnLogin = "com.bahaso:id/btn_front_login";
 	
 	public void ClickButtonRegister(){
-		mobileApplication.getDriver().findElementById("com.bahaso:id/btn_front_register").click();
+		mobileApplication.getDriver().findElementById(btnRegister).click();
 	}
 	
 	public void ClickButtonLogin(){
-		mobileApplication.getDriver().findElementById("com.bahaso:id/btn_front_login").click();
+		mobileApplication.getDriver().findElementById(btnLogin).click();
 	}
+	
 }

@@ -1,21 +1,19 @@
 package mz.bahaso.testing.android;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-import mz.driver.MZAndroidDriver;
 import mz.page.android.LandingPage;
 import mz.page.android.LessonPage;
 import mz.page.android.LoginPage;
 import mz.page.android.AndroidApplication;
 
-public class LoginTest
-{
+public class LoginTest{
+	
 	@BeforeSuite
   	public void RunAppiumServer() throws IOException, InterruptedException
 	{
@@ -66,4 +64,5 @@ public class LoginTest
 				Assert.assertTrue(lessonPage.ClickRightArrow());
 		}while(!lessonPage.GetTextCurrentLevel().equals("B2"));
 	}
+	
 }

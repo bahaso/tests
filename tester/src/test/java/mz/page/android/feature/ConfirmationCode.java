@@ -1,6 +1,7 @@
 package mz.page.android.feature;
 
 public class ConfirmationCode {
+	
 	public void ClickOK()
 	{}
 	
@@ -15,4 +16,5 @@ public class ConfirmationCode {
 	
 	public void SetTextConfirmationCode(String code)
 	{}
+	
 }

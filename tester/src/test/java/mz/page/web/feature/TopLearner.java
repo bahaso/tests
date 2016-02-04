@@ -2,11 +2,12 @@ package mz.page.web.feature;
 
 import java.awt.List;
 
-import mz.page.web.WebApplication;
+import mz.page.general.AbstractWeb;
 
-public class TopLearner{
-	WebApplication webApplication = WebApplication.getInstance();
+public class TopLearner extends AbstractWeb {
+	
 	public TopLearner(){}
 	
 	public List GetRankList(){return new List();}
+	
 }

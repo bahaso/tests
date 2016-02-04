@@ -7,7 +7,6 @@ public class MZFirefoxDriver extends MZWebDriver {
 
 	public MZFirefoxDriver(){}
 	
-
 	@Override
 	public RemoteWebDriver getDriver() {
 		FirefoxDriver driver = new FirefoxDriver();

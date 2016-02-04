@@ -4,7 +4,9 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import mz.driver.MZMobileDriver;
 
 public class AndroidApplication {
+	
 	private static AndroidApplication instance = new AndroidApplication();
+	
 	protected RemoteWebDriver driver = null;
 	
 	private AndroidApplication(){}
@@ -24,4 +26,5 @@ public class AndroidApplication {
 		MZMobileDriver mobile = new MZMobileDriver();
 		this.driver = mobile.getDriver();
 	}
+	
 }

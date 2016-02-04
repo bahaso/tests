@@ -1,21 +1,31 @@
 package mz.page.android;
 
-import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.ios.IOSDriver;
+import mz.page.general.AbstractAndroid;
 
-public class LoginPage{
-	AndroidApplication mobileApplication = AndroidApplication.getInstance();
+public class LoginPage extends AbstractAndroid {
+	
+	private String txtEmailOrUsername = "com.bahaso:id/et_username";
+	
+	private String txtPassword = "com.bahaso:id/et_password";
+	
+	private String btnMasuk = "com.bahaso:id/btn_login";
+	
+	private String linkForgetPassword = "com.bahaso:id/forgotPass";
+	
 	public void SetTextEmailOrUsername(String emailOrUsername){
-		mobileApplication.getDriver().findElementById("com.bahaso:id/et_username").sendKeys(emailOrUsername);
+		mobileApplication.getDriver().findElementById(txtEmailOrUsername).sendKeys(emailOrUsername);
 	}
+	
 	public void SetTextPassword(String password){
-		mobileApplication.getDriver().findElementById("com.bahaso:id/et_password").sendKeys(password);
+		mobileApplication.getDriver().findElementById(txtPassword).sendKeys(password);
 	}
+	
 	public void ClickButtonMasuk(){
-		mobileApplication.getDriver().findElementById("com.bahaso:id/btn_login").click();
+		mobileApplication.getDriver().findElementById(btnMasuk).click();
 	}
+	
 	public void ClickLinkForgetPassword(){
-		mobileApplication.getDriver().findElementById("com.bahaso:id/forgotPass").click();
+		mobileApplication.getDriver().findElementById(linkForgetPassword).click();
 	}
+	
 }

@@ -5,6 +5,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import mz.config.Configuration;
 
 public class MZMobileDriver extends MZPlatformDriver {
+	
 	protected RemoteWebDriver driver = null;
 	
 	public MZMobileDriver(){}

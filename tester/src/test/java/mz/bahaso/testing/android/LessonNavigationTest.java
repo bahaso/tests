@@ -3,7 +3,6 @@ package mz.bahaso.testing.android;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import mz.driver.MZAndroidDriver;
 import mz.page.android.LessonPage;
 
 public class LessonNavigationTest {

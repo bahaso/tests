@@ -1,11 +1,13 @@
 package mz.page.android;
 
-import io.appium.java_client.AppiumDriver;
+import mz.page.general.AbstractAndroid;
 
-public class RegisterPage{
-	AndroidApplication mobileApplication = AndroidApplication.getInstance();
+public class RegisterPage extends AbstractAndroid {
 	
 	public void SetTextFullName(){}
+	
 	public void SetTextEmail(){}
+	
 	public void SetTextPassword(){}
+	
 }

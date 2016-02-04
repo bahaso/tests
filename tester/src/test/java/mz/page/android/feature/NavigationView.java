@@ -1,6 +1,7 @@
 package mz.page.android.feature;
 
 public class NavigationView {
+	
 	public void ClickLessonsModule()
 	{
 		
@@ -23,4 +24,5 @@ public class NavigationView {
 	
 	public void ClickBurgerButton()
 	{}
+	
 }

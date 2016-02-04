@@ -32,4 +32,5 @@ public abstract class Entity {
 	{
 		return (_id==null)?-1:_id.hashCode();
 	}
+	
 }

@@ -6,6 +6,7 @@ import org.mongodb.morphia.annotations.Id;
 
 @Entity("users")
 public class Users {
+	
 	@Id
 	private ObjectId _id;
 	

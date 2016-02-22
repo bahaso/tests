@@ -1,6 +1,7 @@
 package mz.driver;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
@@ -32,7 +33,10 @@ public class MZAndroidDriver{
 		if(capabilities == null) DesiredCapabilitiesSetting();
 		try {
 			if(driver == null)
+			{
+				this.runAppiumServer();
 				driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
+			}
 			return driver;
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -63,6 +67,20 @@ public class MZAndroidDriver{
 			capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "100");
 			setApplicationPath();
 			capabilities.setCapability(MobileCapabilityType.APP, app);
+		}
+	}
+	
+	private void runAppiumServer()
+	{
+		String path = "src\\startappium.bat";
+		try {
+			Runtime.getRuntime().exec("cmd /c start "+path);
+			Thread.sleep(20000L);
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 	}
 	

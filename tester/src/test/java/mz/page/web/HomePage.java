@@ -19,4 +19,9 @@ public class HomePage extends CommonPage{
 	
 	public void ClickButtonPlacementTest(){}
 	
+	public UnsupportedMobileAnnouncement getUnsoppertedMobileAnnouncement()
+	{
+		return this.unsupportedMobileAnnouncement;
+	}
+	
 }

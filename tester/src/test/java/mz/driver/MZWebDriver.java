@@ -1,6 +1,7 @@
 package mz.driver;
 
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import mz.config.Configuration;
@@ -17,7 +18,7 @@ public class MZWebDriver extends MZPlatformDriver{
 		{
 			this.switchDriver();
 			driver.manage().window().maximize();
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		    //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		    driver.get(Configuration.WEB_BASE_URL);
 		}
 		return this.driver;

@@ -14,4 +14,13 @@ public class CommonPage extends AbstractWeb{
 	{
 	}
 	
+	public Header getHeader()
+	{
+		return this.header;
+	}
+	
+	public Footer getFooter()
+	{
+		return this.footer;
+	}
 }

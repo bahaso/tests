@@ -18,10 +18,11 @@ public class AndroidApplication {
 	
 	public RemoteWebDriver getDriver()
 	{
+		if(driver == null)initializeDriver();
 		return driver;
 	}
 	
-	public void initializeDriver()
+	private void initializeDriver()
 	{
 		MZMobileDriver mobile = new MZMobileDriver();
 		this.driver = mobile.getDriver();

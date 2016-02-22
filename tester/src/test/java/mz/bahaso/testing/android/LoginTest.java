@@ -17,16 +17,16 @@ public class LoginTest{
 	@BeforeSuite
   	public void RunAppiumServer() throws IOException, InterruptedException
 	{
-		String path = "src\\startappium.bat";
+		/*String path = "src\\startappium.bat";
 		Runtime.getRuntime().exec("cmd /c start "+path);
 		Thread.sleep(20000L);
 		AndroidApplication mobileApplication = AndroidApplication.getInstance();
-		mobileApplication.initializeDriver();
+		mobileApplication.initializeDriver();*/
 	}
 
 	@AfterSuite
 	public void KillAppiumServer() throws IOException {
-		Runtime.getRuntime().exec("taskkill /F /IM node.exe");	  
+		//Runtime.getRuntime().exec("taskkill /F /IM node.exe");	  
 	}
 	
 	@Test

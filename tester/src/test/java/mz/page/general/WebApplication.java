@@ -19,14 +19,22 @@ public class WebApplication {
 	
 	public RemoteWebDriver getDriver()
 	{
-		if(this.driver == null)initializeDriver();
+		if(this.driver == null)this.initializeDriver();
 		return this.driver;
 	}
 	
-	public void initializeDriver()
+	private void initializeDriver()
 	{
-		MZWebDriver web = new MZWebDriver();
-		this.driver = web.getDriver();
+		if(this.driver == null)
+		{
+			MZWebDriver web = new MZWebDriver();
+			this.driver = web.getDriver();
+		}
+	}
+	
+	public void quitDriver()
+	{
+		if(this.driver != null) this.driver.quit();
 	}
 	
 }

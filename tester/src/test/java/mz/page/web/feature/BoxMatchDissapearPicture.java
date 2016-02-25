@@ -22,17 +22,17 @@ public class BoxMatchDissapearPicture extends AbstractWeb{
 	public ArrayList<WebElement> BoxAnswer = new ArrayList<WebElement>();
 	
 	public ArrayList<WebElement> getCategories(){
-		if(Categories.size()==0)Categories = (ArrayList<WebElement>) driver.findElements(By.className("hint"));
+		if(Categories.size()==0) Categories = (ArrayList<WebElement>) driver.findElements(By.className("hint"));
 		return Categories;
 	}
 	
 	public ArrayList<WebElement> getDropBox(){
-		if(DropBox.size()==0)DropBox = (ArrayList<WebElement>) driver.findElements(By.className("droppable"));
+		if(DropBox.size()==0) DropBox = (ArrayList<WebElement>) driver.findElements(By.className("droppable"));
 		return DropBox;
 	}
 	
 	public ArrayList<WebElement> getBoxAnswer(){
-		if(BoxAnswer.size()==0)BoxAnswer = (ArrayList<WebElement>) driver.findElements(By.className("tile-question"));
+		if(BoxAnswer.size()==0) BoxAnswer = (ArrayList<WebElement>) driver.findElements(By.className("tile-question"));
 		return BoxAnswer;
 	}
 	

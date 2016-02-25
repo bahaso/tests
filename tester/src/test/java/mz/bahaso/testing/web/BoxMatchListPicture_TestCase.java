@@ -54,6 +54,7 @@ public class BoxMatchListPicture_TestCase {
 		jawabanSalah2.add("inside");
 		
 		action = new Actions(subLessonPage.getDriver());
+		//subLessonPage.login();
 	}
 	
 	@BeforeMethod
@@ -120,6 +121,7 @@ public class BoxMatchListPicture_TestCase {
 	
 	@Test
 	public void test6() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<jawabanBenar.size();i++){
 			action.dragAndDrop(subLessonPage.getBoxMatchListPicture().getBoxAnswer().get(i), subLessonPage.getBoxMatchListPicture().getDropBox().get(i)).perform();
 			Thread.sleep(3000);
@@ -135,6 +137,7 @@ public class BoxMatchListPicture_TestCase {
 	
 	@Test
 	public void test7() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getBoxMatchListPicture().getBoxAnswer().size();i++){
 			Integer index = jawabanBenar.indexOf(subLessonPage.getBoxMatchListPicture().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -151,6 +154,7 @@ public class BoxMatchListPicture_TestCase {
 	
 	@Test
 	public void test8() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getBoxMatchListPicture().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah.indexOf(subLessonPage.getBoxMatchListPicture().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -167,6 +171,7 @@ public class BoxMatchListPicture_TestCase {
 	
 	@Test
 	public void test9() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getBoxMatchListPicture().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah2.indexOf(subLessonPage.getBoxMatchListPicture().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -183,6 +188,7 @@ public class BoxMatchListPicture_TestCase {
 	
 	@Test
 	public void test10and11() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getBoxMatchListPicture().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah.indexOf(subLessonPage.getBoxMatchListPicture().getBoxAnswer().get(i).getText());
 			if(index!=-1){

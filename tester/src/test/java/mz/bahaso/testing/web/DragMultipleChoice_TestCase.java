@@ -12,7 +12,7 @@ import org.testng.asserts.Assertion;
 
 import mz.page.web.SubLessonPage;
 
-public class DragMultipleChoice {
+public class DragMultipleChoice_TestCase {
 	Actions action = null;
 	
 	SubLessonPage subLessonPage = new SubLessonPage();
@@ -29,8 +29,8 @@ public class DragMultipleChoice {
 	ArrayList<String> jawabanBenar = new ArrayList<String>();
 	ArrayList<String> jawabanSalah = new ArrayList<String>();
 	
-	ArrayList<String> tampilanJawaban = new ArrayList<String>();
-	ArrayList<Integer> urutan = new ArrayList<Integer>();
+	ArrayList<String> tampilanJawaban;
+	ArrayList<Integer> urutan;
 	
 	@BeforeClass
 	public void BeforeClass() throws InterruptedException{
@@ -43,7 +43,6 @@ public class DragMultipleChoice {
 		jawabanBenar.add("him");
 		jawabanSalah.add("her");
 		
-		subLessonPage.login();
 	}
 	
 	@BeforeMethod
@@ -98,6 +97,7 @@ public class DragMultipleChoice {
 	
 	@Test
 	public void test6() throws InterruptedException{
+		Thread.sleep(1000);
 		if(subLessonPage.getBtnPeriksa().getAttribute("disabled")==null){
 			hardAssert.fail("Tombol periksa bisa diklik sebelum semua jawaban di drag");
 		}
@@ -113,6 +113,7 @@ public class DragMultipleChoice {
 	
 	@Test
 	public void test7() throws InterruptedException{
+		Thread.sleep(1000);
 		if(subLessonPage.getBtnPeriksa().getAttribute("disabled")==null){
 			hardAssert.fail("Tombol periksa bisa diklik sebelum semua jawaban di drag");
 		}
@@ -128,6 +129,7 @@ public class DragMultipleChoice {
 	
 	@Test
 	public void test8() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getDragMultipleChoice().getBoxAnswer().size();i++){
 			Integer index = jawabanBenar.indexOf(subLessonPage.getDragMultipleChoice().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -144,6 +146,7 @@ public class DragMultipleChoice {
 	
 	@Test
 	public void test9() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getDragMultipleChoice().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah.indexOf(subLessonPage.getDragMultipleChoice().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -160,6 +163,9 @@ public class DragMultipleChoice {
 	
 	@Test
 	public void test10() throws InterruptedException{
+		urutan = new ArrayList<Integer>();
+		tampilanJawaban = new ArrayList<String>();
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getDragMultipleChoice().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah.indexOf(subLessonPage.getDragMultipleChoice().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -184,10 +190,14 @@ public class DragMultipleChoice {
 				hardAssert.fail("Tampilan jawaban yang benar dan salah tidak sesuai");
 			}
 		}
+		tampilanJawaban.clear();
 	}
 	
 	@Test
 	public void test11() throws InterruptedException{
+		urutan = new ArrayList<Integer>();
+		tampilanJawaban = new ArrayList<String>();
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getDragMultipleChoice().getBoxAnswer().size();i++){
 			Integer index = jawabanBenar.indexOf(subLessonPage.getDragMultipleChoice().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -209,7 +219,7 @@ public class DragMultipleChoice {
 		for(int i=0;i<tampilanJawaban.size();i++){
 			String status[] = subLessonPage.getDragMultipleChoice().getBoxAnswer().get(urutan.get(i)).getAttribute("class").split(" ");
 			if(tampilanJawaban.get(i).equals(status[status.length-1])==false){
-				hardAssert.fail("Tampilan jawaban yang benar dan salah tidak sesuai");
+				hardAssert.fail("Tampilan jawaban yang benar dan salah tidak sesuai " + status[status.length-1] + " == " +tampilanJawaban.get(i));
 			}
 		}
 	}

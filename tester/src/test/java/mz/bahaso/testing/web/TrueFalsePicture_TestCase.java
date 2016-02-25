@@ -77,6 +77,7 @@ public class TrueFalsePicture_TestCase {
 	
 	@Test
 	public void test6() throws InterruptedException{
+		Thread.sleep(1000);
 		if(jawaban){
 			subLessonPage.getTrueFalsePicture().getBoxAnswer().get(0).click();
 		}else{
@@ -91,6 +92,7 @@ public class TrueFalsePicture_TestCase {
 	
 	@Test
 	public void test7() throws InterruptedException{
+		Thread.sleep(1000);
 		if(!jawaban){
 			subLessonPage.getTrueFalsePicture().getBoxAnswer().get(0).click();
 		}else{
@@ -105,6 +107,7 @@ public class TrueFalsePicture_TestCase {
 	
 	@Test
 	public void test8() throws InterruptedException{
+		Thread.sleep(1000);
 		if(jawaban){
 			subLessonPage.getTrueFalsePicture().getBoxAnswer().get(0).click();
 		}else{
@@ -124,6 +127,7 @@ public class TrueFalsePicture_TestCase {
 	
 	@Test
 	public void test9() throws InterruptedException{
+		Thread.sleep(1000);
 		if(!jawaban){
 			subLessonPage.getTrueFalsePicture().getBoxAnswer().get(0).click();
 		}else{

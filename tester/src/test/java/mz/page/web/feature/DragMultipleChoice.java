@@ -25,7 +25,7 @@ public class DragMultipleChoice extends AbstractWeb{
 	}
 	
 	public ArrayList<WebElement> getBoxAnswer(){
-		if(BoxAnswer.size()==0)BoxAnswer = (ArrayList<WebElement>) driver.findElements(By.className("tile-question"));
+		if(BoxAnswer.size()==0) BoxAnswer = (ArrayList<WebElement>) driver.findElements(By.className("tile-question"));
 		return BoxAnswer;
 	}
 }

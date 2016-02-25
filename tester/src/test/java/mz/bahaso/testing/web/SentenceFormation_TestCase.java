@@ -101,6 +101,7 @@ public class SentenceFormation_TestCase {
 	
 	@Test
 	public void test5() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getSentenceFormation().getBoxAnswer().size();i++){
 			Integer index = jawaban.indexOf(subLessonPage.getSentenceFormation().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -117,6 +118,7 @@ public class SentenceFormation_TestCase {
 	
 	@Test
 	public void test6() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getSentenceFormation().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah.indexOf(subLessonPage.getSentenceFormation().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -133,6 +135,7 @@ public class SentenceFormation_TestCase {
 	
 	@Test
 	public void test7and8() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getSentenceFormation().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah.indexOf(subLessonPage.getSentenceFormation().getBoxAnswer().get(i).getText());
 			if(index!=-1){

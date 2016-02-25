@@ -136,6 +136,7 @@ public class BoxMatchList_TestCase {
 	
 	@Test
 	public void test6() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getBoxMatchList().getBoxAnswer().size();i++){
 			Integer index = jawabanBenar.indexOf(subLessonPage.getBoxMatchList().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -152,6 +153,7 @@ public class BoxMatchList_TestCase {
 	
 	@Test
 	public void test7() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getBoxMatchList().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah.indexOf(subLessonPage.getBoxMatchList().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -168,6 +170,7 @@ public class BoxMatchList_TestCase {
 	
 	@Test
 	public void test8() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getBoxMatchList().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah2.indexOf(subLessonPage.getBoxMatchList().getBoxAnswer().get(i).getText());
 			if(index!=-1){
@@ -184,6 +187,7 @@ public class BoxMatchList_TestCase {
 	
 	@Test
 	public void test9and10() throws InterruptedException{
+		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getBoxMatchList().getBoxAnswer().size();i++){
 			Integer index = jawabanSalah.indexOf(subLessonPage.getBoxMatchList().getBoxAnswer().get(i).getText());
 			if(index!=-1){

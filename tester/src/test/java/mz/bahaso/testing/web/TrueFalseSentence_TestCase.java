@@ -68,6 +68,7 @@ public class TrueFalseSentence_TestCase {
 	
 	@Test
 	public void test5() throws InterruptedException{
+		Thread.sleep(1000);
 		if(jawaban){
 			subLessonPage.getTrueFalseSentence().getBoxAnswer().get(0).click();
 		}else{
@@ -82,6 +83,7 @@ public class TrueFalseSentence_TestCase {
 	
 	@Test
 	public void test6() throws InterruptedException{
+		Thread.sleep(1000);
 		if(!jawaban){
 			subLessonPage.getTrueFalseSentence().getBoxAnswer().get(0).click();
 		}else{
@@ -96,6 +98,7 @@ public class TrueFalseSentence_TestCase {
 	
 	@Test
 	public void test7() throws InterruptedException{
+		Thread.sleep(1000);
 		if(jawaban){
 			subLessonPage.getTrueFalseSentence().getBoxAnswer().get(0).click();
 		}else{
@@ -115,6 +118,7 @@ public class TrueFalseSentence_TestCase {
 	
 	@Test
 	public void test8() throws InterruptedException{
+		Thread.sleep(1000);
 		if(!jawaban){
 			subLessonPage.getTrueFalseSentence().getBoxAnswer().get(0).click();
 		}else{

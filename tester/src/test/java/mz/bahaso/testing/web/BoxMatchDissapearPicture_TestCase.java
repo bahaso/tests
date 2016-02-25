@@ -32,7 +32,7 @@ public class BoxMatchDissapearPicture_TestCase{
 	ArrayList<String> TampilanJawaban = new ArrayList<String>();
 	
 	@BeforeClass
-	public void BeforeClass(){
+	public void BeforeClass() throws InterruptedException{
 		jawaban.put("Running-shoes.png",0);
 		jawaban.put("Short.png",0);
 		jawaban.put("Tshirt2.png",0);
@@ -77,7 +77,8 @@ public class BoxMatchDissapearPicture_TestCase{
 	}
 	
 	@Test
-	public void test3(){
+	public void test3() throws InterruptedException{
+		Thread.sleep(1000);
 		if(jawaban.size()==subLessonPage.getBoxMatchDisappearPicture().getBoxAnswer().size()){
 			for(int i=0;i<jawaban.size();i++){
 				if(jawaban.containsKey(subLessonPage.getBoxMatchDisappearPicture().getBoxAnswer().get(i).getAttribute("data-val"))==false){

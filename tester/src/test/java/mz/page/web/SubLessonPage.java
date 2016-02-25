@@ -104,8 +104,8 @@ public class SubLessonPage extends AbstractWeb {
 		landingPage.getLogin().ClickButtonLogin();
 		login=1;
 		Thread.sleep(3000);
-		this.popUp();
-		Thread.sleep(3000);
+		//this.popUp();
+		//Thread.sleep(3000);
 	}
 	
 	public void popUp()

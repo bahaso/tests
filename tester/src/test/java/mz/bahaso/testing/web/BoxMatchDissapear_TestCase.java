@@ -80,7 +80,8 @@ public class BoxMatchDissapear_TestCase{
 	}
 	
 	@Test
-	public void test3(){
+	public void test3() throws InterruptedException{
+		Thread.sleep(1000);
 		if(jawaban.size()==subLessonPage.getBoxMatchDisappear().getBoxAnswer().size()){
 			for(int i=0;i<jawaban.size();i++){
 				if(jawaban.containsKey(subLessonPage.getBoxMatchDisappear().getBoxAnswer().get(i).getText())==false){
@@ -94,10 +95,10 @@ public class BoxMatchDissapear_TestCase{
 	
 	@Test
 	public void test4() throws InterruptedException{
+		Thread.sleep(1000);
 		if(subLessonPage.getBtnPeriksa().getAttribute("disabled")==null){
 			hardAssert.fail("Tombol periksa bisa diklik sebelum semua jawaban di drag");
 		}
-		Thread.sleep(2000);
 		for(int i=0;i<subLessonPage.getBoxMatchDisappear().getBoxAnswer().size()-1;i++){
 			action.dragAndDrop(subLessonPage.getBoxMatchDisappear().getBoxAnswer().get(i), subLessonPage.getBoxMatchDisappear().getDropBox().get(0)).perform();
 			Thread.sleep(3000);
@@ -109,10 +110,10 @@ public class BoxMatchDissapear_TestCase{
 	
 	@Test
 	public void test5() throws InterruptedException{
+		Thread.sleep(1000);
 		if(subLessonPage.getBtnPeriksa().getAttribute("disabled")==null){
 			hardAssert.fail("Tombol periksa bisa diklik sebelum semua jawaban di drag");
 		}
-		Thread.sleep(2000);
 		for(int i=0;i<subLessonPage.getBoxMatchDisappear().getBoxAnswer().size();i++){
 			action.dragAndDrop(subLessonPage.getBoxMatchDisappear().BoxAnswer.get(i), subLessonPage.getBoxMatchDisappear().getDropBox().get(0)).perform();
 			Thread.sleep(3000);

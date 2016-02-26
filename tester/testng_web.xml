@@ -15,6 +15,7 @@
   	        <class name="mz.bahaso.testing.web.TrueFalsePicture_TestCase"/>
   	        <class name="mz.bahaso.testing.web.SentenceFormation_TestCase"/>
   	        <class name="mz.bahaso.testing.web.DragMultipleChoice_TestCase"/>
+  	        <class name="mz.bahaso.testing.web.LostWordListen_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

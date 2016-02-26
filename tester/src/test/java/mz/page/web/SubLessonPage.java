@@ -92,6 +92,12 @@ public class SubLessonPage extends AbstractWeb {
 		return (DragMultipleChoice)objMapping.get(_case);
 	}
 	
+	public LostWordListen getLostWordListen() {
+		String _case = "LostWordListen";
+		if(!objMapping.containsKey(_case))objMapping.put(_case, new LostWordListen());
+		return (LostWordListen)objMapping.get(_case);
+	}
+	
 	public void getUrl(String url) throws InterruptedException{
 		webApplication.getDriver().get(url);
 	}

@@ -106,6 +106,7 @@ public class BoxMatchListPicture_TestCase {
 	
 	@Test
 	public void test5() throws InterruptedException{
+		Thread.sleep(1000);
 		if(subLessonPage.getBtnPeriksa().getAttribute("disabled")==null){
 			hardAssert.fail("Tombol periksa bisa diklik sebelum semua jawaban di drag");
 		}

@@ -148,7 +148,7 @@ public class BoxMatchList_TestCase {
 		subLessonPage.getBtnPeriksa().click();
 		Thread.sleep(2000);
 		String status[] = subLessonPage.getBoxMatchList().getStatus().getAttribute("class").split(" ");
-		if(status[status.length-1].equals("true")==false)hardAssert.fail("Hasil akhir seharusnya salah");
+		if(status[status.length-1].equals("true")==false)hardAssert.fail("Hasil akhir seharusnya benar");
 	}
 	
 	@Test

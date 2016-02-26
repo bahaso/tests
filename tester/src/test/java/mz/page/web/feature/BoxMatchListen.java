@@ -8,22 +8,34 @@ import org.openqa.selenium.WebElement;
 
 import mz.page.general.AbstractWeb;
 
-public class BoxMatchList extends AbstractWeb{
+public class BoxMatchListen extends AbstractWeb{
 	WebDriver driver = webApplication.getDriver();
 	
 	public WebElement instruction = driver.findElement(By.id("lesson-instruction"));
 	
-	public WebElement status = null;
+	ArrayList<WebElement> audio = new ArrayList<WebElement>();
 	
-	public ArrayList<WebElement> question = new ArrayList<WebElement>();
+	ArrayList<WebElement> audioButtonPlay = new ArrayList<WebElement>();
+	
+	ArrayList<WebElement> audioButtonPause = new ArrayList<WebElement>();
 	
 	public ArrayList<WebElement> DropBox = new ArrayList<WebElement>();
 	
 	public ArrayList<WebElement> BoxAnswer = new ArrayList<WebElement>();
 	
-	public ArrayList<WebElement> getQuestion(){
-		question = (ArrayList<WebElement>) driver.findElements(By.xpath("//*[@id='lesson-content']/div/div[1]/ol/li"));
-		return question;
+	public ArrayList<WebElement> getAudio(){
+		if(audio.size()==0) audio  = (ArrayList<WebElement>) driver.findElements(By.className("audiojs"));
+		return audio;
+	}
+	
+	public ArrayList<WebElement> getAudioButtonPlay(){
+		if(audioButtonPlay.size()==0) audioButtonPlay  = (ArrayList<WebElement>) driver.findElements(By.className("audio-play"));
+		return audioButtonPlay;
+	}
+	
+	public ArrayList<WebElement> getAudioButtonPause(){
+		if(audioButtonPause.size()==0) audioButtonPause  = (ArrayList<WebElement>) driver.findElements(By.className("audio-pause"));
+		return audioButtonPause;
 	}
 	
 	public ArrayList<WebElement> getDropBox(){
@@ -34,10 +46,5 @@ public class BoxMatchList extends AbstractWeb{
 	public ArrayList<WebElement> getBoxAnswer(){
 		if(BoxAnswer.size()==0)BoxAnswer = (ArrayList<WebElement>) driver.findElements(By.className("tile-question"));
 		return BoxAnswer;
-	}
-	
-	public WebElement getStatus(){
-		status = driver.findElement(By.className("lesson-status"));
-		return status;
 	}
 }

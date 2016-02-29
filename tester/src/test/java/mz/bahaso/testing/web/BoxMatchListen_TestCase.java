@@ -49,7 +49,7 @@ public class BoxMatchListen_TestCase {
 		
 		action = new Actions(subLessonPage.getDriver());
 		
-		subLessonPage.login();
+		//subLessonPage.login();
 	}
 	
 	@BeforeMethod
@@ -70,7 +70,7 @@ public class BoxMatchListen_TestCase {
 		Thread.sleep(1000);
 		for(int i=0;i<subLessonPage.getBoxMatchListen().getAudio().size();i++){
 			subLessonPage.getBoxMatchListen().getAudioButtonPlay().get(i).click();
-			Thread.sleep(1000);
+			Thread.sleep(500);
 			String PlayPause[] = subLessonPage.getBoxMatchListen().getAudio().get(i).getAttribute("class").split(" ");
 			if(PlayPause[PlayPause.length-1].equals("audio-playing")==false){
 				hardAssert.fail("audio " +(i+1) + " tidak bisa di-play");

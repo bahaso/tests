@@ -110,6 +110,12 @@ public class SubLessonPage extends AbstractWeb {
 		return (ListenAndTranslate)objMapping.get(_case);
 	}
 	
+	public ListenSelectSingleBox getListenSelectSingleBox() {
+		String _case = "ListenSelectSingleBox";
+		if(!objMapping.containsKey(_case))objMapping.put(_case, new ListenSelectSingleBox());
+		return (ListenSelectSingleBox)objMapping.get(_case);
+	}
+	
 	public void getUrl(String url) throws InterruptedException{
 		webApplication.getDriver().get(url);
 	}

@@ -18,6 +18,7 @@
   	        <class name="mz.bahaso.testing.web.LostWordListen_TestCase"/>
   	        <class name="mz.bahaso.testing.web.BoxMatchListen_TestCase"/>
   	        <class name="mz.bahaso.testing.web.ListenAndTranslate_TestCase"/>
+  	        <class name="mz.bahaso.testing.web.ListenSelectSingleBox_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

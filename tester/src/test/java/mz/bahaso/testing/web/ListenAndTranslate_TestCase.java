@@ -27,6 +27,8 @@ public class ListenAndTranslate_TestCase {
 		jawabanBenar.add("keponakan perempuan");
 		jawabanBenar.add("ponakan perempuan");
 		jawabanBenar.add("kemenakan perempuan");
+		
+		//subLessonPage.login();
 	}
 	
 	@BeforeMethod
@@ -148,7 +150,7 @@ public class ListenAndTranslate_TestCase {
 	public void test10() throws InterruptedException{
 		Thread.sleep(1000);
 		tampilanJawaban = new String();
-		subLessonPage.getListenAndTranslate().BoxAnswer.sendKeys(jawabanBenar.get(0));
+		subLessonPage.getListenAndTranslate().BoxAnswer.sendKeys(jawabanBenar.get(1));
 		tampilanJawaban = "true";
 		
 		subLessonPage.getBtnPeriksa().click();

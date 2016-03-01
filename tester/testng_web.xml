@@ -20,6 +20,7 @@
   	        <class name="mz.bahaso.testing.web.ListenAndTranslate_TestCase"/>
   	        <class name="mz.bahaso.testing.web.ListenSelectSingleBox_TestCase"/>
   	        <class name="mz.bahaso.testing.web.ListenSelectPicture_TestCase"/>
+  	        <class name="mz.bahaso.testing.web.BoxMatchParagraph_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

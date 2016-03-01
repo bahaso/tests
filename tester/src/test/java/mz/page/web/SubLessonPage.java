@@ -116,6 +116,12 @@ public class SubLessonPage extends AbstractWeb {
 		return (ListenSelectSingleBox)objMapping.get(_case);
 	}
 	
+	public ListenSelectPicture getListenSelectPicture() {
+		String _case = "ListenSelectPicture";
+		if(!objMapping.containsKey(_case))objMapping.put(_case, new ListenSelectPicture());
+		return (ListenSelectPicture)objMapping.get(_case);
+	}
+	
 	public void getUrl(String url) throws InterruptedException{
 		webApplication.getDriver().get(url);
 	}

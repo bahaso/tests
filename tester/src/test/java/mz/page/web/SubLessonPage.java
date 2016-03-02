@@ -134,6 +134,12 @@ public class SubLessonPage extends AbstractWeb {
 		return (BoxMatchSentence)objMapping.get(_case);
 	}
 	
+	public TrueFalseListen getTrueFalseListen() {
+		String _case = "TrueFalseListen";
+		if(!objMapping.containsKey(_case))objMapping.put(_case, new TrueFalseListen());
+		return (TrueFalseListen)objMapping.get(_case);
+	}
+	
 	public void getUrl(String url) throws InterruptedException{
 		webApplication.getDriver().get(url);
 	}

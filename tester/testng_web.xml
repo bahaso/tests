@@ -22,6 +22,7 @@
   	        <class name="mz.bahaso.testing.web.ListenSelectPicture_TestCase"/>
   	        <class name="mz.bahaso.testing.web.BoxMatchParagraph_TestCase"/>
   	        <class name="mz.bahaso.testing.web.BoxMatchSentence_TestCase"/>
+  	        <class name="mz.bahaso.testing.web.TrueFalseListen_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

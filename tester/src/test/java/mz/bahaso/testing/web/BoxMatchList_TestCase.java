@@ -21,7 +21,6 @@ public class BoxMatchList_TestCase {
 	
 	private Assertion hardAssert = new Assertion();
 	
-	
 	String url = "http://10.10.24.10/ngeadmin/previewCaseNewTab/5680dd7d938e8e7f2c8b4569";
 	String instruksi = "Lengkapi bagian yang kosong di setiap kalimat";
 	

@@ -128,6 +128,12 @@ public class SubLessonPage extends AbstractWeb {
 		return (BoxMatchParagraph)objMapping.get(_case);
 	}
 	
+	public BoxMatchSentence getBoxMatchSentence() {
+		String _case = "BoxMatchSentence";
+		if(!objMapping.containsKey(_case))objMapping.put(_case, new BoxMatchSentence());
+		return (BoxMatchSentence)objMapping.get(_case);
+	}
+	
 	public void getUrl(String url) throws InterruptedException{
 		webApplication.getDriver().get(url);
 	}

@@ -6,8 +6,8 @@
       <class name="bahaso.testing.web.Register">
         <methods>
           <include name="before"/>
+          <include name="RegisterFail8"/>
           <include name="after"/>
-          <include name="RegisterFail2"/>
         </methods>
       </class> <!-- bahaso.testing.web.Register -->
     </classes>

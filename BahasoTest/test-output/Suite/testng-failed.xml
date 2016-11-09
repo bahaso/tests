@@ -6,13 +6,12 @@
       <class name="bahaso.testing.web.Register">
         <methods>
           <include name="before"/>
-          <include name="RegisterCorrect"/>
+          <include name="RegisterFail11"/>
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.Register -->
       <class name="bahaso.testing.web.Login">
         <methods>
-          <include name="LoginFail2"/>
           <include name="before"/>
           <include name="after"/>
         </methods>

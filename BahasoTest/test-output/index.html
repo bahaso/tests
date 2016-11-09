@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>E:\testing\BahasoTest\test.xml</span>
+                    <span>E:\java\tests\BahasoTest\test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail11">RegisterFail11</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -132,12 +146,57 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail10">RegisterFail10</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail12">RegisterFail12</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail13">RegisterFail13</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail2">RegisterFail2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail3">RegisterFail3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail4">RegisterFail4</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail5">RegisterFail5</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail6">RegisterFail6</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail7">RegisterFail7</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail8">RegisterFail8</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="bahaso.testing.web.Register" hash-for-method="RegisterFail9">RegisterFail9</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -152,6 +211,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">bahaso.testing.web.Register</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterFail11">
+                  </a> <!-- RegisterFail11 -->
+                  <span class="method-name">RegisterFail11</span>
+                  <div class="stack-trace">java.lang.AssertionError: Error Massage not same as Expected expected [Kata sandi harus diisi.] but found [Kata sandi harus diisi]
+	at bahaso.testing.web.Register.RegisterFail11(Register.java:205)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -174,6 +252,27 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="RegisterFail10">
+                  </a> <!-- RegisterFail10 -->
+                  <span class="method-name">RegisterFail10</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterFail12">
+                  </a> <!-- RegisterFail12 -->
+                  <span class="method-name">RegisterFail12</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterFail13">
+                  </a> <!-- RegisterFail13 -->
+                  <span class="method-name">RegisterFail13</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="RegisterFail2">
                   </a> <!-- RegisterFail2 -->
                   <span class="method-name">RegisterFail2</span>
@@ -184,6 +283,48 @@
                   <a name="RegisterFail3">
                   </a> <!-- RegisterFail3 -->
                   <span class="method-name">RegisterFail3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterFail4">
+                  </a> <!-- RegisterFail4 -->
+                  <span class="method-name">RegisterFail4</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterFail5">
+                  </a> <!-- RegisterFail5 -->
+                  <span class="method-name">RegisterFail5</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterFail6">
+                  </a> <!-- RegisterFail6 -->
+                  <span class="method-name">RegisterFail6</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterFail7">
+                  </a> <!-- RegisterFail7 -->
+                  <span class="method-name">RegisterFail7</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterFail8">
+                  </a> <!-- RegisterFail8 -->
+                  <span class="method-name">RegisterFail8</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RegisterFail9">
+                  </a> <!-- RegisterFail9 -->
+                  <span class="method-name">RegisterFail9</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -227,7 +368,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\testing\BahasoTest\test.xml</span>
+            <span class="header-content">E:\java\tests\BahasoTest\test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -277,44 +418,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginCorrect')
 data.setCell(0, 2, 'bahaso.testing.web.Login')
-data.setCell(0, 3, 13445);
+data.setCell(0, 3, 17299);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'RegisterCorrect')
 data.setCell(1, 2, 'bahaso.testing.web.Register')
-data.setCell(1, 3, 8953);
+data.setCell(1, 3, 9600);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'RegisterFail1')
 data.setCell(2, 2, 'bahaso.testing.web.Register')
-data.setCell(2, 3, 3315);
+data.setCell(2, 3, 3332);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'RegisterFail3')
+data.setCell(3, 1, 'RegisterFail4')
 data.setCell(3, 2, 'bahaso.testing.web.Register')
-data.setCell(3, 3, 3287);
+data.setCell(3, 3, 3292);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'RegisterFail2')
+data.setCell(4, 1, 'RegisterFail3')
 data.setCell(4, 2, 'bahaso.testing.web.Register')
-data.setCell(4, 3, 3265);
+data.setCell(4, 3, 3288);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'LoginFail3')
-data.setCell(5, 2, 'bahaso.testing.web.Login')
-data.setCell(5, 3, 2763);
+data.setCell(5, 1, 'RegisterFail5')
+data.setCell(5, 2, 'bahaso.testing.web.Register')
+data.setCell(5, 3, 3288);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'LoginFail2')
-data.setCell(6, 2, 'bahaso.testing.web.Login')
-data.setCell(6, 3, 2512);
+data.setCell(6, 1, 'RegisterFail12')
+data.setCell(6, 2, 'bahaso.testing.web.Register')
+data.setCell(6, 3, 3285);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'LoginFail1')
-data.setCell(7, 2, 'bahaso.testing.web.Login')
-data.setCell(7, 3, 2429);
+data.setCell(7, 1, 'RegisterFail11')
+data.setCell(7, 2, 'bahaso.testing.web.Register')
+data.setCell(7, 3, 3285);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'RegisterFail10')
+data.setCell(8, 2, 'bahaso.testing.web.Register')
+data.setCell(8, 3, 3284);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'RegisterFail9')
+data.setCell(9, 2, 'bahaso.testing.web.Register')
+data.setCell(9, 3, 3283);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'RegisterFail2')
+data.setCell(10, 2, 'bahaso.testing.web.Register')
+data.setCell(10, 3, 3282);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'RegisterFail6')
+data.setCell(11, 2, 'bahaso.testing.web.Register')
+data.setCell(11, 3, 3276);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'RegisterFail7')
+data.setCell(12, 2, 'bahaso.testing.web.Register')
+data.setCell(12, 3, 3271);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'RegisterFail8')
+data.setCell(13, 2, 'bahaso.testing.web.Register')
+data.setCell(13, 3, 3270);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'RegisterFail13')
+data.setCell(14, 2, 'bahaso.testing.web.Register')
+data.setCell(14, 3, 3264);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'LoginFail2')
+data.setCell(15, 2, 'bahaso.testing.web.Login')
+data.setCell(15, 3, 2784);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'LoginFail3')
+data.setCell(16, 2, 'bahaso.testing.web.Login')
+data.setCell(16, 3, 2750);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'LoginFail1')
+data.setCell(17, 2, 'bahaso.testing.web.Login')
+data.setCell(17, 3, 2488);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -347,98 +528,220 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginCorrect</span>
-                <span class="method-start">6140 ms</span>
+                <span class="method-start">8813 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">19586 ms</span>
+                <span class="method-start">26113 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">before</span>
-                <span class="method-start">21897 ms</span>
+                <span class="method-start">26311 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginFail1</span>
-                <span class="method-start">27470 ms</span>
+                <span class="method-start">33341 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">29900 ms</span>
+                <span class="method-start">35829 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">before</span>
-                <span class="method-start">32210 ms</span>
+                <span class="method-start">38140 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginFail2</span>
-                <span class="method-start">38524 ms</span>
+                <span class="method-start">50902 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">41037 ms</span>
+                <span class="method-start">53687 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">before</span>
-                <span class="method-start">43350 ms</span>
+                <span class="method-start">55997 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">LoginFail3</span>
-                <span class="method-start">49360 ms</span>
+                <span class="method-start">62867 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">52124 ms</span>
+                <span class="method-start">65617 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">bahaso.testing.web.Register</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">before</span>
-                <span class="method-start">54449 ms</span>
+                <span class="method-start">67930 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">RegisterCorrect</span>
-                <span class="method-start">60144 ms</span>
+                <span class="method-start">74965 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">69097 ms</span>
+                <span class="method-start">84566 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">before</span>
-                <span class="method-start">71417 ms</span>
+                <span class="method-start">86880 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">RegisterFail1</span>
-                <span class="method-start">77259 ms</span>
+                <span class="method-start">93508 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">80574 ms</span>
+                <span class="method-start">96840 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">before</span>
-                <span class="method-start">82888 ms</span>
+                <span class="method-start">99152 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterFail10</span>
+                <span class="method-start">107008 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">110293 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">112607 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RegisterFail11</span>
+                <span class="method-start">119862 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">123152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">125469 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterFail12</span>
+                <span class="method-start">132563 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">135849 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">138162 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterFail13</span>
+                <span class="method-start">145142 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">148407 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">150721 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">RegisterFail2</span>
-                <span class="method-start">90984 ms</span>
+                <span class="method-start">157461 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">94249 ms</span>
+                <span class="method-start">160744 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">before</span>
-                <span class="method-start">96561 ms</span>
+                <span class="method-start">163058 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">RegisterFail3</span>
-                <span class="method-start">102439 ms</span>
+                <span class="method-start">170242 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">after</span>
-                <span class="method-start">105727 ms</span>
+                <span class="method-start">173531 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">175842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterFail4</span>
+                <span class="method-start">182000 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">185294 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">187610 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterFail5</span>
+                <span class="method-start">196249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">199538 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">201850 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterFail6</span>
+                <span class="method-start">208007 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">211285 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">213605 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterFail7</span>
+                <span class="method-start">221691 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">224963 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">227283 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterFail8</span>
+                <span class="method-start">236340 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">239612 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">before</span>
+                <span class="method-start">241921 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">RegisterFail9</span>
+                <span class="method-start">248869 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">after</span>
+                <span class="method-start">252153 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

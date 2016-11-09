@@ -202,7 +202,7 @@ public class Register extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
-  		Assert.assertEquals(lp.getInputRegisterPasswordErrorMassage(driver), "Kata sandi harus diisi.", "Error Massage not same as Expected");
+  		Assert.assertEquals(lp.getInputRegisterPasswordErrorMassage(driver), "Kata sandi harus diisi", "Error Massage not same as Expected");
   	}
   	
   	/*

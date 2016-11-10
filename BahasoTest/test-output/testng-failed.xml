@@ -5,9 +5,12 @@
     <classes>
       <class name="bahaso.testing.web.Register">
         <methods>
+          <include name="RegisterFail9"/>
           <include name="before"/>
-          <include name="RegisterFail11"/>
+          <include name="RegisterFail8"/>
+          <include name="RegisterFail10"/>
           <include name="after"/>
+          <include name="RegisterFail7"/>
         </methods>
       </class> <!-- bahaso.testing.web.Register -->
       <class name="bahaso.testing.web.Login">

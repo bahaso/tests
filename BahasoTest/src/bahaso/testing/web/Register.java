@@ -41,7 +41,7 @@ public class Register extends General{
   	 * all form is blank
   	 */
   	@Test
-  	public void RegisterFail1() throws InterruptedException {
+  	public void RegisterFailAllBlank() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -59,7 +59,7 @@ public class Register extends General{
   	 * Firstname less than 3 char
   	 */
   	@Test
-  	public void RegisterFail2() throws InterruptedException {
+  	public void RegisterFailFirstname1() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","a");
   		RegisterData.put("lastname","");
@@ -74,7 +74,7 @@ public class Register extends General{
   	 * Firstname contains invalid char
   	 */
   	@Test
-  	public void RegisterFail3() throws InterruptedException {
+  	public void RegisterFailFirstname2() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","aaa---!!!");
   		RegisterData.put("lastname","");
@@ -89,7 +89,7 @@ public class Register extends General{
   	 * Lastname less than 2 char
   	 */
   	@Test
-  	public void RegisterFail4() throws InterruptedException {
+  	public void RegisterFailLastname1() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","a");
@@ -104,7 +104,7 @@ public class Register extends General{
   	 * Lastname contains invalid char
   	 */
   	@Test
-  	public void RegisterFail5() throws InterruptedException {
+  	public void RegisterFailLastname2() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","a!!!!!!!!");
@@ -119,7 +119,7 @@ public class Register extends General{
   	 * Email is blank
   	 */
   	@Test
-  	public void RegisterFail6() throws InterruptedException {
+  	public void RegisterFailEmail1() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -134,7 +134,7 @@ public class Register extends General{
   	 * Email without "@" and "."
   	 */
   	@Test
-  	public void RegisterFail7() throws InterruptedException {
+  	public void RegisterFailEmail2() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -142,14 +142,14 @@ public class Register extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
-  		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Format email salah", "Error Massage not same as Expected");
+  		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
   	/*
   	 * Email without "." after "@"
   	 */
   	@Test
-  	public void RegisterFail8() throws InterruptedException {
+  	public void RegisterFailEmail3() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -157,14 +157,14 @@ public class Register extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
-  		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Format email salah", "Error Massage not same as Expected");
+  		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
   	/*
   	 * Email with "@" and "." but without any character between "@" and "."
   	 */
   	@Test
-  	public void RegisterFail9() throws InterruptedException {
+  	public void RegisterFailEmail4() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -172,14 +172,14 @@ public class Register extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
-  		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Format email salah", "Error Massage not same as Expected");
+  		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
   	/*
   	 * Email with "@", "." and any character between "@" and "." but without any character after last "."
   	 */
   	@Test
-  	public void RegisterFail10() throws InterruptedException {
+  	public void RegisterFailEmail5() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -187,14 +187,29 @@ public class Register extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
-  		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Format email salah", "Error Massage not same as Expected");
+  		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
+  	}
+  	
+  	/*
+  	 * Email is exist
+  	 */
+  	@Test
+  	public void RegisterFailEmail6() throws InterruptedException {
+  		HashMap<String, String> RegisterData = new HashMap<String, String>();
+  		RegisterData.put("firstname",firstname);
+  		RegisterData.put("lastname",lastname);
+  		RegisterData.put("email",email);
+  		RegisterData.put("password",password);
+  		LandingPage lp = new LandingPage();
+  		lp.doRegister(driver, RegisterData);
+ 	    Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email telah dipakai. Gunakan email lainnya.", "Error Massage not same as Expected");
   	}
   	
   	/*
   	 * Password is blank
   	 */
   	@Test
-  	public void RegisterFail11() throws InterruptedException {
+  	public void RegisterFailPassword1() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -209,7 +224,7 @@ public class Register extends General{
   	 * Password is full of space
   	 */
   	@Test
-  	public void RegisterFail12() throws InterruptedException {
+  	public void RegisterFailPassword2() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -224,7 +239,7 @@ public class Register extends General{
   	 * Password less than 6 char
   	 */
   	@Test
-  	public void RegisterFail13() throws InterruptedException {
+  	public void RegisterFailPassword3() throws InterruptedException {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");

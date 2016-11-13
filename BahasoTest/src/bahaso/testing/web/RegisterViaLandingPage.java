@@ -13,7 +13,7 @@ import java.util.HashMap;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 
-public class Register extends General{
+public class RegisterViaLandingPage extends General{
 	String firstname = "bahaso";
 	String lastname = "bahaso";
 	String email = "a@a.com";

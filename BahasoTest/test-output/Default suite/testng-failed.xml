@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.web.RegisterViaRegisterPage">
+      <class name="bahaso.testing.web.RegisterViaLandingPage">
         <methods>
-          <include name="before"/>
           <include name="after"/>
-          <include name="RegisterCorrect"/>
+          <include name="RegisterFailFirstname1"/>
+          <include name="before"/>
         </methods>
-      </class> <!-- bahaso.testing.web.RegisterViaRegisterPage -->
+      </class> <!-- bahaso.testing.web.RegisterViaLandingPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -67,7 +67,7 @@ public class RegisterViaLandingPage extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
-  		Assert.assertEquals(lp.getInputRegisterFirstnameErrorMassage(driver), "Nama depan minimal terdiri dari 3 karakter", "Error Massage not same as Expected");
+  		Assert.assertEquals(lp.getInputRegisterFirstnameErrorMassage(driver), "Nama depan minimal terdiri dari 3 karakter.", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -97,7 +97,7 @@ public class RegisterViaLandingPage extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
-  		Assert.assertEquals(lp.getInputRegisterLastnameErrorMassage(driver), "Nama belakang minimal terdiri dari 2 karakter", "Error Massage not same as Expected");
+  		Assert.assertEquals(lp.getInputRegisterLastnameErrorMassage(driver), "Nama belakang minimal terdiri dari 2 karakter.", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -247,7 +247,7 @@ public class RegisterViaLandingPage extends General{
   		RegisterData.put("password","aaa");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
-  		Assert.assertEquals(lp.getInputRegisterPasswordErrorMassage(driver), "Kata sandi minimal terdiri dari 6 karakter", "Error Massage not same as Expected");
+  		Assert.assertEquals(lp.getInputRegisterPasswordErrorMassage(driver), "Kata sandi minimal terdiri dari 6 karakter.", "Error Massage not same as Expected");
   	}
 
   	@AfterMethod

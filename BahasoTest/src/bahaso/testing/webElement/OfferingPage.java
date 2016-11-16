@@ -1,5 +1,7 @@
 package bahaso.testing.webElement;
 
+import java.util.HashMap;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -60,5 +62,22 @@ public class OfferingPage {
 	public WebElement getRegisterButton3(WebDriver driver){
 		RegisterButton3 = driver.findElement(By.xpath(".//*[@id='section-10']/div/div/form/div[3]/button"));
 		return RegisterButton3;
+	}
+	
+	//Operation
+	
+	public void doRegister1(WebDriver driver, HashMap<String, String> RegisterData){
+		getInputRegisterNama1(driver).sendKeys(RegisterData.get("name"));;
+		getInputRegisterEmail1(driver).sendKeys(RegisterData.get("email"));
+	}
+	
+	public void doRegister2(WebDriver driver, HashMap<String, String> RegisterData){
+		getInputRegisterNama2(driver).sendKeys(RegisterData.get("name"));;
+		getInputRegisterEmail2(driver).sendKeys(RegisterData.get("email"));
+	}
+	
+	public void doRegister3(WebDriver driver, HashMap<String, String> RegisterData){
+		getInputRegisterNama3(driver).sendKeys(RegisterData.get("name"));;
+		getInputRegisterEmail3(driver).sendKeys(RegisterData.get("email"));
 	}
 }

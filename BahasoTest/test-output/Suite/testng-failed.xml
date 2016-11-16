@@ -3,10 +3,22 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="bahaso.testing.web.RegisterViaLandingPage">
+        <methods>
+          <include name="after"/>
+          <include name="RegisterFailPassword3"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.RegisterViaLandingPage -->
+      <class name="bahaso.testing.web.RegisterViaOfferingPage">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.RegisterViaOfferingPage -->
       <class name="bahaso.testing.web.Login">
         <methods>
           <include name="before"/>
-          <include name="LoginCorrect"/>
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.Login -->

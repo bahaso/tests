@@ -1,7 +1,9 @@
 <suite name="Suite" parallel="none">
   	<test name="Test">
   	    <classes>
-  	       	<class name="bahaso.testing.web.Login"/>
+  	    	<class name="bahaso.testing.web.Login"/>
+  	    	<class name="bahaso.testing.web.RegisterViaLandingPage"/>
+  	       	<class name="bahaso.testing.web.RegisterViaOfferingPage"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

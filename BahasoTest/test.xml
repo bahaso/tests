@@ -4,6 +4,7 @@
   	    	<class name="bahaso.testing.web.Login"/>
   	    	<class name="bahaso.testing.web.RegisterViaLandingPage"/>
   	       	<class name="bahaso.testing.web.RegisterViaOfferingPage"/>
+  	       	<class name="bahaso.testing.web.RegisterViaRegisterPage"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

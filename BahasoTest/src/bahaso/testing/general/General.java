@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class General {
 	public static WebDriver driver;
 	
-	public static WebDriver getDriver(){
+	public WebDriver getDriver(){
 		System.setProperty("webdriver.gecko.driver", "E:\\testing\\driver\\geckodriver.exe");
 		System.setProperty("webdriver.chrome.driver", "E:\\testing\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();

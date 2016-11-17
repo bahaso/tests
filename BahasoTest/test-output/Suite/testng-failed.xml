@@ -23,8 +23,8 @@
       </class> <!-- bahaso.testing.web.RegisterViaOfferingPage -->
       <class name="bahaso.testing.web.Login">
         <methods>
+          <include name="LoginFail1"/>
           <include name="before"/>
-          <include name="LoginCorrect"/>
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.Login -->

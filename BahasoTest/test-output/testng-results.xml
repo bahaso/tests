@@ -1,573 +1,886 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="46" passed="46">
+<testng-results skipped="1" failed="3" total="52" passed="48">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1101340" started-at="2016-11-18T06:35:19Z" finished-at="2016-11-18T06:53:40Z">
+  <suite name="Suite" duration-ms="1020133" started-at="2016-11-18T09:50:54Z" finished-at="2016-11-18T10:07:55Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1101340" started-at="2016-11-18T06:35:19Z" finished-at="2016-11-18T06:53:40Z">
-      <class name="bahaso.testing.web.RegisterViaOfferingPage">
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="before" is-config="true" duration-ms="8204" started-at="2016-11-18T13:39:49Z" finished-at="2016-11-18T13:39:57Z">
+    <test name="Test" duration-ms="1020133" started-at="2016-11-18T09:50:54Z" finished-at="2016-11-18T10:07:55Z">
+      <class name="bahaso.testing.web.TrueFalseListen_TestCase">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@68c4039c]" name="before" is-config="true" duration-ms="25403" started-at="2016-11-18T17:01:56Z" finished-at="2016-11-18T17:02:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterCorrect1()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="RegisterCorrect1" duration-ms="243" started-at="2016-11-18T13:39:57Z" finished-at="2016-11-18T13:39:57Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@68c4039c]" name="answerRight" duration-ms="4163" started-at="2016-11-18T17:02:21Z" finished-at="2016-11-18T17:02:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answerRight -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@68c4039c]" name="after" is-config="true" duration-ms="965" started-at="2016-11-18T17:02:25Z" finished-at="2016-11-18T17:02:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@68c4039c]" name="before" is-config="true" duration-ms="98436" started-at="2016-11-18T17:02:26Z" finished-at="2016-11-18T17:04:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@68c4039c]" name="answerWrong" duration-ms="4152" started-at="2016-11-18T17:04:05Z" finished-at="2016-11-18T17:04:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answerWrong -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@68c4039c]" name="after" is-config="true" duration-ms="994" started-at="2016-11-18T17:04:09Z" finished-at="2016-11-18T17:04:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@68c4039c]" name="before" is-config="true" duration-ms="34671" started-at="2016-11-18T17:04:10Z" finished-at="2016-11-18T17:04:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="cekAllElement()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@68c4039c]" name="cekAllElement" duration-ms="2139" started-at="2016-11-18T17:04:44Z" finished-at="2016-11-18T17:04:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cekAllElement -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@68c4039c]" name="after" is-config="true" duration-ms="954" started-at="2016-11-18T17:04:47Z" finished-at="2016-11-18T17:04:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- bahaso.testing.web.TrueFalseListen_TestCase -->
+      <class name="bahaso.testing.web.RegisterViaOfferingPage">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="before" is-config="true" duration-ms="8168" started-at="2016-11-18T16:55:37Z" finished-at="2016-11-18T16:55:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="RegisterCorrect1()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="RegisterCorrect1" duration-ms="229" started-at="2016-11-18T16:55:45Z" finished-at="2016-11-18T16:55:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCorrect1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="after" is-config="true" duration-ms="879" started-at="2016-11-18T13:39:57Z" finished-at="2016-11-18T13:39:58Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="after" is-config="true" duration-ms="1002" started-at="2016-11-18T16:55:46Z" finished-at="2016-11-18T16:55:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="before" is-config="true" duration-ms="9846" started-at="2016-11-18T13:39:58Z" finished-at="2016-11-18T13:40:08Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="before" is-config="true" duration-ms="7443" started-at="2016-11-18T16:55:47Z" finished-at="2016-11-18T16:55:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterCorrect2()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="RegisterCorrect2" duration-ms="243" started-at="2016-11-18T13:40:08Z" finished-at="2016-11-18T13:40:08Z">
+        <test-method status="PASS" signature="RegisterCorrect2()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="RegisterCorrect2" duration-ms="226" started-at="2016-11-18T16:55:54Z" finished-at="2016-11-18T16:55:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCorrect2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="after" is-config="true" duration-ms="793" started-at="2016-11-18T13:40:08Z" finished-at="2016-11-18T13:40:09Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="after" is-config="true" duration-ms="907" started-at="2016-11-18T16:55:54Z" finished-at="2016-11-18T16:55:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="before" is-config="true" duration-ms="7576" started-at="2016-11-18T13:40:09Z" finished-at="2016-11-18T13:40:16Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="before" is-config="true" duration-ms="7375" started-at="2016-11-18T16:55:55Z" finished-at="2016-11-18T16:56:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterCorrect3()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="RegisterCorrect3" duration-ms="255" started-at="2016-11-18T13:40:16Z" finished-at="2016-11-18T13:40:17Z">
+        <test-method status="PASS" signature="RegisterCorrect3()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="RegisterCorrect3" duration-ms="252" started-at="2016-11-18T16:56:03Z" finished-at="2016-11-18T16:56:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCorrect3 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="after" is-config="true" duration-ms="801" started-at="2016-11-18T13:40:17Z" finished-at="2016-11-18T13:40:18Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="after" is-config="true" duration-ms="889" started-at="2016-11-18T16:56:03Z" finished-at="2016-11-18T16:56:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="before" is-config="true" duration-ms="7298" started-at="2016-11-18T13:40:18Z" finished-at="2016-11-18T13:40:25Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="before" is-config="true" duration-ms="7124" started-at="2016-11-18T16:56:04Z" finished-at="2016-11-18T16:56:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail1()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="RegisterFailEmail1" duration-ms="243" started-at="2016-11-18T13:40:25Z" finished-at="2016-11-18T13:40:25Z">
+        <test-method status="PASS" signature="RegisterFailEmail1()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="RegisterFailEmail1" duration-ms="245" started-at="2016-11-18T16:56:11Z" finished-at="2016-11-18T16:56:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="after" is-config="true" duration-ms="830" started-at="2016-11-18T13:40:25Z" finished-at="2016-11-18T13:40:26Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="after" is-config="true" duration-ms="892" started-at="2016-11-18T16:56:11Z" finished-at="2016-11-18T16:56:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="before" is-config="true" duration-ms="11396" started-at="2016-11-18T13:40:26Z" finished-at="2016-11-18T13:40:37Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="before" is-config="true" duration-ms="7087" started-at="2016-11-18T16:56:12Z" finished-at="2016-11-18T16:56:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail2()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="RegisterFailEmail2" duration-ms="237" started-at="2016-11-18T13:40:37Z" finished-at="2016-11-18T13:40:38Z">
+        <test-method status="PASS" signature="RegisterFailEmail2()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="RegisterFailEmail2" duration-ms="247" started-at="2016-11-18T16:56:19Z" finished-at="2016-11-18T16:56:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="after" is-config="true" duration-ms="817" started-at="2016-11-18T13:40:38Z" finished-at="2016-11-18T13:40:38Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="after" is-config="true" duration-ms="931" started-at="2016-11-18T16:56:19Z" finished-at="2016-11-18T16:56:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="before" is-config="true" duration-ms="7188" started-at="2016-11-18T13:40:38Z" finished-at="2016-11-18T13:40:46Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="before" is-config="true" duration-ms="7143" started-at="2016-11-18T16:56:20Z" finished-at="2016-11-18T16:56:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail3()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="RegisterFailEmail3" duration-ms="243" started-at="2016-11-18T13:40:46Z" finished-at="2016-11-18T13:40:46Z">
+        <test-method status="PASS" signature="RegisterFailEmail3()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="RegisterFailEmail3" duration-ms="229" started-at="2016-11-18T16:56:27Z" finished-at="2016-11-18T16:56:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail3 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="after" is-config="true" duration-ms="762" started-at="2016-11-18T13:40:46Z" finished-at="2016-11-18T13:40:47Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="after" is-config="true" duration-ms="896" started-at="2016-11-18T16:56:28Z" finished-at="2016-11-18T16:56:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="before" is-config="true" duration-ms="10562" started-at="2016-11-18T13:40:47Z" finished-at="2016-11-18T13:40:57Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="before" is-config="true" duration-ms="27201" started-at="2016-11-18T16:56:28Z" finished-at="2016-11-18T16:56:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailName1()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="RegisterFailName1" duration-ms="236" started-at="2016-11-18T13:40:57Z" finished-at="2016-11-18T13:40:57Z">
+        <test-method status="PASS" signature="RegisterFailName1()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="RegisterFailName1" duration-ms="129" started-at="2016-11-18T16:56:56Z" finished-at="2016-11-18T16:56:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailName1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="after" is-config="true" duration-ms="836" started-at="2016-11-18T13:40:57Z" finished-at="2016-11-18T13:40:58Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="after" is-config="true" duration-ms="904" started-at="2016-11-18T16:56:56Z" finished-at="2016-11-18T16:56:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="before" is-config="true" duration-ms="21107" started-at="2016-11-18T13:40:58Z" finished-at="2016-11-18T13:41:19Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="before" is-config="true" duration-ms="7123" started-at="2016-11-18T16:56:57Z" finished-at="2016-11-18T16:57:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailName2()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="RegisterFailName2" duration-ms="239" started-at="2016-11-18T13:41:19Z" finished-at="2016-11-18T13:41:20Z">
+        <test-method status="PASS" signature="RegisterFailName2()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="RegisterFailName2" duration-ms="248" started-at="2016-11-18T16:57:04Z" finished-at="2016-11-18T16:57:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailName2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="after" is-config="true" duration-ms="835" started-at="2016-11-18T13:41:20Z" finished-at="2016-11-18T13:41:20Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="after" is-config="true" duration-ms="957" started-at="2016-11-18T16:57:04Z" finished-at="2016-11-18T16:57:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="before" is-config="true" duration-ms="26948" started-at="2016-11-18T13:41:20Z" finished-at="2016-11-18T13:41:47Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="before" is-config="true" duration-ms="6972" started-at="2016-11-18T16:57:05Z" finished-at="2016-11-18T16:57:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailName3()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="RegisterFailName3" duration-ms="168" started-at="2016-11-18T13:41:47Z" finished-at="2016-11-18T13:41:47Z">
+        <test-method status="PASS" signature="RegisterFailName3()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="RegisterFailName3" duration-ms="251" started-at="2016-11-18T16:57:12Z" finished-at="2016-11-18T16:57:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailName3 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@29774679]" name="after" is-config="true" duration-ms="790" started-at="2016-11-18T13:41:47Z" finished-at="2016-11-18T13:41:48Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaOfferingPage@5e5792a0]" name="after" is-config="true" duration-ms="987" started-at="2016-11-18T16:57:12Z" finished-at="2016-11-18T16:57:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- bahaso.testing.web.RegisterViaOfferingPage -->
       <class name="bahaso.testing.web.RegisterViaRegisterPage">
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="13876" started-at="2016-11-18T13:41:48Z" finished-at="2016-11-18T13:42:02Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="8424" started-at="2016-11-18T16:57:13Z" finished-at="2016-11-18T16:57:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterCorrect()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterCorrect" duration-ms="14983" started-at="2016-11-18T13:42:02Z" finished-at="2016-11-18T13:42:17Z">
+        <test-method status="FAIL" signature="RegisterCorrect()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterCorrect" duration-ms="3314" started-at="2016-11-18T16:57:22Z" finished-at="2016-11-18T16:57:25Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='nav-main']/ul[2]/li[1]/a"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'BahasoComputer', ip: '10.10.16.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\BAHASO~1\AppData\Local\Temp\scoped_dir11912_12790}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bb52d39b0ca98dd3e596e08cf5358c8b
+*** Element info: {Using=xpath, value=.//*[@id='nav-main']/ul[2]/li[1]/a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='nav-main']/ul[2]/li[1]/a"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 55 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'BahasoComputer', ip: '10.10.16.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\BAHASO~1\AppData\Local\Temp\scoped_dir11912_12790}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: bb52d39b0ca98dd3e596e08cf5358c8b
+*** Element info: {Using=xpath, value=.//*[@id='nav-main']/ul[2]/li[1]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at bahaso.testing.webElement.LoginPage.getUsernameButton(LoginPage.java:11)
+	at bahaso.testing.web.RegisterViaRegisterPage.RegisterCorrect(RegisterViaRegisterPage.java:36)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCorrect -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2315" started-at="2016-11-18T13:42:17Z" finished-at="2016-11-18T13:42:19Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2315" started-at="2016-11-18T16:57:25Z" finished-at="2016-11-18T16:57:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="13503" started-at="2016-11-18T13:42:19Z" finished-at="2016-11-18T13:42:33Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6892" started-at="2016-11-18T16:57:27Z" finished-at="2016-11-18T16:57:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailAllBlank()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailAllBlank" duration-ms="3332" started-at="2016-11-18T13:42:33Z" finished-at="2016-11-18T13:42:36Z">
+        <test-method status="PASS" signature="RegisterFailAllBlank()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailAllBlank" duration-ms="3337" started-at="2016-11-18T16:57:34Z" finished-at="2016-11-18T16:57:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailAllBlank -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2307" started-at="2016-11-18T13:42:36Z" finished-at="2016-11-18T13:42:39Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2313" started-at="2016-11-18T16:57:38Z" finished-at="2016-11-18T16:57:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="8125" started-at="2016-11-18T13:42:39Z" finished-at="2016-11-18T13:42:47Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6661" started-at="2016-11-18T16:57:40Z" finished-at="2016-11-18T16:57:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail1()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailEmail1" duration-ms="3258" started-at="2016-11-18T13:42:47Z" finished-at="2016-11-18T13:42:50Z">
+        <test-method status="PASS" signature="RegisterFailEmail1()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailEmail1" duration-ms="3262" started-at="2016-11-18T16:57:47Z" finished-at="2016-11-18T16:57:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2309" started-at="2016-11-18T13:42:50Z" finished-at="2016-11-18T13:42:52Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2309" started-at="2016-11-18T16:57:50Z" finished-at="2016-11-18T16:57:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="7393" started-at="2016-11-18T13:42:52Z" finished-at="2016-11-18T13:43:00Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6908" started-at="2016-11-18T16:57:52Z" finished-at="2016-11-18T16:57:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail2()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailEmail2" duration-ms="3308" started-at="2016-11-18T13:43:00Z" finished-at="2016-11-18T13:43:03Z">
+        <test-method status="PASS" signature="RegisterFailEmail2()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailEmail2" duration-ms="3253" started-at="2016-11-18T16:57:59Z" finished-at="2016-11-18T16:58:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2308" started-at="2016-11-18T13:43:03Z" finished-at="2016-11-18T13:43:05Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:58:02Z" finished-at="2016-11-18T16:58:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="7165" started-at="2016-11-18T13:43:05Z" finished-at="2016-11-18T13:43:12Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6841" started-at="2016-11-18T16:58:05Z" finished-at="2016-11-18T16:58:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail3()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailEmail3" duration-ms="3275" started-at="2016-11-18T13:43:12Z" finished-at="2016-11-18T13:43:16Z">
+        <test-method status="PASS" signature="RegisterFailEmail3()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailEmail3" duration-ms="3250" started-at="2016-11-18T16:58:11Z" finished-at="2016-11-18T16:58:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail3 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2313" started-at="2016-11-18T13:43:16Z" finished-at="2016-11-18T13:43:18Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T16:58:15Z" finished-at="2016-11-18T16:58:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="9207" started-at="2016-11-18T13:43:18Z" finished-at="2016-11-18T13:43:27Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="7519" started-at="2016-11-18T16:58:17Z" finished-at="2016-11-18T16:58:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail4()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailEmail4" duration-ms="3277" started-at="2016-11-18T13:43:27Z" finished-at="2016-11-18T13:43:31Z">
+        <test-method status="PASS" signature="RegisterFailEmail4()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailEmail4" duration-ms="3274" started-at="2016-11-18T16:58:24Z" finished-at="2016-11-18T16:58:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail4 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2313" started-at="2016-11-18T13:43:31Z" finished-at="2016-11-18T13:43:33Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:58:28Z" finished-at="2016-11-18T16:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="7704" started-at="2016-11-18T13:43:33Z" finished-at="2016-11-18T13:43:41Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6926" started-at="2016-11-18T16:58:30Z" finished-at="2016-11-18T16:58:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail5()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailEmail5" duration-ms="3288" started-at="2016-11-18T13:43:41Z" finished-at="2016-11-18T13:43:44Z">
+        <test-method status="PASS" signature="RegisterFailEmail5()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailEmail5" duration-ms="3280" started-at="2016-11-18T16:58:37Z" finished-at="2016-11-18T16:58:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail5 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T13:43:44Z" finished-at="2016-11-18T13:43:46Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T16:58:40Z" finished-at="2016-11-18T16:58:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="10262" started-at="2016-11-18T13:43:46Z" finished-at="2016-11-18T13:43:56Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="7024" started-at="2016-11-18T16:58:43Z" finished-at="2016-11-18T16:58:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail6()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailEmail6" duration-ms="3298" started-at="2016-11-18T13:43:56Z" finished-at="2016-11-18T13:44:00Z">
+        <test-method status="PASS" signature="RegisterFailEmail6()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailEmail6" duration-ms="3291" started-at="2016-11-18T16:58:50Z" finished-at="2016-11-18T16:58:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail6 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2306" started-at="2016-11-18T13:44:00Z" finished-at="2016-11-18T13:44:02Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:58:53Z" finished-at="2016-11-18T16:58:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="7361" started-at="2016-11-18T13:44:02Z" finished-at="2016-11-18T13:44:09Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6883" started-at="2016-11-18T16:58:55Z" finished-at="2016-11-18T16:59:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailFirstname1()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailFirstname1" duration-ms="3261" started-at="2016-11-18T13:44:09Z" finished-at="2016-11-18T13:44:13Z">
+        <test-method status="PASS" signature="RegisterFailFirstname1()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailFirstname1" duration-ms="3275" started-at="2016-11-18T16:59:02Z" finished-at="2016-11-18T16:59:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailFirstname1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2307" started-at="2016-11-18T13:44:13Z" finished-at="2016-11-18T13:44:15Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T16:59:05Z" finished-at="2016-11-18T16:59:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="7806" started-at="2016-11-18T13:44:15Z" finished-at="2016-11-18T13:44:23Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6944" started-at="2016-11-18T16:59:08Z" finished-at="2016-11-18T16:59:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailFirstname2()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailFirstname2" duration-ms="3286" started-at="2016-11-18T13:44:23Z" finished-at="2016-11-18T13:44:26Z">
+        <test-method status="PASS" signature="RegisterFailFirstname2()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailFirstname2" duration-ms="3285" started-at="2016-11-18T16:59:15Z" finished-at="2016-11-18T16:59:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailFirstname2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2307" started-at="2016-11-18T13:44:26Z" finished-at="2016-11-18T13:44:28Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2314" started-at="2016-11-18T16:59:18Z" finished-at="2016-11-18T16:59:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="7231" started-at="2016-11-18T13:44:28Z" finished-at="2016-11-18T13:44:36Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="16834" started-at="2016-11-18T16:59:20Z" finished-at="2016-11-18T16:59:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailLastname1()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailLastname1" duration-ms="3253" started-at="2016-11-18T13:44:36Z" finished-at="2016-11-18T13:44:39Z">
+        <test-method status="PASS" signature="RegisterFailLastname1()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailLastname1" duration-ms="3293" started-at="2016-11-18T16:59:37Z" finished-at="2016-11-18T16:59:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailLastname1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2309" started-at="2016-11-18T13:44:39Z" finished-at="2016-11-18T13:44:41Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:59:40Z" finished-at="2016-11-18T16:59:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="8599" started-at="2016-11-18T13:44:41Z" finished-at="2016-11-18T13:44:50Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="7240" started-at="2016-11-18T16:59:43Z" finished-at="2016-11-18T16:59:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailLastname2()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailLastname2" duration-ms="3285" started-at="2016-11-18T13:44:50Z" finished-at="2016-11-18T13:44:53Z">
+        <test-method status="PASS" signature="RegisterFailLastname2()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailLastname2" duration-ms="3266" started-at="2016-11-18T16:59:50Z" finished-at="2016-11-18T16:59:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailLastname2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T13:44:53Z" finished-at="2016-11-18T13:44:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:59:53Z" finished-at="2016-11-18T16:59:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="28569" started-at="2016-11-18T13:44:55Z" finished-at="2016-11-18T13:45:24Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6623" started-at="2016-11-18T16:59:55Z" finished-at="2016-11-18T17:00:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailPassword1()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailPassword1" duration-ms="3285" started-at="2016-11-18T13:45:24Z" finished-at="2016-11-18T13:45:27Z">
+        <test-method status="PASS" signature="RegisterFailPassword1()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailPassword1" duration-ms="3279" started-at="2016-11-18T17:00:02Z" finished-at="2016-11-18T17:00:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailPassword1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T13:45:27Z" finished-at="2016-11-18T13:45:29Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2318" started-at="2016-11-18T17:00:05Z" finished-at="2016-11-18T17:00:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="32429" started-at="2016-11-18T13:45:29Z" finished-at="2016-11-18T13:46:02Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6731" started-at="2016-11-18T17:00:08Z" finished-at="2016-11-18T17:00:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailPassword2()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailPassword2" duration-ms="3271" started-at="2016-11-18T13:46:02Z" finished-at="2016-11-18T13:46:05Z">
+        <test-method status="PASS" signature="RegisterFailPassword2()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailPassword2" duration-ms="3266" started-at="2016-11-18T17:00:14Z" finished-at="2016-11-18T17:00:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailPassword2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2309" started-at="2016-11-18T13:46:05Z" finished-at="2016-11-18T13:46:07Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2308" started-at="2016-11-18T17:00:18Z" finished-at="2016-11-18T17:00:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="before" is-config="true" duration-ms="12815" started-at="2016-11-18T13:46:07Z" finished-at="2016-11-18T13:46:20Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="before" is-config="true" duration-ms="6398" started-at="2016-11-18T17:00:20Z" finished-at="2016-11-18T17:00:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailPassword3()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="RegisterFailPassword3" duration-ms="3265" started-at="2016-11-18T13:46:20Z" finished-at="2016-11-18T13:46:24Z">
+        <test-method status="PASS" signature="RegisterFailPassword3()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="RegisterFailPassword3" duration-ms="3261" started-at="2016-11-18T17:00:26Z" finished-at="2016-11-18T17:00:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailPassword3 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@3ffc5af1]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T13:46:24Z" finished-at="2016-11-18T13:46:26Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaRegisterPage@26653222]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T17:00:30Z" finished-at="2016-11-18T17:00:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- bahaso.testing.web.RegisterViaRegisterPage -->
       <class name="bahaso.testing.web.Login">
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="before" is-config="true" duration-ms="6657" started-at="2016-11-18T13:35:19Z" finished-at="2016-11-18T13:35:26Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="before" is-config="true" duration-ms="7797" started-at="2016-11-18T16:50:54Z" finished-at="2016-11-18T16:51:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="LoginCorrect()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="LoginCorrect" duration-ms="16788" started-at="2016-11-18T13:35:26Z" finished-at="2016-11-18T13:35:42Z">
+        <test-method status="PASS" signature="LoginCorrect()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="LoginCorrect" duration-ms="15897" started-at="2016-11-18T16:51:02Z" finished-at="2016-11-18T16:51:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginCorrect -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="after" is-config="true" duration-ms="2316" started-at="2016-11-18T13:35:42Z" finished-at="2016-11-18T13:35:45Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="after" is-config="true" duration-ms="2313" started-at="2016-11-18T16:51:18Z" finished-at="2016-11-18T16:51:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="before" is-config="true" duration-ms="6421" started-at="2016-11-18T13:35:45Z" finished-at="2016-11-18T13:35:51Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="before" is-config="true" duration-ms="5842" started-at="2016-11-18T16:51:20Z" finished-at="2016-11-18T16:51:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="LoginFail1()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="LoginFail1" duration-ms="3201" started-at="2016-11-18T13:35:51Z" finished-at="2016-11-18T13:35:54Z">
+        <test-method status="PASS" signature="LoginFail1()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="LoginFail1" duration-ms="2489" started-at="2016-11-18T16:51:26Z" finished-at="2016-11-18T16:51:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFail1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T13:35:54Z" finished-at="2016-11-18T13:35:57Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:51:29Z" finished-at="2016-11-18T16:51:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="before" is-config="true" duration-ms="6379" started-at="2016-11-18T13:35:57Z" finished-at="2016-11-18T13:36:03Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="before" is-config="true" duration-ms="22240" started-at="2016-11-18T16:51:31Z" finished-at="2016-11-18T16:51:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="LoginFail2()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="LoginFail2" duration-ms="2574" started-at="2016-11-18T13:36:03Z" finished-at="2016-11-18T13:36:06Z">
+        <test-method status="FAIL" signature="LoginFail2()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="LoginFail2" duration-ms="3051" started-at="2016-11-18T16:51:53Z" finished-at="2016-11-18T16:51:56Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error Massage not same as Expected expected [Username tidak ditemukan.] but found [Gagal masuk, kata sandi anda salah]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error Massage not same as Expected expected [Username tidak ditemukan.] but found [Gagal masuk, kata sandi anda salah]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at bahaso.testing.web.Login.LoginFail2(Login.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFail2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="after" is-config="true" duration-ms="2313" started-at="2016-11-18T13:36:06Z" finished-at="2016-11-18T13:36:08Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="after" is-config="true" duration-ms="2309" started-at="2016-11-18T16:51:56Z" finished-at="2016-11-18T16:51:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="before" is-config="true" duration-ms="6234" started-at="2016-11-18T13:36:08Z" finished-at="2016-11-18T13:36:14Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="before" is-config="true" duration-ms="14593" started-at="2016-11-18T16:51:59Z" finished-at="2016-11-18T16:52:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="LoginFail3()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="LoginFail3" duration-ms="2891" started-at="2016-11-18T13:36:14Z" finished-at="2016-11-18T13:36:17Z">
+        <test-method status="PASS" signature="LoginFail3()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="LoginFail3" duration-ms="2830" started-at="2016-11-18T16:52:13Z" finished-at="2016-11-18T16:52:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginFail3 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T13:36:17Z" finished-at="2016-11-18T13:36:19Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@29774679]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:52:16Z" finished-at="2016-11-18T16:52:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- bahaso.testing.web.Login -->
       <class name="bahaso.testing.web.RegisterViaLandingPage">
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="11743" started-at="2016-11-18T13:36:19Z" finished-at="2016-11-18T13:36:31Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="6850" started-at="2016-11-18T16:52:18Z" finished-at="2016-11-18T16:52:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterCorrect()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterCorrect" duration-ms="10355" started-at="2016-11-18T13:36:31Z" finished-at="2016-11-18T13:36:41Z">
+        <test-method status="FAIL" signature="RegisterCorrect()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterCorrect" duration-ms="3336" started-at="2016-11-18T16:52:25Z" finished-at="2016-11-18T16:52:29Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='nav-main']/ul[2]/li[1]/a"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'BahasoComputer', ip: '10.10.16.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\BAHASO~1\AppData\Local\Temp\scoped_dir11508_7352}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3502186f6f7f3d389e33094635ca52ae
+*** Element info: {Using=xpath, value=.//*[@id='nav-main']/ul[2]/li[1]/a}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":".//*[@id='nav-main']/ul[2]/li[1]/a"}
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 70 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'BahasoComputer', ip: '10.10.16.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\BAHASO~1\AppData\Local\Temp\scoped_dir11508_7352}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 3502186f6f7f3d389e33094635ca52ae
+*** Element info: {Using=xpath, value=.//*[@id='nav-main']/ul[2]/li[1]/a}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at bahaso.testing.webElement.LoginPage.getUsernameButton(LoginPage.java:11)
+	at bahaso.testing.web.RegisterViaLandingPage.RegisterCorrect(RegisterViaLandingPage.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterCorrect -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T13:36:41Z" finished-at="2016-11-18T13:36:44Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2312" started-at="2016-11-18T16:52:29Z" finished-at="2016-11-18T16:52:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="8900" started-at="2016-11-18T13:36:44Z" finished-at="2016-11-18T13:36:53Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="7344" started-at="2016-11-18T16:52:31Z" finished-at="2016-11-18T16:52:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailAllBlank()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailAllBlank" duration-ms="3347" started-at="2016-11-18T13:36:53Z" finished-at="2016-11-18T13:36:56Z">
+        <test-method status="PASS" signature="RegisterFailAllBlank()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailAllBlank" duration-ms="3340" started-at="2016-11-18T16:52:38Z" finished-at="2016-11-18T16:52:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailAllBlank -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2314" started-at="2016-11-18T13:36:56Z" finished-at="2016-11-18T13:36:58Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2318" started-at="2016-11-18T16:52:42Z" finished-at="2016-11-18T16:52:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="6780" started-at="2016-11-18T13:36:58Z" finished-at="2016-11-18T13:37:05Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="6652" started-at="2016-11-18T16:52:44Z" finished-at="2016-11-18T16:52:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail1()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailEmail1" duration-ms="3275" started-at="2016-11-18T13:37:05Z" finished-at="2016-11-18T13:37:08Z">
+        <test-method status="PASS" signature="RegisterFailEmail1()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailEmail1" duration-ms="3290" started-at="2016-11-18T16:52:51Z" finished-at="2016-11-18T16:52:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2317" started-at="2016-11-18T13:37:08Z" finished-at="2016-11-18T13:37:11Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2312" started-at="2016-11-18T16:52:54Z" finished-at="2016-11-18T16:52:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="8174" started-at="2016-11-18T13:37:11Z" finished-at="2016-11-18T13:37:19Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="7126" started-at="2016-11-18T16:52:56Z" finished-at="2016-11-18T16:53:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail2()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailEmail2" duration-ms="3299" started-at="2016-11-18T13:37:19Z" finished-at="2016-11-18T13:37:22Z">
+        <test-method status="PASS" signature="RegisterFailEmail2()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailEmail2" duration-ms="3291" started-at="2016-11-18T16:53:03Z" finished-at="2016-11-18T16:53:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2326" started-at="2016-11-18T13:37:22Z" finished-at="2016-11-18T13:37:24Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:53:07Z" finished-at="2016-11-18T16:53:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="5918" started-at="2016-11-18T13:37:24Z" finished-at="2016-11-18T13:37:30Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="15808" started-at="2016-11-18T16:53:09Z" finished-at="2016-11-18T16:53:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail3()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailEmail3" duration-ms="3294" started-at="2016-11-18T13:37:30Z" finished-at="2016-11-18T13:37:34Z">
+        <test-method status="PASS" signature="RegisterFailEmail3()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailEmail3" duration-ms="3294" started-at="2016-11-18T16:53:25Z" finished-at="2016-11-18T16:53:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail3 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T13:37:34Z" finished-at="2016-11-18T13:37:36Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:53:28Z" finished-at="2016-11-18T16:53:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="7934" started-at="2016-11-18T13:37:36Z" finished-at="2016-11-18T13:37:44Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="15852" started-at="2016-11-18T16:53:30Z" finished-at="2016-11-18T16:53:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail4()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailEmail4" duration-ms="3287" started-at="2016-11-18T13:37:44Z" finished-at="2016-11-18T13:37:47Z">
+        <test-method status="PASS" signature="RegisterFailEmail4()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailEmail4" duration-ms="3289" started-at="2016-11-18T16:53:46Z" finished-at="2016-11-18T16:53:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail4 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2312" started-at="2016-11-18T13:37:47Z" finished-at="2016-11-18T13:37:50Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2315" started-at="2016-11-18T16:53:49Z" finished-at="2016-11-18T16:53:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="8468" started-at="2016-11-18T13:37:50Z" finished-at="2016-11-18T13:37:58Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="6566" started-at="2016-11-18T16:53:52Z" finished-at="2016-11-18T16:53:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail5()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailEmail5" duration-ms="3291" started-at="2016-11-18T13:37:58Z" finished-at="2016-11-18T13:38:01Z">
+        <test-method status="PASS" signature="RegisterFailEmail5()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailEmail5" duration-ms="3273" started-at="2016-11-18T16:53:58Z" finished-at="2016-11-18T16:54:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail5 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2314" started-at="2016-11-18T13:38:01Z" finished-at="2016-11-18T13:38:04Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2313" started-at="2016-11-18T16:54:02Z" finished-at="2016-11-18T16:54:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="9121" started-at="2016-11-18T13:38:04Z" finished-at="2016-11-18T13:38:13Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="5673" started-at="2016-11-18T16:54:04Z" finished-at="2016-11-18T16:54:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailEmail6()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailEmail6" duration-ms="3312" started-at="2016-11-18T13:38:13Z" finished-at="2016-11-18T13:38:16Z">
+        <test-method status="PASS" signature="RegisterFailEmail6()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailEmail6" duration-ms="3306" started-at="2016-11-18T16:54:10Z" finished-at="2016-11-18T16:54:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailEmail6 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2313" started-at="2016-11-18T13:38:16Z" finished-at="2016-11-18T13:38:18Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2312" started-at="2016-11-18T16:54:13Z" finished-at="2016-11-18T16:54:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="5716" started-at="2016-11-18T13:38:18Z" finished-at="2016-11-18T13:38:24Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="6053" started-at="2016-11-18T16:54:15Z" finished-at="2016-11-18T16:54:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailFirstname1()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailFirstname1" duration-ms="3293" started-at="2016-11-18T13:38:24Z" finished-at="2016-11-18T13:38:27Z">
+        <test-method status="PASS" signature="RegisterFailFirstname1()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailFirstname1" duration-ms="3282" started-at="2016-11-18T16:54:21Z" finished-at="2016-11-18T16:54:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailFirstname1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2313" started-at="2016-11-18T13:38:27Z" finished-at="2016-11-18T13:38:30Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2319" started-at="2016-11-18T16:54:25Z" finished-at="2016-11-18T16:54:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="6266" started-at="2016-11-18T13:38:30Z" finished-at="2016-11-18T13:38:36Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="6384" started-at="2016-11-18T16:54:27Z" finished-at="2016-11-18T16:54:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailFirstname2()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailFirstname2" duration-ms="3302" started-at="2016-11-18T13:38:36Z" finished-at="2016-11-18T13:38:39Z">
+        <test-method status="PASS" signature="RegisterFailFirstname2()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailFirstname2" duration-ms="3292" started-at="2016-11-18T16:54:33Z" finished-at="2016-11-18T16:54:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailFirstname2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2085" started-at="2016-11-18T13:38:39Z" finished-at="2016-11-18T13:38:41Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2320" started-at="2016-11-18T16:54:37Z" finished-at="2016-11-18T16:54:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="7370" started-at="2016-11-18T13:38:41Z" finished-at="2016-11-18T13:38:49Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="6029" started-at="2016-11-18T16:54:39Z" finished-at="2016-11-18T16:54:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailLastname1()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailLastname1" duration-ms="3286" started-at="2016-11-18T13:38:49Z" finished-at="2016-11-18T13:38:52Z">
+        <test-method status="PASS" signature="RegisterFailLastname1()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailLastname1" duration-ms="3269" started-at="2016-11-18T16:54:45Z" finished-at="2016-11-18T16:54:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailLastname1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2314" started-at="2016-11-18T13:38:52Z" finished-at="2016-11-18T13:38:54Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T16:54:48Z" finished-at="2016-11-18T16:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="6331" started-at="2016-11-18T13:38:54Z" finished-at="2016-11-18T13:39:01Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="5729" started-at="2016-11-18T16:54:51Z" finished-at="2016-11-18T16:54:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailLastname2()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailLastname2" duration-ms="3302" started-at="2016-11-18T13:39:01Z" finished-at="2016-11-18T13:39:04Z">
+        <test-method status="PASS" signature="RegisterFailLastname2()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailLastname2" duration-ms="3286" started-at="2016-11-18T16:54:56Z" finished-at="2016-11-18T16:55:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailLastname2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2316" started-at="2016-11-18T13:39:04Z" finished-at="2016-11-18T13:39:06Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2314" started-at="2016-11-18T16:55:00Z" finished-at="2016-11-18T16:55:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="9240" started-at="2016-11-18T13:39:06Z" finished-at="2016-11-18T13:39:15Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="6275" started-at="2016-11-18T16:55:02Z" finished-at="2016-11-18T16:55:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailPassword1()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailPassword1" duration-ms="3271" started-at="2016-11-18T13:39:15Z" finished-at="2016-11-18T13:39:19Z">
+        <test-method status="PASS" signature="RegisterFailPassword1()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailPassword1" duration-ms="3287" started-at="2016-11-18T16:55:08Z" finished-at="2016-11-18T16:55:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailPassword1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T13:39:19Z" finished-at="2016-11-18T13:39:21Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2312" started-at="2016-11-18T16:55:11Z" finished-at="2016-11-18T16:55:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="9625" started-at="2016-11-18T13:39:21Z" finished-at="2016-11-18T13:39:31Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="6250" started-at="2016-11-18T16:55:14Z" finished-at="2016-11-18T16:55:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailPassword2()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailPassword2" duration-ms="3286" started-at="2016-11-18T13:39:31Z" finished-at="2016-11-18T13:39:34Z">
+        <test-method status="PASS" signature="RegisterFailPassword2()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailPassword2" duration-ms="3289" started-at="2016-11-18T16:55:20Z" finished-at="2016-11-18T16:55:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailPassword2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T13:39:34Z" finished-at="2016-11-18T13:39:36Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-18T16:55:23Z" finished-at="2016-11-18T16:55:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="before" is-config="true" duration-ms="6790" started-at="2016-11-18T13:39:36Z" finished-at="2016-11-18T13:39:43Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="before" is-config="true" duration-ms="6018" started-at="2016-11-18T16:55:26Z" finished-at="2016-11-18T16:55:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="RegisterFailPassword3()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="RegisterFailPassword3" duration-ms="3279" started-at="2016-11-18T13:39:43Z" finished-at="2016-11-18T13:39:46Z">
+        <test-method status="PASS" signature="RegisterFailPassword3()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="RegisterFailPassword3" duration-ms="3264" started-at="2016-11-18T16:55:32Z" finished-at="2016-11-18T16:55:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterFailPassword3 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@61832929]" name="after" is-config="true" duration-ms="2312" started-at="2016-11-18T13:39:46Z" finished-at="2016-11-18T13:39:49Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RegisterViaLandingPage@3ffc5af1]" name="after" is-config="true" duration-ms="2311" started-at="2016-11-18T16:55:35Z" finished-at="2016-11-18T16:55:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- bahaso.testing.web.RegisterViaLandingPage -->
       <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@5e5792a0]" name="before" is-config="true" duration-ms="160395" started-at="2016-11-18T13:46:26Z" finished-at="2016-11-18T13:49:06Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@3532ec19]" name="before" is-config="true" duration-ms="26671" started-at="2016-11-18T17:00:32Z" finished-at="2016-11-18T17:00:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@5e5792a0]" name="answerRight" duration-ms="4185" started-at="2016-11-18T13:49:06Z" finished-at="2016-11-18T13:49:10Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@3532ec19]" name="answerRight" duration-ms="4175" started-at="2016-11-18T17:00:59Z" finished-at="2016-11-18T17:01:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@5e5792a0]" name="after" is-config="true" duration-ms="847" started-at="2016-11-18T13:49:10Z" finished-at="2016-11-18T13:49:11Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@3532ec19]" name="after" is-config="true" duration-ms="979" started-at="2016-11-18T17:01:03Z" finished-at="2016-11-18T17:01:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@5e5792a0]" name="before" is-config="true" duration-ms="179438" started-at="2016-11-18T13:49:11Z" finished-at="2016-11-18T13:52:11Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@3532ec19]" name="before" is-config="true" duration-ms="21809" started-at="2016-11-18T17:01:04Z" finished-at="2016-11-18T17:01:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@5e5792a0]" name="answerWrong" duration-ms="4184" started-at="2016-11-18T13:52:11Z" finished-at="2016-11-18T13:52:15Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@3532ec19]" name="answerWrong" duration-ms="4164" started-at="2016-11-18T17:01:26Z" finished-at="2016-11-18T17:01:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@5e5792a0]" name="after" is-config="true" duration-ms="941" started-at="2016-11-18T13:52:15Z" finished-at="2016-11-18T13:52:16Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@3532ec19]" name="after" is-config="true" duration-ms="954" started-at="2016-11-18T17:01:30Z" finished-at="2016-11-18T17:01:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@5e5792a0]" name="before" is-config="true" duration-ms="81365" started-at="2016-11-18T13:52:16Z" finished-at="2016-11-18T13:53:37Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@3532ec19]" name="before" is-config="true" duration-ms="21896" started-at="2016-11-18T17:01:31Z" finished-at="2016-11-18T17:01:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="cekAllElement()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@5e5792a0]" name="cekAllElement" duration-ms="2129" started-at="2016-11-18T13:53:37Z" finished-at="2016-11-18T13:53:39Z">
+        <test-method status="PASS" signature="cekAllElement()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@3532ec19]" name="cekAllElement" duration-ms="2105" started-at="2016-11-18T17:01:53Z" finished-at="2016-11-18T17:01:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cekAllElement -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@5e5792a0]" name="after" is-config="true" duration-ms="863" started-at="2016-11-18T13:53:39Z" finished-at="2016-11-18T13:53:40Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalsePicture_TestCase@3532ec19]" name="after" is-config="true" duration-ms="955" started-at="2016-11-18T17:01:55Z" finished-at="2016-11-18T17:01:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
       </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
+      <class name="bahaso.testing.web.TrueFalseSentence_TestCase">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@ae45eb6]" name="before" is-config="true" duration-ms="24206" started-at="2016-11-18T17:04:48Z" finished-at="2016-11-18T17:05:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@ae45eb6]" name="answerRight" duration-ms="4175" started-at="2016-11-18T17:05:12Z" finished-at="2016-11-18T17:05:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answerRight -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@ae45eb6]" name="after" is-config="true" duration-ms="948" started-at="2016-11-18T17:05:16Z" finished-at="2016-11-18T17:05:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@ae45eb6]" name="before" is-config="true" duration-ms="145948" started-at="2016-11-18T17:05:17Z" finished-at="2016-11-18T17:07:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@ae45eb6]" name="answerWrong" duration-ms="4179" started-at="2016-11-18T17:07:43Z" finished-at="2016-11-18T17:07:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answerWrong -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@ae45eb6]" name="after" is-config="true" duration-ms="1038" started-at="2016-11-18T17:07:47Z" finished-at="2016-11-18T17:07:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="FAIL" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@ae45eb6]" name="before" is-config="true" duration-ms="0" started-at="2016-11-18T17:07:48Z" finished-at="2016-11-18T17:07:48Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[element not visible
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'BahasoComputer', ip: '10.10.16.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\BAHASO~1\AppData\Local\Temp\scoped_dir7856_25425}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d560dab9968d7057c8dc477b4e05ff67]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=54.0.2840.99)
+  (Driver info: chromedriver=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed),platform=Windows NT 10.0.10586 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 31 milliseconds
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'BahasoComputer', ip: '10.10.16.45', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426923 (0390b88869384d6eb0d5d09729679f934aab9eed), userDataDir=C:\Users\BAHASO~1\AppData\Local\Temp\scoped_dir7856_25425}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.99, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d560dab9968d7057c8dc477b4e05ff67
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:274)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+	at bahaso.testing.webElement.LandingPage.doLogin(LandingPage.java:98)
+	at bahaso.testing.web.TrueFalseSentence_TestCase.before(TrueFalseSentence_TestCase.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="SKIP" signature="cekAllElement()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@ae45eb6]" name="cekAllElement" duration-ms="1" started-at="2016-11-18T17:07:55Z" finished-at="2016-11-18T17:07:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cekAllElement -->
+        <test-method status="SKIP" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@ae45eb6]" name="after" is-config="true" duration-ms="0" started-at="2016-11-18T17:07:55Z" finished-at="2016-11-18T17:07:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- bahaso.testing.web.TrueFalseSentence_TestCase -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

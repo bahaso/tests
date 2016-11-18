@@ -3,6 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="bahaso.testing.web.TrueFalseSentence_TestCase">
+        <methods>
+          <include name="cekAllElement"/>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.TrueFalseSentence_TestCase -->
       <class name="bahaso.testing.web.RegisterViaRegisterPage">
         <methods>
           <include name="before"/>
@@ -10,6 +17,12 @@
           <include name="RegisterCorrect"/>
         </methods>
       </class> <!-- bahaso.testing.web.RegisterViaRegisterPage -->
+      <class name="bahaso.testing.web.TrueFalseListen_TestCase">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.TrueFalseListen_TestCase -->
       <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
         <methods>
           <include name="after"/>

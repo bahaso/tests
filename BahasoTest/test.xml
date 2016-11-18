@@ -6,6 +6,8 @@
   	       	<class name="bahaso.testing.web.RegisterViaOfferingPage"/>
   	       	<class name="bahaso.testing.web.RegisterViaRegisterPage"/>
   	       	<class name="bahaso.testing.web.TrueFalsePicture_TestCase"/>
+  	       	<class name="bahaso.testing.web.TrueFalseListen_TestCase"/>
+  	       	<class name="bahaso.testing.web.TrueFalseSentence_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -5,6 +5,7 @@
   	    	<class name="bahaso.testing.web.RegisterViaLandingPage"/>
   	       	<class name="bahaso.testing.web.RegisterViaOfferingPage"/>
   	       	<class name="bahaso.testing.web.RegisterViaRegisterPage"/>
+  	       	<class name="bahaso.testing.web.TrueFalsePicture_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

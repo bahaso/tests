@@ -7,10 +7,18 @@
         <methods>
           <include name="before"/>
           <include name="after"/>
+          <include name="RegisterCorrect"/>
         </methods>
       </class> <!-- bahaso.testing.web.RegisterViaRegisterPage -->
+      <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
       <class name="bahaso.testing.web.RegisterViaLandingPage">
         <methods>
+          <include name="RegisterCorrect"/>
           <include name="after"/>
           <include name="before"/>
         </methods>
@@ -23,7 +31,7 @@
       </class> <!-- bahaso.testing.web.RegisterViaOfferingPage -->
       <class name="bahaso.testing.web.Login">
         <methods>
-          <include name="LoginFail1"/>
+          <include name="LoginFail2"/>
           <include name="before"/>
           <include name="after"/>
         </methods>

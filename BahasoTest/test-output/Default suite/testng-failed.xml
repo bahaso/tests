@@ -7,7 +7,7 @@
         <methods>
           <include name="after"/>
           <include name="before"/>
-          <include name="cekAllElement"/>
+          <include name="answerWrong"/>
         </methods>
       </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
     </classes>

@@ -25,7 +25,7 @@ public class RegisterViaLandingPage extends General{
   	}
   
   	@Test
-  	public void RegisterCorrect() throws InterruptedException {
+  	public void RegisterCorrect()  {
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname",firstname);
   		RegisterData.put("lastname",lastname);
@@ -41,7 +41,7 @@ public class RegisterViaLandingPage extends General{
   	 * all form is blank
   	 */
   	@Test
-  	public void RegisterFailAllBlank() throws InterruptedException {
+  	public void RegisterFailAllBlank(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -59,7 +59,7 @@ public class RegisterViaLandingPage extends General{
   	 * Firstname less than 3 char
   	 */
   	@Test
-  	public void RegisterFailFirstname1() throws InterruptedException {
+  	public void RegisterFailFirstname1(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","a");
   		RegisterData.put("lastname","");
@@ -74,7 +74,7 @@ public class RegisterViaLandingPage extends General{
   	 * Firstname contains invalid char
   	 */
   	@Test
-  	public void RegisterFailFirstname2() throws InterruptedException {
+  	public void RegisterFailFirstname2(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","aaa---!!!");
   		RegisterData.put("lastname","");
@@ -89,7 +89,7 @@ public class RegisterViaLandingPage extends General{
   	 * Lastname less than 2 char
   	 */
   	@Test
-  	public void RegisterFailLastname1() throws InterruptedException {
+  	public void RegisterFailLastname1(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","a");
@@ -104,7 +104,7 @@ public class RegisterViaLandingPage extends General{
   	 * Lastname contains invalid char
   	 */
   	@Test
-  	public void RegisterFailLastname2() throws InterruptedException {
+  	public void RegisterFailLastname2(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","a!!!!!!!!");
@@ -119,7 +119,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email is blank
   	 */
   	@Test
-  	public void RegisterFailEmail1() throws InterruptedException {
+  	public void RegisterFailEmail1(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -134,7 +134,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email without "@" and "."
   	 */
   	@Test
-  	public void RegisterFailEmail2() throws InterruptedException {
+  	public void RegisterFailEmail2() throws InterruptedException{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -142,6 +142,7 @@ public class RegisterViaLandingPage extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
+  		Thread.sleep(2000);
   		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
@@ -149,7 +150,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email without "." after "@"
   	 */
   	@Test
-  	public void RegisterFailEmail3() throws InterruptedException {
+  	public void RegisterFailEmail3(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -164,7 +165,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email with "@" and "." but without any character between "@" and "."
   	 */
   	@Test
-  	public void RegisterFailEmail4() throws InterruptedException {
+  	public void RegisterFailEmail4(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -179,7 +180,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email with "@", "." and any character between "@" and "." but without any character after last "."
   	 */
   	@Test
-  	public void RegisterFailEmail5() throws InterruptedException {
+  	public void RegisterFailEmail5(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -194,7 +195,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email is exist
   	 */
   	@Test
-  	public void RegisterFailEmail6() throws InterruptedException {
+  	public void RegisterFailEmail6(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname",firstname);
   		RegisterData.put("lastname",lastname);
@@ -209,7 +210,7 @@ public class RegisterViaLandingPage extends General{
   	 * Password is blank
   	 */
   	@Test
-  	public void RegisterFailPassword1() throws InterruptedException {
+  	public void RegisterFailPassword1(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -224,7 +225,7 @@ public class RegisterViaLandingPage extends General{
   	 * Password is full of space
   	 */
   	@Test
-  	public void RegisterFailPassword2() throws InterruptedException {
+  	public void RegisterFailPassword2(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -239,7 +240,7 @@ public class RegisterViaLandingPage extends General{
   	 * Password less than 6 char
   	 */
   	@Test
-  	public void RegisterFailPassword3() throws InterruptedException {
+  	public void RegisterFailPassword3(){
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");

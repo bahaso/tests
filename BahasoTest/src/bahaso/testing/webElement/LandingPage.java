@@ -2,13 +2,15 @@ package bahaso.testing.webElement;
 
 import org.openqa.selenium.WebElement;
 
+import bahaso.testing.general.WaitElement;
+
 import java.util.HashMap;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class LandingPage{
-	
+	WaitElement wt = new WaitElement();
 	public WebElement masukButton = null;
 	public WebElement LoginButton = null;
 	public WebElement RegisterButton = null;
@@ -23,52 +25,62 @@ public class LandingPage{
 	public WebElement inputRegisterPassword = null;
 	
 	public WebElement getMasukButtonElement(WebDriver driver){
-		masukButton = driver.findElement(By.xpath(".//*[@id='navbar-collapse']/p[2]/button"));
+		masukButton = wt.waitForElement(driver, By.xpath(".//*[@id='navbar-collapse']/p[2]/button"));
+		//masukButton = driver.findElement(By.xpath(".//*[@id='navbar-collapse']/p[2]/button"));
 		return masukButton;
 	}
 	
 	public WebElement getLoginButtonElement(WebDriver driver){
-		LoginButton = driver.findElement(By.xpath(".//*[@id='form-login']/button"));
+		LoginButton = wt.waitForElement(driver, By.xpath(".//*[@id='form-login']/button"));
+		//LoginButton = driver.findElement(By.xpath(".//*[@id='form-login']/button"));
 		return LoginButton;
 	}
 	
 	public WebElement getInputEmailElement(WebDriver driver){
-		inputLoginEmail = driver.findElement(By.xpath(".//*[@id='login-email']"));
+		inputLoginEmail = wt.waitForElement(driver, By.xpath(".//*[@id='login-email']"));
+		//inputLoginEmail = driver.findElement(By.xpath(".//*[@id='login-email']"));
 		return inputLoginEmail;
 	}
 	
 	public WebElement getInputPasswordElement(WebDriver driver){
-		inputLoginPassword = driver.findElement(By.xpath(".//*[@id='login-password']"));
+		inputLoginPassword =wt.waitForElement(driver, By.xpath(".//*[@id='login-password']"));
+		//inputLoginPassword = driver.findElement(By.xpath(".//*[@id='login-password']"));
 		return inputLoginPassword;
 	}
 	
 	public String getLoginErrorMessage(WebDriver driver){
-		loginErrorMessage = driver.findElement(By.xpath(".//*[@id='login-error']"));
+		loginErrorMessage = wt.waitForElement(driver, By.xpath(".//*[@id='login-error']"));
+		//loginErrorMessage = driver.findElement(By.xpath(".//*[@id='login-error']"));
 		return loginErrorMessage.getText();
 	}
 	
 	public WebElement getInputRegisterFirstname(WebDriver driver){
-		inputRegisterFirstname = driver.findElement(By.xpath(".//*[@id='register-firstname']"));
+		inputRegisterFirstname = wt.waitForElement(driver, By.xpath(".//*[@id='register-firstname']"));
+		//inputRegisterFirstname = driver.findElement(By.xpath(".//*[@id='register-firstname']"));
 		return inputRegisterFirstname;
 	}
 	
 	public WebElement getInputRegisterLastname(WebDriver driver){
-		inputRegisterLastname = driver.findElement(By.xpath(".//*[@id='register-lastname']"));
+		inputRegisterLastname = wt.waitForElement(driver, By.xpath(".//*[@id='register-lastname']"));
+		//inputRegisterLastname = driver.findElement(By.xpath(".//*[@id='register-lastname']"));
 		return inputRegisterLastname;
 	}
 	
 	public WebElement getInputRegisterEmail(WebDriver driver){
-		inputRegisterEmail = driver.findElement(By.xpath(".//*[@id='register-email']"));
+		inputRegisterEmail = wt.waitForElement(driver, By.xpath(".//*[@id='register-email']"));
+		//inputRegisterEmail = driver.findElement(By.xpath(".//*[@id='register-email']"));
 		return inputRegisterEmail;
 	}
 	
 	public WebElement getInputRegisterPassword(WebDriver driver){
-		inputRegisterPassword = driver.findElement(By.xpath(".//*[@id='register-password']"));
+		inputRegisterPassword = wt.waitForElement(driver, By.xpath(".//*[@id='register-password']"));
+		//inputRegisterPassword = driver.findElement(By.xpath(".//*[@id='register-password']"));
 		return inputRegisterPassword;
 	}
 	
 	public WebElement getRegisterButton(WebDriver driver){
-		RegisterButton = driver.findElement(By.xpath(".//*[@id='form-register']/button"));
+		RegisterButton = wt.waitForElement(driver, By.xpath(".//*[@id='form-register']/button"));
+		//RegisterButton = driver.findElement(By.xpath(".//*[@id='form-register']/button"));
 		return RegisterButton;
 	}
 	
@@ -100,13 +112,12 @@ public class LandingPage{
 		getLoginButtonElement(driver).click();
 	}
 	
-	public void doRegister(WebDriver driver, HashMap<String, String> RegisterData) throws InterruptedException{
+	public void doRegister(WebDriver driver, HashMap<String, String> RegisterData){
 		getInputRegisterFirstname(driver).sendKeys(RegisterData.get("firstname"));
 		getInputRegisterLastname(driver).sendKeys(RegisterData.get("lastname"));
 		getInputRegisterEmail(driver).sendKeys(RegisterData.get("email"));
 		getInputRegisterPassword(driver).sendKeys(RegisterData.get("password"));
 		getRegisterButton(driver).click();
-		Thread.sleep(3000);
 	}
 	
 }

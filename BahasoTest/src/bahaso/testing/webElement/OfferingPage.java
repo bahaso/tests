@@ -6,7 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import bahaso.testing.general.WaitElement;
+
 public class OfferingPage {
+	WaitElement wt = new WaitElement();
 	public WebElement inputRegisterNama1 = null;
 	public WebElement inputRegisterEmail1 = null;
 	public WebElement RegisterButton1 = null;
@@ -20,12 +23,14 @@ public class OfferingPage {
 	public WebElement RegisterButton3 = null;
 	
 	public WebElement getInputRegisterNama1(WebDriver driver){
-		inputRegisterNama1 = driver.findElement(By.xpath(".//*[@id='nama-1']"));
+		inputRegisterNama1 = wt.waitForElement(driver, By.xpath(".//*[@id='nama-1']"));
+		//inputRegisterNama1 = driver.findElement(By.xpath(".//*[@id='nama-1']"));
 		return inputRegisterNama1;
 	}
 	
 	public WebElement getInputRegisterEmail1(WebDriver driver){
-		inputRegisterEmail1 = driver.findElement(By.xpath(".//*[@id='email-1']"));
+		inputRegisterEmail1 = wt.waitForElement(driver, By.xpath(".//*[@id='email-1']"));
+		//inputRegisterEmail1 = driver.findElement(By.xpath(".//*[@id='email-1']"));
 		return inputRegisterEmail1;
 	}
 	

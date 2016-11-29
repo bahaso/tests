@@ -12,7 +12,6 @@ public class LoginPage {
 	
 	public WebElement getUsernameButton(WebDriver driver){
 		usernameButton = wt.waitForElement(driver, By.xpath(".//*[@id='nav-main']/ul[2]/li[1]/a"));
-		//usernameButton = driver.findElement(By.xpath(".//*[@id='nav-main']/ul[2]/li[1]/a"));
 		return usernameButton;
 	}
 	

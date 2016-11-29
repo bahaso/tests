@@ -150,7 +150,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email without "." after "@"
   	 */
   	@Test
-  	public void RegisterFailEmail3(){
+  	public void RegisterFailEmail3() throws InterruptedException{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -158,6 +158,7 @@ public class RegisterViaLandingPage extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
+  		Thread.sleep(3000);
   		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
@@ -165,7 +166,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email with "@" and "." but without any character between "@" and "."
   	 */
   	@Test
-  	public void RegisterFailEmail4(){
+  	public void RegisterFailEmail4() throws InterruptedException{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -173,6 +174,7 @@ public class RegisterViaLandingPage extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
+  		Thread.sleep(3000);
   		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
@@ -180,7 +182,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email with "@", "." and any character between "@" and "." but without any character after last "."
   	 */
   	@Test
-  	public void RegisterFailEmail5(){
+  	public void RegisterFailEmail5() throws InterruptedException{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname","");
   		RegisterData.put("lastname","");
@@ -188,6 +190,7 @@ public class RegisterViaLandingPage extends General{
   		RegisterData.put("password","");
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
+  		Thread.sleep(3000);
   		Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
@@ -195,7 +198,7 @@ public class RegisterViaLandingPage extends General{
   	 * Email is exist
   	 */
   	@Test
-  	public void RegisterFailEmail6(){
+  	public void RegisterFailEmail6() throws InterruptedException{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("firstname",firstname);
   		RegisterData.put("lastname",lastname);
@@ -203,6 +206,7 @@ public class RegisterViaLandingPage extends General{
   		RegisterData.put("password",password);
   		LandingPage lp = new LandingPage();
   		lp.doRegister(driver, RegisterData);
+  		Thread.sleep(3000);
  	    Assert.assertEquals(lp.getInputRegisterEmailErrorMassage(driver), "Email telah dipakai. Gunakan email lainnya.", "Error Massage not same as Expected");
   	}
   	

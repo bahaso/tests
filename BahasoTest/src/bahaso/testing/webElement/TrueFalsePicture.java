@@ -11,28 +11,32 @@ public class TrueFalsePicture extends ExcercisePage{
 	public WebElement trueButton = null;
 	public WebElement falseButton = null;
 	
-	public WebElement getInstruction(WebDriver driver){
-		instruction = driver.findElement(By.xpath(".//*[@id='lesson-instruction']"));
+	public TrueFalsePicture(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public WebElement getInstruction(){
+		instruction = wt.waitForElement(driver, By.xpath(".//*[@id='lesson-instruction']"));
 		return instruction;
 	}
 	
-	public WebElement getQuestion(WebDriver driver){
-		question = driver.findElement(By.className("question-container"));
+	public WebElement getQuestion(){
+		question = wt.waitForElement(driver, By.className("question-container"));
 		return question;
 	}
 	
-	public WebElement getDescription(WebDriver driver){
-		question = driver.findElement(By.className("description-container"));
-		return question;
+	public WebElement getDescription(){
+		description = wt.waitForElement(driver, By.className("description-container"));
+		return description;
 	}
 	
-	public WebElement getTrueButton(WebDriver driver){
-		trueButton = driver.findElement(By.xpath(".//*[@id='true']"));
+	public WebElement getTrueButton(){
+		trueButton = wt.waitForElement(driver, By.xpath(".//*[@id='true']"));
 		return trueButton;
 	}
 	
-	public WebElement getFalseButton(WebDriver driver){
-		falseButton = driver.findElement(By.xpath(".//*[@id='false']"));
+	public WebElement getFalseButton(){
+		falseButton = wt.waitForElement(driver, By.xpath(".//*[@id='false']"));
 		return falseButton;
 	}
 }

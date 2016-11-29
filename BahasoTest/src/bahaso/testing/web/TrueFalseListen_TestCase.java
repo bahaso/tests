@@ -16,8 +16,8 @@ public class TrueFalseListen_TestCase extends General{
 	String question = "What time is it?";
 	String description = "It's twenty five past four o'clock.";
 	boolean answer = true;
-	TrueFalseListen TrueFalseListen = new TrueFalseListen();
-	LandingPage landingPage = new LandingPage();
+	TrueFalseListen TrueFalseListen = null;
+	LandingPage landingPage = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	
 	@BeforeMethod
@@ -25,35 +25,37 @@ public class TrueFalseListen_TestCase extends General{
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
-	  landingPage.doLogin(driver, LoginData);
+	  TrueFalseListen = new TrueFalseListen(driver);
+	  landingPage = new LandingPage(driver);
+	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl +"/ngeadmin/previewCaseNewTab/568ba5c3938e8ebe3d8b4569");
   	}
 	
 	@Test
   	public void cekAllElement() throws InterruptedException{
 		Thread.sleep(2000);
-		String status[] = TrueFalseListen.getAudioButton(driver).getAttribute("class").split(" ");
+		String status[] = TrueFalseListen.getAudioButton().getAttribute("class").split(" ");
 		Assert.assertEquals(status[status.length-1], "audio-playing");
-		Assert.assertEquals(TrueFalseListen.getInstruction(driver).getText(), instruction);
-		Assert.assertEquals(TrueFalseListen.getQuestion(driver).getText(), question);
-		Assert.assertEquals(TrueFalseListen.getDescription(driver).getText(), description);
+		Assert.assertEquals(TrueFalseListen.getInstruction().getText(), instruction);
+		Assert.assertEquals(TrueFalseListen.getQuestion().getText(), question);
+		Assert.assertEquals(TrueFalseListen.getDescription().getText(), description);
 	}
 	
 	@Test
   	public void answerRight() throws InterruptedException{
 		Thread.sleep(2000);
 		if(answer){
-			TrueFalseListen.getTrueButton(driver).click();
-			TrueFalseListen.getButtonCheck(driver).click();
+			TrueFalseListen.getTrueButton().click();
+			TrueFalseListen.getButtonCheck().click();
 			Thread.sleep(2000);
-			String status[] = TrueFalseListen.getLessonStatus(driver).getAttribute("class").split(" ");
+			String status[] = TrueFalseListen.getLessonStatus().getAttribute("class").split(" ");
 			Assert.assertEquals(status[status.length-1], "true");
 		}else{
-			TrueFalseListen.getTrueButton(driver).click();
-			TrueFalseListen.getButtonCheck(driver).click();
+			TrueFalseListen.getFalseButton().click();
+			TrueFalseListen.getButtonCheck().click();
 			Thread.sleep(2000);
-			String status[] = TrueFalseListen.getLessonStatus(driver).getAttribute("class").split(" ");
-			Assert.assertEquals(status[status.length-1], "false");
+			String status[] = TrueFalseListen.getLessonStatus().getAttribute("class").split(" ");
+			Assert.assertEquals(status[status.length-1], "true");
 		}
 	}
 	
@@ -61,17 +63,17 @@ public class TrueFalseListen_TestCase extends General{
   	public void answerWrong() throws InterruptedException{
 		Thread.sleep(2000);
 		if(!answer){
-			TrueFalseListen.getTrueButton(driver).click();
-			TrueFalseListen.getButtonCheck(driver).click();
+			TrueFalseListen.getTrueButton().click();
+			TrueFalseListen.getButtonCheck().click();
 			Thread.sleep(2000);
-			String status[] = TrueFalseListen.getLessonStatus(driver).getAttribute("class").split(" ");
+			String status[] = TrueFalseListen.getLessonStatus().getAttribute("class").split(" ");
 			Assert.assertEquals(status[status.length-1], "false");
 		}else{
-			TrueFalseListen.getTrueButton(driver).click();
-			TrueFalseListen.getButtonCheck(driver).click();
+			TrueFalseListen.getFalseButton().click();
+			TrueFalseListen.getButtonCheck().click();
 			Thread.sleep(2000);
-			String status[] = TrueFalseListen.getLessonStatus(driver).getAttribute("class").split(" ");
-			Assert.assertEquals(status[status.length-1], "true");
+			String status[] = TrueFalseListen.getLessonStatus().getAttribute("class").split(" ");
+			Assert.assertEquals(status[status.length-1], "false");
 		}
 	}
 	

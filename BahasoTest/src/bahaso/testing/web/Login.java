@@ -12,10 +12,14 @@ import bahaso.testing.webElement.LandingPage;
 import bahaso.testing.webElement.LoginPage;;
 
 public class Login extends General{
+	LandingPage lp = null;
+	LoginPage loginPage = null;
 	
   @BeforeMethod
   public void before(){
 	  driver = getDriver();
+	  lp = new LandingPage(driver);
+	  loginPage = new LoginPage(driver);
   }
 	
   @Test
@@ -23,10 +27,8 @@ public class Login extends General{
 	   HashMap<String, String> LoginData = new HashMap<String, String>();
 	   LoginData.put("email","reddev");
 	   LoginData.put("password","mahendralubis");
-	   LandingPage lp = new LandingPage();
-	   LoginPage loginPage = new LoginPage();
-	   lp.doLogin(driver, LoginData);
-	   Assert.assertEquals(loginPage.getUsernameButton(driver).getText().trim(), "hendra", "Error Massage not same as Expected");
+	   lp.doLogin(LoginData);
+	   Assert.assertEquals(loginPage.getUsernameButton().getText().trim(), "hendra", "Error Massage not same as Expected");
   }
   
   /*
@@ -37,9 +39,8 @@ public class Login extends General{
 	   HashMap<String, String> LoginData = new HashMap<String, String>();
 	   LoginData.put("email","a");
 	   LoginData.put("password","a");
-	   LandingPage lp = new LandingPage();
-	   lp.doLogin(driver, LoginData);
-	   Assert.assertEquals(lp.getLoginErrorMessage(driver), "Username tidak ditemukan.", "Error Massage not same as Expected");
+	   lp.doLogin(LoginData);
+	   Assert.assertEquals(lp.getLoginErrorMessage(), "Username tidak ditemukan.", "Error Massage not same as Expected");
   }
   
   /*
@@ -50,9 +51,8 @@ public class Login extends General{
 	   HashMap<String, String> LoginData = new HashMap<String, String>();
 	   LoginData.put("email","a@a.com");
 	   LoginData.put("password","a");
-	   LandingPage lp = new LandingPage();
-	   lp.doLogin(driver, LoginData);
-	   Assert.assertEquals(lp.getLoginErrorMessage(driver), "Username tidak ditemukan.", "Error Massage not same as Expected");
+	   lp.doLogin(LoginData);
+	   Assert.assertEquals(lp.getLoginErrorMessage(), "Username tidak ditemukan.", "Error Massage not same as Expected");
   }
   
   /*
@@ -63,9 +63,8 @@ public class Login extends General{
 	   HashMap<String, String> LoginData = new HashMap<String, String>();
 	   LoginData.put("email","reddev");
 	   LoginData.put("password","a");
-	   LandingPage lp = new LandingPage();
-	   lp.doLogin(driver, LoginData);
-	   Assert.assertEquals(lp.getLoginErrorMessage(driver), "Gagal masuk, kata sandi anda salah", "Error Massage not same as Expected");
+	   lp.doLogin(LoginData);
+	   Assert.assertEquals(lp.getLoginErrorMessage(), "Gagal masuk, kata sandi anda salah", "Error Massage not same as Expected");
   }
   
   @AfterMethod

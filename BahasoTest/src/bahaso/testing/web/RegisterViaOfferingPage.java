@@ -11,13 +11,15 @@ import bahaso.testing.general.General;
 import bahaso.testing.webElement.OfferingPage;
 
 public class RegisterViaOfferingPage extends General{
+	OfferingPage offeringPage = null;
 	String name = "bahaso";
 	String email = "a@a.com";
 	
 	@BeforeMethod
   	public void before() {
 	  driver = getDriver();
-	  driver.get("http://localhost/offering");
+	  driver.get(baseUrl + "/offering");
+	  offeringPage = new OfferingPage(driver);
   	}
 	
 	@Test
@@ -25,9 +27,8 @@ public class RegisterViaOfferingPage extends General{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("name",name);
   		RegisterData.put("email",email);
-  		OfferingPage offeringPage = new OfferingPage();
-  		offeringPage.doRegister1(driver, RegisterData);
-  		Assert.assertEquals(offeringPage.getRegisterButton1(driver).getAttribute("disabled")==null, true);
+  		offeringPage.doRegister1(RegisterData);
+  		Assert.assertEquals(offeringPage.getRegisterButton1().getAttribute("disabled")==null, true);
   	}
 	
 	@Test
@@ -35,9 +36,8 @@ public class RegisterViaOfferingPage extends General{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("name",name);
   		RegisterData.put("email",email);
-  		OfferingPage offeringPage = new OfferingPage();
-  		offeringPage.doRegister2(driver, RegisterData);
-  		Assert.assertEquals(offeringPage.getRegisterButton2(driver).getAttribute("disabled")==null, true);
+  		offeringPage.doRegister2(RegisterData);
+  		Assert.assertEquals(offeringPage.getRegisterButton2().getAttribute("disabled")==null, true);
   	}
 	
 	@Test
@@ -45,9 +45,8 @@ public class RegisterViaOfferingPage extends General{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("name",name);
   		RegisterData.put("email",email);
-  		OfferingPage offeringPage = new OfferingPage();
-  		offeringPage.doRegister3(driver, RegisterData);
-  		Assert.assertEquals(offeringPage.getRegisterButton3(driver).getAttribute("disabled")==null, true);
+  		offeringPage.doRegister3(RegisterData);
+  		Assert.assertEquals(offeringPage.getRegisterButton3().getAttribute("disabled")==null, true);
   	}
 	
 	/*
@@ -58,9 +57,8 @@ public class RegisterViaOfferingPage extends General{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("name","");
   		RegisterData.put("email",email);
-  		OfferingPage offeringPage = new OfferingPage();
-  		offeringPage.doRegister1(driver, RegisterData);
-  		Assert.assertEquals(offeringPage.getRegisterButton1(driver).getAttribute("disabled")!=null, true);
+  		offeringPage.doRegister1(RegisterData);
+  		Assert.assertEquals(offeringPage.getRegisterButton1().getAttribute("disabled")!=null, true);
   	}
 	
 	/*
@@ -71,9 +69,8 @@ public class RegisterViaOfferingPage extends General{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("name","");
   		RegisterData.put("email",email);
-  		OfferingPage offeringPage = new OfferingPage();
-  		offeringPage.doRegister2(driver, RegisterData);
-  		Assert.assertEquals(offeringPage.getRegisterButton2(driver).getAttribute("disabled")!=null, true);
+  		offeringPage.doRegister2(RegisterData);
+  		Assert.assertEquals(offeringPage.getRegisterButton2().getAttribute("disabled")!=null, true);
   	}
 	
 	/*
@@ -84,9 +81,8 @@ public class RegisterViaOfferingPage extends General{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("name","");
   		RegisterData.put("email",email);
-  		OfferingPage offeringPage = new OfferingPage();
-  		offeringPage.doRegister3(driver, RegisterData);
-  		Assert.assertEquals(offeringPage.getRegisterButton3(driver).getAttribute("disabled")!=null, true);
+  		offeringPage.doRegister3(RegisterData);
+  		Assert.assertEquals(offeringPage.getRegisterButton3().getAttribute("disabled")!=null, true);
   	}
 	
 	/*
@@ -97,9 +93,8 @@ public class RegisterViaOfferingPage extends General{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("name",name);
   		RegisterData.put("email","");
-  		OfferingPage offeringPage = new OfferingPage();
-  		offeringPage.doRegister1(driver, RegisterData);
-  		Assert.assertEquals(offeringPage.getRegisterButton1(driver).getAttribute("disabled")!=null, true);
+  		offeringPage.doRegister1(RegisterData);
+  		Assert.assertEquals(offeringPage.getRegisterButton1().getAttribute("disabled")!=null, true);
   	}
 	
 	/*
@@ -110,9 +105,8 @@ public class RegisterViaOfferingPage extends General{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("name",name);
   		RegisterData.put("email","");
-  		OfferingPage offeringPage = new OfferingPage();
-  		offeringPage.doRegister2(driver, RegisterData);
-  		Assert.assertEquals(offeringPage.getRegisterButton2(driver).getAttribute("disabled")!=null, true);
+  		offeringPage.doRegister2(RegisterData);
+  		Assert.assertEquals(offeringPage.getRegisterButton2().getAttribute("disabled")!=null, true);
   	}
 	
 	/*
@@ -123,9 +117,8 @@ public class RegisterViaOfferingPage extends General{
   		HashMap<String, String> RegisterData = new HashMap<String, String>();
   		RegisterData.put("name",name);
   		RegisterData.put("email","");
-  		OfferingPage offeringPage = new OfferingPage();
-  		offeringPage.doRegister3(driver, RegisterData);
-  		Assert.assertEquals(offeringPage.getRegisterButton3(driver).getAttribute("disabled")!=null, true);
+  		offeringPage.doRegister3(RegisterData);
+  		Assert.assertEquals(offeringPage.getRegisterButton3().getAttribute("disabled")!=null, true);
   	}
 	
 	@AfterMethod

@@ -12,6 +12,9 @@ import bahaso.testing.webElement.RegisterPage;
 import bahaso.testing.webElement.LoginPage;
 
 public class RegisterViaRegisterPage extends General{
+	RegisterPage registerPage = null;
+	LoginPage loginPage = null;
+	
 	String firstname = "bahaso";
 	String lastname = "bahaso";
 	String email = "b@b.com";
@@ -20,7 +23,9 @@ public class RegisterViaRegisterPage extends General{
   	@BeforeMethod
   	public void before() {
 	  driver = getDriver();
-	  driver.get("http://localhost/register");
+	  driver.get(baseUrl + "/register");
+	  registerPage = new RegisterPage(driver);
+	  loginPage = new LoginPage(driver);
   	}
   
   	@Test
@@ -30,10 +35,8 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname",lastname);
   		RegisterData.put("email",email);
   		RegisterData.put("password",password);
-  		RegisterPage registerPage = new RegisterPage();
-  		LoginPage loginPage = new LoginPage();
-  		registerPage.doRegister(driver, RegisterData);
- 	    Assert.assertEquals(loginPage.getUsernameButton(driver).getText().trim(), "bahaso", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+ 	    Assert.assertEquals(loginPage.getUsernameButton().getText().trim(), "bahaso", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -46,12 +49,11 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterFirstnameErrorMassage(driver), "Nama depan harus diisi", "Error Massage not same as Expected");
-  		Assert.assertEquals(registerPage.getInputRegisterLastnameErrorMassage(driver), "Nama belakang harus diisi", "Error Massage not same as Expected");
-  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(driver), "Email harus diisi", "Error Massage not same as Expected");
-  		Assert.assertEquals(registerPage.getInputRegisterPasswordErrorMassage(driver), "Kata sandi harus diisi", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Assert.assertEquals(registerPage.getInputRegisterFirstnameErrorMassage(), "Nama depan harus diisi", "Error Massage not same as Expected");
+  		Assert.assertEquals(registerPage.getInputRegisterLastnameErrorMassage(), "Nama belakang harus diisi", "Error Massage not same as Expected");
+  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(), "Email harus diisi", "Error Massage not same as Expected");
+  		Assert.assertEquals(registerPage.getInputRegisterPasswordErrorMassage(), "Kata sandi harus diisi", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -64,9 +66,8 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterFirstnameErrorMassage(driver), "Nama depan minimal terdiri dari 3 karakter", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Assert.assertEquals(registerPage.getInputRegisterFirstnameErrorMassage(), "Nama depan minimal terdiri dari 3 karakter", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -79,9 +80,8 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterFirstnameErrorMassage(driver), "Nama depan hanya boleh diisi huruf, spasi dan apostrof (')", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Assert.assertEquals(registerPage.getInputRegisterFirstnameErrorMassage(), "Nama depan hanya boleh diisi huruf, spasi dan apostrof (')", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -94,9 +94,8 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","a");
   		RegisterData.put("email","");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterLastnameErrorMassage(driver), "Nama belakang minimal terdiri dari 2 karakter", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Assert.assertEquals(registerPage.getInputRegisterLastnameErrorMassage(), "Nama belakang minimal terdiri dari 2 karakter", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -109,9 +108,8 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","a!!!!!!!!");
   		RegisterData.put("email","");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterLastnameErrorMassage(driver), "Nama belakang hanya boleh diisi oleh huruf, spasi, titik, apostrof (') dan hifenasi (-)", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Assert.assertEquals(registerPage.getInputRegisterLastnameErrorMassage(), "Nama belakang hanya boleh diisi oleh huruf, spasi, titik, apostrof (') dan hifenasi (-)", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -124,9 +122,8 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(driver), "Email harus diisi", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(), "Email harus diisi", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -139,9 +136,9 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","a");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Thread.sleep(2000);
+  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -154,9 +151,9 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","a@");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Thread.sleep(2000);
+  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -169,9 +166,9 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","a@.");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Thread.sleep(2000);
+  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -184,9 +181,9 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","a@a.");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(driver), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Thread.sleep(2000);
+  		Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(), "Email harus valid\ncontoh:john@example.com", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -199,9 +196,9 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname",lastname);
   		RegisterData.put("email",email);
   		RegisterData.put("password",password);
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
- 	    Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(driver), "Email telah dipakai. Gunakan email lainnya.", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Thread.sleep(2000);
+ 	    Assert.assertEquals(registerPage.getInputRegisterEmailErrorMassage(), "Email telah dipakai. Gunakan email lainnya.", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -214,9 +211,8 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","");
   		RegisterData.put("password","");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterPasswordErrorMassage(driver), "Kata sandi harus diisi", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Assert.assertEquals(registerPage.getInputRegisterPasswordErrorMassage(), "Kata sandi harus diisi", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -229,9 +225,8 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","");
   		RegisterData.put("password","      ");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterPasswordErrorMassage(driver), "Kata sandi harus diisi", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Assert.assertEquals(registerPage.getInputRegisterPasswordErrorMassage(), "Kata sandi harus diisi", "Error Massage not same as Expected");
   	}
   	
   	/*
@@ -244,13 +239,12 @@ public class RegisterViaRegisterPage extends General{
   		RegisterData.put("lastname","");
   		RegisterData.put("email","");
   		RegisterData.put("password","aaa");
-  		RegisterPage registerPage = new RegisterPage();
-  		registerPage.doRegister(driver, RegisterData);
-  		Assert.assertEquals(registerPage.getInputRegisterPasswordErrorMassage(driver), "Kata sandi minimal terdiri dari 6 karakter", "Error Massage not same as Expected");
+  		registerPage.doRegister(RegisterData);
+  		Assert.assertEquals(registerPage.getInputRegisterPasswordErrorMassage(), "Kata sandi minimal terdiri dari 6 karakter", "Error Massage not same as Expected");
   	}
 
   	@AfterMethod
-  	public void after() {
+  	public void after(){
   		driver.close();
   	}
 }

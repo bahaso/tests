@@ -10,23 +10,27 @@ public class TrueFalseSentence extends ExcercisePage{
 	public WebElement trueButton = null;
 	public WebElement falseButton = null;
 	
-	public WebElement getInstruction(WebDriver driver){
-		instruction = driver.findElement(By.xpath(".//*[@id='lesson-instruction']"));
+	public TrueFalseSentence(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public WebElement getInstruction(){
+		instruction = wt.waitForElement(driver, By.xpath(".//*[@id='lesson-instruction']"));
 		return instruction;
 	}
 	
-	public WebElement getDescription(WebDriver driver){
-		description = driver.findElement(By.className("description-container"));
+	public WebElement getDescription(){
+		description = wt.waitForElement(driver, By.className("description-container"));
 		return description;
 	}
 	
-	public WebElement getTrueButton(WebDriver driver){
-		trueButton = driver.findElement(By.xpath(".//*[@id='true']"));
+	public WebElement getTrueButton(){
+		trueButton = wt.waitForElement(driver, By.xpath(".//*[@id='true']"));
 		return trueButton;
 	}
 	
-	public WebElement getFalseButton(WebDriver driver){
-		falseButton = driver.findElement(By.xpath(".//*[@id='false']"));
+	public WebElement getFalseButton(){
+		falseButton = wt.waitForElement(driver, By.xpath(".//*[@id='false']"));
 		return falseButton;
 	}
 }

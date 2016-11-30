@@ -3,13 +3,18 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="bahaso.testing.web.Login">
+      <class name="bahaso.testing.web.RegisterViaRegisterPage">
         <methods>
           <include name="before"/>
-          <include name="LoginCorrect"/>
           <include name="after"/>
+          <include name="RegisterFailEmail2"/>
+          <include name="RegisterFailEmail4"/>
+          <include name="RegisterFailEmail5"/>
+          <include name="RegisterFailEmail6"/>
+          <include name="RegisterCorrect"/>
+          <include name="RegisterFailEmail3"/>
         </methods>
-      </class> <!-- bahaso.testing.web.Login -->
+      </class> <!-- bahaso.testing.web.RegisterViaRegisterPage -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

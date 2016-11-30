@@ -1,0 +1,24 @@
+package bahaso.testing.general;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class WaitElement {
+	WebDriver driver;
+	
+	public WaitElement(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public WebElement waitForElement(By locator){
+		WebElement element = null;
+		try {
+			WebDriverWait wait = new WebDriverWait(driver, 3); 
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return element;
+	}
+}

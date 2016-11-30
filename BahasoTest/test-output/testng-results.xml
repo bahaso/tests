@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="50722" started-at="2016-11-11T04:26:53Z" finished-at="2016-11-11T04:27:44Z">
+  <suite name="Default suite" duration-ms="28812" started-at="2016-11-29T11:06:17Z" finished-at="2016-11-29T11:06:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="50722" started-at="2016-11-11T04:26:53Z" finished-at="2016-11-11T04:27:44Z">
-      <class name="bahaso.testing.web.Login">
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="before" is-config="true" duration-ms="6646" started-at="2016-11-11T11:26:53Z" finished-at="2016-11-11T11:27:00Z">
+    <test name="Default test" duration-ms="28812" started-at="2016-11-29T11:06:17Z" finished-at="2016-11-29T11:06:46Z">
+      <class name="bahaso.testing.web.TrueFalseListen_TestCase">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@28d25987]" name="before" is-config="true" duration-ms="23597" started-at="2016-11-29T18:06:17Z" finished-at="2016-11-29T18:06:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="LoginCorrect()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="LoginCorrect" duration-ms="12065" started-at="2016-11-11T11:27:00Z" finished-at="2016-11-11T11:27:12Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@28d25987]" name="answerWrong" duration-ms="4201" started-at="2016-11-29T18:06:40Z" finished-at="2016-11-29T18:06:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginCorrect -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-11T11:27:12Z" finished-at="2016-11-11T11:27:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="before" is-config="true" duration-ms="6416" started-at="2016-11-11T11:27:14Z" finished-at="2016-11-11T11:27:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="LoginFail1()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="LoginFail1" duration-ms="968" started-at="2016-11-11T11:27:21Z" finished-at="2016-11-11T11:27:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFail1 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="after" is-config="true" duration-ms="2310" started-at="2016-11-11T11:27:22Z" finished-at="2016-11-11T11:27:24Z">
+        </test-method> <!-- answerWrong -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@28d25987]" name="after" is-config="true" duration-ms="1001" started-at="2016-11-29T18:06:45Z" finished-at="2016-11-29T18:06:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="before" is-config="true" duration-ms="6683" started-at="2016-11-11T11:27:24Z" finished-at="2016-11-11T11:27:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="LoginFail2()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="LoginFail2" duration-ms="1028" started-at="2016-11-11T11:27:31Z" finished-at="2016-11-11T11:27:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFail2 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="after" is-config="true" duration-ms="2308" started-at="2016-11-11T11:27:32Z" finished-at="2016-11-11T11:27:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="before" is-config="true" duration-ms="6561" started-at="2016-11-11T11:27:34Z" finished-at="2016-11-11T11:27:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="LoginFail3()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="LoginFail3" duration-ms="1095" started-at="2016-11-11T11:27:41Z" finished-at="2016-11-11T11:27:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginFail3 -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Login@5b275dab]" name="after" is-config="true" duration-ms="2309" started-at="2016-11-11T11:27:42Z" finished-at="2016-11-11T11:27:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.Login -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- bahaso.testing.web.TrueFalseListen_TestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,0 +1,13 @@
+package bahaso.testing.webElement;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class LostWordListen extends ExcercisePage{
+	public WebElement audioButton = null;
+	
+	public TrueFalseListen(WebDriver driver){
+		this.driver = driver;
+	}
+
+}

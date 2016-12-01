@@ -1,0 +1,19 @@
+package bahaso.testing.web;
+
+import org.testng.annotations.BeforeMethod;
+
+import bahaso.testing.webElement.LoginPage;
+import bahaso.testing.webElement.RegisterPage;
+
+public class LostWordListen_TestCase {
+	
+	
+	
+	@BeforeMethod
+  	public void before() {
+	  driver = getDriver();
+	  driver.get(baseUrl + "/register");
+	  registerPage = new RegisterPage(driver);
+	  loginPage = new LoginPage(driver);
+  	}
+}

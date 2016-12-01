@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28812" started-at="2016-11-29T11:06:17Z" finished-at="2016-11-29T11:06:46Z">
+  <suite name="Default suite" duration-ms="117467" started-at="2016-12-01T10:27:09Z" finished-at="2016-12-01T10:29:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28812" started-at="2016-11-29T11:06:17Z" finished-at="2016-11-29T11:06:46Z">
-      <class name="bahaso.testing.web.TrueFalseListen_TestCase">
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@28d25987]" name="before" is-config="true" duration-ms="23597" started-at="2016-11-29T18:06:17Z" finished-at="2016-11-29T18:06:40Z">
+    <test name="Default test" duration-ms="117467" started-at="2016-12-01T10:27:09Z" finished-at="2016-12-01T10:29:07Z">
+      <class name="bahaso.testing.web.LostWordListen_TestCase">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@59fa1d9b]" name="before" is-config="true" duration-ms="114282" started-at="2016-12-01T17:27:09Z" finished-at="2016-12-01T17:29:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@28d25987]" name="answerWrong" duration-ms="4201" started-at="2016-11-29T18:06:40Z" finished-at="2016-11-29T18:06:45Z">
+        <test-method status="PASS" signature="cekAllElements()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@59fa1d9b]" name="cekAllElements" duration-ms="3172" started-at="2016-12-01T17:29:04Z" finished-at="2016-12-01T17:29:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalseListen_TestCase@28d25987]" name="after" is-config="true" duration-ms="1001" started-at="2016-11-29T18:06:45Z" finished-at="2016-11-29T18:06:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.TrueFalseListen_TestCase -->
+        </test-method> <!-- cekAllElements -->
+      </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

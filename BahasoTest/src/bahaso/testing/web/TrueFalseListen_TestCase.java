@@ -21,7 +21,7 @@ public class TrueFalseListen_TestCase extends General{
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	
 	@BeforeMethod
-  	public void before() throws InterruptedException {
+  	public void before(){
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");

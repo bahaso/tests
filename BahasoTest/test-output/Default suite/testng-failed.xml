@@ -6,7 +6,8 @@
       <class name="bahaso.testing.web.LostWordListen_TestCase">
         <methods>
           <include name="before"/>
-          <include name="cekAllElements"/>
+          <include name="answerRight"/>
+          <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
     </classes>

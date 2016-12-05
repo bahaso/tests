@@ -2,6 +2,8 @@ package bahaso.testing.web;
 
 import java.util.HashMap;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -13,6 +15,7 @@ public class LostWordListen_TestCase extends General{
 	LandingPage landingPage = null;
 	LostWordListen lostWordListen = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
+	String[] answer = {"morning","later","evening"};
 	
 	@BeforeMethod
   	public void before() {
@@ -28,8 +31,26 @@ public class LostWordListen_TestCase extends General{
 	@Test
   	public void cekAllElements() throws InterruptedException {
 		Thread.sleep(3000);
-		lostWordListen.getBoxAnswer().get(0).sendKeys("a");
-		lostWordListen.getBoxAnswer().get(1).sendKeys("a");
-		lostWordListen.getBoxAnswer().get(2).sendKeys("a");
+		String status[] = lostWordListen.getAudioButton().getAttribute("class").split(" ");
+		Assert.assertEquals(status[status.length-1], "audio-playing");
 	}
+	
+	@Test
+  	public void answerRight() throws InterruptedException{
+		lostWordListen.answerRight(answer);
+		String status[] = lostWordListen.getLessonStatus().getAttribute("class").split(" ");
+		Assert.assertEquals(status[status.length-1], "true");
+	}
+	
+	@Test
+  	public void answerWrong() throws InterruptedException{
+		lostWordListen.answerWrong(answer);
+		String status[] = lostWordListen.getLessonStatus().getAttribute("class").split(" ");
+		Assert.assertEquals(status[status.length-1], "false");
+	}
+	
+	@AfterMethod
+  	public void after() {
+  		driver.quit();
+  	}
 }

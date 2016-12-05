@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="117467" started-at="2016-12-01T10:27:09Z" finished-at="2016-12-01T10:29:07Z">
+  <suite name="Default suite" duration-ms="83768" started-at="2016-12-05T09:32:20Z" finished-at="2016-12-05T09:33:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="117467" started-at="2016-12-01T10:27:09Z" finished-at="2016-12-01T10:29:07Z">
+    <test name="Default test" duration-ms="83768" started-at="2016-12-05T09:32:20Z" finished-at="2016-12-05T09:33:44Z">
       <class name="bahaso.testing.web.LostWordListen_TestCase">
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@59fa1d9b]" name="before" is-config="true" duration-ms="114282" started-at="2016-12-01T17:27:09Z" finished-at="2016-12-01T17:29:04Z">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@14acaea5]" name="before" is-config="true" duration-ms="15669" started-at="2016-12-05T16:32:20Z" finished-at="2016-12-05T16:32:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method status="PASS" signature="cekAllElements()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@59fa1d9b]" name="cekAllElements" duration-ms="3172" started-at="2016-12-01T17:29:04Z" finished-at="2016-12-01T17:29:07Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@14acaea5]" name="answerRight" duration-ms="15434" started-at="2016-12-05T16:32:36Z" finished-at="2016-12-05T16:32:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answerRight -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@14acaea5]" name="after" is-config="true" duration-ms="941" started-at="2016-12-05T16:32:51Z" finished-at="2016-12-05T16:32:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@14acaea5]" name="before" is-config="true" duration-ms="14796" started-at="2016-12-05T16:32:52Z" finished-at="2016-12-05T16:33:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@14acaea5]" name="answerWrong" duration-ms="15365" started-at="2016-12-05T16:33:07Z" finished-at="2016-12-05T16:33:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answerWrong -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@14acaea5]" name="after" is-config="true" duration-ms="839" started-at="2016-12-05T16:33:23Z" finished-at="2016-12-05T16:33:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@14acaea5]" name="before" is-config="true" duration-ms="16745" started-at="2016-12-05T16:33:23Z" finished-at="2016-12-05T16:33:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="cekAllElements()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@14acaea5]" name="cekAllElements" duration-ms="3074" started-at="2016-12-05T16:33:40Z" finished-at="2016-12-05T16:33:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cekAllElements -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@14acaea5]" name="after" is-config="true" duration-ms="889" started-at="2016-12-05T16:33:43Z" finished-at="2016-12-05T16:33:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
       </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

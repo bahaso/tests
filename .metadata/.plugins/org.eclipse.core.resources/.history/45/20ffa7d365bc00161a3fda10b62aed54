@@ -1,0 +1,42 @@
+package bahaso.testing.web;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+
+import org.junit.Before;
+import org.testng.annotations.BeforeMethod;
+
+import bahaso.testing.general.General;
+import bahaso.testing.webElement.LandingPage;
+import bahaso.testing.webElement.LittleBoxMultipleChoice;
+
+public class LittleBoxMultipleChoice_TestCase extends General{
+	LandingPage landingPage = null;
+	LittleBoxMultipleChoice littleBoxMultipleChoice = null;
+	HashMap<String, String> LoginData = new HashMap<String, String>();
+	ArrayList<ArrayList<String>> choices = new ArrayList<ArrayList<String>>();
+	ArrayList<String> choice = new ArrayList<String>();
+	String[] answer = {"is","are","is","is","am","are"};
+	
+	@Before
+	public void before(){
+		for(int i=0;i<6;i++){
+			choice.add("is");
+			choice.add("am");
+			choice.add("are");
+			choices.add(choice);
+			choice.clear();
+		}
+	}
+	
+	@BeforeMethod
+  	public void beforeMethod() {
+	  driver = getDriver();
+	  LoginData.put("email","reddev");
+	  LoginData.put("password","mahendralubis");
+	  landingPage = new LandingPage(driver);
+	  LittleBoxMultipleChoice littleBoxMultipleChoice = new LostWordType(driver);
+	  landingPage.doLogin(LoginData);
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56826370938e8eed498b4568");
+  	}
+}

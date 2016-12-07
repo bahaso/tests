@@ -1,0 +1,27 @@
+package bahaso.testing.web;
+
+import java.util.ArrayList;
+
+import org.junit.Before;
+import org.testng.annotations.BeforeMethod;
+
+import bahaso.testing.general.General;
+
+public class LittleBoxMultipleChoice_TestCase extends General{
+	ArrayList<ArrayList<String>> choices = new ArrayList<ArrayList<String>>();
+	ArrayList<String> choice = new ArrayList<String>();
+	String[] answer = {"is","are","is","is","am","are"};
+	
+	@Before
+	public void before(){
+		for(int i=0;i<6;i++){
+			choice.add("is");
+			choice.add("am");
+			choice.add("are");
+			choices.add(choice);
+			choice.clear();
+		}
+	}
+	
+	@BeforeMethod
+}

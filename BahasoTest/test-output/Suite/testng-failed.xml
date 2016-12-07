@@ -5,30 +5,21 @@
     <classes>
       <class name="bahaso.testing.web.TrueFalseSentence_TestCase">
         <methods>
-          <include name="answerRight"/>
-          <include name="cekAllElement"/>
           <include name="before"/>
-          <include name="answerWrong"/>
+          <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.TrueFalseSentence_TestCase -->
+      <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="before"/>
+          <include name="cekAllElement"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
       <class name="bahaso.testing.web.RegisterViaRegisterPage">
         <methods>
-          <include name="RegisterFailFirstname2"/>
           <include name="before"/>
-          <include name="RegisterFailLastname1"/>
-          <include name="RegisterFailFirstname1"/>
-          <include name="RegisterCorrect"/>
-          <include name="RegisterFailAllBlank"/>
-          <include name="RegisterFailPassword1"/>
-          <include name="RegisterFailLastname2"/>
-          <include name="RegisterFailPassword2"/>
-          <include name="RegisterFailPassword3"/>
-          <include name="RegisterFailEmail1"/>
-          <include name="RegisterFailEmail2"/>
-          <include name="RegisterFailEmail4"/>
-          <include name="RegisterFailEmail5"/>
-          <include name="RegisterFailEmail6"/>
-          <include name="RegisterFailEmail3"/>
+          <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.RegisterViaRegisterPage -->
       <class name="bahaso.testing.web.TrueFalseListen_TestCase">
@@ -37,32 +28,21 @@
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.TrueFalseListen_TestCase -->
-      <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
-        <methods>
-          <include name="after"/>
-          <include name="before"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
-      <class name="bahaso.testing.web.LostWordListen_TestCase">
-        <methods>
-          <include name="before"/>
-          <include name="cekAllElements"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
       <class name="bahaso.testing.web.LostWordType_TestCase">
         <methods>
           <include name="before"/>
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.LostWordType_TestCase -->
+      <class name="bahaso.testing.web.LostWordListen_TestCase">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
       <class name="bahaso.testing.web.RegisterViaLandingPage">
         <methods>
           <include name="after"/>
-          <include name="RegisterFailLastname2"/>
-          <include name="RegisterFailPassword2"/>
-          <include name="RegisterFailPassword1"/>
-          <include name="RegisterFailPassword3"/>
           <include name="before"/>
         </methods>
       </class> <!-- bahaso.testing.web.RegisterViaLandingPage -->

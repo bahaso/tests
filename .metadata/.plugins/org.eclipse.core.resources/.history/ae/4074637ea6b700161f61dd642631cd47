@@ -1,8 +1,0 @@
-package bahaso.testing.webElement;
-
-import org.openqa.selenium.WebElement;
-
-public class LostWordListen extends ExcercisePage{
-	public WebElement audioButton = null;
-
-}

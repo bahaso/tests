@@ -10,6 +10,8 @@
   	        <class name="bahaso.testing.web.TrueFalseSentence_TestCase"/>
   	        <class name="bahaso.testing.web.LostWordListen_TestCase"/>
   	        <class name="bahaso.testing.web.LostWordType_TestCase"/>
+  	        <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase"/>
+  	        <class name="bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

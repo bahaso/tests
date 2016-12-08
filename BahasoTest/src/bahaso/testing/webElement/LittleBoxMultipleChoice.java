@@ -11,6 +11,7 @@ public class LittleBoxMultipleChoice extends ExcercisePage{
 	public ArrayList<WebElement> AnswerPerQuestion;
 	public ArrayList<ArrayList<WebElement>> allAnswer = new ArrayList<ArrayList<WebElement>>();
 	public WebElement answerLabel;
+	
 	public LittleBoxMultipleChoice(WebDriver driver){
 		this.driver = driver;
 	}

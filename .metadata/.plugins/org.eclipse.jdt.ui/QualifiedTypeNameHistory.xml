@@ -2,14 +2,22 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.OfferingPage"/>
-<fullyQualifiedTypeName name="bahaso.testing.general.General"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedCondition"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="bahaso.testing.general.WaitElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.By"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.RegisterPage"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LoginPage"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LostWordListen"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LandingPage"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.ExcercisePage"/>
+<fullyQualifiedTypeName name="bahaso.testing.general.General"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LostWordType"/>
 </qualifiedTypeNameHistroy>

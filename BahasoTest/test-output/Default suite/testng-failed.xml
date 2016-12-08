@@ -5,7 +5,8 @@
     <classes>
       <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase">
         <methods>
-          <include name="answerRight"/>
+          <include name="answerWrong"/>
+          <include name="after"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- bahaso.testing.web.LittleBoxMultipleChoice_TestCase -->

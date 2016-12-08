@@ -5,8 +5,10 @@
     <classes>
       <class name="bahaso.testing.web.TrueFalseSentence_TestCase">
         <methods>
+          <include name="cekAllElement"/>
           <include name="before"/>
           <include name="after"/>
+          <include name="answerWrong"/>
         </methods>
       </class> <!-- bahaso.testing.web.TrueFalseSentence_TestCase -->
       <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
@@ -30,8 +32,9 @@
       </class> <!-- bahaso.testing.web.TrueFalseListen_TestCase -->
       <class name="bahaso.testing.web.LostWordType_TestCase">
         <methods>
+          <include name="answerWrong"/>
           <include name="before"/>
-          <include name="after"/>
+          <include name="answerRight"/>
         </methods>
       </class> <!-- bahaso.testing.web.LostWordType_TestCase -->
       <class name="bahaso.testing.web.LostWordListen_TestCase">
@@ -54,6 +57,7 @@
       </class> <!-- bahaso.testing.web.RegisterViaOfferingPage -->
       <class name="bahaso.testing.web.Login">
         <methods>
+          <include name="LoginFail3"/>
           <include name="before"/>
           <include name="after"/>
         </methods>

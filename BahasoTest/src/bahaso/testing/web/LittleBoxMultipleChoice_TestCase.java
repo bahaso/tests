@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import org.junit.Before;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -44,8 +45,20 @@ public class LittleBoxMultipleChoice_TestCase extends General{
 	
 	@Test
   	public void answerRight() throws InterruptedException{
-		littleBoxMultipleChoice.answerRight(choices,answer);
+		littleBoxMultipleChoice.answerRight(answer);
 		String status[] = littleBoxMultipleChoice.getLessonStatus().getAttribute("class").split(" ");
 		Assert.assertEquals(status[status.length-1], "true");
 	}
+	
+	@Test
+  	public void answerWrong() throws InterruptedException{
+		littleBoxMultipleChoice.answerWrong(answer);
+		String status[] = littleBoxMultipleChoice.getLessonStatus().getAttribute("class").split(" ");
+		Assert.assertEquals(status[status.length-1], "false");
+	}
+	
+	@AfterMethod
+  	public void after() {
+  		driver.quit();
+  	}
 }

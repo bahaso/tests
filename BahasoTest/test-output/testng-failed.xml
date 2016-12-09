@@ -3,19 +3,19 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="bahaso.testing.web.ListenTranslate_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="cekAllElements"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.ListenTranslate_TestCase -->
       <class name="bahaso.testing.web.TrueFalseSentence_TestCase">
         <methods>
           <include name="before"/>
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.TrueFalseSentence_TestCase -->
-      <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
-        <methods>
-          <include name="after"/>
-          <include name="before"/>
-          <include name="answerWrong"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
       <class name="bahaso.testing.web.RegisterViaRegisterPage">
         <methods>
           <include name="before"/>
@@ -28,6 +28,12 @@
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.TrueFalseListen_TestCase -->
+      <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
       <class name="bahaso.testing.web.LostWordType_TestCase">
         <methods>
           <include name="before"/>
@@ -58,6 +64,12 @@
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.RegisterViaOfferingPage -->
+      <class name="bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase -->
       <class name="bahaso.testing.web.Login">
         <methods>
           <include name="before"/>

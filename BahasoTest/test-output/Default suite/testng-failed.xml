@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase">
+      <class name="bahaso.testing.web.ListenTranslate_TestCase">
         <methods>
-          <include name="answerWrong"/>
           <include name="after"/>
-          <include name="beforeMethod"/>
+          <include name="cekAllElements"/>
+          <include name="before"/>
         </methods>
-      </class> <!-- bahaso.testing.web.LittleBoxMultipleChoice_TestCase -->
+      </class> <!-- bahaso.testing.web.ListenTranslate_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

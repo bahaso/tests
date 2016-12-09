@@ -12,6 +12,7 @@
   	        <class name="bahaso.testing.web.LostWordType_TestCase"/>
   	        <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase"/>
   	        <class name="bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenTranslate_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

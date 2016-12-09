@@ -1,9 +1,0 @@
-package bahaso.testing.webElement;
-
-import org.openqa.selenium.WebDriver;
-
-public class LitteBoxMultipleChoice extends ExcercisePage{
-	public LitteBoxMultipleChoice(WebDriver driver){
-		this.driver = driver;
-	}
-}

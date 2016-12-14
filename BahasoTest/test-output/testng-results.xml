@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="87797" started-at="2016-12-14T09:55:37Z" finished-at="2016-12-14T09:57:05Z">
+  <suite name="Default suite" duration-ms="87471" started-at="2016-12-14T10:08:59Z" finished-at="2016-12-14T10:10:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="87797" started-at="2016-12-14T09:55:37Z" finished-at="2016-12-14T09:57:05Z">
-      <class name="bahaso.testing.web.ListenSelectPicture_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenSelectPicture_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="30175" started-at="2016-12-14T16:55:37Z" finished-at="2016-12-14T16:56:07Z">
+    <test name="Default test" duration-ms="87471" started-at="2016-12-14T10:08:59Z" finished-at="2016-12-14T10:10:27Z">
+      <class name="bahaso.testing.web.ListenSelectSingleBox_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="35705" started-at="2016-12-14T17:08:59Z" finished-at="2016-12-14T17:09:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.ListenSelectPicture_TestCase@14acaea5]" name="answerRight" duration-ms="8351" started-at="2016-12-14T16:56:07Z" finished-at="2016-12-14T16:56:16Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="answerRight" duration-ms="8372" started-at="2016-12-14T17:09:35Z" finished-at="2016-12-14T17:09:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenSelectPicture_TestCase@14acaea5]" name="after" is-config="true" duration-ms="1008" started-at="2016-12-14T16:56:16Z" finished-at="2016-12-14T16:56:17Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="after" is-config="true" duration-ms="994" started-at="2016-12-14T17:09:44Z" finished-at="2016-12-14T17:09:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenSelectPicture_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="39031" started-at="2016-12-14T16:56:17Z" finished-at="2016-12-14T16:56:56Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="33108" started-at="2016-12-14T17:09:45Z" finished-at="2016-12-14T17:10:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.ListenSelectPicture_TestCase@14acaea5]" name="answerWrong" duration-ms="8309" started-at="2016-12-14T16:56:56Z" finished-at="2016-12-14T16:57:04Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="answerWrong" duration-ms="8336" started-at="2016-12-14T17:10:18Z" finished-at="2016-12-14T17:10:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenSelectPicture_TestCase@14acaea5]" name="after" is-config="true" duration-ms="908" started-at="2016-12-14T16:57:04Z" finished-at="2016-12-14T16:57:05Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="after" is-config="true" duration-ms="938" started-at="2016-12-14T17:10:26Z" finished-at="2016-12-14T17:10:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.ListenSelectPicture_TestCase -->
+      </class> <!-- bahaso.testing.web.ListenSelectSingleBox_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

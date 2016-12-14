@@ -34,18 +34,19 @@
           <include name="before"/>
         </methods>
       </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
+      <class name="bahaso.testing.web.LostWordListen_TestCase">
+        <methods>
+          <include name="before"/>
+          <include name="cekAllElements"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
       <class name="bahaso.testing.web.LostWordType_TestCase">
         <methods>
           <include name="before"/>
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.LostWordType_TestCase -->
-      <class name="bahaso.testing.web.LostWordListen_TestCase">
-        <methods>
-          <include name="before"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
       <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase">
         <methods>
           <include name="after"/>

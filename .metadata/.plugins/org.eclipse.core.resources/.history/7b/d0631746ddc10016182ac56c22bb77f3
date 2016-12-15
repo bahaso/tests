@@ -1,0 +1,13 @@
+package bahaso.testing.web;
+
+import java.util.HashMap;
+
+import bahaso.testing.general.General;
+import bahaso.testing.webElement.LandingPage;
+
+public class ListenSelectMultipleBox extends General{
+	LandingPage landingPage = null;
+	ListenSelectMultipleBox listenSelectMultipleBox = null;
+	HashMap<String, String> LoginData = new HashMap<String, String>();
+	String[] answer = {"beautiful","handsome","awesome"};
+}

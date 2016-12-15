@@ -1,0 +1,27 @@
+package bahaso.testing.webElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class PictureMultipleChoice extends ExcercisePage{
+	public ArrayList<WebElement> allChoices = new ArrayList<WebElement>();
+	public WebElement choice;
+	
+	public PictureMultipleChoice(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public ArrayList<WebElement> getQuestion(){
+		allChoices = (ArrayList<WebElement>) driver.findElements(By.xpath("//*[@id='lesson-content']/div/div/ol/li"));
+		return question;
+	}
+	
+	public WebElement getAnswerLabel(String kelas){
+		return driver.findElement(By.xpath("//label[@for='"+kelas+"']"));
+	}
+	
+	
+}

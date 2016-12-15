@@ -1,0 +1,21 @@
+package bahaso.testing.webElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ListenSelectMultipleBox extends ExcercisePage{
+	public ArrayList<WebElement> choices = new ArrayList<WebElement>();
+	public WebElement choice = null;
+	
+	public ListenSelectMultipleBox(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public ArrayList<WebElement> getChoices(){
+		choices = (ArrayList<WebElement>) driver.findElements(By.xpath("//input[@class='lesson']/div/div/ol/li"));
+		return choices;
+	}
+}

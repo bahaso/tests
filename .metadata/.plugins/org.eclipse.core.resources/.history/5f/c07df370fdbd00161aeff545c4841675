@@ -1,0 +1,16 @@
+package bahaso.testing.webElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class PictureMultipleChoice extends ExcercisePage{
+	public ArrayList<WebElement> question = new ArrayList<WebElement>();
+	public ArrayList<WebElement> AnswerPerQuestion;
+	
+	public PictureMultipleChoice(WebDriver driver){
+		this.driver = driver;
+	}
+	
+}

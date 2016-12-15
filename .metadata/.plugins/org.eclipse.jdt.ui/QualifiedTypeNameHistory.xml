@@ -8,8 +8,6 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="bahaso.testing.general.WaitElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.RegisterPage"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LoginPage"/>
@@ -17,7 +15,11 @@
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LandingPage"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LostWordType"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.ExcercisePage"/>
 <fullyQualifiedTypeName name="bahaso.testing.general.General"/>
-<fullyQualifiedTypeName name="bahaso.testing.webElement.LostWordType"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LittleBoxMultipleChoicePicture"/>
 </qualifiedTypeNameHistroy>

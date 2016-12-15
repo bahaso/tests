@@ -1,0 +1,17 @@
+package bahaso.testing.webElement;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ListenTranslate extends ExcercisePage{
+	public WebElement audioButton = null;
+	public WebElement boxAnswer = null;
+	
+	public ListenTranslate(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public WebElement getAudioButton(){
+		return
+	}
+}

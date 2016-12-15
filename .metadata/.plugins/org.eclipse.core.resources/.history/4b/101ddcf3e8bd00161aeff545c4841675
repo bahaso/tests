@@ -1,0 +1,7 @@
+package bahaso.testing.webElement;
+
+import org.openqa.selenium.WebElement;
+
+public class ListenTranslate extends ExcercisePage{
+	public WebElement audioButton = null;
+}

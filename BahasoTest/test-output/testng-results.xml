@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="87471" started-at="2016-12-14T10:08:59Z" finished-at="2016-12-14T10:10:27Z">
+  <suite name="Default suite" duration-ms="54350" started-at="2016-12-16T10:44:20Z" finished-at="2016-12-16T10:45:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="87471" started-at="2016-12-14T10:08:59Z" finished-at="2016-12-14T10:10:27Z">
-      <class name="bahaso.testing.web.ListenSelectSingleBox_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="35705" started-at="2016-12-14T17:08:59Z" finished-at="2016-12-14T17:09:35Z">
+    <test name="Default test" duration-ms="54350" started-at="2016-12-16T10:44:20Z" finished-at="2016-12-16T10:45:15Z">
+      <class name="bahaso.testing.web.RecordASentence_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.RecordASentence_TestCase@4501b7af]" name="beforeMethod" is-config="true" duration-ms="17195" started-at="2016-12-16T17:44:20Z" finished-at="2016-12-16T17:44:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="answerRight" duration-ms="8372" started-at="2016-12-14T17:09:35Z" finished-at="2016-12-14T17:09:44Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.RecordASentence_TestCase@4501b7af]" name="answerRight" duration-ms="8363" started-at="2016-12-16T17:44:38Z" finished-at="2016-12-16T17:44:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="after" is-config="true" duration-ms="994" started-at="2016-12-14T17:09:44Z" finished-at="2016-12-14T17:09:45Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RecordASentence_TestCase@4501b7af]" name="after" is-config="true" duration-ms="884" started-at="2016-12-16T17:44:46Z" finished-at="2016-12-16T17:44:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="33108" started-at="2016-12-14T17:09:45Z" finished-at="2016-12-14T17:10:18Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.RecordASentence_TestCase@4501b7af]" name="beforeMethod" is-config="true" duration-ms="18884" started-at="2016-12-16T17:44:47Z" finished-at="2016-12-16T17:45:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="answerWrong" duration-ms="8336" started-at="2016-12-14T17:10:18Z" finished-at="2016-12-14T17:10:26Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.RecordASentence_TestCase@4501b7af]" name="answerWrong" duration-ms="8262" started-at="2016-12-16T17:45:06Z" finished-at="2016-12-16T17:45:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="after" is-config="true" duration-ms="938" started-at="2016-12-14T17:10:26Z" finished-at="2016-12-14T17:10:27Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.RecordASentence_TestCase@4501b7af]" name="after" is-config="true" duration-ms="744" started-at="2016-12-16T17:45:14Z" finished-at="2016-12-16T17:45:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.ListenSelectSingleBox_TestCase -->
+      </class> <!-- bahaso.testing.web.RecordASentence_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

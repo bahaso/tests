@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.web.ListenSelectMultipleBox_TestCase">
+      <class name="bahaso.testing.web.RecordASentence_TestCase">
         <methods>
           <include name="after"/>
+          <include name="answerRight"/>
           <include name="beforeMethod"/>
-          <include name="answerWrong"/>
         </methods>
-      </class> <!-- bahaso.testing.web.ListenSelectMultipleBox_TestCase -->
+      </class> <!-- bahaso.testing.web.RecordASentence_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

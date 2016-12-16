@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class LostWordType extends ExcercisePage{
-public ArrayList<WebElement> boxAnswer = new ArrayList<WebElement>();
+	public ArrayList<WebElement> boxAnswer = new ArrayList<WebElement>();
 	
 	public LostWordType(WebDriver driver){
 		this.driver = driver;

@@ -35,7 +35,6 @@ public class BoxMatchDialog extends ExcercisePage{
 					action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 					//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 					Thread.sleep(2000);
-					break;
 				}
 			}
 		}

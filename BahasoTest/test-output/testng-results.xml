@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37068" started-at="2016-12-19T12:06:08Z" finished-at="2016-12-19T12:06:45Z">
+  <suite name="Default suite" duration-ms="96644" started-at="2016-12-19T12:15:33Z" finished-at="2016-12-19T12:17:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37068" started-at="2016-12-19T12:06:08Z" finished-at="2016-12-19T12:06:45Z">
-      <class name="bahaso.testing.web.BoxMatchList_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.BoxMatchList_TestCase@28d25987]" name="beforeMethod" is-config="true" duration-ms="21320" started-at="2016-12-19T19:06:08Z" finished-at="2016-12-19T19:06:29Z">
+    <test name="Default test" duration-ms="96644" started-at="2016-12-19T12:15:33Z" finished-at="2016-12-19T12:17:10Z">
+      <class name="bahaso.testing.web.BoxMatchListPicture_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="50601" started-at="2016-12-19T19:15:33Z" finished-at="2016-12-19T19:16:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.BoxMatchList_TestCase@28d25987]" name="answerRight" duration-ms="14749" started-at="2016-12-19T19:06:29Z" finished-at="2016-12-19T19:06:44Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@14acaea5]" name="answerRight" duration-ms="8366" started-at="2016-12-19T19:16:24Z" finished-at="2016-12-19T19:16:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.BoxMatchList_TestCase@28d25987]" name="after" is-config="true" duration-ms="985" started-at="2016-12-19T19:06:44Z" finished-at="2016-12-19T19:06:45Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@14acaea5]" name="after" is-config="true" duration-ms="964" started-at="2016-12-19T19:16:32Z" finished-at="2016-12-19T19:16:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.BoxMatchList_TestCase -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="27444" started-at="2016-12-19T19:16:33Z" finished-at="2016-12-19T19:17:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@14acaea5]" name="answerWrong" duration-ms="8336" started-at="2016-12-19T19:17:01Z" finished-at="2016-12-19T19:17:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answerWrong -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@14acaea5]" name="after" is-config="true" duration-ms="917" started-at="2016-12-19T19:17:09Z" finished-at="2016-12-19T19:17:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- bahaso.testing.web.BoxMatchListPicture_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

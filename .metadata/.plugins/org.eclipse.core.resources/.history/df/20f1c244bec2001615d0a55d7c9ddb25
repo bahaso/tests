@@ -1,0 +1,40 @@
+package bahaso.testing.webElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class RecordASentence extends ExcercisePage{
+	public WebElement BoxAnswer = null;
+	public WebElement microphoneButton = null;
+	
+	public RecordASentence(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public WebElement getBoxAnswer(){
+		return wt.waitForElement(driver, By.xpath("//input[@type='text']"));
+	}
+	
+	public WebElement getMicrophoneButton(){
+		microphoneButton = wt.waitForElement(driver, By.xpath("//button[@class='btn-toggle-microphone']"));
+		return microphoneButton;
+	}
+	
+	//operation
+	public void answerRight(String[] answer) throws InterruptedException{
+		Thread.sleep(3000);
+	}
+	
+	public void answerWrong(String answer) throws InterruptedException{
+		Thread.sleep(3000);
+		getMicrophoneButton().click();
+		Thread.sleep(2000);
+		getBoxAnswer().sendKeys(answer);
+		Thread.sleep(2000);
+		getButtonCheck().click();
+		Thread.sleep(3000);
+	}
+}

@@ -1,0 +1,26 @@
+package bahaso.testing.webElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class BoxMatchDialog extends ExcercisePage{
+	public ArrayList<WebElement> draggable = new ArrayList<WebElement>();
+	public ArrayList<WebElement> droppable = new ArrayList<WebElement>();
+	
+	public BoxMatchDialog(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public ArrayList<WebElement> getDraggable(){
+		draggable = (ArrayList<WebElement>) driver.findElements(By.xpath("//input[@class='lesson']"));
+		return draggable;
+	}
+	
+	public ArrayList<WebElement> getChoices(){
+		droppable = (ArrayList<WebElement>) driver.findElements(By.xpath("//input[@class='lesson']"));
+		return droppable;
+	}
+}

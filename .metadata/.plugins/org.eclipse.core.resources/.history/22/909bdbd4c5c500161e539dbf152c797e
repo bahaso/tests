@@ -1,0 +1,10 @@
+package bahaso.testing.webElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebElement;
+
+public class BoxMatchDialog {
+	public ArrayList<WebElement> draggable = new ArrayList<WebElement>();
+	public ArrayList<WebElement> droppable = new ArrayList<WebElement>();
+}

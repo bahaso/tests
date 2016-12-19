@@ -1,0 +1,27 @@
+package bahaso.testing.web;
+
+import java.util.HashMap;
+
+import org.testng.annotations.BeforeMethod;
+
+import bahaso.testing.general.General;
+import bahaso.testing.webElement.LandingPage;
+import bahaso.testing.webElement.RecordASentence;
+
+public class RecordASentence_TestCase extends General{
+	LandingPage landingPage = null;
+	RecordASentence recordASentence = null;
+	HashMap<String, String> LoginData = new HashMap<String, String>();
+	String answer = "After graduation my brother wants to be an engineer";
+	
+	@BeforeMethod
+  	public void beforeMethod() {
+	  driver = getDriver();
+	  LoginData.put("email","reddev");
+	  LoginData.put("password","mahendralubis");
+	  landingPage = new LandingPage(driver);
+	  recordASentence = new RecordASentence(driver);
+	  landingPage.doLogin(LoginData);
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56825cdf938e8ed6498b4567");
+  	}
+}

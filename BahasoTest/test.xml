@@ -14,6 +14,13 @@
   	        <class name="bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase"/>
   	        <class name="bahaso.testing.web.ListenTranslate_TestCase"/>
   	        <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase"/>
+  	        <class name="bahaso.testing.web.RecordASentence_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenRecord_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenRecordPicture_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenSelectMultipleBox_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenSelectPicture_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenSelectSingleBox_TestCase"/>
+  	        <class name="bahaso.testing.web.PictureMultipleChoice_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

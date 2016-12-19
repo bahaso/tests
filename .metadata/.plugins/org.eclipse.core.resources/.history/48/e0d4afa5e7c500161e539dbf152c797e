@@ -1,0 +1,7 @@
+package bahaso.testing.web;
+
+import bahaso.testing.general.General;
+
+public class BoxMatchPicture_TestCase extends General{
+
+}

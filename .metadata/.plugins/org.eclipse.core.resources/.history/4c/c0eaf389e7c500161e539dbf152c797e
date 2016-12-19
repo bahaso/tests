@@ -1,0 +1,5 @@
+package bahaso.testing.webElement;
+
+public class BoxMatchPicture extends ExcercisePage{
+
+}

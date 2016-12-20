@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="87471" started-at="2016-12-14T10:08:59Z" finished-at="2016-12-14T10:10:27Z">
+  <suite name="Default suite" duration-ms="22651" started-at="2016-12-20T12:00:02Z" finished-at="2016-12-20T12:00:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="87471" started-at="2016-12-14T10:08:59Z" finished-at="2016-12-14T10:10:27Z">
-      <class name="bahaso.testing.web.ListenSelectSingleBox_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="35705" started-at="2016-12-14T17:08:59Z" finished-at="2016-12-14T17:09:35Z">
+    <test name="Default test" duration-ms="22651" started-at="2016-12-20T12:00:02Z" finished-at="2016-12-20T12:00:25Z">
+      <class name="bahaso.testing.web.ListenAndOrganize_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenAndOrganize_TestCase@29774679]" name="beforeMethod" is-config="true" duration-ms="15623" started-at="2016-12-20T19:00:03Z" finished-at="2016-12-20T19:00:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="answerRight" duration-ms="8372" started-at="2016-12-14T17:09:35Z" finished-at="2016-12-14T17:09:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="after" is-config="true" duration-ms="994" started-at="2016-12-14T17:09:44Z" finished-at="2016-12-14T17:09:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="33108" started-at="2016-12-14T17:09:45Z" finished-at="2016-12-14T17:10:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="answerWrong" duration-ms="8336" started-at="2016-12-14T17:10:18Z" finished-at="2016-12-14T17:10:26Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.ListenAndOrganize_TestCase@29774679]" name="answerWrong" duration-ms="6173" started-at="2016-12-20T19:00:18Z" finished-at="2016-12-20T19:00:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenSelectSingleBox_TestCase@14acaea5]" name="after" is-config="true" duration-ms="938" started-at="2016-12-14T17:10:26Z" finished-at="2016-12-14T17:10:27Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenAndOrganize_TestCase@29774679]" name="after" is-config="true" duration-ms="840" started-at="2016-12-20T19:00:24Z" finished-at="2016-12-20T19:00:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.ListenSelectSingleBox_TestCase -->
+      </class> <!-- bahaso.testing.web.ListenAndOrganize_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

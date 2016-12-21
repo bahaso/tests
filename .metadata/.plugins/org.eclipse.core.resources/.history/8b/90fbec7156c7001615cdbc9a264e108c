@@ -1,0 +1,34 @@
+package bahaso.testing.general;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+
+public class cobamongo {
+	MongoClient mongoClient = null;
+	MongoDatabase db = null;
+	
+	@BeforeClass
+	public void beforeClass(){
+		try {
+			mongoClient = new MongoClient("localhost", 27017);
+			db = mongoClient.getDatabase("bahaso");
+			System.out.println("Konek database berhasil");
+		} catch (Exception e) {
+			System.err.println(e.getClass().getName() + ": " + e.getMessage());
+		}
+	}
+	
+	@Test
+	public void test(){
+		try {
+			MongoCollection<TDocument> table = db.getCollection("");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+}

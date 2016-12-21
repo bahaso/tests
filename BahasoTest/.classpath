@@ -39,5 +39,7 @@
 	<classpathentry kind="lib" path="E:/testing/selenium-java-3.0.1/lib/xml-apis-1.4.01.jar"/>
 	<classpathentry kind="lib" path="E:/testing/driver/mongodb-driver-3.4.1.jar"/>
 	<classpathentry kind="lib" path="E:/testing/driver/mongodb-driver-3.4.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="E:/testing/driver/bson-3.4.1.jar"/>
+	<classpathentry kind="lib" path="E:/testing/driver/mongodb-driver-core-3.4.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,0 +1,7 @@
+package bahaso.testing.general;
+
+import com.mongodb.MongoClient;
+
+public class cobamongo {
+	MongoClient mongoClient = null;
+}

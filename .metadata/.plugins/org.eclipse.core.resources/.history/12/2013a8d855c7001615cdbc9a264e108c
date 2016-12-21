@@ -1,0 +1,21 @@
+package bahaso.testing.general;
+
+import org.junit.BeforeClass;
+
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoDatabase;
+
+public class cobamongo {
+	MongoClient mongoClient = null;
+	MongoDatabase db = null;
+	
+	@BeforeClass
+	public void beforeClass(){
+		try {
+			mongoClient = new MongoClient("localhost", 27017);
+			db = mongoClient.getDatabase("bahaso");
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

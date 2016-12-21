@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.web.ListenAndOrganize_TestCase">
+      <class name="bahaso.testing.general.cobamongo">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="answerRight"/>
-          <include name="after"/>
+          <include name="test"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- bahaso.testing.web.ListenAndOrganize_TestCase -->
+      </class> <!-- bahaso.testing.general.cobamongo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

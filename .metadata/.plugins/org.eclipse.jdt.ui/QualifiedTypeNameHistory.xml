@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="bahaso.testing.webElement.OfferingPage"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.WebDriverWait"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedCondition"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebDriver"/>
 <fullyQualifiedTypeName name="bahaso.testing.general.WaitElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
@@ -14,12 +13,22 @@
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LostWordListen"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LandingPage"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LostWordType"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LittleBoxMultipleChoicePicture"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Action"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchDialog"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchList"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListPicture"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListen"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchParagraph"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchPicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.ExcercisePage"/>
 <fullyQualifiedTypeName name="bahaso.testing.general.General"/>
-<fullyQualifiedTypeName name="bahaso.testing.webElement.LittleBoxMultipleChoicePicture"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchSentence"/>
 </qualifiedTypeNameHistroy>

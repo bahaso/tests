@@ -1,0 +1,32 @@
+<suite name="Suite" parallel="none">
+  	<test name="Test">
+  	    <classes>
+  	    	<class name="bahaso.testing.web.BoxMatchDialog_TestCase"/>
+  	        <class name="bahaso.testing.web.BoxMatchList_TestCase"/>
+  	        <class name="bahaso.testing.web.BoxMatchListen_TestCase"/>
+  	    	<class name="bahaso.testing.web.Login"/>
+  	    	<class name="bahaso.testing.web.RegisterViaLandingPage"/>
+  	       	<class name="bahaso.testing.web.RegisterViaOfferingPage"/>
+  	       	<class name="bahaso.testing.web.RegisterViaRegisterPage"/>
+  	       	<class name="bahaso.testing.web.TrueFalseListen_TestCase"/>
+  	       	<class name="bahaso.testing.web.TrueFalsePicture_TestCase"/>
+  	        <class name="bahaso.testing.web.TrueFalseSentence_TestCase"/>
+  	        <class name="bahaso.testing.web.LostWordListen_TestCase"/>
+  	        <class name="bahaso.testing.web.LostWordType_TestCase"/>
+  	        <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase"/>
+  	        <class name="bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenTranslate_TestCase"/>
+  	        <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase"/>
+  	        <class name="bahaso.testing.web.RecordASentence_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenRecord_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenRecordPicture_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenSelectMultipleBox_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenSelectPicture_TestCase"/>
+  	        <class name="bahaso.testing.web.ListenSelectSingleBox_TestCase"/>
+  	        <class name="bahaso.testing.web.PictureMultipleChoice_TestCase"/>
+  	        <class name="bahaso.testing.web.PictureMultipleChoice_TestCase"/>
+  	        <class name="bahaso.testing.web.PictureMultipleChoice_TestCase"/>
+  	        <class name="bahaso.testing.web.PictureMultipleChoice_TestCase"/>
+  	    </classes>
+  	</test> <!-- Test -->
+</suite> <!-- Suite -->

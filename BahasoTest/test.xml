@@ -27,6 +27,7 @@
   	        <class name="bahaso.testing.web.TrueFalseListen_TestCase"/>
   	       	<class name="bahaso.testing.web.TrueFalsePicture_TestCase"/>
   	        <class name="bahaso.testing.web.TrueFalseSentence_TestCase"/>
+  	        <class name="bahaso.testing.web.VideoAnswerCase_TestCase"/>
   	    </classes>
   	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,7 +1,0 @@
-package bahaso.testing.web;
-
-import bahaso.testing.general.General;
-
-public class LittleBoxMultipleChoicePicture_TestCase extends General{
-	
-}

@@ -1,6 +1,0 @@
-package bahaso.testing.webElement;
-
-public class ListenTranslate extends ExcercisePage{
-	
-	
-}

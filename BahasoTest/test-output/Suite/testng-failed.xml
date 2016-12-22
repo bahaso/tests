@@ -3,10 +3,27 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
+      <class name="bahaso.testing.web.RegisterViaOfferingPage">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.RegisterViaOfferingPage -->
+      <class name="bahaso.testing.web.ListenSelectPicture_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.ListenSelectPicture_TestCase -->
+      <class name="bahaso.testing.web.BoxMatchSentence_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.BoxMatchSentence_TestCase -->
       <class name="bahaso.testing.web.ListenTranslate_TestCase">
         <methods>
           <include name="after"/>
-          <include name="cekAllElements"/>
           <include name="before"/>
         </methods>
       </class> <!-- bahaso.testing.web.ListenTranslate_TestCase -->
@@ -16,10 +33,84 @@
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.TrueFalseSentence_TestCase -->
+      <class name="bahaso.testing.web.RegisterViaLandingPage">
+        <methods>
+          <include name="RegisterCorrect"/>
+          <include name="after"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.RegisterViaLandingPage -->
+      <class name="bahaso.testing.web.PictureMultipleChoice_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.PictureMultipleChoice_TestCase -->
+      <class name="bahaso.testing.web.RecordASentence_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.RecordASentence_TestCase -->
+      <class name="bahaso.testing.web.BoxMatchListPicture_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.BoxMatchListPicture_TestCase -->
+      <class name="bahaso.testing.web.BoxMatchDialog_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.BoxMatchDialog_TestCase -->
+      <class name="bahaso.testing.web.BoxMatchListen_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.BoxMatchListen_TestCase -->
+      <class name="bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase -->
+      <class name="bahaso.testing.web.BoxMatchPicture_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.BoxMatchPicture_TestCase -->
+      <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
+      <class name="bahaso.testing.web.ListenRecord_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.ListenRecord_TestCase -->
+      <class name="bahaso.testing.web.ListenSelectMultipleBox_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.ListenSelectMultipleBox_TestCase -->
+      <class name="bahaso.testing.web.BoxMatchList_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.BoxMatchList_TestCase -->
       <class name="bahaso.testing.web.RegisterViaRegisterPage">
         <methods>
           <include name="before"/>
           <include name="after"/>
+          <include name="RegisterCorrect"/>
         </methods>
       </class> <!-- bahaso.testing.web.RegisterViaRegisterPage -->
       <class name="bahaso.testing.web.TrueFalseListen_TestCase">
@@ -28,55 +119,49 @@
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.TrueFalseListen_TestCase -->
-      <class name="bahaso.testing.web.TrueFalsePicture_TestCase">
-        <methods>
-          <include name="after"/>
-          <include name="before"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.TrueFalsePicture_TestCase -->
-      <class name="bahaso.testing.web.LostWordListen_TestCase">
-        <methods>
-          <include name="before"/>
-          <include name="cekAllElements"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
-      <class name="bahaso.testing.web.LostWordType_TestCase">
-        <methods>
-          <include name="before"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.LostWordType_TestCase -->
       <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase">
         <methods>
           <include name="after"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- bahaso.testing.web.LittleBoxMultipleChoice_TestCase -->
-      <class name="bahaso.testing.web.RegisterViaLandingPage">
-        <methods>
-          <include name="after"/>
-          <include name="before"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.RegisterViaLandingPage -->
-      <class name="bahaso.testing.web.RegisterViaOfferingPage">
-        <methods>
-          <include name="before"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.RegisterViaOfferingPage -->
-      <class name="bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="after"/>
-        </methods>
-      </class> <!-- bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase -->
       <class name="bahaso.testing.web.Login">
         <methods>
+          <include name="LoginFail2"/>
           <include name="before"/>
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.Login -->
+      <class name="bahaso.testing.web.BoxMatchParagraph_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.BoxMatchParagraph_TestCase -->
+      <class name="bahaso.testing.web.LostWordType_TestCase">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.LostWordType_TestCase -->
+      <class name="bahaso.testing.web.ListenRecordPicture_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.ListenRecordPicture_TestCase -->
+      <class name="bahaso.testing.web.LostWordListen_TestCase">
+        <methods>
+          <include name="before"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
+      <class name="bahaso.testing.web.ListenSelectSingleBox_TestCase">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="after"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.ListenSelectSingleBox_TestCase -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

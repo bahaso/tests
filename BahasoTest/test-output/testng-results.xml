@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22651" started-at="2016-12-20T12:00:02Z" finished-at="2016-12-20T12:00:25Z">
+  <suite name="Default suite" duration-ms="65943" started-at="2016-12-22T10:06:23Z" finished-at="2016-12-22T10:07:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22651" started-at="2016-12-20T12:00:02Z" finished-at="2016-12-20T12:00:25Z">
-      <class name="bahaso.testing.web.ListenAndOrganize_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.ListenAndOrganize_TestCase@29774679]" name="beforeMethod" is-config="true" duration-ms="15623" started-at="2016-12-20T19:00:03Z" finished-at="2016-12-20T19:00:18Z">
+    <test name="Default test" duration-ms="65943" started-at="2016-12-22T10:06:23Z" finished-at="2016-12-22T10:07:29Z">
+      <class name="bahaso.testing.web.VideoAnswerCase_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="beforeMethod" is-config="true" duration-ms="20928" started-at="2016-12-22T17:06:23Z" finished-at="2016-12-22T17:06:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.ListenAndOrganize_TestCase@29774679]" name="answerWrong" duration-ms="6173" started-at="2016-12-20T19:00:18Z" finished-at="2016-12-20T19:00:24Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="answerRight" duration-ms="10396" started-at="2016-12-22T17:06:44Z" finished-at="2016-12-22T17:06:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenAndOrganize_TestCase@29774679]" name="after" is-config="true" duration-ms="840" started-at="2016-12-20T19:00:24Z" finished-at="2016-12-20T19:00:25Z">
+        </test-method> <!-- answerRight -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="after" is-config="true" duration-ms="838" started-at="2016-12-22T17:06:54Z" finished-at="2016-12-22T17:06:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.ListenAndOrganize_TestCase -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="beforeMethod" is-config="true" duration-ms="22488" started-at="2016-12-22T17:06:55Z" finished-at="2016-12-22T17:07:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="answerWrong" duration-ms="10439" started-at="2016-12-22T17:07:18Z" finished-at="2016-12-22T17:07:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- answerWrong -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="after" is-config="true" duration-ms="839" started-at="2016-12-22T17:07:28Z" finished-at="2016-12-22T17:07:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- bahaso.testing.web.VideoAnswerCase_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

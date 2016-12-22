@@ -1,0 +1,14 @@
+package bahaso.testing.general;
+
+public class cobamongo {
+	DB db = null;
+	DBCollection collect = null;
+	BasicDBObject query = null;
+	
+	public static void main(String[] args){
+		 MongoClient client = new MongoClient();
+		 MongoDatabase db = client.getDatabase("school");
+		 MongoCollection<Document> coll = db.getCollection("people");
+	}
+	
+}

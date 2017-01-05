@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65943" started-at="2016-12-22T10:06:23Z" finished-at="2016-12-22T10:07:29Z">
+  <suite name="Default suite" duration-ms="72229" started-at="2017-01-05T09:32:29Z" finished-at="2017-01-05T09:33:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65943" started-at="2016-12-22T10:06:23Z" finished-at="2016-12-22T10:07:29Z">
-      <class name="bahaso.testing.web.VideoAnswerCase_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="beforeMethod" is-config="true" duration-ms="20928" started-at="2016-12-22T17:06:23Z" finished-at="2016-12-22T17:06:44Z">
+    <test name="Default test" duration-ms="72229" started-at="2017-01-05T09:32:29Z" finished-at="2017-01-05T09:33:41Z">
+      <class name="bahaso.testing.web.Sublesson">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="21358" started-at="2017-01-05T16:32:29Z" finished-at="2017-01-05T16:32:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="answerRight" duration-ms="10396" started-at="2016-12-22T17:06:44Z" finished-at="2016-12-22T17:06:54Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerRight" duration-ms="14676" started-at="2017-01-05T16:32:50Z" finished-at="2017-01-05T16:33:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="after" is-config="true" duration-ms="838" started-at="2016-12-22T17:06:54Z" finished-at="2016-12-22T17:06:55Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="969" started-at="2017-01-05T16:33:05Z" finished-at="2017-01-05T16:33:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="beforeMethod" is-config="true" duration-ms="22488" started-at="2016-12-22T17:06:55Z" finished-at="2016-12-22T17:07:18Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="19744" started-at="2017-01-05T16:33:06Z" finished-at="2017-01-05T16:33:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="answerWrong" duration-ms="10439" started-at="2016-12-22T17:07:18Z" finished-at="2016-12-22T17:07:28Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerWrong" duration-ms="14628" started-at="2017-01-05T16:33:26Z" finished-at="2017-01-05T16:33:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@61832929]" name="after" is-config="true" duration-ms="839" started-at="2016-12-22T17:07:28Z" finished-at="2016-12-22T17:07:29Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="838" started-at="2017-01-05T16:33:40Z" finished-at="2017-01-05T16:33:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.VideoAnswerCase_TestCase -->
+      </class> <!-- bahaso.testing.web.Sublesson -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

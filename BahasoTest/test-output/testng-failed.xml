@@ -5,6 +5,7 @@
     <classes>
       <class name="bahaso.testing.web.Sublesson">
         <methods>
+          <include name="answerWrong"/>
           <include name="beforeMethod"/>
           <include name="answerRight"/>
           <include name="after"/>

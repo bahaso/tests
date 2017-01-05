@@ -56,11 +56,8 @@ public class BoxMatchDissappearPicture extends ExcercisePage implements answerLe
 	}
 	
 	//operation
-	@Override
-	public void answerWrong(Object ans){
-		try {
+		public void answerWrong(String[][] answer) throws InterruptedException{
 			Thread.sleep(3000);
-			String[][] answer = (String[][])ans;
 			int size = getDroppable().size();
 			for(int i=0;i<size;i++){
 				for(int j=0;j<answer[i].length;j++){
@@ -78,9 +75,5 @@ public class BoxMatchDissappearPicture extends ExcercisePage implements answerLe
 			}
 			getButtonCheck().click();
 			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
-	}
 }

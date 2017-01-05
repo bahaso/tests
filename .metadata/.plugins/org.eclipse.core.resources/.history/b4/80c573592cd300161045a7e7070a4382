@@ -24,7 +24,7 @@ public class Sublesson extends General{
 	  landingPage = new LandingPage(driver);
 	  obj = new BoxMatchDissappearPicture(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/569776c2938e8e97658b456c");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5680dfcb938e8e7f2c8b456a");
   	}
 	
 	@Test

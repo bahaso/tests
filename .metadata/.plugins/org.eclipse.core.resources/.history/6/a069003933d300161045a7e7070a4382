@@ -54,8 +54,7 @@ public class BoxMatchParagraph extends ExcercisePage implements answerLesson{
 	}
 	
 	//operation
-	@Override
-	public void answerWrong(Object ans){
+	public void answerWrong(String[] ans){
 		try {
 			Thread.sleep(3000);
 			int wrong = 1;

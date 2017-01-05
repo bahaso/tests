@@ -54,12 +54,9 @@ public class DragMultipleChoice extends ExcercisePage implements answerLesson{
 	}
 	
 	//operation
-	@Override
-	public void answerWrong(Object ans){
-		try {
+		public void answerWrong(String[] answer) throws InterruptedException{
 			Thread.sleep(3000);
 			int wrong = 1;
-			String[] answer = (String[])ans;
 			for(int i=0;i<getDroppable().size();i++){
 				for(int j=0;j<getDraggable().size();j++){
 					if(wrong>0){
@@ -82,9 +79,5 @@ public class DragMultipleChoice extends ExcercisePage implements answerLesson{
 			}
 			getButtonCheck().click();
 			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
-	}
 }

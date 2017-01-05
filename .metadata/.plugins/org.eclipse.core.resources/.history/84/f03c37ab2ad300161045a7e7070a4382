@@ -31,34 +31,32 @@ public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 	
 	//operation
 	@Override
-	public void answerRight(Object ans){
+	public void answerRight(String[][] answer){
 		try {
-			Thread.sleep(3000);
-			String[][] answer = (String[][])ans;
-			for(int i=0;i<getDroppable().size();i++){
-				for(int j=0;j<answer[i].length;j++){
-					for(int k=0;k<getDraggable().size();k++){
-						if(answer[i][j].equals(getDraggable().get(k).getText())){
-							action.dragAndDrop(getDraggable().get(k), getDroppable().get(i)).perform();
-							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
-							Thread.sleep(2000);
-							break;
-						}
-					}
-				}
-			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
+			
 		} catch (Exception e) {
 			
 		}
+		Thread.sleep(3000);
+		for(int i=0;i<getDroppable().size();i++){
+			for(int j=0;j<answer[i].length;j++){
+				for(int k=0;k<getDraggable().size();k++){
+					if(answer[i][j].equals(getDraggable().get(k).getText())){
+						action.dragAndDrop(getDraggable().get(k), getDroppable().get(i)).perform();
+						//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
+						Thread.sleep(2000);
+						break;
+					}
+				}
+			}
+		}
+		getButtonCheck().click();
+		Thread.sleep(3000);
 	}
 	
 	//operation
-	public void answerWrong(Object ans){
-		try {
+		public void answerWrong(String[][] answer) throws InterruptedException{
 			Thread.sleep(3000);
-			String[][] answer = (String[][]) ans;
 			int size = getDroppable().size();
 			for(int i=0;i<size;i++){
 				for(int j=0;j<answer[i].length;j++){
@@ -76,8 +74,5 @@ public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 			}
 			getButtonCheck().click();
 			Thread.sleep(3000);
-		} catch (Exception e) {
-			
 		}
-	}
 }

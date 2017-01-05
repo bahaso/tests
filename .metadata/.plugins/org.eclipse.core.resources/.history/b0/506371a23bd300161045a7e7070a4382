@@ -25,35 +25,21 @@ public class ListenRecord extends ExcercisePage implements answerLesson{
 	}
 	//operation
 	@Override
-	public void answerRight(Object ans){
-		try {
-			Thread.sleep(3000);
-			String answer = (String) ans;
-			getMicrophoneButton().click();
-			Thread.sleep(2000);
-			getBoxAnswer().sendKeys(answer);
-			getButtonCheck().click();
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void answerRight(String answer) throws InterruptedException{
+		Thread.sleep(3000);
+		getMicrophoneButton().click();
+		Thread.sleep(2000);
+		getBoxAnswer().sendKeys(answer);
+		getButtonCheck().click();
+		Thread.sleep(3000);
 	}
 	
-	//operation
-	@Override
-	public void answerWrong(Object ans){
-		try {
-			Thread.sleep(3000);
-			String answer = (String) ans;
-			getMicrophoneButton().click();
-			Thread.sleep(2000);
-			getBoxAnswer().sendKeys("aaa");
-			getButtonCheck().click();
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void answerWrong(String answer) throws InterruptedException{
+		Thread.sleep(3000);
+		getMicrophoneButton().click();
+		Thread.sleep(2000);
+		getBoxAnswer().sendKeys("aaa");
+		getButtonCheck().click();
+		Thread.sleep(3000);
 	}
 }

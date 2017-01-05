@@ -13,7 +13,8 @@ public class Sublesson extends General{
 	LandingPage landingPage = null;
 	answerLesson obj = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	String answer = "Garage";
+	String[] answer = {"Hello, my name is Michelle. I'm 33 years old.","Hello! My name is Julian.","How old are you, Julian?",
+			"I am 28 years old. Where are you from, Michelle?","I'm from Paris, France, and you?","I'm from Brussels, Belgium. "};
 	
 
 	@BeforeMethod
@@ -22,12 +23,12 @@ public class Sublesson extends General{
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
 	  landingPage = new LandingPage(driver);
-	  obj = new ListenRecord(driver);
+	  obj = new ListenAndOrganize(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5684aa15938e8e15578b4585");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/568a1241938e8e4d3d8b4568");
   	}
 	
-	@Test  
+	@Test
   	public void answerRight(){
 		obj.answerRight(answer);
 		//String status[] = boxMatchSentence.getLessonStatus().getAttribute("class").split(" ");

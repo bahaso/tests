@@ -30,7 +30,6 @@ public class BoxMatchPicture extends ExcercisePage implements answerLesson{
 	}
 	
 	//operation
-	@Override
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
@@ -54,8 +53,7 @@ public class BoxMatchPicture extends ExcercisePage implements answerLesson{
 	}
 	
 	//operation
-	@Override
-	public void answerWrong(Object ans){
+	public void answerWrong(String[] ans){
 		try {
 			Thread.sleep(3000);
 			int wrong = 1;

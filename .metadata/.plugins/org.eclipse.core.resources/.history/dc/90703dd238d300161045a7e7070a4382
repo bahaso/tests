@@ -23,7 +23,7 @@ public class Sublesson extends General{
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
 	  landingPage = new LandingPage(driver);
-	  obj = new ListenAndOrganize(driver);
+	  obj = new DragMultipleChoice(driver);
 	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/568a1241938e8e4d3d8b4568");
   	}

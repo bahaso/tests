@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61661" started-at="2017-01-06T10:04:01Z" finished-at="2017-01-06T10:05:02Z">
+  <suite name="Default suite" duration-ms="71633" started-at="2017-01-06T10:09:08Z" finished-at="2017-01-06T10:10:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61661" started-at="2017-01-06T10:04:01Z" finished-at="2017-01-06T10:05:02Z">
+    <test name="Default test" duration-ms="71633" started-at="2017-01-06T10:09:08Z" finished-at="2017-01-06T10:10:20Z">
       <class name="bahaso.testing.web.Sublesson">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="21416" started-at="2017-01-06T17:04:01Z" finished-at="2017-01-06T17:04:22Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="32189" started-at="2017-01-06T17:09:08Z" finished-at="2017-01-06T17:09:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerRight" duration-ms="9249" started-at="2017-01-06T17:04:22Z" finished-at="2017-01-06T17:04:31Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerRight" duration-ms="8327" started-at="2017-01-06T17:09:40Z" finished-at="2017-01-06T17:09:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="899" started-at="2017-01-06T17:04:31Z" finished-at="2017-01-06T17:04:32Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="947" started-at="2017-01-06T17:09:48Z" finished-at="2017-01-06T17:09:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="19990" started-at="2017-01-06T17:04:32Z" finished-at="2017-01-06T17:04:52Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="21026" started-at="2017-01-06T17:09:49Z" finished-at="2017-01-06T17:10:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerWrong" duration-ms="9224" started-at="2017-01-06T17:04:52Z" finished-at="2017-01-06T17:05:02Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerWrong" duration-ms="8245" started-at="2017-01-06T17:10:10Z" finished-at="2017-01-06T17:10:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="863" started-at="2017-01-06T17:05:02Z" finished-at="2017-01-06T17:05:02Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="882" started-at="2017-01-06T17:10:19Z" finished-at="2017-01-06T17:10:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

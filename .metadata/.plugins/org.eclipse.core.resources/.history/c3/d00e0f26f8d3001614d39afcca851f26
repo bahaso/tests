@@ -24,7 +24,7 @@ public class Sublesson extends General{
 	  landingPage = new LandingPage(driver);
 	  obj = new RecordASentence(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56810b41938e8e7b148b4579");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5679286f938e8e0a3a8b4579");
   	}
 	
 	@Test  

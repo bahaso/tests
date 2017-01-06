@@ -7,7 +7,6 @@
         <methods>
           <include name="answerWrong"/>
           <include name="beforeMethod"/>
-          <include name="answerRight"/>
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.Sublesson -->

@@ -13,7 +13,7 @@ public class Sublesson extends General{
 	LandingPage landingPage = null;
 	answerLesson obj = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	String answer = "His name is John.";
+	String[] answer = {"Are they","they are","Is it","it isn't","Is it","it is","Are they","they aren't"};
 	
 
 	@BeforeMethod
@@ -22,9 +22,9 @@ public class Sublesson extends General{
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
 	  landingPage = new LandingPage(driver);
-	  obj = new PictureMultipleChoice(driver);
+	  obj = new LostWordType(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5679286f938e8e0a3a8b4579");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56826370938e8eed498b4568");
   	}
 	
 	@Test  

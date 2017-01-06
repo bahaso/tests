@@ -13,7 +13,7 @@ public class Sublesson extends General{
 	LandingPage landingPage = null;
 	answerLesson obj = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	String[] answer = {"Their names","are Vince","and Derek"};
+	String answer = "After graduation my brother wants to be an engineer";
 	
 
 	@BeforeMethod
@@ -22,9 +22,9 @@ public class Sublesson extends General{
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
 	  landingPage = new LandingPage(driver);
-	  obj = new SentenceFormation(driver);
+	  obj = new RecordASentence(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/567926da938e8e6c5f8b4572");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56810b41938e8e7b148b4579");
   	}
 	
 	@Test  

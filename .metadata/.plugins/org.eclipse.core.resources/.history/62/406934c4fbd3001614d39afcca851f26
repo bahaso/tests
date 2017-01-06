@@ -22,9 +22,9 @@ public class Sublesson extends General{
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
 	  landingPage = new LandingPage(driver);
-	  obj = new VideoAnswerCase(driver);
+	  obj = new TrueFalseSentence(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5680bf66938e8ec1788b4567");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56961fde938e8e7c358b4575");
   	}
 	
 	@Test  

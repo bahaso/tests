@@ -24,7 +24,7 @@ public class Sublesson extends General{
 	  landingPage = new LandingPage(driver);
 	  obj = new LittleBoxMultipleChoicePicture(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56838e1c938e8ec0348b4569");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5681033b938e8e7b148b4570");
   	}
 	
 	@Test  

@@ -60,24 +60,19 @@ public class LittleBoxMultipleChoicePicture extends ExcercisePage implements ans
 		}
 	}
 	
-	public void answerWrong(Object ans){
-		try {
-			Thread.sleep(3000);
-			String[] answer = (String[])ans;
-			for(int i=0;i<getAllAnswer().size();i++){
-				for(int j=0;j<getAllAnswer().get(i).size();j++){
-					if(!answer[i].equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
-						getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
-						Thread.sleep(2000);
-						break;
-					}
+	public void answerWrong(String[] answer) throws InterruptedException{
+		Thread.sleep(3000);
+		String[] answer = (String[])ans;
+		for(int i=0;i<getAllAnswer().size();i++){
+			for(int j=0;j<getAllAnswer().get(i).size();j++){
+				if(!answer[i].equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
+					getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
+					Thread.sleep(2000);
+					break;
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 		}
+		getButtonCheck().click();
+		Thread.sleep(3000);
 	}
 }

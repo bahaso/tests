@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class TrueFalseSentence extends ExcercisePage{
+import bahaso.testing.web.answerLesson;
+
+public class TrueFalseSentence extends ExcercisePage implements answerLesson{
 	public WebElement instruction = null;
 	public WebElement description = null;
 	public WebElement trueButton = null;
@@ -32,5 +34,39 @@ public class TrueFalseSentence extends ExcercisePage{
 	public WebElement getFalseButton(){
 		falseButton = wt.waitForElement(driver, By.xpath(".//*[@id='false']"));
 		return falseButton;
+	}
+	
+	@Override
+	public void answerRight(Object ans) {
+		try {
+			boolean answer = (boolean)ans;
+			if(answer){
+				getTrueButton().click();
+			}else{
+				getFalseButton().click();
+			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void answerWrong(Object ans) {
+		try {
+			boolean answer = (boolean)ans;
+			if(answer==false){
+				getTrueButton().click();
+			}else{
+				getFalseButton().click();
+			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

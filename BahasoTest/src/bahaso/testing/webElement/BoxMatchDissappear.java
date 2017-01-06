@@ -7,7 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class BoxMatchDissappear extends ExcercisePage{
+import bahaso.testing.web.answerLesson;
+
+public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> draggable = new ArrayList<WebElement>();
 	public ArrayList<WebElement> droppable = new ArrayList<WebElement>();
 	public Actions action = null;
@@ -28,27 +30,35 @@ public class BoxMatchDissappear extends ExcercisePage{
 	}
 	
 	//operation
-	public void answerRight(String[][] answer) throws InterruptedException{
-		Thread.sleep(3000);
-		for(int i=0;i<getDroppable().size();i++){
-			for(int j=0;j<answer[i].length;j++){
-				for(int k=0;k<getDraggable().size();k++){
-					if(answer[i][j].equals(getDraggable().get(k).getText())){
-						action.dragAndDrop(getDraggable().get(k), getDroppable().get(i)).perform();
-						//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
-						Thread.sleep(2000);
-						break;
+	@Override
+	public void answerRight(Object ans){
+		try {
+			Thread.sleep(3000);
+			String[][] answer = (String[][])ans;
+			for(int i=0;i<getDroppable().size();i++){
+				for(int j=0;j<answer[i].length;j++){
+					for(int k=0;k<getDraggable().size();k++){
+						if(answer[i][j].equals(getDraggable().get(k).getText())){
+							action.dragAndDrop(getDraggable().get(k), getDroppable().get(i)).perform();
+							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
+							Thread.sleep(2000);
+							break;
+						}
 					}
 				}
 			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			
 		}
-		getButtonCheck().click();
-		Thread.sleep(3000);
 	}
 	
 	//operation
-		public void answerWrong(String[][] answer) throws InterruptedException{
+	public void answerWrong(Object ans){
+		try {
 			Thread.sleep(3000);
+			String[][] answer = (String[][]) ans;
 			int size = getDroppable().size();
 			for(int i=0;i<size;i++){
 				for(int j=0;j<answer[i].length;j++){
@@ -66,5 +76,8 @@ public class BoxMatchDissappear extends ExcercisePage{
 			}
 			getButtonCheck().click();
 			Thread.sleep(3000);
+		} catch (Exception e) {
+			
 		}
+	}
 }

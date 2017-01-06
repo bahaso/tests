@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class TrueFalseListen extends ExcercisePage{
+import bahaso.testing.web.answerLesson;
+
+public class TrueFalseListen extends ExcercisePage implements answerLesson{
 	public WebElement instruction = null;
 	public WebElement question = null;
 	public WebElement audioButton = null;
@@ -44,5 +46,39 @@ public class TrueFalseListen extends ExcercisePage{
 	public WebElement getFalseButton(){
 		falseButton = wt.waitForElement(driver, By.xpath(".//*[@id='false']"));
 		return falseButton;
+	}
+
+	@Override
+	public void answerRight(Object ans) {
+		try {
+			boolean answer = (boolean)ans;
+			if(answer){
+				getTrueButton().click();
+			}else{
+				getFalseButton().click();
+			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public void answerWrong(Object ans) {
+		try {
+			boolean answer = (boolean)ans;
+			if(answer==false){
+				getTrueButton().click();
+			}else{
+				getFalseButton().click();
+			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

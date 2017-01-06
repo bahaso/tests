@@ -6,7 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class VideoAnswerCase extends ExcercisePage{
+import bahaso.testing.web.answerLesson;
+
+public class VideoAnswerCase extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> choices;
 	public WebElement microphoneButton;
 	
@@ -28,8 +30,11 @@ public class VideoAnswerCase extends ExcercisePage{
 		return microphoneButton;
 	}
 	//operation
-		public void answerRight(String[] answer) throws InterruptedException{
+	@Override
+	public void answerRight(Object ans){
+		try {
 			Thread.sleep(3000);
+			String[] answer = (String[])ans;
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
 			for(int i=0;i<answer.length;i++){
@@ -43,10 +48,18 @@ public class VideoAnswerCase extends ExcercisePage{
 			}
 			getButtonCheck().click();
 			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		
-		public void answerWrong(String[] answer) throws InterruptedException{
+	}
+	
+	//operation
+	@Override
+	public void answerWrong(Object ans){
+		try {
 			Thread.sleep(3000);
+			String[] answer = (String[])ans;
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
 			int wrong = 1;
@@ -70,5 +83,9 @@ public class VideoAnswerCase extends ExcercisePage{
 			}
 			getButtonCheck().click();
 			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+	}
 }

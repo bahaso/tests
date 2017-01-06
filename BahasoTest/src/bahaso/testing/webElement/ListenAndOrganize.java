@@ -7,7 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-public class ListenAndOrganize extends ExcercisePage{
+import bahaso.testing.web.answerLesson;
+
+public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> draggable = new ArrayList<WebElement>();
 	public ArrayList<WebElement> droppable = new ArrayList<WebElement>();
 	public Actions action = null;
@@ -28,27 +30,37 @@ public class ListenAndOrganize extends ExcercisePage{
 	}
 	
 	//operation
-	public void answerRight(String[] answer) throws InterruptedException{
-		Thread.sleep(3000);
-		for(int i=0;i<answer.length;i++){
-			for(int j=0;j<getDraggable().size();j++){
-				if(answer[i].equals(getDraggable().get(j).getText())){
-					//action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
-					action.clickAndHold(getDraggable().get(j)).moveToElement(getDraggable().get(i),225,0).build().perform();
-					Thread.sleep(3000);
-					action.release().build().perform();
-					Thread.sleep(3000);
-					break;
+	@Override
+	public void answerRight(Object ans){
+		try {
+			Thread.sleep(3000);
+			String[] answer = (String[])ans;
+			for(int i=0;i<answer.length;i++){
+				for(int j=0;j<getDraggable().size();j++){
+					if(answer[i].equals(getDraggable().get(j).getText())){
+						//action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
+						action.clickAndHold(getDraggable().get(j)).moveToElement(getDraggable().get(i),225,0).build().perform();
+						Thread.sleep(3000);
+						action.release().build().perform();
+						Thread.sleep(3000);
+						break;
+					}
 				}
 			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		getButtonCheck().click();
-		Thread.sleep(3000);
 	}
 	
 	//operation
-		public void answerWrong(String[] answer) throws InterruptedException{
+	@Override
+	public void answerWrong(Object ans){
+		try {
 			Thread.sleep(3000);
+			String[] answer = (String[])ans;
 			if(answer[0].equals(getDraggable().get(0).getText())){
 				//action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 				action.clickAndHold(getDraggable().get(0)).moveToElement(getDraggable().get(1),225,0);
@@ -58,5 +70,9 @@ public class ListenAndOrganize extends ExcercisePage{
 			}
 			getButtonCheck().click();
 			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+	}
 }

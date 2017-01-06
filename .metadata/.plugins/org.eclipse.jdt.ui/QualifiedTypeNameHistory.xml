@@ -18,14 +18,12 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Action"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
-<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchDialog"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchList"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListPicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListen"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchParagraph"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchPicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.ExcercisePage"/>
-<fullyQualifiedTypeName name="bahaso.testing.general.General"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchSentence"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
@@ -42,7 +40,13 @@
 <fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="org.bson.types.ObjectId"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="org.bson.Document"/>
+<fullyQualifiedTypeName name="bahaso.testing.general.General"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchDialog"/>
+<fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextExtPackage.StringNameHelper"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="bahaso.testing.web.answerLesson"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
 </qualifiedTypeNameHistroy>

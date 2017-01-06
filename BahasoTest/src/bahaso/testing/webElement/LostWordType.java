@@ -6,7 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LostWordType extends ExcercisePage{
+import bahaso.testing.web.answerLesson;
+
+public class LostWordType extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> boxAnswer = new ArrayList<WebElement>();
 	
 	public LostWordType(WebDriver driver){
@@ -19,23 +21,38 @@ public class LostWordType extends ExcercisePage{
 	}
 	
 	//operation
-	public void answerRight(String[] answer) throws InterruptedException{
-		Thread.sleep(3000);
-		for(int i=0;i<answer.length;i++){
-			getBoxAnswer().get(i).sendKeys(answer[i]);
+	@Override
+	public void answerRight(Object ans){
+		try {
 			Thread.sleep(3000);
+			String[] answer = (String[])ans;
+			for(int i=0;i<answer.length;i++){
+				getBoxAnswer().get(i).sendKeys(answer[i]);
+				Thread.sleep(3000);
+			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		getButtonCheck().click();
-		Thread.sleep(3000);
 	}
 	
-	public void answerWrong(String[] answer) throws InterruptedException{
-		Thread.sleep(3000);
-		for(int i=0;i<answer.length;i++){
-			getBoxAnswer().get(i).sendKeys("aaa");
+	//operation
+	@Override
+	public void answerWrong(Object ans){
+		try {
 			Thread.sleep(3000);
+			String[] answer = (String[])ans;
+			for(int i=0;i<answer.length;i++){
+				getBoxAnswer().get(i).sendKeys("aaa");
+				Thread.sleep(3000);
+			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		getButtonCheck().click();
-		Thread.sleep(3000);
 	}
 }

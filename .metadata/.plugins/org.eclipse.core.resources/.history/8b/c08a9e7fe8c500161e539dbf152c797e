@@ -1,7 +1,0 @@
-package bahaso.testing.web;
-
-import bahaso.testing.general.General;
-
-public class BoxMatchSentence_TestCase extends General{
-
-}

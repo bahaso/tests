@@ -6,7 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class LittleBoxMultipleChoice extends ExcercisePage{
+import bahaso.testing.web.answerLesson;
+
+public class LittleBoxMultipleChoice extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> question = new ArrayList<WebElement>();
 	public ArrayList<WebElement> AnswerPerQuestion;
 	public ArrayList<ArrayList<WebElement>> allAnswer = new ArrayList<ArrayList<WebElement>>();
@@ -37,35 +39,48 @@ public class LittleBoxMultipleChoice extends ExcercisePage{
 	}
 	
 	//operation
-	public void answerRight(String[] answer) throws InterruptedException{
-		Thread.sleep(3000);
-		
-		for(int i=0;i<getAllAnswer().size();i++){
-			for(int j=0;j<getAllAnswer().get(i).size();j++){
-				if(answer[i].equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
-					getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
-					Thread.sleep(2000);
+	@Override
+	public void answerRight(Object ans){
+		try {
+			Thread.sleep(3000);
+			String[] answer = (String[])ans;
+			for(int i=0;i<getAllAnswer().size();i++){
+				for(int j=0;j<getAllAnswer().get(i).size();j++){
+					if(answer[i].equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
+						getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
+						Thread.sleep(2000);
+					}
 				}
 			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		getButtonCheck().click();
-		Thread.sleep(3000);
 	}
 	
-	public void answerWrong(String[] answer) throws InterruptedException{
-		Thread.sleep(3000);
-		
-		for(int i=0;i<getAllAnswer().size();i++){
-			for(int j=0;j<getAllAnswer().get(i).size();j++){
-				if(!answer[i].equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
-					getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
-					Thread.sleep(2000);
-					break;
+	//operation
+	@Override
+	public void answerWrong(Object ans){
+		try {
+			Thread.sleep(3000);
+			String[] answer = (String[])ans;
+			for(int i=0;i<getAllAnswer().size();i++){
+				for(int j=0;j<getAllAnswer().get(i).size();j++){
+					if(!answer[i].equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
+						getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
+						Thread.sleep(2000);
+						break;
+					}
 				}
 			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		getButtonCheck().click();
-		Thread.sleep(3000);
 	}
 	
 }

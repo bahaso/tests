@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ListenTranslate extends ExcercisePage{
+import bahaso.testing.web.answerLesson;
+
+public class ListenTranslate extends ExcercisePage implements answerLesson{
 	public WebElement audioButton = null;
 	public WebElement boxAnswer = null;
 	
@@ -23,17 +25,32 @@ public class ListenTranslate extends ExcercisePage{
 	}
 	
 	//operation
-	public void answerRight(String answer) throws InterruptedException{
-		getBoxAnswer().sendKeys(answer);
-		Thread.sleep(2000);
-		getButtonCheck().click();
-		Thread.sleep(3000);
+	@Override
+	public void answerRight(Object ans){
+		try {
+			String answer = (String)ans;
+			getBoxAnswer().sendKeys(answer);
+			Thread.sleep(2000);
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
-	public void answerWrong(String answer) throws InterruptedException{
-		getBoxAnswer().sendKeys("aaa");
-		Thread.sleep(2000);
-		getButtonCheck().click();
-		Thread.sleep(3000);
+	//operation
+	@Override
+	public void answerWrong(Object ans){
+		try {
+			String answer = (String)ans;
+			getBoxAnswer().sendKeys("aaa");
+			Thread.sleep(2000);
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

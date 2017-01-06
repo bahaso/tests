@@ -6,7 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class PictureMultipleChoice extends ExcercisePage{
+import bahaso.testing.web.answerLesson;
+
+public class PictureMultipleChoice extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> allChoices = new ArrayList<WebElement>();
 	public WebElement choice;
 	
@@ -23,30 +25,43 @@ public class PictureMultipleChoice extends ExcercisePage{
 	}
 	
 	//operation
-	public void answerRight(String answer) throws InterruptedException{
-		Thread.sleep(3000);
-		for(int i=0;i<getAllAnswer().size();i++){
-			if(answer.equals(getAllAnswer().get(i).getAttribute("value"))){
-				getAnswerLabel(getAllAnswer().get(i).getAttribute("id")).click();
-				Thread.sleep(3000);
-				break;
+	@Override
+	public void answerRight(Object ans){
+		try {
+			Thread.sleep(3000);
+			String answer = (String)ans;
+			for(int i=0;i<getAllAnswer().size();i++){
+				if(answer.equals(getAllAnswer().get(i).getAttribute("value"))){
+					getAnswerLabel(getAllAnswer().get(i).getAttribute("id")).click();
+					Thread.sleep(3000);
+					break;
+				}
 			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		getButtonCheck().click();
-		Thread.sleep(3000);
 	}
 	
-	public void answerWrong(String answer) throws InterruptedException{
-		Thread.sleep(3000);
-		for(int i=0;i<getAllAnswer().size();i++){
-			if(!answer.equals(getAllAnswer().get(i).getAttribute("value"))){
-				getAnswerLabel(getAllAnswer().get(i).getAttribute("id")).click();
-				Thread.sleep(3000);
-				break;
+	public void answerWrong(Object ans){
+		try {
+			Thread.sleep(3000);
+			String answer = (String)ans;
+			for(int i=0;i<getAllAnswer().size();i++){
+				if(!answer.equals(getAllAnswer().get(i).getAttribute("value"))){
+					getAnswerLabel(getAllAnswer().get(i).getAttribute("id")).click();
+					Thread.sleep(3000);
+					break;
+				}
 			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
-		getButtonCheck().click();
-		Thread.sleep(3000);
 	}	
 	
 	

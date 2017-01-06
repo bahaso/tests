@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="74625" started-at="2017-01-06T09:47:22Z" finished-at="2017-01-06T09:48:37Z">
+  <suite name="Default suite" duration-ms="104721" started-at="2017-01-06T09:57:39Z" finished-at="2017-01-06T09:59:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="74625" started-at="2017-01-06T09:47:22Z" finished-at="2017-01-06T09:48:37Z">
+    <test name="Default test" duration-ms="104721" started-at="2017-01-06T09:57:39Z" finished-at="2017-01-06T09:59:23Z">
       <class name="bahaso.testing.web.Sublesson">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="22016" started-at="2017-01-06T16:47:22Z" finished-at="2017-01-06T16:47:44Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="21319" started-at="2017-01-06T16:57:39Z" finished-at="2017-01-06T16:58:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerRight" duration-ms="15366" started-at="2017-01-06T16:47:44Z" finished-at="2017-01-06T16:48:00Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerRight" duration-ms="30751" started-at="2017-01-06T16:58:00Z" finished-at="2017-01-06T16:58:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="926" started-at="2017-01-06T16:48:00Z" finished-at="2017-01-06T16:48:01Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="936" started-at="2017-01-06T16:58:31Z" finished-at="2017-01-06T16:58:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="20157" started-at="2017-01-06T16:48:01Z" finished-at="2017-01-06T16:48:21Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="20106" started-at="2017-01-06T16:58:32Z" finished-at="2017-01-06T16:58:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerWrong" duration-ms="15302" started-at="2017-01-06T16:48:21Z" finished-at="2017-01-06T16:48:36Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerWrong" duration-ms="30704" started-at="2017-01-06T16:58:52Z" finished-at="2017-01-06T16:59:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="842" started-at="2017-01-06T16:48:36Z" finished-at="2017-01-06T16:48:37Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="887" started-at="2017-01-06T16:59:22Z" finished-at="2017-01-06T16:59:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

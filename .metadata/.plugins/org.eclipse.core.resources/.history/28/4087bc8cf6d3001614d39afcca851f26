@@ -24,7 +24,7 @@ public class Sublesson extends General{
 	  landingPage = new LandingPage(driver);
 	  obj = new LostWordType(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56826370938e8eed498b4568");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5680de85938e8e173c8b456b");
   	}
 	
 	@Test  

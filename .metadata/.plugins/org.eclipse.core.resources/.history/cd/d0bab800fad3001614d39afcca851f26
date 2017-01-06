@@ -69,7 +69,7 @@ public class TrueFalseListen extends ExcercisePage implements answerLesson{
 	public void answerWrong(Object ans) {
 		try {
 			boolean answer = (boolean)ans;
-			if(answer==false){
+			if(answer){
 				getTrueButton().click();
 			}else{
 				getFalseButton().click();

@@ -6,19 +6,31 @@ import org.openqa.selenium.WebElement;
 
 import bahaso.testing.web.answerLesson;
 
-public class TrueFalseSentence extends ExcercisePage implements answerLesson{
+public class TrueFalseListen extends ExcercisePage implements answerLesson{
 	public WebElement instruction = null;
+	public WebElement question = null;
+	public WebElement audioButton = null;
 	public WebElement description = null;
 	public WebElement trueButton = null;
 	public WebElement falseButton = null;
 	
-	public TrueFalseSentence(WebDriver driver){
+	public TrueFalseListen(WebDriver driver){
 		this.driver = driver;
 	}
 	
 	public WebElement getInstruction(){
 		instruction = wt.waitForElement(driver, By.xpath(".//*[@id='lesson-instruction']"));
 		return instruction;
+	}
+	
+	public WebElement getQuestion(){
+		question = wt.waitForElement(driver, By.className("question-container"));
+		return question;
+	}
+	
+	public WebElement getAudioButton(){
+		audioButton = wt.waitForElement(driver, By.xpath(".//*[@id='audiojs_wrapper0']"));
+		return audioButton;
 	}
 	
 	public WebElement getDescription(){
@@ -35,7 +47,7 @@ public class TrueFalseSentence extends ExcercisePage implements answerLesson{
 		falseButton = wt.waitForElement(driver, By.xpath(".//*[@id='false']"));
 		return falseButton;
 	}
-	
+
 	@Override
 	public void answerRight(Object ans) {
 		try {
@@ -68,5 +80,6 @@ public class TrueFalseSentence extends ExcercisePage implements answerLesson{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
 	}
 }

@@ -80,6 +80,5 @@ public class TrueFalseListen extends ExcercisePage implements answerLesson{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
 	}
 }

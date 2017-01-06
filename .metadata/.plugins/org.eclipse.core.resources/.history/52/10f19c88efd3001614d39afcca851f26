@@ -44,7 +44,7 @@ public class ListenTranslate extends ExcercisePage implements answerLesson{
 	public void answerWrong(Object ans){
 		try {
 			String answer = (String)ans;
-			getBoxAnswer().sendKeys("aaa");
+			getBoxAnswer().sendKeys(answer);
 			Thread.sleep(2000);
 			getButtonCheck().click();
 			Thread.sleep(3000);

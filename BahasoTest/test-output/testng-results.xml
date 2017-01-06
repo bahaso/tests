@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59382" started-at="2017-01-06T08:48:44Z" finished-at="2017-01-06T08:49:43Z">
+  <suite name="Default suite" duration-ms="28878" started-at="2017-01-06T09:12:14Z" finished-at="2017-01-06T09:12:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59382" started-at="2017-01-06T08:48:44Z" finished-at="2017-01-06T08:49:43Z">
+    <test name="Default test" duration-ms="28878" started-at="2017-01-06T09:12:14Z" finished-at="2017-01-06T09:12:43Z">
       <class name="bahaso.testing.web.Sublesson">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="20514" started-at="2017-01-06T15:48:44Z" finished-at="2017-01-06T15:49:04Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="beforeMethod" is-config="true" duration-ms="21800" started-at="2017-01-06T16:12:14Z" finished-at="2017-01-06T16:12:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerRight" duration-ms="8291" started-at="2017-01-06T15:49:04Z" finished-at="2017-01-06T15:49:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="942" started-at="2017-01-06T15:49:12Z" finished-at="2017-01-06T15:49:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="beforeMethod" is-config="true" duration-ms="20554" started-at="2017-01-06T15:49:13Z" finished-at="2017-01-06T15:49:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="answerWrong" duration-ms="8218" started-at="2017-01-06T15:49:34Z" finished-at="2017-01-06T15:49:42Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="answerWrong" duration-ms="6188" started-at="2017-01-06T16:12:36Z" finished-at="2017-01-06T16:12:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@61832929]" name="after" is-config="true" duration-ms="846" started-at="2017-01-06T15:49:42Z" finished-at="2017-01-06T15:49:43Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="after" is-config="true" duration-ms="874" started-at="2017-01-06T16:12:42Z" finished-at="2017-01-06T16:12:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

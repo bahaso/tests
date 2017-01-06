@@ -28,29 +28,21 @@ public class ListenTranslate extends ExcercisePage implements answerLesson{
 	@Override
 	public void answerRight(Object ans){
 		try {
-			String answer = (String)ans;
-			getBoxAnswer().sendKeys(answer);
 			Thread.sleep(2000);
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		getButtonCheck().click();
+		Thread.sleep(3000);
 	}
 	
 	//operation
 	@Override
-	public void answerWrong(Object ans){
-		try {
-			String answer = (String)ans;
-			getBoxAnswer().sendKeys("aaa");
-			Thread.sleep(2000);
-			getButtonCheck().click();
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void answerWrong(Object answer){
+		getBoxAnswer().sendKeys("aaa");
+		Thread.sleep(2000);
+		getButtonCheck().click();
+		Thread.sleep(3000);
 	}
 }

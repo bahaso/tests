@@ -1,5 +1,6 @@
 package bahaso.testing.web;
 
+import java.awt.print.Printable;
 import java.util.HashMap;
 
 import org.testng.annotations.AfterMethod;
@@ -11,6 +12,7 @@ import bahaso.testing.webElement.*;
 
 public class Sublesson extends General{
 	LandingPage landingPage = null;
+	LoginPage loginPage = null;
 	answerLesson obj = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	String[] answer = {"Good morning, Kevin."};
@@ -22,10 +24,53 @@ public class Sublesson extends General{
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
 	  landingPage = new LandingPage(driver);
+	  loginPage = new LoginPage(driver);
 	  obj = new VideoAnswerCase(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5680bf66938e8ec1788b4567");
+	  //driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5680bf66938e8ec1788b4567");
   	}
+	
+	@Test  
+  	public void Simulation(){
+		try {
+			Thread.sleep(3000);
+			System.out.println(loginPage.getLessonListA1().size());
+			for(int i=0;i<loginPage.getLessonListA1().size();i++){
+				loginPage.getLessonListA1().get(i).click();
+				Thread.sleep(3000);
+			}
+			driver.get(baseUrl);
+			Thread.sleep(3000);
+			loginPage.getLevelButton().get(1).click();
+			Thread.sleep(3000);
+			for(int i=0;i<loginPage.getLessonListA2().size();i++){
+				loginPage.getLessonListA2().get(i).click();
+				Thread.sleep(3000);
+			}
+			driver.get(baseUrl);
+			Thread.sleep(3000);
+			loginPage.getLevelButton().get(2).click();
+			Thread.sleep(3000);
+			for(int i=0;i<loginPage.getLessonListB1().size();i++){
+				loginPage.getLessonListB1().get(i).click();
+				Thread.sleep(3000);
+			}
+			driver.get(baseUrl);
+			Thread.sleep(3000);
+			loginPage.getLevelButton().get(3).click();
+			Thread.sleep(3000);
+			for(int i=0;i<loginPage.getLessonListB2().size();i++){
+				loginPage.getLessonListB2().get(i).click();
+				Thread.sleep(3000);
+			}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		//String status[] = boxMatchSentence.getLessonStatus().getAttribute("class").split(" ");
+		//Assert.assertEquals(status[status.length-1], "true");
+	}
+	
 	
 	@Test  
   	public void answerRight(){

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32096" started-at="2017-01-06T10:36:23Z" finished-at="2017-01-06T10:36:55Z">
+  <suite name="Default suite" duration-ms="204070" started-at="2017-01-09T11:55:54Z" finished-at="2017-01-09T11:59:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32096" started-at="2017-01-06T10:36:23Z" finished-at="2017-01-06T10:36:55Z">
+    <test name="Default test" duration-ms="204070" started-at="2017-01-09T11:55:54Z" finished-at="2017-01-09T11:59:18Z">
       <class name="bahaso.testing.web.Sublesson">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="beforeMethod" is-config="true" duration-ms="20769" started-at="2017-01-06T17:36:23Z" finished-at="2017-01-06T17:36:44Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="beforeMethod" is-config="true" duration-ms="19842" started-at="2017-01-09T18:55:54Z" finished-at="2017-01-09T18:56:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="answerRight" duration-ms="10407" started-at="2017-01-06T17:36:44Z" finished-at="2017-01-06T17:36:54Z">
+        <test-method status="PASS" signature="Simulation()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="Simulation" duration-ms="183234" started-at="2017-01-09T18:56:14Z" finished-at="2017-01-09T18:59:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="after" is-config="true" duration-ms="904" started-at="2017-01-06T17:36:54Z" finished-at="2017-01-06T17:36:55Z">
+        </test-method> <!-- Simulation -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="after" is-config="true" duration-ms="979" started-at="2017-01-09T18:59:17Z" finished-at="2017-01-09T18:59:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->

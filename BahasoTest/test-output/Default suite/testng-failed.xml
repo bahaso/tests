@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.web.SentenceFormation_TestCase">
+      <class name="bahaso.testing.web.Sublesson">
         <methods>
-          <include name="answerRight"/>
+          <include name="Simulation"/>
           <include name="beforeMethod"/>
-          <include name="answerWrong"/>
+          <include name="after"/>
         </methods>
-      </class> <!-- bahaso.testing.web.SentenceFormation_TestCase -->
+      </class> <!-- bahaso.testing.web.Sublesson -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

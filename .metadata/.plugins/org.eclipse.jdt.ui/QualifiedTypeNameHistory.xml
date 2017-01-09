@@ -45,6 +45,7 @@
 <fullyQualifiedTypeName name="bahaso.testing.general.General"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchDialog"/>
 <fullyQualifiedTypeName name="org.omg.CosNaming.NamingContextExtPackage.StringNameHelper"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.ListenSelectPicture"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="bahaso.testing.web.answerLesson"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>

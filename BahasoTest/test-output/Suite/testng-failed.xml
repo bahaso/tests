@@ -17,6 +17,7 @@
       </class> <!-- bahaso.testing.web.ListenSelectPicture_TestCase -->
       <class name="bahaso.testing.web.BoxMatchSentence_TestCase">
         <methods>
+          <include name="answerWrong"/>
           <include name="beforeMethod"/>
           <include name="after"/>
         </methods>
@@ -35,7 +36,6 @@
       </class> <!-- bahaso.testing.web.TrueFalseSentence_TestCase -->
       <class name="bahaso.testing.web.RegisterViaLandingPage">
         <methods>
-          <include name="RegisterCorrect"/>
           <include name="after"/>
           <include name="before"/>
         </methods>
@@ -106,11 +106,17 @@
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.BoxMatchList_TestCase -->
+      <class name="bahaso.testing.web.VideoAnswerCase_TestCase">
+        <methods>
+          <include name="after"/>
+          <include name="beforeMethod"/>
+          <include name="answerWrong"/>
+        </methods>
+      </class> <!-- bahaso.testing.web.VideoAnswerCase_TestCase -->
       <class name="bahaso.testing.web.RegisterViaRegisterPage">
         <methods>
           <include name="before"/>
           <include name="after"/>
-          <include name="RegisterCorrect"/>
         </methods>
       </class> <!-- bahaso.testing.web.RegisterViaRegisterPage -->
       <class name="bahaso.testing.web.TrueFalseListen_TestCase">
@@ -127,8 +133,8 @@
       </class> <!-- bahaso.testing.web.LittleBoxMultipleChoice_TestCase -->
       <class name="bahaso.testing.web.Login">
         <methods>
-          <include name="LoginFail2"/>
           <include name="before"/>
+          <include name="LoginCorrect"/>
           <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.Login -->

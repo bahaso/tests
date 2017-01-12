@@ -23,9 +23,7 @@ public class BoxMatchSentence_TestCase extends General{
 	LandingPage landingPage = null;
 	BoxMatchSentence boxMatchSentence = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
-	//String[] answer = {"Good afternoon, Sadie.","How are you doing?","Nice to see you, Britanny."};
+	String[] answer = {"Good afternoon, Sadie.","How are you doing?","Nice to see you, Britanny."};
 	
 
 	@BeforeMethod
@@ -48,7 +46,7 @@ public class BoxMatchSentence_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = boxMatchSentence.getAnswerData(cursor);
+	  answer = boxMatchListen.getAnswerData(cursor);
   	}
 	
 	@Test

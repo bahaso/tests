@@ -23,9 +23,7 @@ public class BoxMatchListPicture_TestCase extends General{
 	LandingPage landingPage = null;
 	BoxMatchListPicture boxMatchListPicture = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
-	//String[] answer = {"on"};
+	String[] answer = {"on"};
 	
 
 	@BeforeMethod
@@ -38,7 +36,7 @@ public class BoxMatchListPicture_TestCase extends General{
 	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/568382ed938e8ec0348b4567");
 	  
-	  //Get Case ID
+	//Get Case ID
 	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
 	  
 	  //Get Data from Database
@@ -48,7 +46,7 @@ public class BoxMatchListPicture_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = boxMatchListPicture.getAnswerData(cursor);
+	  answer = boxMatchList.getAnswerData(cursor);
   	}
 	
 	@Test

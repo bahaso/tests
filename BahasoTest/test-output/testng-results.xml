@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="69170" started-at="2017-01-12T10:06:54Z" finished-at="2017-01-12T10:08:03Z">
+  <suite name="Default suite" duration-ms="59597" started-at="2017-01-12T10:52:28Z" finished-at="2017-01-12T10:53:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="69170" started-at="2017-01-12T10:06:54Z" finished-at="2017-01-12T10:08:03Z">
-      <class name="bahaso.testing.web.BoxMatchListen_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.BoxMatchListen_TestCase@ae45eb6]" name="beforeMethod" is-config="true" duration-ms="19100" started-at="2017-01-12T17:06:54Z" finished-at="2017-01-12T17:07:13Z">
+    <test name="Default test" duration-ms="59597" started-at="2017-01-12T10:52:28Z" finished-at="2017-01-12T10:53:28Z">
+      <class name="bahaso.testing.web.BoxMatchListPicture_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@ae45eb6]" name="beforeMethod" is-config="true" duration-ms="20418" started-at="2017-01-12T17:52:28Z" finished-at="2017-01-12T17:52:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.BoxMatchListen_TestCase@ae45eb6]" name="answerRight" duration-ms="14755" started-at="2017-01-12T17:07:13Z" finished-at="2017-01-12T17:07:28Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@ae45eb6]" name="answerRight" duration-ms="8319" started-at="2017-01-12T17:52:49Z" finished-at="2017-01-12T17:52:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.BoxMatchListen_TestCase@ae45eb6]" name="after" is-config="true" duration-ms="902" started-at="2017-01-12T17:07:28Z" finished-at="2017-01-12T17:07:29Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@ae45eb6]" name="after" is-config="true" duration-ms="894" started-at="2017-01-12T17:52:57Z" finished-at="2017-01-12T17:52:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.BoxMatchListen_TestCase@ae45eb6]" name="beforeMethod" is-config="true" duration-ms="18968" started-at="2017-01-12T17:07:29Z" finished-at="2017-01-12T17:07:48Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@ae45eb6]" name="beforeMethod" is-config="true" duration-ms="20751" started-at="2017-01-12T17:52:58Z" finished-at="2017-01-12T17:53:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.BoxMatchListen_TestCase@ae45eb6]" name="answerWrong" duration-ms="14628" started-at="2017-01-12T17:07:48Z" finished-at="2017-01-12T17:08:02Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@ae45eb6]" name="answerWrong" duration-ms="8346" started-at="2017-01-12T17:53:19Z" finished-at="2017-01-12T17:53:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.BoxMatchListen_TestCase@ae45eb6]" name="after" is-config="true" duration-ms="802" started-at="2017-01-12T17:08:02Z" finished-at="2017-01-12T17:08:03Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.BoxMatchListPicture_TestCase@ae45eb6]" name="after" is-config="true" duration-ms="853" started-at="2017-01-12T17:53:27Z" finished-at="2017-01-12T17:53:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.BoxMatchListen_TestCase -->
+      </class> <!-- bahaso.testing.web.BoxMatchListPicture_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -23,9 +23,7 @@ public class BoxMatchListPicture_TestCase extends General{
 	LandingPage landingPage = null;
 	BoxMatchListPicture boxMatchListPicture = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
-	//String[] answer = {"on"};
+	String[] answer = {"on"};
 	
 
 	@BeforeMethod
@@ -48,7 +46,7 @@ public class BoxMatchListPicture_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = boxMatchListPicture.getAnswerData(cursor);
+	  answer = boxMatchList.getAnswerData(cursor);
   	}
 	
 	@Test

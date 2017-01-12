@@ -30,7 +30,7 @@ public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 	
 	@Override
 	public Object getAnswerData(Document data) {
-		ArrayList<Document> answer = (ArrayList<Document>) data.get("sentences");
+		ArrayList<Document> answer = (ArrayList<Document>) data.get("answers");
 		return answer;
 	}
 	

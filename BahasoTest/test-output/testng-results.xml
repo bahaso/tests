@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27229" started-at="2017-01-12T13:03:05Z" finished-at="2017-01-12T13:03:32Z">
+  <suite name="Default suite" duration-ms="38925" started-at="2017-01-12T13:11:34Z" finished-at="2017-01-12T13:12:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27229" started-at="2017-01-12T13:03:05Z" finished-at="2017-01-12T13:03:32Z">
-      <class name="bahaso.testing.web.ListenTranslate_TestCase">
-        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.ListenTranslate_TestCase@47c62251]" name="before" is-config="true" duration-ms="20033" started-at="2017-01-12T20:03:05Z" finished-at="2017-01-12T20:03:25Z">
+    <test name="Default test" duration-ms="38925" started-at="2017-01-12T13:11:34Z" finished-at="2017-01-12T13:12:13Z">
+      <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoice_TestCase@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="19116" started-at="2017-01-12T20:11:34Z" finished-at="2017-01-12T20:11:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- before -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.ListenTranslate_TestCase@47c62251]" name="answerWrong" duration-ms="6267" started-at="2017-01-12T20:03:25Z" finished-at="2017-01-12T20:03:31Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoice_TestCase@5c3bd550]" name="answerWrong" duration-ms="18903" started-at="2017-01-12T20:11:54Z" finished-at="2017-01-12T20:12:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.ListenTranslate_TestCase@47c62251]" name="after" is-config="true" duration-ms="915" started-at="2017-01-12T20:03:31Z" finished-at="2017-01-12T20:03:32Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoice_TestCase@5c3bd550]" name="after" is-config="true" duration-ms="891" started-at="2017-01-12T20:12:12Z" finished-at="2017-01-12T20:12:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.ListenTranslate_TestCase -->
+      </class> <!-- bahaso.testing.web.LittleBoxMultipleChoice_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

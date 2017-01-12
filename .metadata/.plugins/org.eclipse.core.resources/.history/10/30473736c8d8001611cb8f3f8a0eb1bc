@@ -26,8 +26,6 @@ public class LittleBoxMultipleChoice_TestCase extends General{
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	ArrayList<ArrayList<String>> choices = new ArrayList<ArrayList<String>>();
 	ArrayList<String> choice = new ArrayList<String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
 	
 	@Before
 	public void before(){
@@ -60,7 +58,7 @@ public class LittleBoxMultipleChoice_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = littleBoxMultipleChoice.getAnswerData(cursor);
+	  answer = boxMatchListen.getAnswerData(cursor);
   	}
 	
 	@Test

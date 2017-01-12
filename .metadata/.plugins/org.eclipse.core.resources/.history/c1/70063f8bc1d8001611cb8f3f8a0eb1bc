@@ -23,8 +23,7 @@ public class ListenSelectMultipleBox_TestCase extends General{
 	LandingPage landingPage = null;
 	ListenSelectMultipleBox listenSelectMultipleBox = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
+	String[] answer = {"beautiful","handsome","awesome"};
 	
 	@BeforeMethod
   	public void beforeMethod() {
@@ -36,7 +35,7 @@ public class ListenSelectMultipleBox_TestCase extends General{
 	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/568a22d9938e8e8e4f8b456a");
 	  
-	  //Get Case ID
+	//Get Case ID
 	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
 	  
 	  //Get Data from Database
@@ -46,7 +45,7 @@ public class ListenSelectMultipleBox_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = listenSelectMultipleBox.getAnswerData(cursor);
+	  answer = listenRecord.getAnswerData(cursor);
   	}
 	
 	@Test

@@ -46,7 +46,7 @@ public class ListenSelectMultipleBox_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = listenSelectMultipleBox.getAnswerData(cursor);
+	  answer = listenRecord.getAnswerData(cursor);
   	}
 	
 	@Test

@@ -26,7 +26,7 @@ public class ListenSelectMultipleBox extends ExcercisePage implements answerLess
 	
 	@Override
 	public Object getAnswerData(Document data) {
-		ArrayList<Document> answer = (ArrayList<Document>) data.get("answer");
+		ArrayList<Document> answer = (ArrayList<Document>) data.get("answers");
 		return answer;
 	}
 	
@@ -68,7 +68,7 @@ public class ListenSelectMultipleBox extends ExcercisePage implements answerLess
 							break;
 						}
 					}
-					else if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+					else if(answer[i].equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 						break;

@@ -24,8 +24,8 @@ public class ListenRecordPicture_TestCase extends General{
 	ListenRecordPicture listenRecordPicture = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	ArrayList<ArrayList<String>> choices = new ArrayList<ArrayList<String>>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
+	ArrayList<String> choice = new ArrayList<String>();
+	String answer = "I am from the united kingdom.";
 	
 
 	@BeforeMethod

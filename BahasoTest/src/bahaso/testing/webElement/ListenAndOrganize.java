@@ -7,8 +7,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import bahaso.testing.web.answerLesson;
-
 public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> draggable = new ArrayList<WebElement>();
 	public ArrayList<WebElement> droppable = new ArrayList<WebElement>();

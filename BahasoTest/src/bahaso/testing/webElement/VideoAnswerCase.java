@@ -6,8 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import bahaso.testing.web.answerLesson;
-
 public class VideoAnswerCase extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> choices;
 	public WebElement microphoneButton;

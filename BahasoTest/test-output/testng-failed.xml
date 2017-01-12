@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.web.Sublesson">
+      <class name="bahaso.testing.web.BoxMatchDissappear_TestCase">
         <methods>
-          <include name="Simulation"/>
+          <include name="answerRight"/>
           <include name="beforeMethod"/>
           <include name="after"/>
         </methods>
-      </class> <!-- bahaso.testing.web.Sublesson -->
+      </class> <!-- bahaso.testing.web.BoxMatchDissappear_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

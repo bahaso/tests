@@ -4,8 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import bahaso.testing.web.answerLesson;
-
 public class TrueFalseListen extends ExcercisePage implements answerLesson{
 	public WebElement instruction = null;
 	public WebElement question = null;

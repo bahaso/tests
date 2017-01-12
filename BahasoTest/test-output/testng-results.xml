@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="204070" started-at="2017-01-09T11:55:54Z" finished-at="2017-01-09T11:59:18Z">
+  <suite name="Default suite" duration-ms="44959" started-at="2017-01-12T08:50:51Z" finished-at="2017-01-12T08:51:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="204070" started-at="2017-01-09T11:55:54Z" finished-at="2017-01-09T11:59:18Z">
-      <class name="bahaso.testing.web.Sublesson">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="beforeMethod" is-config="true" duration-ms="19842" started-at="2017-01-09T18:55:54Z" finished-at="2017-01-09T18:56:14Z">
+    <test name="Default test" duration-ms="44959" started-at="2017-01-12T08:50:51Z" finished-at="2017-01-12T08:51:36Z">
+      <class name="bahaso.testing.web.BoxMatchDissappear_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.BoxMatchDissappear_TestCase@47c62251]" name="beforeMethod" is-config="true" duration-ms="27156" started-at="2017-01-12T15:50:51Z" finished-at="2017-01-12T15:51:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="Simulation()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="Simulation" duration-ms="183234" started-at="2017-01-09T18:56:14Z" finished-at="2017-01-09T18:59:17Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.BoxMatchDissappear_TestCase@47c62251]" name="answerWrong" duration-ms="16928" started-at="2017-01-12T15:51:18Z" finished-at="2017-01-12T15:51:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Simulation -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="after" is-config="true" duration-ms="979" started-at="2017-01-09T18:59:17Z" finished-at="2017-01-09T18:59:18Z">
+        </test-method> <!-- answerWrong -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.BoxMatchDissappear_TestCase@47c62251]" name="after" is-config="true" duration-ms="862" started-at="2017-01-12T15:51:35Z" finished-at="2017-01-12T15:51:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.Sublesson -->
+      </class> <!-- bahaso.testing.web.BoxMatchDissappear_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

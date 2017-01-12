@@ -8,7 +8,6 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.support.ui.ExpectedConditions"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.RegisterPage"/>
-<fullyQualifiedTypeName name="bahaso.testing.webElement.LoginPage"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LostWordListen"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LandingPage"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
@@ -17,7 +16,6 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Action"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchList"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListPicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListen"/>
@@ -25,7 +23,6 @@
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchPicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.ExcercisePage"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchSentence"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.junit.BeforeClass"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="com.mongodb.DB"/>
@@ -50,4 +47,8 @@
 <fullyQualifiedTypeName name="bahaso.testing.web.answerLesson"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LoginPage"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.awt.print.Printable"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

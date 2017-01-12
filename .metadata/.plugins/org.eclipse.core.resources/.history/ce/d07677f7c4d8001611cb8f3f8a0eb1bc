@@ -70,7 +70,7 @@ public class ListenSelectSingleBox extends ExcercisePage implements answerLesson
 							break;
 						}
 					}
-					else if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+					else if(answer[i].equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 						break;

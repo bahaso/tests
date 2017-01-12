@@ -46,7 +46,7 @@ public class ListenSelectSingleBox_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = listenSelectSingleBox.getAnswerData(cursor);
+	  answer = listenSelectPicture.getAnswerData(cursor);
   	}
 	
 	@Test

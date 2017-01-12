@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38925" started-at="2017-01-12T13:11:34Z" finished-at="2017-01-12T13:12:13Z">
+  <suite name="Default suite" duration-ms="27555" started-at="2017-01-12T13:18:19Z" finished-at="2017-01-12T13:18:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38925" started-at="2017-01-12T13:11:34Z" finished-at="2017-01-12T13:12:13Z">
-      <class name="bahaso.testing.web.LittleBoxMultipleChoice_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoice_TestCase@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="19116" started-at="2017-01-12T20:11:34Z" finished-at="2017-01-12T20:11:54Z">
+    <test name="Default test" duration-ms="27555" started-at="2017-01-12T13:18:19Z" finished-at="2017-01-12T13:18:46Z">
+      <class name="bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="18374" started-at="2017-01-12T20:18:19Z" finished-at="2017-01-12T20:18:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoice_TestCase@5c3bd550]" name="answerWrong" duration-ms="18903" started-at="2017-01-12T20:11:54Z" finished-at="2017-01-12T20:12:12Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase@5c3bd550]" name="answerWrong" duration-ms="8274" started-at="2017-01-12T20:18:37Z" finished-at="2017-01-12T20:18:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoice_TestCase@5c3bd550]" name="after" is-config="true" duration-ms="891" started-at="2017-01-12T20:12:12Z" finished-at="2017-01-12T20:12:13Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase@5c3bd550]" name="after" is-config="true" duration-ms="892" started-at="2017-01-12T20:18:45Z" finished-at="2017-01-12T20:18:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.LittleBoxMultipleChoice_TestCase -->
+      </class> <!-- bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

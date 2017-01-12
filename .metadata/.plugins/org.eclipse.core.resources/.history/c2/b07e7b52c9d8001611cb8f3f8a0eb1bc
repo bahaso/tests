@@ -60,7 +60,7 @@ public class LittleBoxMultipleChoicePicture_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = littleBoxMultipleChoicePicture.getAnswerData(cursor);
+	  answer = littleBoxMultipleChoice.getAnswerData(cursor);
   	}
 	
 	@Test

@@ -48,7 +48,7 @@ public class BoxMatchPicture_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = boxMatchPicture.getAnswerData(cursor);
+	  answer = boxMatchListen.getAnswerData(cursor);
   	}
 	
 	@Test

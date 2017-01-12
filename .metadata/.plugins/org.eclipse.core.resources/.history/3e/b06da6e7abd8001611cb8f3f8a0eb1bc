@@ -23,9 +23,7 @@ public class BoxMatchList_TestCase extends General{
 	LandingPage landingPage = null;
 	BoxMatchList boxMatchList = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
-	//String[] answer = {"is","is","is","are"};
+	String[] answer = {"is","is","is","are"};
 	
 
 	@BeforeMethod
@@ -48,7 +46,7 @@ public class BoxMatchList_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = boxMatchList.getAnswerData(cursor);
+	  answer = boxMatchDialog.getAnswerData(cursor);
   	}
 	
 	@Test

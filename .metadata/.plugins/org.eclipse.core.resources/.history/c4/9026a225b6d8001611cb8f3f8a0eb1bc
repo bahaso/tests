@@ -30,8 +30,8 @@ public class BoxMatchParagraph extends ExcercisePage implements answerLesson{
 	
 	@Override
 	public Object getAnswerData(Document data) {
-		ArrayList<Document> answer = (ArrayList<Document>) data.get("answers");
-		return answer;
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	//operation
@@ -39,10 +39,10 @@ public class BoxMatchParagraph extends ExcercisePage implements answerLesson{
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			ArrayList<String> answer = (ArrayList<String>) ans;
-			for(int i=0;i<answer.size();i++){
+			String[] answer = (String[])ans;
+			for(int i=0;i<answer.length;i++){
 				for(int j=0;j<getDraggable().size();j++){
-					if(answer.get(i).equals(getDraggable().get(j).getText()) && getDraggable().get(j).getAttribute("answer-id").equals("666")){
+					if(answer[i].equals(getDraggable().get(j).getText()) && getDraggable().get(j).getAttribute("answer-id").equals("666")){
 						action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 						//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 						Thread.sleep(2000);
@@ -64,11 +64,11 @@ public class BoxMatchParagraph extends ExcercisePage implements answerLesson{
 		try {
 			Thread.sleep(3000);
 			int wrong = 1;
-			ArrayList<String> answer = (ArrayList<String>) ans;
+			String[] answer = (String[])ans;
 			for(int i=0;i<getDroppable().size();i++){
 				for(int j=0;j<getDraggable().size();j++){
 					if(wrong>0){
-						if(answer.get(i).equals(getDraggable().get(j).getText())==false && getDraggable().get(i).getAttribute("answer-id").equals("666")){
+						if(answer[i].equals(getDraggable().get(j).getText())==false && getDraggable().get(i).getAttribute("answer-id").equals("666")){
 							action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 							wrong = 0;

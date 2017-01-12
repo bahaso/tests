@@ -23,9 +23,7 @@ public class BoxMatchParagraph_TestCase extends General{
 	LandingPage landingPage = null;
 	BoxMatchParagraph boxMatchParagraph = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
-	//String[] answer = {"Korean","funny guy","Japan","Japanese","Tokyo","quiet"};
+	String[] answer = {"Korean","funny guy","Japan","Japanese","Tokyo","quiet"};
 	
 
 	@BeforeMethod

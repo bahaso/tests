@@ -26,16 +26,11 @@ public class BoxMatchDialog_TestCase extends General{
 	BoxMatchDialog boxMatchDialog = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	MongoClient mongoClient = null;
-	MongoDatabase db = null;
 	Object answer;
 	
 
 	@BeforeMethod
   	public void beforeMethod() {
-	  mongoClient = new MongoClient("localhost", 27017);
-	  db = mongoClient.getDatabase("bahaso");	
-	  
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
@@ -48,7 +43,6 @@ public class BoxMatchDialog_TestCase extends General{
 	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
 	  
 	  //Get Data from Database
-	  System.out.println(buttonPage.get(0).getAttribute("data-id"));
 	  MongoCollection<Document> table = db.getCollection("case");
 	  BasicDBObject searchQuery = new BasicDBObject();
 	  searchQuery.put("_id", new ObjectId(buttonPage.get(0).getAttribute("data-id")));

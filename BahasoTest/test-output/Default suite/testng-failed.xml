@@ -7,7 +7,6 @@
         <methods>
           <include name="answerRight"/>
           <include name="beforeMethod"/>
-          <include name="after"/>
         </methods>
       </class> <!-- bahaso.testing.web.BoxMatchDissappear_TestCase -->
     </classes>

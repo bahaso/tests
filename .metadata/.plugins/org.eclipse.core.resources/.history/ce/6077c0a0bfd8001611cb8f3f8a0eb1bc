@@ -27,6 +27,7 @@ public class ListenRecord_TestCase extends General{
 	ArrayList<String> choice = new ArrayList<String>();
 	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
 	Object answer;
+	String answer = "Garage";
 	
 
 	@BeforeMethod
@@ -49,7 +50,7 @@ public class ListenRecord_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = listenRecord.getAnswerData(cursor);
+	  answer = listenAndOrganize.getAnswerData(cursor);
   	}
 	
 	@Test

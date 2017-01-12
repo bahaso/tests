@@ -25,8 +25,7 @@ public class ListenRecord_TestCase extends General{
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	ArrayList<ArrayList<String>> choices = new ArrayList<ArrayList<String>>();
 	ArrayList<String> choice = new ArrayList<String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
+	String answer = "Garage";
 	
 
 	@BeforeMethod
@@ -39,7 +38,7 @@ public class ListenRecord_TestCase extends General{
 	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5684aa15938e8e15578b4585");
 	  
-	  //Get Case ID
+	//Get Case ID
 	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
 	  
 	  //Get Data from Database
@@ -49,7 +48,7 @@ public class ListenRecord_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = listenRecord.getAnswerData(cursor);
+	  answer = listenAndOrganize.getAnswerData(cursor);
   	}
 	
 	@Test

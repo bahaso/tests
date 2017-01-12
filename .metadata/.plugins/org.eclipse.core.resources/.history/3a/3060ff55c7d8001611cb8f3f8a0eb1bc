@@ -50,7 +50,7 @@ public class ListenTranslate extends ExcercisePage implements answerLesson{
 	@Override
 	public void answerWrong(Object ans){
 		try {
-			ArrayList<String> answer = (ArrayList<String>) ans;
+			String answer = (String)ans;
 			getBoxAnswer().sendKeys("aaa");
 			Thread.sleep(2000);
 			getButtonCheck().click();

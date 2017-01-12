@@ -22,7 +22,6 @@ import bahaso.testing.webElement.ListenTranslate;
 public class ListenTranslate_TestCase extends General{
 	LandingPage landingPage = null;
 	ListenTranslate listenTranslate = null;
-	HashMap<String, String> LoginData = new HashMap<String, String>();
 	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
 	Object answer;
 	

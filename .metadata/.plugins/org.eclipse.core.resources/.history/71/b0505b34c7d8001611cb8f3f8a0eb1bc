@@ -23,8 +23,7 @@ public class ListenTranslate_TestCase extends General{
 	LandingPage landingPage = null;
 	ListenTranslate listenTranslate = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
+	String answer = "Keponakan Perempuan";
 	
 	@BeforeMethod
   	public void before() {
@@ -46,7 +45,7 @@ public class ListenTranslate_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = listenTranslate.getAnswerData(cursor);
+	  answer = listenAndOrganize.getAnswerData(cursor);
   	}
 	
 	@Test

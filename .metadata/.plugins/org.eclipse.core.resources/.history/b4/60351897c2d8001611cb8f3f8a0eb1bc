@@ -49,7 +49,7 @@ public class ListenSelectPicture_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = listenSelectPicture.getAnswerData(cursor);
+	  answer = listenRecord.getAnswerData(cursor);
   	}
 	
 	@Test

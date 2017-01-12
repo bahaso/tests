@@ -23,8 +23,7 @@ public class ListenSelectPicture_TestCase extends General{
 	LandingPage landingPage = null;
 	ListenSelectPicture listenSelectPicture = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
+	String[] answer = {"two tables"};
 	
 	/**
 	 * 
@@ -49,7 +48,7 @@ public class ListenSelectPicture_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = listenSelectPicture.getAnswerData(cursor);
+	  answer = listenRecord.getAnswerData(cursor);
   	}
 	
 	@Test

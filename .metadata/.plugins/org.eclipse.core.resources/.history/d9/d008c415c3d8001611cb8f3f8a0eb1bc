@@ -38,10 +38,10 @@ public class ListenSelectPicture extends ExcercisePage implements answerLesson{
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			ArrayList<String> answer = (ArrayList<String>) ans;
-			for(int i=0;i<answer.size();i++){
+			String[] answer = (String[])ans;
+			for(int i=0;i<answer.length;i++){
 				for(int j=0;j<getChoices().size();j++){
-					if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+					if(answer[i].equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 					}
@@ -59,18 +59,18 @@ public class ListenSelectPicture extends ExcercisePage implements answerLesson{
 		try {
 			Thread.sleep(3000);
 			int wrong = 1;
-			ArrayList<String> answer = (ArrayList<String>) ans;
-			for(int i=0;i<answer.size();i++){
+			String[] answer = (String[])ans;
+			for(int i=0;i<answer.length;i++){
 				for(int j=0;j<getChoices().size();j++){
 					if(wrong>0){
-						if(!answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+						if(!answer[i].equals(getChoices().get(j).getAttribute("value"))){
 							getChoice(getChoices().get(j).getAttribute("id")).click();
 							wrong = 0;
 							Thread.sleep(2000);
 							break;
 						}
 					}
-					else if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+					else if(answer[i].equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 						break;

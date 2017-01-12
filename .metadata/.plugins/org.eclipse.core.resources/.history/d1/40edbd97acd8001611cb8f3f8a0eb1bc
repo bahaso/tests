@@ -23,8 +23,7 @@ public class BoxMatchListen_TestCase extends General{
 	LandingPage landingPage = null;
 	BoxMatchListen boxMatchListen = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
+	String[] answer = {"A","U","O","I"};
 	
 
 	@BeforeMethod
@@ -47,7 +46,7 @@ public class BoxMatchListen_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = boxMatchListen.getAnswerData(cursor);
+	  answer = boxMatchList.getAnswerData(cursor);
   	}
 	
 	@Test

@@ -23,9 +23,7 @@ public class DragMultipleChoice_TestCase extends General{
 	LandingPage landingPage = null;
 	DragMultipleChoice dragMultipleChoice = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
-	//String[] answer = {"him"};
+	String[] answer = {"him"};
 	
 
 	@BeforeMethod
@@ -38,7 +36,7 @@ public class DragMultipleChoice_TestCase extends General{
 	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/568b3969938e8e4d3d8b4656");
 	  
-	  //Get Case ID
+	//Get Case ID
 	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
 	  
 	  //Get Data from Database
@@ -48,7 +46,7 @@ public class DragMultipleChoice_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = dragMultipleChoice.getAnswerData(cursor);
+	  answer = boxMatchListPicture.getAnswerData(cursor);
   	}
 	
 	@Test

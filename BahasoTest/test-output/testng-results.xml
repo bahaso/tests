@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36849" started-at="2017-01-12T11:20:58Z" finished-at="2017-01-12T11:21:35Z">
+  <suite name="Default suite" duration-ms="29654" started-at="2017-01-12T11:32:26Z" finished-at="2017-01-12T11:32:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36849" started-at="2017-01-12T11:20:58Z" finished-at="2017-01-12T11:21:35Z">
-      <class name="bahaso.testing.web.BoxMatchSentence_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.BoxMatchSentence_TestCase@47c62251]" name="beforeMethod" is-config="true" duration-ms="23243" started-at="2017-01-12T18:20:58Z" finished-at="2017-01-12T18:21:22Z">
+    <test name="Default test" duration-ms="29654" started-at="2017-01-12T11:32:26Z" finished-at="2017-01-12T11:32:56Z">
+      <class name="bahaso.testing.web.DragMultipleChoice_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.DragMultipleChoice_TestCase@47c62251]" name="beforeMethod" is-config="true" duration-ms="20400" started-at="2017-01-12T18:32:26Z" finished-at="2017-01-12T18:32:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.BoxMatchSentence_TestCase@47c62251]" name="answerWrong" duration-ms="12646" started-at="2017-01-12T18:21:22Z" finished-at="2017-01-12T18:21:34Z">
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.DragMultipleChoice_TestCase@47c62251]" name="answerWrong" duration-ms="8308" started-at="2017-01-12T18:32:47Z" finished-at="2017-01-12T18:32:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.BoxMatchSentence_TestCase@47c62251]" name="after" is-config="true" duration-ms="948" started-at="2017-01-12T18:21:34Z" finished-at="2017-01-12T18:21:35Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.DragMultipleChoice_TestCase@47c62251]" name="after" is-config="true" duration-ms="933" started-at="2017-01-12T18:32:55Z" finished-at="2017-01-12T18:32:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.BoxMatchSentence_TestCase -->
+      </class> <!-- bahaso.testing.web.DragMultipleChoice_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

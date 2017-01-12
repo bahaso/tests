@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.web.BoxMatchListPicture_TestCase">
+      <class name="bahaso.testing.web.DragMultipleChoice_TestCase">
         <methods>
-          <include name="answerRight"/>
-          <include name="after"/>
           <include name="beforeMethod"/>
+          <include name="answerRight"/>
         </methods>
-      </class> <!-- bahaso.testing.web.BoxMatchListPicture_TestCase -->
+      </class> <!-- bahaso.testing.web.DragMultipleChoice_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -30,9 +30,8 @@ public class DragMultipleChoice extends ExcercisePage implements answerLesson{
 	
 	@Override
 	public Object getAnswerData(Document data) {
-		ArrayList<String> answer = new ArrayList<String>();
+		ArrayList<Document> answer = (ArrayList<Document>) data.get("answer");
 		String ans = (String) data.get("answer");
-		answer.add(ans);
 		return answer;
 	}
 	

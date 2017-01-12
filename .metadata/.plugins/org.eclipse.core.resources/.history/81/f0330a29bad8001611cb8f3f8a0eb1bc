@@ -25,7 +25,7 @@ public class DragMultipleChoice_TestCase extends General{
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
 	Object answer;
-	//String[] answer = {"him"};
+	String[] answer = {"him"};
 	
 
 	@BeforeMethod
@@ -48,7 +48,7 @@ public class DragMultipleChoice_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = dragMultipleChoice.getAnswerData(cursor);
+	  answer = boxMatchListPicture.getAnswerData(cursor);
   	}
 	
 	@Test

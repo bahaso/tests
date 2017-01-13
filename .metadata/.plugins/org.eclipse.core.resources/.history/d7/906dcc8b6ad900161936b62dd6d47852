@@ -25,8 +25,8 @@ public class PictureMultipleChoice extends ExcercisePage implements answerLesson
 	
 	@Override
 	public Object getAnswerData(Document data) {
-		String answer = (String) data.get("answer");
-		return answer;
+		// TODO Auto-generated method stub
+		return null;
 	}	
 	
 	//operation

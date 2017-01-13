@@ -25,7 +25,9 @@ public class PictureMultipleChoice extends ExcercisePage implements answerLesson
 	
 	@Override
 	public Object getAnswerData(Document data) {
-		String answer = (String) data.get("answer");
+		ArrayList<String> answer = new ArrayList<String>();
+		String ans = (String) data.get("answer");
+		answer.add(ans);
 		return answer;
 	}	
 	

@@ -25,7 +25,9 @@ public class PictureMultipleChoice extends ExcercisePage implements answerLesson
 	
 	@Override
 	public Object getAnswerData(Document data) {
-		String answer = (String) data.get("answer");
+		ArrayList<String> answer = new ArrayList<String>();
+		String ans = (String) data.get("answer");
+		answer.add(ans);
 		return answer;
 	}	
 	
@@ -34,7 +36,7 @@ public class PictureMultipleChoice extends ExcercisePage implements answerLesson
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			String answer = (String)ans;
+			ArrayList<String> answer = (ArrayList<String>) ans;
 			for(int i=0;i<getAllAnswer().size();i++){
 				if(answer.equals(getAllAnswer().get(i).getAttribute("value"))){
 					getAnswerLabel(getAllAnswer().get(i).getAttribute("id")).click();

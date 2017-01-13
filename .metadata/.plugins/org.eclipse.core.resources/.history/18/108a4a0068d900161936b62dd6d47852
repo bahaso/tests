@@ -34,7 +34,7 @@ public class LostWordType_TestCase extends General{
 	  landingPage = new LandingPage(driver);
 	  lostWordType = new LostWordType(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56849f87938e8e15578b457f");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56826370938e8eed498b4568");
 	  
 	  //Get Case ID
 	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));

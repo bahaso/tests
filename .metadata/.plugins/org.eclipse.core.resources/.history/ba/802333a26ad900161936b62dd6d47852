@@ -17,24 +17,23 @@ import com.mongodb.client.MongoCollection;
 
 import bahaso.testing.general.General;
 import bahaso.testing.webElement.LandingPage;
-import bahaso.testing.webElement.LostWordType;
+import bahaso.testing.webElement.PictureMultipleChoice;
 
-public class LostWordType_TestCase extends General{
+public class PictureMultipleChoice_TestCase extends General{
 	LandingPage landingPage = null;
-	LostWordType lostWordType = null;
+	PictureMultipleChoice PictureMultipleChoice = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
+	String answer = "His name is John.";
 	
 	@BeforeMethod
-  	public void before() {
+  	public void beforeMethod() {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
 	  landingPage = new LandingPage(driver);
-	  lostWordType = new LostWordType(driver);
+	  PictureMultipleChoice = new PictureMultipleChoice(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56849f87938e8e15578b457f");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5679286f938e8e0a3a8b4579");
 	  
 	  //Get Case ID
 	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
@@ -46,20 +45,20 @@ public class LostWordType_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = lostWordType.getAnswerData(cursor);
+	  answer = boxMatchList.getAnswerData(cursor);
   	}
 	
 	@Test
   	public void answerRight() throws InterruptedException{
-		lostWordType.answerRight(answer);
-		String status[] = lostWordType.getLessonStatus().getAttribute("class").split(" ");
+		PictureMultipleChoice.answerRight(answer);
+		String status[] = PictureMultipleChoice.getLessonStatus().getAttribute("class").split(" ");
 		Assert.assertEquals(status[status.length-1], "true");
 	}
 	
 	@Test
   	public void answerWrong() throws InterruptedException{
-		lostWordType.answerWrong(answer);
-		String status[] = lostWordType.getLessonStatus().getAttribute("class").split(" ");
+		PictureMultipleChoice.answerWrong(answer);
+		String status[] = PictureMultipleChoice.getLessonStatus().getAttribute("class").split(" ");
 		Assert.assertEquals(status[status.length-1], "false");
 	}
 	

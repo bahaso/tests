@@ -23,12 +23,6 @@ public class PictureMultipleChoice extends ExcercisePage implements answerLesson
 		return wt.waitForElement(driver, By.xpath("//label[@for='"+kelas+"']"));
 	}
 	
-	@Override
-	public Object getAnswerData(Document data) {
-		String answer = (String) data.get("answer");
-		return answer;
-	}	
-	
 	//operation
 	@Override
 	public void answerRight(Object ans){

@@ -23,7 +23,7 @@ public class TrueFalsePicture_TestCase extends General{
 	String instruction = "Tentukan benar atau salah berdasarkan gambar berikut ini";
 	String question = "Apakah pernyataan ini benar?";
 	String description = "Her name is Kevin";
-	TrueFalsePicture TrueFalsePicture = null;
+	TrueFalsePicture trueFalsePicture = null;
 	LandingPage landingPage = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
@@ -34,7 +34,7 @@ public class TrueFalsePicture_TestCase extends General{
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
-	  TrueFalsePicture = new TrueFalsePicture(driver);
+	  trueFalsePicture = new TrueFalsePicture(driver);
 	  landingPage = new LandingPage(driver);
 	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/567929fb938e8e0a3a8b457a");
@@ -49,29 +49,41 @@ public class TrueFalsePicture_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = TrueFalsePicture.getAnswerData(cursor);
+	  answer = trueFalsePicture.getAnswerData(cursor);
   	}
 	
 	@Test
   	public void cekAllElement() throws InterruptedException{
 		Thread.sleep(2000);
-		Assert.assertEquals(TrueFalsePicture.getInstruction().getText(), instruction);
-		Assert.assertEquals(TrueFalsePicture.getQuestion().getText(), question);
-		Assert.assertEquals(TrueFalsePicture.getDescription().getText(), description);
+		Assert.assertEquals(trueFalsePicture.getInstruction().getText(), instruction);
+		Assert.assertEquals(trueFalsePicture.getQuestion().getText(), question);
+		Assert.assertEquals(trueFalsePicture.getDescription().getText(), description);
 	}
 	
 	@Test
   	public void answerRight() throws InterruptedException{
-		TrueFalsePicture.answerRight(answer);
-		String status[] = TrueFalsePicture.getLessonStatus().getAttribute("class").split(" ");
+		Thread.sleep(2000);
+		TrueFalseListen.answerRight(answer);
+		String status[] = TrueFalseListen.getLessonStatus().getAttribute("class").split(" ");
 		Assert.assertEquals(status[status.length-1], "true");
 	}
 	
 	@Test
   	public void answerWrong() throws InterruptedException{
-		TrueFalsePicture.answerWrong(answer);
-		String status[] = TrueFalsePicture.getLessonStatus().getAttribute("class").split(" ");
-		Assert.assertEquals(status[status.length-1], "false");
+		Thread.sleep(2000);
+		if(!answer){
+			trueFalsePicture.getTrueButton().click();
+			trueFalsePicture.getButtonCheck().click();
+			Thread.sleep(2000);
+			String status[] = trueFalsePicture.getLessonStatus().getAttribute("class").split(" ");
+			Assert.assertEquals(status[status.length-1], "false");
+		}else{
+			trueFalsePicture.getFalseButton().click();
+			trueFalsePicture.getButtonCheck().click();
+			Thread.sleep(2000);
+			String status[] = trueFalsePicture.getLessonStatus().getAttribute("class").split(" ");
+			Assert.assertEquals(status[status.length-1], "false");
+		}
 	}
 	
 	@AfterMethod

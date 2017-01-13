@@ -70,7 +70,7 @@ public class TrueFalsePicture_TestCase extends General{
 	@Test
   	public void answerWrong() throws InterruptedException{
 		TrueFalsePicture.answerWrong(answer);
-		String status[] = TrueFalsePicture.getLessonStatus().getAttribute("class").split(" ");
+		String status[] = TrueFalseListen.getLessonStatus().getAttribute("class").split(" ");
 		Assert.assertEquals(status[status.length-1], "false");
 	}
 	

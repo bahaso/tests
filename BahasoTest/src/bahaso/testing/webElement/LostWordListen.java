@@ -2,6 +2,7 @@ package bahaso.testing.webElement;
 
 import java.util.ArrayList;
 
+import org.bson.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,14 +25,29 @@ public class LostWordListen extends ExcercisePage implements answerLesson{
 		return audioButton;
 	}
 	
+	@Override
+	public Object getAnswerData(Document data) {
+		ArrayList<Document> ans = (ArrayList<Document>) data.get("sentences");
+		ArrayList<String> answer = new ArrayList<String>();
+		for(int i=0;i<ans.size();i++){
+			ArrayList<String> ans2 = (ArrayList<String>) ans.get(i).get("answer");
+			if(ans2.size()>0){
+				for(int j=0;j<ans2.size();j++){
+					answer.add((String) ans2.get(j));
+				}
+			}
+		}
+		return answer;
+	}
+	
 	//operation
 	@Override
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[] answer = (String[])ans;
-			for(int i=0;i<answer.length;i++){
-				getBoxAnswer().get(i).sendKeys(answer[i]);
+			ArrayList<String> answer= (ArrayList<String>) ans;
+			for(int i=0;i<answer.size();i++){
+				getBoxAnswer().get(i).sendKeys(answer.get(i));
 				Thread.sleep(3000);
 			}
 			getButtonCheck().click();
@@ -47,8 +63,8 @@ public class LostWordListen extends ExcercisePage implements answerLesson{
 	public void answerWrong(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[] answer = (String[])ans;
-			for(int i=0;i<answer.length;i++){
+			ArrayList<String> answer= (ArrayList<String>) ans;
+			for(int i=0;i<answer.size();i++){
 				getBoxAnswer().get(i).sendKeys("aaa");
 				Thread.sleep(3000);
 			}
@@ -59,6 +75,4 @@ public class LostWordListen extends ExcercisePage implements answerLesson{
 			e.printStackTrace();
 		}
 	}
-	
-	
 }

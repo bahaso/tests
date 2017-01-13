@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27555" started-at="2017-01-12T13:18:19Z" finished-at="2017-01-12T13:18:46Z">
+  <suite name="Default suite" duration-ms="37625" started-at="2017-01-13T07:03:26Z" finished-at="2017-01-13T07:04:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27555" started-at="2017-01-12T13:18:19Z" finished-at="2017-01-12T13:18:46Z">
-      <class name="bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase@5c3bd550]" name="beforeMethod" is-config="true" duration-ms="18374" started-at="2017-01-12T20:18:19Z" finished-at="2017-01-12T20:18:37Z">
+    <test name="Default test" duration-ms="37625" started-at="2017-01-13T07:03:26Z" finished-at="2017-01-13T07:04:03Z">
+      <class name="bahaso.testing.web.LostWordListen_TestCase">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@47c62251]" name="before" is-config="true" duration-ms="21371" started-at="2017-01-13T14:03:26Z" finished-at="2017-01-13T14:03:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase@5c3bd550]" name="answerWrong" duration-ms="8274" started-at="2017-01-12T20:18:37Z" finished-at="2017-01-12T20:18:45Z">
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@47c62251]" name="answerWrong" duration-ms="15376" started-at="2017-01-13T14:03:47Z" finished-at="2017-01-13T14:04:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase@5c3bd550]" name="after" is-config="true" duration-ms="892" started-at="2017-01-12T20:18:45Z" finished-at="2017-01-12T20:18:46Z">
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.LostWordListen_TestCase@47c62251]" name="after" is-config="true" duration-ms="865" started-at="2017-01-13T14:04:02Z" finished-at="2017-01-13T14:04:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.LittleBoxMultipleChoicePicture_TestCase -->
+      </class> <!-- bahaso.testing.web.LostWordListen_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

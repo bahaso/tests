@@ -23,8 +23,7 @@ public class SentenceFormation_TestCase extends General{
 	LandingPage landingPage = null;
 	SentenceFormation sentenceFormation = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
-	Object answer;
+	String[] answer = {"Their names","are Vince","and Derek"};
 	
 
 	@BeforeMethod
@@ -47,7 +46,7 @@ public class SentenceFormation_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = sentenceFormation.getAnswerData(cursor);
+	  answer = boxMatchList.getAnswerData(cursor);
   	}
 	
 	@Test

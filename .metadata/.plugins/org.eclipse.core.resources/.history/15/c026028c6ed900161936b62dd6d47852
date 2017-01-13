@@ -47,7 +47,7 @@ public class SentenceFormation_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = sentenceFormation.getAnswerData(cursor);
+	  answer = boxMatchList.getAnswerData(cursor);
   	}
 	
 	@Test

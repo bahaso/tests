@@ -38,14 +38,8 @@ public class TrueFalseSentence extends ExcercisePage implements answerLesson{
 
 	@Override
 	public Object getAnswerData(Document data) {
-		String ans= (String) data.get("answer");
-		Boolean answer = null;
-		if(ans.equals("true")){
-			answer = true;
-		}else{
-			answer = false;
-		}
-		return answer;
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	@Override

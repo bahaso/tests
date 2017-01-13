@@ -22,7 +22,7 @@ import bahaso.testing.webElement.TrueFalseSentence;
 public class TrueFalseSentence_TestCase extends General{
 	String instruction = "Tentukan benar atau salah berdasarkan kalimat di bawah ini";
 	String description = "This necklaces is most expensive.";
-	TrueFalseSentence TrueFalseSentence = null;
+	TrueFalseSentence trueFalseSentence = null;
 	LandingPage landingPage = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
@@ -33,7 +33,7 @@ public class TrueFalseSentence_TestCase extends General{
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
 	  LoginData.put("password","mahendralubis");
-	  TrueFalseSentence = new TrueFalseSentence(driver);
+	  trueFalseSentence = new TrueFalseSentence(driver);
 	  landingPage = new LandingPage(driver);
 	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56961fde938e8e7c358b4575");
@@ -48,28 +48,50 @@ public class TrueFalseSentence_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = TrueFalseSentence.getAnswerData(cursor);
+	  answer = TrueFalseListen.getAnswerData(cursor);
   	}
 	
 	@Test
   	public void cekAllElement() throws InterruptedException{
 		Thread.sleep(2000);
-		Assert.assertEquals(TrueFalseSentence.getInstruction().getText(), instruction);
-		Assert.assertEquals(TrueFalseSentence.getDescription().getText(), description);
+		Assert.assertEquals(trueFalseSentence.getInstruction().getText(), instruction);
+		Assert.assertEquals(trueFalseSentence.getDescription().getText(), description);
 	}
 	
 	@Test
   	public void answerRight() throws InterruptedException{
-		TrueFalseSentence.answerRight(answer);
-		String status[] = TrueFalseSentence.getLessonStatus().getAttribute("class").split(" ");
-		Assert.assertEquals(status[status.length-1], "true");
+		Thread.sleep(2000);
+		if(answer){
+			trueFalseSentence.getTrueButton().click();
+			trueFalseSentence.getButtonCheck().click();
+			Thread.sleep(2000);
+			String status[] = trueFalseSentence.getLessonStatus().getAttribute("class").split(" ");
+			Assert.assertEquals(status[status.length-1], "true");
+		}else{
+			trueFalseSentence.getFalseButton().click();
+			trueFalseSentence.getButtonCheck().click();
+			Thread.sleep(2000);
+			String status[] = trueFalseSentence.getLessonStatus().getAttribute("class").split(" ");
+			Assert.assertEquals(status[status.length-1], "true");
+		}
 	}
 	
 	@Test
   	public void answerWrong() throws InterruptedException{
-		TrueFalseSentence.answerWrong(answer);
-		String status[] = TrueFalseSentence.getLessonStatus().getAttribute("class").split(" ");
-		Assert.assertEquals(status[status.length-1], "false");
+		Thread.sleep(2000);
+		if(!answer){
+			trueFalseSentence.getTrueButton().click();
+			trueFalseSentence.getButtonCheck().click();
+			Thread.sleep(2000);
+			String status[] = trueFalseSentence.getLessonStatus().getAttribute("class").split(" ");
+			Assert.assertEquals(status[status.length-1], "false");
+		}else{
+			trueFalseSentence.getFalseButton().click();
+			trueFalseSentence.getButtonCheck().click();
+			Thread.sleep(2000);
+			String status[] = trueFalseSentence.getLessonStatus().getAttribute("class").split(" ");
+			Assert.assertEquals(status[status.length-1], "false");
+		}
 	}
 	
 	@AfterMethod

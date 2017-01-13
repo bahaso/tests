@@ -49,7 +49,7 @@ public class TrueFalseListen_TestCase extends General{
 	  Document cursor = table.find(searchQuery).first();
 	  
 	  //Convert answer
-	  answer = TrueFalseListen.getAnswerData(cursor);
+	  answer = boxMatchList.getAnswerData(cursor);
   	}
 	
 	@Test

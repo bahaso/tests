@@ -51,7 +51,7 @@ public class TrueFalseListen extends ExcercisePage implements answerLesson{
 	
 	@Override
 	public Object getAnswerData(Document data) {
-		String ans= (String) data.get("answer");
+		String ans = (String) data.get("answer");
 		Boolean answer = null;
 		if(ans.equals("true")){
 			answer = true;
@@ -64,7 +64,7 @@ public class TrueFalseListen extends ExcercisePage implements answerLesson{
 	@Override
 	public void answerRight(Object ans) {
 		try {
-			Boolean answer = (boolean)ans;
+			String answer = (boolean)ans;
 			if(answer){
 				getTrueButton().click();
 			}else{

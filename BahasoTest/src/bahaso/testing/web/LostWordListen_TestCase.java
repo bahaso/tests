@@ -25,7 +25,6 @@ public class LostWordListen_TestCase extends General{
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
 	Object answer;
-	//String[] answer = {"morning","later","evening"};
 	
 	@BeforeMethod
   	public void before() {

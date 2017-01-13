@@ -1,11 +1,19 @@
 package bahaso.testing.web;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.bson.Document;
+import org.bson.types.ObjectId;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.client.MongoCollection;
 
 import bahaso.testing.general.General;
 import bahaso.testing.webElement.LandingPage;
@@ -15,8 +23,8 @@ public class ListenAndOrganize_TestCase extends General{
 	LandingPage landingPage = null;
 	ListenAndOrganize listenAndOrganize = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	String[] answer = {"Hello, my name is Michelle. I'm 33 years old.","Hello! My name is Julian.","How old are you, Julian?",
-						"I am 28 years old. Where are you from, Michelle?","I'm from Paris, France, and you?","I'm from Brussels, Belgium. "};
+	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
+	Object answer;
 	
 
 	@BeforeMethod
@@ -28,6 +36,18 @@ public class ListenAndOrganize_TestCase extends General{
 	  listenAndOrganize = new ListenAndOrganize(driver);
 	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/568a1241938e8e4d3d8b4568");
+	  
+	  //Get Case ID
+	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
+	  
+	  //Get Data from Database
+	  MongoCollection<Document> table = db.getCollection("case");
+	  BasicDBObject searchQuery = new BasicDBObject();
+	  searchQuery.put("_id", new ObjectId(buttonPage.get(0).getAttribute("data-id")));
+	  Document cursor = table.find(searchQuery).first();
+	  
+	  //Convert answer
+	  answer = listenAndOrganize.getAnswerData(cursor);
   	}
 	
 	@Test

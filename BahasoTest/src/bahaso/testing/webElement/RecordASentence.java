@@ -1,10 +1,11 @@
 package bahaso.testing.webElement;
 
+import java.util.ArrayList;
+
+import org.bson.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import bahaso.testing.web.answerLesson;
 
 public class RecordASentence extends ExcercisePage implements answerLesson{
 	public WebElement boxAnswer;
@@ -24,15 +25,22 @@ public class RecordASentence extends ExcercisePage implements answerLesson{
 		return microphoneButton;
 	}
 	
+	@Override
+	public Object getAnswerData(Document data) {
+		ArrayList<Document> answer = (ArrayList<Document>) data.get("answers");
+		return answer;
+	}
+	
 	//operation
 	@Override
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			String answer = (String)ans;
+			ArrayList<String> answer = (ArrayList<String>) ans;
+			int order = (int)(Math.random() * answer.size());
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
-			getBoxAnswer().sendKeys(answer);
+			getBoxAnswer().sendKeys(answer.get(order));
 			getButtonCheck().click();
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {
@@ -46,7 +54,7 @@ public class RecordASentence extends ExcercisePage implements answerLesson{
 	public void answerWrong(Object ans){
 		try {
 			Thread.sleep(3000);
-			String answer = (String)ans;
+			ArrayList<String> answer = (ArrayList<String>) ans;
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
 			getBoxAnswer().sendKeys("aaa");

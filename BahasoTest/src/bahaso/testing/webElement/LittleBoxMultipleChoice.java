@@ -2,11 +2,10 @@ package bahaso.testing.webElement;
 
 import java.util.ArrayList;
 
+import org.bson.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import bahaso.testing.web.answerLesson;
 
 public class LittleBoxMultipleChoice extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> question = new ArrayList<WebElement>();
@@ -38,15 +37,25 @@ public class LittleBoxMultipleChoice extends ExcercisePage implements answerLess
 		return driver.findElement(By.xpath("//label[@for='"+kelas+"']"));
 	}
 	
+	@Override
+	public Object getAnswerData(Document data) {
+		ArrayList<Document> ans = (ArrayList<Document>) data.get("questions");
+		ArrayList<String> answer = new ArrayList<String>();
+		for(int i=0;i<ans.size();i++){
+			answer.add((String) ans.get(i).get("answer"));
+		}
+		return answer;
+	}
+	
 	//operation
 	@Override
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[] answer = (String[])ans;
+			ArrayList<String> answer= (ArrayList<String>) ans;
 			for(int i=0;i<getAllAnswer().size();i++){
 				for(int j=0;j<getAllAnswer().get(i).size();j++){
-					if(answer[i].equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
+					if(answer.get(i).equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
 						getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 					}
@@ -65,10 +74,10 @@ public class LittleBoxMultipleChoice extends ExcercisePage implements answerLess
 	public void answerWrong(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[] answer = (String[])ans;
+			ArrayList<String> answer= (ArrayList<String>) ans;
 			for(int i=0;i<getAllAnswer().size();i++){
 				for(int j=0;j<getAllAnswer().get(i).size();j++){
-					if(!answer[i].equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
+					if(!answer.get(i).equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
 						getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 						break;
@@ -82,5 +91,4 @@ public class LittleBoxMultipleChoice extends ExcercisePage implements answerLess
 			e.printStackTrace();
 		}
 	}
-	
 }

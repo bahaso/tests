@@ -1,10 +1,9 @@
 package bahaso.testing.webElement;
 
+import org.bson.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import bahaso.testing.web.answerLesson;
 
 public class TrueFalseSentence extends ExcercisePage implements answerLesson{
 	public WebElement instruction = null;
@@ -34,6 +33,19 @@ public class TrueFalseSentence extends ExcercisePage implements answerLesson{
 	public WebElement getFalseButton(){
 		falseButton = wt.waitForElement(driver, By.xpath(".//*[@id='false']"));
 		return falseButton;
+	}
+	
+
+	@Override
+	public Object getAnswerData(Document data) {
+		String ans= (String) data.get("answer");
+		Boolean answer = null;
+		if(ans.equals("true")){
+			answer = true;
+		}else{
+			answer = false;
+		}
+		return answer;
 	}
 	
 	@Override

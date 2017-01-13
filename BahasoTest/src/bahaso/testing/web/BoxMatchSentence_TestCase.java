@@ -1,11 +1,19 @@
 package bahaso.testing.web;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.bson.Document;
+import org.bson.types.ObjectId;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.mongodb.BasicDBObject;
+import com.mongodb.client.MongoCollection;
 
 import bahaso.testing.general.General;
 import bahaso.testing.webElement.BoxMatchSentence;
@@ -15,7 +23,9 @@ public class BoxMatchSentence_TestCase extends General{
 	LandingPage landingPage = null;
 	BoxMatchSentence boxMatchSentence = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	String[] answer = {"Good afternoon, Sadie.","How are you doing?","Nice to see you, Britanny."};
+	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
+	Object answer;
+	//String[] answer = {"Good afternoon, Sadie.","How are you doing?","Nice to see you, Britanny."};
 	
 
 	@BeforeMethod
@@ -27,6 +37,18 @@ public class BoxMatchSentence_TestCase extends General{
 	  boxMatchSentence = new BoxMatchSentence(driver);
 	  landingPage.doLogin(LoginData);
 	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5680e70a938e8e173c8b456d");
+	  
+	  //Get Case ID
+	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
+	  
+	  //Get Data from Database
+	  MongoCollection<Document> table = db.getCollection("case");
+	  BasicDBObject searchQuery = new BasicDBObject();
+	  searchQuery.put("_id", new ObjectId(buttonPage.get(0).getAttribute("data-id")));
+	  Document cursor = table.find(searchQuery).first();
+	  
+	  //Convert answer
+	  answer = boxMatchSentence.getAnswerData(cursor);
   	}
 	
 	@Test

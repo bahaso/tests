@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="32096" started-at="2017-01-06T10:36:23Z" finished-at="2017-01-06T10:36:55Z">
+  <suite name="Default suite" duration-ms="25670" started-at="2017-01-13T10:56:32Z" finished-at="2017-01-13T10:56:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="32096" started-at="2017-01-06T10:36:23Z" finished-at="2017-01-06T10:36:55Z">
-      <class name="bahaso.testing.web.Sublesson">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="beforeMethod" is-config="true" duration-ms="20769" started-at="2017-01-06T17:36:23Z" finished-at="2017-01-06T17:36:44Z">
+    <test name="Default test" duration-ms="25670" started-at="2017-01-13T10:56:32Z" finished-at="2017-01-13T10:56:58Z">
+      <class name="bahaso.testing.web.TrueFalseSentence_TestCase">
+        <test-method status="PASS" signature="before()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@47c62251]" name="before" is-config="true" duration-ms="20555" started-at="2017-01-13T17:56:32Z" finished-at="2017-01-13T17:56:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="answerRight" duration-ms="10407" started-at="2017-01-06T17:36:44Z" finished-at="2017-01-06T17:36:54Z">
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@47c62251]" name="answerWrong" duration-ms="4264" started-at="2017-01-13T17:56:53Z" finished-at="2017-01-13T17:56:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- answerRight -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.Sublesson@26653222]" name="after" is-config="true" duration-ms="904" started-at="2017-01-06T17:36:54Z" finished-at="2017-01-06T17:36:55Z">
+        </test-method> <!-- answerWrong -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.TrueFalseSentence_TestCase@47c62251]" name="after" is-config="true" duration-ms="836" started-at="2017-01-13T17:56:57Z" finished-at="2017-01-13T17:56:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.Sublesson -->
+      </class> <!-- bahaso.testing.web.TrueFalseSentence_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

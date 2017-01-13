@@ -2,12 +2,11 @@ package bahaso.testing.webElement;
 
 import java.util.ArrayList;
 
+import org.bson.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
-import bahaso.testing.web.answerLesson;
 
 public class SentenceFormation extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> draggable = new ArrayList<WebElement>();
@@ -29,14 +28,20 @@ public class SentenceFormation extends ExcercisePage implements answerLesson{
 		return droppable;
 	}
 	
+	@Override
+	public Object getAnswerData(Document data) {
+		ArrayList<Document> answer = (ArrayList<Document>) data.get("words");
+		return answer;
+	}
+	
 	//operation
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[] answer = (String[])ans;
-			for(int i=0;i<answer.length;i++){
+			ArrayList<String> answer = (ArrayList<String>) ans;
+			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getDraggable().size();j++){
-					if(answer[i].equals(getDraggable().get(j).getText()) && getDraggable().get(j).getAttribute("answer-id").equals("666")){
+					if(answer.get(i).equals(getDraggable().get(j).getText()) && getDraggable().get(j).getAttribute("answer-id").equals("666")){
 						action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 						//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 						Thread.sleep(2000);
@@ -57,11 +62,11 @@ public class SentenceFormation extends ExcercisePage implements answerLesson{
 			try {
 				Thread.sleep(3000);
 				int wrong = 1;
-				String[] answer = (String[])ans;
+				ArrayList<String> answer = (ArrayList<String>) ans;
 				for(int i=0;i<getDroppable().size();i++){
 					for(int j=0;j<getDraggable().size();j++){
 						if(wrong>0){
-							if(answer[i].equals(getDraggable().get(j).getText())==false && getDraggable().get(i).getAttribute("answer-id").equals("666")){
+							if(answer.get(i).equals(getDraggable().get(j).getText())==false && getDraggable().get(i).getAttribute("answer-id").equals("666")){
 								action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 								//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 								wrong = 0;

@@ -2,11 +2,10 @@ package bahaso.testing.webElement;
 
 import java.util.ArrayList;
 
+import org.bson.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import bahaso.testing.web.answerLesson;
 
 public class ListenSelectSingleBox extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> choices = new ArrayList<WebElement>();
@@ -25,15 +24,23 @@ public class ListenSelectSingleBox extends ExcercisePage implements answerLesson
 		return wt.waitForElement(driver, By.xpath("//label[@for='"+kelas+"']"));
 	}
 	
+	@Override
+	public Object getAnswerData(Document data) {
+		ArrayList<String> answer = new ArrayList<String>();
+		String ans = (String) data.get("answer");
+		answer.add(ans);
+		return answer;
+	}
+	
 	//operation
 	@Override
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[]answer = (String[])ans;
-			for(int i=0;i<answer.length;i++){
+			ArrayList<String> answer = (ArrayList<String>) ans;
+			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getChoices().size();j++){
-					if(answer[i].equals(getChoices().get(j).getAttribute("value"))){
+					if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 					}
@@ -52,18 +59,18 @@ public class ListenSelectSingleBox extends ExcercisePage implements answerLesson
 		try {
 			Thread.sleep(3000);
 			int wrong = 1;
-			String[]answer = (String[])ans;
-			for(int i=0;i<answer.length;i++){
+			ArrayList<String> answer = (ArrayList<String>) ans;
+			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getChoices().size();j++){
 					if(wrong>0){
-						if(!answer[i].equals(getChoices().get(j).getAttribute("value"))){
+						if(!answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
 							getChoice(getChoices().get(j).getAttribute("id")).click();
 							wrong = 0;
 							Thread.sleep(2000);
 							break;
 						}
 					}
-					else if(answer[i].equals(getChoices().get(j).getAttribute("value"))){
+					else if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 						break;

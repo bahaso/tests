@@ -2,11 +2,10 @@ package bahaso.testing.webElement;
 
 import java.util.ArrayList;
 
+import org.bson.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
-import bahaso.testing.web.answerLesson;
 
 public class PictureMultipleChoice extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> allChoices = new ArrayList<WebElement>();
@@ -23,6 +22,12 @@ public class PictureMultipleChoice extends ExcercisePage implements answerLesson
 	public WebElement getAnswerLabel(String kelas){
 		return wt.waitForElement(driver, By.xpath("//label[@for='"+kelas+"']"));
 	}
+	
+	@Override
+	public Object getAnswerData(Document data) {
+		String answer = (String) data.get("answer");
+		return answer;
+	}	
 	
 	//operation
 	@Override
@@ -62,7 +67,5 @@ public class PictureMultipleChoice extends ExcercisePage implements answerLesson
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}	
-	
-	
+	}
 }

@@ -2,12 +2,11 @@ package bahaso.testing.webElement;
 
 import java.util.ArrayList;
 
+import org.bson.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
-import bahaso.testing.web.answerLesson;
 
 public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> draggable = new ArrayList<WebElement>();
@@ -29,16 +28,27 @@ public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 		return droppable;
 	}
 	
+	@Override
+	public Object getAnswerData(Document data) {
+		ArrayList<ArrayList<Document>> answer = new ArrayList<ArrayList<Document>>();
+		ArrayList<Document> ans = (ArrayList<Document>) data.get("categories");
+		for(int i=0;i<ans.size();i++){
+			ArrayList<Document> ans2 = (ArrayList<Document>) ans.get(i).get("texts");
+			answer.add(ans2);
+		}
+		return answer;
+	}
+	
 	//operation
 	@Override
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[][] answer = (String[][])ans;
+			ArrayList<ArrayList<String>> answer = (ArrayList<ArrayList<String>>)ans;
 			for(int i=0;i<getDroppable().size();i++){
-				for(int j=0;j<answer[i].length;j++){
+				for(int j=0;j<answer.get(i).size();j++){
 					for(int k=0;k<getDraggable().size();k++){
-						if(answer[i][j].equals(getDraggable().get(k).getText())){
+						if(answer.get(i).get(j).equals(getDraggable().get(k).getText())){
 							action.dragAndDrop(getDraggable().get(k), getDroppable().get(i)).perform();
 							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 							Thread.sleep(2000);
@@ -58,14 +68,14 @@ public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 	public void answerWrong(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[][] answer = (String[][]) ans;
+			ArrayList<ArrayList<String>> answer = (ArrayList<ArrayList<String>>)ans;
 			int size = getDroppable().size();
 			for(int i=0;i<size;i++){
-				for(int j=0;j<answer[i].length;j++){
+				for(int j=0;j<answer.get(i).size();j++){
 					for(int k=0;k<getDraggable().size();k++){
 						int move = i+(size-(size-1));
 						if(move==size)move = move - size;
-						if(answer[i][j].equals(getDraggable().get(k).getText())){
+						if(answer.get(i).get(j).equals(getDraggable().get(k).getText())){
 							action.dragAndDrop(getDraggable().get(k), getDroppable().get(move)).perform();
 							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 							Thread.sleep(2000);

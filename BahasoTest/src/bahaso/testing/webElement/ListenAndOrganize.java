@@ -2,12 +2,11 @@ package bahaso.testing.webElement;
 
 import java.util.ArrayList;
 
+import org.bson.Document;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
-import bahaso.testing.web.answerLesson;
 
 public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 	public ArrayList<WebElement> draggable = new ArrayList<WebElement>();
@@ -29,15 +28,21 @@ public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 		return droppable;
 	}
 	
+	@Override
+	public Object getAnswerData(Document data) {
+		ArrayList<Document> answer = (ArrayList<Document>) data.get("sentences");
+		return answer;
+	}
+	
 	//operation
 	@Override
 	public void answerRight(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[] answer = (String[])ans;
-			for(int i=0;i<answer.length;i++){
+			ArrayList<String> answer = (ArrayList<String>) ans;
+			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getDraggable().size();j++){
-					if(answer[i].equals(getDraggable().get(j).getText())){
+					if(answer.get(i).equals(getDraggable().get(j).getText())){
 						//action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 						action.clickAndHold(getDraggable().get(j)).moveToElement(getDraggable().get(i),225,0).build().perform();
 						Thread.sleep(3000);
@@ -60,8 +65,8 @@ public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 	public void answerWrong(Object ans){
 		try {
 			Thread.sleep(3000);
-			String[] answer = (String[])ans;
-			if(answer[0].equals(getDraggable().get(0).getText())){
+			ArrayList<String> answer = (ArrayList<String>) ans;
+			if(answer.get(0).equals(getDraggable().get(0).getText())){
 				//action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 				action.clickAndHold(getDraggable().get(0)).moveToElement(getDraggable().get(1),225,0);
 				Thread.sleep(2000);

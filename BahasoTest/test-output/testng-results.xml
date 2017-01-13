@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37720" started-at="2017-01-13T09:00:36Z" finished-at="2017-01-13T09:01:14Z">
+  <suite name="Default suite" duration-ms="32906" started-at="2017-01-13T10:25:06Z" finished-at="2017-01-13T10:25:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37720" started-at="2017-01-13T09:00:36Z" finished-at="2017-01-13T09:01:14Z">
-      <class name="bahaso.testing.web.SentenceFormation_TestCase">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.SentenceFormation_TestCase@47c62251]" name="beforeMethod" is-config="true" duration-ms="24521" started-at="2017-01-13T16:00:37Z" finished-at="2017-01-13T16:01:01Z">
+    <test name="Default test" duration-ms="32906" started-at="2017-01-13T10:25:06Z" finished-at="2017-01-13T10:25:39Z">
+      <class name="bahaso.testing.web.VideoAnswerCase_TestCase">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@47c62251]" name="beforeMethod" is-config="true" duration-ms="21586" started-at="2017-01-13T17:25:06Z" finished-at="2017-01-13T17:25:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="answerWrong()[pri:0, instance:bahaso.testing.web.SentenceFormation_TestCase@47c62251]" name="answerWrong" duration-ms="12388" started-at="2017-01-13T16:01:01Z" finished-at="2017-01-13T16:01:13Z">
+        <test-method status="PASS" signature="answerRight()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@47c62251]" name="answerRight" duration-ms="10444" started-at="2017-01-13T17:25:27Z" finished-at="2017-01-13T17:25:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- answerWrong -->
-        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.SentenceFormation_TestCase@47c62251]" name="after" is-config="true" duration-ms="797" started-at="2017-01-13T16:01:13Z" finished-at="2017-01-13T16:01:14Z">
+        </test-method> <!-- answerRight -->
+        <test-method status="PASS" signature="after()[pri:0, instance:bahaso.testing.web.VideoAnswerCase_TestCase@47c62251]" name="after" is-config="true" duration-ms="862" started-at="2017-01-13T17:25:38Z" finished-at="2017-01-13T17:25:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- after -->
-      </class> <!-- bahaso.testing.web.SentenceFormation_TestCase -->
+      </class> <!-- bahaso.testing.web.VideoAnswerCase_TestCase -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -1,8 +1,12 @@
 package bahaso.testing.web;
 
 import java.awt.print.Printable;
+import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,6 +20,58 @@ public class Sublesson extends General{
 	answerLesson obj = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
 	String[] answer = {"Good morning, Kevin."};
+	
+	public void getTypes(Integer value,WebDriver driver){
+		if(value==2){
+			obj = new SentenceFormation(driver);
+		}else if(value==11){
+			obj = new BoxMatchListen(driver);
+		}else if(value==22){
+			obj = new BoxMatchSentence(driver);
+		}else if(value==35){
+			obj = new BoxMatchParagraph(driver);
+		}else if(value==26){
+			obj = new BoxMatchList(driver);
+		}else if(value==10){
+			obj = new BoxMatchPicture(driver);
+		}else if(value==15){
+			//obj = new LostWordTell(driver);
+		}else if(value==14){
+			obj = new LostWordListen(driver);
+		}else if(value==27){
+			obj = new LostWordType(driver);
+		}else if(value==8){
+			obj = new ListenSelectSingleBox(driver);
+		}else if(value==13){
+			obj = new ListenSelectMultipleBox(driver);
+		}else if(value==36){
+			obj = new PictureMultipleChoice(driver);
+		}else if(value==7){
+			obj = new ListenSelectPicture(driver);
+		}else if(value==4){
+			obj = new ListenRecordPicture(driver);
+		}else if(value==3){
+			obj = new ListenRecord(driver);
+		}else if(value==5){
+			//obj = new Listen(driver);
+		}else if(value==30){
+			obj = new LittleBoxMultipleChoice(driver);
+		}else if(value==31){
+			obj = new DragMultipleChoice(driver);
+		}else if(value==37){
+			obj = new BoxMatchDialog(driver);
+		}else if(value==28){
+			obj = new BoxMatchDissappearPicture(driver);
+		}else if(value==20){
+			obj = new BoxMatchDissappear(driver);
+		}else if(value==16){
+			obj = new ListenAndOrganize(driver);
+		}else if(value==21){
+			//obj = new LittleBoxMultipleChoice(driver);
+		}else if(value==19){
+			obj = new LittleBoxMultipleChoice(driver);
+		}
+	}
 	
 
 	@BeforeMethod
@@ -69,6 +125,21 @@ public class Sublesson extends General{
 		}
 		//String status[] = boxMatchSentence.getLessonStatus().getAttribute("class").split(" ");
 		//Assert.assertEquals(status[status.length-1], "true");
+	}
+	
+	@Test  
+  	public void Simulation2(){
+		try {
+			Thread.sleep(3000);
+			String text = "It's nice to meet you";
+			WebElement sub = driver.findElement(By.linkText("Review Test A1 : Lesson 1-3"));
+			sub.click();
+			Thread.sleep(3000);
+		}catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			
 	}
 	
 	

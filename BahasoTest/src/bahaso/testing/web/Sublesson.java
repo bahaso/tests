@@ -130,11 +130,18 @@ public class Sublesson extends General{
 	@Test  
   	public void Simulation2(){
 		try {
+			Integer level = 1;
+			Integer lesson = 4;
+			Integer sublesson = 2;	
+			int value = ((lesson-1)/3*2)+lesson;
+			System.out.println(value);
+			System.out.println(loginPage.getSubLesson(value).size());
+			loginPage.getLevelButton().get(level-1).click();
 			Thread.sleep(3000);
-			String text = "It's nice to meet you";
-			WebElement sub = driver.findElement(By.linkText("Review Test A1 : Lesson 1-3"));
-			sub.click();
+			loginPage.getLessonListA1().get(lesson-1).click();
 			Thread.sleep(3000);
+			loginPage.getSubLesson(value).get(sublesson-1).click();
+			Thread.sleep(5000);
 		}catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

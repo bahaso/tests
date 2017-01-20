@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.web.Sublesson">
+      <class name="bahaso.testing.web.Comprehension_TestCase">
         <methods>
-          <include name="Simulation2"/>
-          <include name="beforeMethod"/>
           <include name="after"/>
+          <include name="answerRight"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- bahaso.testing.web.Sublesson -->
+      </class> <!-- bahaso.testing.web.Comprehension_TestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

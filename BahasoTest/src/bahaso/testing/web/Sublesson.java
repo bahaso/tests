@@ -1,9 +1,10 @@
 package bahaso.testing.web;
 
-import java.awt.print.Printable;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import org.bson.Document;
+import org.bson.types.ObjectId;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,17 +12,22 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.mongodb.BasicDBObject;
+import com.mongodb.client.MongoCollection;
+
 import bahaso.testing.general.General;
 import bahaso.testing.webElement.*;
 
 public class Sublesson extends General{
+	ArrayList<WebElement> buttonPage = new ArrayList<WebElement>();
 	LandingPage landingPage = null;
 	LoginPage loginPage = null;
 	answerLesson obj = null;
 	HashMap<String, String> LoginData = new HashMap<String, String>();
-	String[] answer = {"Good morning, Kevin."};
+	Object answer;
 	
-	public void getTypes(Integer value,WebDriver driver){
+	public void getTypes(String val,WebDriver driver){
+		Integer value = Integer.parseInt(val);
 		if(value==2){
 			obj = new SentenceFormation(driver);
 		}else if(value==11){
@@ -40,6 +46,8 @@ public class Sublesson extends General{
 			obj = new LostWordListen(driver);
 		}else if(value==27){
 			obj = new LostWordType(driver);
+		}else if(value==25){
+			obj = new TrueFalsePicture(driver);
 		}else if(value==8){
 			obj = new ListenSelectSingleBox(driver);
 		}else if(value==13){
@@ -53,7 +61,7 @@ public class Sublesson extends General{
 		}else if(value==3){
 			obj = new ListenRecord(driver);
 		}else if(value==5){
-			//obj = new Listen(driver);
+			obj = new ListenType(driver);
 		}else if(value==30){
 			obj = new LittleBoxMultipleChoice(driver);
 		}else if(value==31){
@@ -71,6 +79,7 @@ public class Sublesson extends General{
 		}else if(value==19){
 			obj = new LittleBoxMultipleChoice(driver);
 		}
+		return;
 	}
 	
 
@@ -78,7 +87,7 @@ public class Sublesson extends General{
   	public void beforeMethod() {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
-	  LoginData.put("password","mahendralubis");
+	  LoginData.put("password","mahendra89");
 	  landingPage = new LandingPage(driver);
 	  loginPage = new LoginPage(driver);
 	  obj = new VideoAnswerCase(driver);
@@ -88,60 +97,59 @@ public class Sublesson extends General{
 	
 	@Test  
   	public void Simulation(){
-		try {
-			Thread.sleep(3000);
-			System.out.println(loginPage.getLessonListA1().size());
-			for(int i=0;i<loginPage.getLessonListA1().size();i++){
-				loginPage.getLessonListA1().get(i).click();
-				Thread.sleep(3000);
-			}
-			driver.get(baseUrl);
-			Thread.sleep(3000);
-			loginPage.getLevelButton().get(1).click();
-			Thread.sleep(3000);
-			for(int i=0;i<loginPage.getLessonListA2().size();i++){
-				loginPage.getLessonListA2().get(i).click();
-				Thread.sleep(3000);
-			}
-			driver.get(baseUrl);
-			Thread.sleep(3000);
-			loginPage.getLevelButton().get(2).click();
-			Thread.sleep(3000);
-			for(int i=0;i<loginPage.getLessonListB1().size();i++){
-				loginPage.getLessonListB1().get(i).click();
-				Thread.sleep(3000);
-			}
-			driver.get(baseUrl);
-			Thread.sleep(3000);
-			loginPage.getLevelButton().get(3).click();
-			Thread.sleep(3000);
-			for(int i=0;i<loginPage.getLessonListB2().size();i++){
-				loginPage.getLessonListB2().get(i).click();
-				Thread.sleep(3000);
-			}
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		//String status[] = boxMatchSentence.getLessonStatus().getAttribute("class").split(" ");
-		//Assert.assertEquals(status[status.length-1], "true");
+//		try {
+//			Thread.sleep(3000);
+//			System.out.println(loginPage.getLessonListA1().size());
+//			for(int i=0;i<loginPage.getLessonList().size();i++){
+//				loginPage.getLessonListA1().get(i).click();
+//				Thread.sleep(3000);
+//			}
+//			driver.get(baseUrl);
+//			Thread.sleep(3000);
+//			loginPage.getLevelButton().get(1).click();
+//			Thread.sleep(3000);
+//			for(int i=0;i<loginPage.getLessonListA2().size();i++){
+//				loginPage.getLessonListA2().get(i).click();
+//				Thread.sleep(3000);
+//			}
+//			driver.get(baseUrl);
+//			Thread.sleep(3000);
+//			loginPage.getLevelButton().get(2).click();
+//			Thread.sleep(3000);
+//			for(int i=0;i<loginPage.getLessonListB1().size();i++){
+//				loginPage.getLessonListB1().get(i).click();
+//				Thread.sleep(3000);
+//			}
+//			driver.get(baseUrl);
+//			Thread.sleep(3000);
+//			loginPage.getLevelButton().get(3).click();
+//			Thread.sleep(3000);
+//			for(int i=0;i<loginPage.getLessonListB2().size();i++){
+//				loginPage.getLessonListB2().get(i).click();
+//				Thread.sleep(3000);
+//			}
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		//String status[] = boxMatchSentence.getLessonStatus().getAttribute("class").split(" ");
+//		//Assert.assertEquals(status[status.length-1], "true");
 	}
 	
 	@Test  
   	public void Simulation2(){
 		try {
-			Integer level = 1;
-			Integer lesson = 4;
-			Integer sublesson = 2;	
+			Integer level = 2;
+			Integer lesson = 5;
+			Integer sublesson = 3;
 			int value = ((lesson-1)/3*2)+lesson;
-			System.out.println(value);
-			System.out.println(loginPage.getSubLesson(value).size());
 			loginPage.getLevelButton().get(level-1).click();
 			Thread.sleep(3000);
-			loginPage.getLessonListA1().get(lesson-1).click();
+			loginPage.getLessonListA1(level-1).get(lesson-1).click();
 			Thread.sleep(3000);
-			loginPage.getSubLesson(value).get(sublesson-1).click();
+			loginPage.getSubLesson(level-1,value).get(sublesson-1).click();
 			Thread.sleep(5000);
+			workPractice();
 		}catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -149,19 +157,30 @@ public class Sublesson extends General{
 			
 	}
 	
-	
-	@Test  
-  	public void answerRight(){
-		obj.answerRight(answer);
-		//String status[] = boxMatchSentence.getLessonStatus().getAttribute("class").split(" ");
-		//Assert.assertEquals(status[status.length-1], "true");
-	}
-	
-	@Test
-  	public void answerWrong(){
-		obj.answerWrong(answer);
-		//String status[] = boxMatchSentence.getLessonStatus().getAttribute("class").split(" ");
-		//Assert.assertEquals(status[status.length-1], "false");
+	public void workPractice(){
+		WebElement buttonNext = driver.findElement(By.className("btn-next"));
+		try {
+			buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
+			for(int i=0;i<buttonPage.size();i++){
+				Thread.sleep(3000);
+				if(buttonPage.get(i).getAttribute("data-type").equals("case")==false){
+					buttonNext.click();
+				}else{
+					System.out.println(buttonPage.get(i).getText());
+					MongoCollection<Document> table = db.getCollection("case");
+					BasicDBObject searchQuery = new BasicDBObject();
+					searchQuery.put("_id", new ObjectId(buttonPage.get(i).getAttribute("data-id")));
+					Document cursor = table.find(searchQuery).first();
+					getTypes(cursor.get("type").toString(), driver);
+					answer = obj.getAnswerData(cursor);
+					obj.answerRight(answer);
+					Thread.sleep(3000);
+					buttonNext.click();
+				}
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 	}
 	
 	@AfterMethod

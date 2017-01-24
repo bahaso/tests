@@ -52,4 +52,6 @@
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.ListenType"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.TrueFalsePicture"/>
 </qualifiedTypeNameHistroy>

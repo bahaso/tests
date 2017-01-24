@@ -29,8 +29,9 @@ public class LoginPage {
 		return levelButton;
 	}
 	
-	public ArrayList<WebElement> getLessonListA1(){
-		lessonList = (ArrayList<WebElement>) driver.findElements(By.xpath("//*[@id='A1']//div//div[@class='lesson col-xs-4']/a"));
+	public ArrayList<WebElement> getLessonListA1(int level){
+		String[] lvl = {"A1","A2","B1","B2"};
+		lessonList = (ArrayList<WebElement>) driver.findElements(By.xpath("//*[@id='" + lvl[level] + "']//div//div[@class='lesson col-xs-4']/a"));
 		return lessonList;
 	}
 	
@@ -49,8 +50,9 @@ public class LoginPage {
 		return lessonList;
 	}
 	
-	public ArrayList<WebElement> getSubLesson(int n){
-		subLesson = (ArrayList<WebElement>) driver.findElements(By.xpath("//*[@id='A1']//div//div["+ n +"]//div//div/a"));
+	public ArrayList<WebElement> getSubLesson(int level, int n){
+		String[] lvl = {"A1","A2","B1","B2"};
+		subLesson = (ArrayList<WebElement>) driver.findElements(By.xpath("//*[@id='"+ lvl[level] +"']//div//div["+ n +"]//div//div/a"));
 		return subLesson;
 	}
 	

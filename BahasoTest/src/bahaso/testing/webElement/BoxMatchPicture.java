@@ -33,7 +33,7 @@ public class BoxMatchPicture extends ExcercisePage implements answerLesson{
 		ArrayList<Document> ans = (ArrayList<Document>) data.get("questions");
 		ArrayList<String> answer = new ArrayList<String>();
 		for(int i=0;i<ans.size();i++){
-			answer.add((String) ans.get(i).get("answer"));
+			answer.add((String) ans.get(i).get("answer").toString().trim());
 		}
 		return answer;
 	}

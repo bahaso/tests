@@ -18,6 +18,7 @@ public class General {
 	public static WebDriver driver;
 	public String baseUrl = "http://localhost";
 	//public String baseUrl = "https://dc33c8b0a252f4219c9698652d4e4708.bahaso.com/";
+	//public String baseUrl = "https://procopy.bahaso.com/";
 	
 	public WebDriver getDriver(){
 		mongoClient = new MongoClient("localhost", 27017);

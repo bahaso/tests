@@ -39,8 +39,6 @@ public class ListenRecordPicture extends ExcercisePage implements answerLesson{
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
 			getBoxAnswer().sendKeys(answer.get(0).trim());
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -54,8 +52,6 @@ public class ListenRecordPicture extends ExcercisePage implements answerLesson{
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
 			getBoxAnswer().sendKeys("aaa");
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

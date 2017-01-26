@@ -50,8 +50,6 @@ public class BoxMatchParagraph extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -85,8 +83,6 @@ public class BoxMatchParagraph extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

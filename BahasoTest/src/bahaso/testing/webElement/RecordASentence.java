@@ -41,8 +41,6 @@ public class RecordASentence extends ExcercisePage implements answerLesson{
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
 			getBoxAnswer().sendKeys(answer.get(order).trim());
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -58,8 +56,6 @@ public class RecordASentence extends ExcercisePage implements answerLesson{
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
 			getBoxAnswer().sendKeys("aaa");
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -47,8 +47,6 @@ public class ListenSelectPicture extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -78,8 +76,6 @@ public class ListenSelectPicture extends ExcercisePage implements answerLesson{
 				}
 				
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

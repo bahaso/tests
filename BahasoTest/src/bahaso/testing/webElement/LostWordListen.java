@@ -50,8 +50,6 @@ public class LostWordListen extends ExcercisePage implements answerLesson{
 				getBoxAnswer().get(i).sendKeys(answer.get(i).trim());
 				Thread.sleep(3000);
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -68,8 +66,6 @@ public class LostWordListen extends ExcercisePage implements answerLesson{
 				getBoxAnswer().get(i).sendKeys("aaa");
 				Thread.sleep(3000);
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

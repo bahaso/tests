@@ -57,8 +57,6 @@ public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (Exception e) {
 			
 		}
@@ -84,8 +82,6 @@ public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (Exception e) {
 			
 		}

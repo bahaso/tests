@@ -61,8 +61,6 @@ public class LittleBoxMultipleChoice extends ExcercisePage implements answerLess
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -84,8 +82,6 @@ public class LittleBoxMultipleChoice extends ExcercisePage implements answerLess
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

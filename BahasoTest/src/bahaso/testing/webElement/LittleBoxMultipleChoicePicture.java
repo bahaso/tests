@@ -61,8 +61,6 @@ public class LittleBoxMultipleChoicePicture extends ExcercisePage implements ans
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -82,8 +80,6 @@ public class LittleBoxMultipleChoicePicture extends ExcercisePage implements ans
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

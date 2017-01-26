@@ -51,8 +51,6 @@ public class ListenType extends ExcercisePage implements answerLesson{
 				}
 				Thread.sleep(3000);
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -73,8 +71,6 @@ public class ListenType extends ExcercisePage implements answerLesson{
 				}
 				Thread.sleep(3000);
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

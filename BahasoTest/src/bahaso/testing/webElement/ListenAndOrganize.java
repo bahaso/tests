@@ -52,8 +52,6 @@ public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -73,8 +71,6 @@ public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 				action.release().build().perform();
 				Thread.sleep(2000);
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

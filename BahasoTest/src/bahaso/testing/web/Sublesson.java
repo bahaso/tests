@@ -153,7 +153,7 @@ public class Sublesson extends General{
 		try {
 			Integer level = 1;
 			Integer lesson = 3;
-			Integer sublesson = 1;
+			Integer sublesson = 4;
 			int value = ((lesson-1)/3*2)+lesson;
 			loginPage.getLevelButton().get(level-1).click();
 			Thread.sleep(3000);
@@ -162,7 +162,13 @@ public class Sublesson extends General{
 			loginPage.getSubLesson(level-1,value).get(sublesson-1).click();
 			Thread.sleep(5000);
 			while(true){
-				workPractice();
+				WebElement detail = driver.findElement(By.className("detail-title"));
+				if(detail.getText().equals("Review Test") || detail.getText().equals("Level Test")){
+					workTest();
+				}else{
+					workPractice();
+				}
+				System.out.println("next");
 				Thread.sleep(3000);
 				WebElement next = driver.findElement(By.id("next-button"));
 				next.click();
@@ -175,12 +181,14 @@ public class Sublesson extends General{
 	}
 	
 	public void workPractice(){
-		WebElement buttonFinish = driver.findElement(By.className("btn-finish"));
-		WebElement buttonNext = driver.findElement(By.className("btn-next"));
 		try {
+			WebElement buttonFinish = driver.findElement(By.className("btn-finish"));
+			WebElement buttonNext = driver.findElement(By.className("btn-next"));
+			WebElement buttonCheck = driver.findElement(By.className("btn-check"));
 			buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
+			System.out.println("jumlah page : " +buttonPage.size());
 			for(int i=0;i<buttonPage.size();i++){
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 				if(buttonPage.get(i).getAttribute("data-type").equals("case")==false){
 					buttonNext.click();
 				}else{
@@ -192,14 +200,48 @@ public class Sublesson extends General{
 					getTypes(cursor.get("type").toString(), driver);
 					answer = obj.getAnswerData(cursor);
 					obj.answerRight(answer);
-					Thread.sleep(5000);
+					buttonCheck.click();
+					Thread.sleep(8000);
 					if(i<buttonPage.size()-1)buttonNext.click();
 					else buttonFinish.click();
 				}
 			}
+			Thread.sleep(3000);
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
+		return;
+	}
+	
+	public void workTest(){
+		try {
+			WebElement buttonFinish = driver.findElement(By.className("btn-finish"));
+			WebElement buttonNext = driver.findElement(By.className("btn-next"));
+			buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));
+			System.out.println("jumlah page : " +buttonPage.size());
+			for(int i=0;i<buttonPage.size();i++){
+				Thread.sleep(8000);
+				if(buttonPage.get(i).getAttribute("data-type").equals("case")==false){
+					buttonNext.click();
+				}else{
+					System.out.println(buttonPage.get(i).getText());
+					MongoCollection<Document> table = db.getCollection("case");
+					BasicDBObject searchQuery = new BasicDBObject();
+					searchQuery.put("_id", new ObjectId(buttonPage.get(i).getAttribute("data-id")));
+					Document cursor = table.find(searchQuery).first();
+					getTypes(cursor.get("type").toString(), driver);
+					answer = obj.getAnswerData(cursor);
+					obj.answerRight(answer);
+					Thread.sleep(8000);
+					if(i<buttonPage.size()-1)buttonNext.click();
+					else buttonFinish.click();
+				}
+			}
+			Thread.sleep(3000);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return;
 	}
 	
 	@AfterMethod

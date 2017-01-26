@@ -48,7 +48,7 @@ public class BoxMatchDissappearPicture extends ExcercisePage implements answerLe
 			for(int i=0;i<getDroppable().size();i++){
 				for(int j=0;j<answer.get(i).size();j++){
 					for(int k=0;k<getDraggable().size();k++){
-						if(answer.get(i).get(j).equals(getDraggable().get(k).getAttribute("data-val"))){
+						if(answer.get(i).get(j).trim().equals(getDraggable().get(k).getAttribute("data-val"))){
 							action.dragAndDrop(getDraggable().get(k), getDroppable().get(i)).perform();
 							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 							Thread.sleep(2000);
@@ -57,8 +57,6 @@ public class BoxMatchDissappearPicture extends ExcercisePage implements answerLe
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -77,7 +75,7 @@ public class BoxMatchDissappearPicture extends ExcercisePage implements answerLe
 					for(int k=0;k<getDraggable().size();k++){
 						int move = i+(size-(size-1));
 						if(move==size)move = move - size;
-						if(answer.get(i).get(j).equals(getDraggable().get(k).getAttribute("data-val"))){
+						if(answer.get(i).get(j).trim().equals(getDraggable().get(k).getAttribute("data-val"))){
 							action.dragAndDrop(getDraggable().get(k), getDroppable().get(move)).perform();
 							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 							Thread.sleep(2000);
@@ -86,8 +84,6 @@ public class BoxMatchDissappearPicture extends ExcercisePage implements answerLe
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -46,7 +46,7 @@ public class BoxMatchListen extends ExcercisePage implements answerLesson{
 			ArrayList<String> answer= (ArrayList<String>) ans;
 			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getDraggable().size();j++){
-					if(answer.get(i).equals(getDraggable().get(j).getText()) && getDraggable().get(j).getAttribute("answer-id").equals("666")){
+					if(answer.get(i).trim().equals(getDraggable().get(j).getText()) && getDraggable().get(j).getAttribute("answer-id").equals("666")){
 						action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 						//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 						Thread.sleep(2000);
@@ -54,8 +54,6 @@ public class BoxMatchListen extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -71,7 +69,7 @@ public class BoxMatchListen extends ExcercisePage implements answerLesson{
 			for(int i=0;i<getDroppable().size();i++){
 				for(int j=0;j<getDraggable().size();j++){
 					if(wrong>0){
-						if(answer.get(i).equals(getDraggable().get(j).getText())==false && getDraggable().get(i).getAttribute("answer-id").equals("666")){
+						if(answer.get(i).trim().equals(getDraggable().get(j).getText())==false && getDraggable().get(i).getAttribute("answer-id").equals("666")){
 							action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 							wrong = 0;
@@ -88,8 +86,6 @@ public class BoxMatchListen extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

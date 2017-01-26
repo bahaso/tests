@@ -34,18 +34,21 @@ public class cobamongo {
 	public void test() throws Exception {
 		try {
 			// STEP 2: Get Collection
-			MongoCollection<Document> table = db.getCollection("case");
+			MongoCollection<Document> table = db.getCollection("case_types");
 			// STEP 3: Extract Data
 			BasicDBObject searchQuery = new BasicDBObject();
 			searchQuery.put("_id", new ObjectId("567925d1938e8e651c8b4579"));
-			FindIterable<Document> cursor = table.find(searchQuery);
+			FindIterable<Document> cursor = table.find();
 			
 			// STEP 4: Iterate over data
 			for (Document obj : cursor) {
-				ArrayList<Document> courses = (ArrayList<Document>) obj.get("choices");
+				//ArrayList<Document> courses = (ArrayList<Document>) obj.get("choices");
 				//String lastName = obj.getString("question");
-				System.out.println("jumlahnya ada : " + courses.size());
-				Assert.assertEquals("", "");
+				//System.out.println("jumlahnya ada : " + courses.size());
+//				String no = obj.getString("no");
+//				String type =  obj.getString("text");
+//				System.out.println(no + " " + type);
+				System.out.println(obj.get("no") + " " + obj.get("text"));
 			}
 			
 		} catch (Exception e) {

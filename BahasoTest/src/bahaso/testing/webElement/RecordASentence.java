@@ -40,9 +40,7 @@ public class RecordASentence extends ExcercisePage implements answerLesson{
 			int order = (int)(Math.random() * answer.size());
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
-			getBoxAnswer().sendKeys(answer.get(order));
-			getButtonCheck().click();
-			Thread.sleep(3000);
+			getBoxAnswer().sendKeys(answer.get(order).trim());
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -58,8 +56,6 @@ public class RecordASentence extends ExcercisePage implements answerLesson{
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
 			getBoxAnswer().sendKeys("aaa");
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

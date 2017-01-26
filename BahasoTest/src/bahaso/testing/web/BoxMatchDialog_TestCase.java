@@ -33,11 +33,11 @@ public class BoxMatchDialog_TestCase extends General{
   	public void beforeMethod() {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
-	  LoginData.put("password","mahendralubis");
+	  LoginData.put("password","mahendra89");
 	  landingPage = new LandingPage(driver);
 	  boxMatchDialog = new BoxMatchDialog(driver);
 	  landingPage.doLogin(LoginData);
-	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/5680eb93938e8e7b148b4568");
+	  driver.get(baseUrl + "/ngeadmin/previewCaseNewTab/56811182938e8e32528b4571");
 	  
 	  //Get Case ID
 	  buttonPage = (ArrayList<WebElement>) driver.findElements(By.className("btn-page"));

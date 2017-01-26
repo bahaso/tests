@@ -1,7 +1,0 @@
-package bahaso.testing.webElement;
-
-public interface answerLesson {
-	public Object getAnswerData();
-	public void answerRight(Object answer);
-	public void answerWrong(Object answer);
-}

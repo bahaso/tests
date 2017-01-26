@@ -12,12 +12,9 @@
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LandingPage"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LostWordType"/>
-<fullyQualifiedTypeName name="bahaso.testing.webElement.LittleBoxMultipleChoicePicture"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Action"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.interactions.Actions"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchList"/>
-<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListPicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListen"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchParagraph"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchPicture"/>
@@ -44,11 +41,22 @@
 <fullyQualifiedTypeName name="bahaso.testing.web.answerLesson"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LoginPage"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.awt.print.Printable"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="org.bson.Document"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.ListenType"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.TrueFalsePicture"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.RecordASentence"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.VideoAnswerCase"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListPicture"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LittleBoxMultipleChoice"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.LittleBoxMultipleChoicePicture"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.TrueFalseSentence"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.TrueFalseListen"/>
 </qualifiedTypeNameHistroy>

@@ -55,14 +55,12 @@ public class LittleBoxMultipleChoicePicture extends ExcercisePage implements ans
 			ArrayList<String> answer= (ArrayList<String>) ans;
 			for(int i=0;i<getAllAnswer().size();i++){
 				for(int j=0;j<getAllAnswer().get(i).size();j++){
-					if(answer.get(i).equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
+					if(answer.get(i).trim().equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
 						getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -75,15 +73,13 @@ public class LittleBoxMultipleChoicePicture extends ExcercisePage implements ans
 			ArrayList<String> answer= (ArrayList<String>) ans;
 			for(int i=0;i<getAllAnswer().size();i++){
 				for(int j=0;j<getAllAnswer().get(i).size();j++){
-					if(!answer.get(i).equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
+					if(!answer.get(i).trim().equals(getAllAnswer().get(i).get(j).getAttribute("value"))){
 						getAnswerLabel(getAllAnswer().get(i).get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 						break;
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

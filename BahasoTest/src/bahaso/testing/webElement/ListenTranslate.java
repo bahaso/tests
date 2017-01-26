@@ -36,10 +36,8 @@ public class ListenTranslate extends ExcercisePage implements answerLesson{
 	public void answerRight(Object ans){
 		try {
 			ArrayList<String> answer = (ArrayList<String>) ans;
-			getBoxAnswer().sendKeys(answer.get(0));
+			getBoxAnswer().sendKeys(answer.get(0).trim());
 			Thread.sleep(2000);
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -53,8 +51,6 @@ public class ListenTranslate extends ExcercisePage implements answerLesson{
 			ArrayList<String> answer = (ArrayList<String>) ans;
 			getBoxAnswer().sendKeys("aaa");
 			Thread.sleep(2000);
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

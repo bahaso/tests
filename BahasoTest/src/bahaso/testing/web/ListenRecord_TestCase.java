@@ -33,7 +33,7 @@ public class ListenRecord_TestCase extends General{
   	public void beforeMethod() {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
-	  LoginData.put("password","mahendralubis");
+	  LoginData.put("password","mahendra89");
 	  landingPage = new LandingPage(driver);
 	  listenRecord = new ListenRecord(driver);
 	  landingPage.doLogin(LoginData);

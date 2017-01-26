@@ -30,7 +30,7 @@ public class LostWordListen_TestCase extends General{
   	public void before() {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
-	  LoginData.put("password","mahendralubis");
+	  LoginData.put("password","mahendra89");
 	  landingPage = new LandingPage(driver);
 	  lostWordListen = new LostWordListen(driver);
 	  landingPage.doLogin(LoginData);

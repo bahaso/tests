@@ -42,7 +42,7 @@ public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 			ArrayList<String> answer = (ArrayList<String>) ans;
 			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getDraggable().size();j++){
-					if(answer.get(i).equals(getDraggable().get(j).getText())){
+					if(answer.get(i).trim().equals(getDraggable().get(j).getText())){
 						//action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 						action.clickAndHold(getDraggable().get(j)).moveToElement(getDraggable().get(i),225,0).build().perform();
 						Thread.sleep(3000);
@@ -52,8 +52,6 @@ public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -66,15 +64,13 @@ public class ListenAndOrganize extends ExcercisePage implements answerLesson{
 		try {
 			Thread.sleep(3000);
 			ArrayList<String> answer = (ArrayList<String>) ans;
-			if(answer.get(0).equals(getDraggable().get(0).getText())){
+			if(answer.get(0).trim().equals(getDraggable().get(0).getText())){
 				//action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 				action.clickAndHold(getDraggable().get(0)).moveToElement(getDraggable().get(1),225,0);
 				Thread.sleep(2000);
 				action.release().build().perform();
 				Thread.sleep(2000);
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

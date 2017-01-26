@@ -1,0 +1,89 @@
+package bahaso.testing.webElement;
+
+import java.util.ArrayList;
+
+import org.bson.Document;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ListenType extends ExcercisePage implements answerLesson{
+	public ArrayList<WebElement> boxAnswer = new ArrayList<WebElement>();
+	public WebElement nextCardButton = null;
+	
+	public ListenType(WebDriver driver){
+		this.driver = driver;
+	}
+	
+	public ArrayList<WebElement> getBoxAnswer(){
+		if(boxAnswer.size()==0)boxAnswer = (ArrayList<WebElement>) driver.findElements(By.xpath("//input[@class='lesson']"));
+		return boxAnswer;
+	}
+	
+	public WebElement getNextCard(){
+		nextCardButton = driver.findElement(By.xpath("//button[@class='btn-card next']"));
+		return nextCardButton;
+	}
+
+	@Override
+	public Object getAnswerData(Document data) {
+		ArrayList<Document> ans = (ArrayList<Document>) data.get("cards");
+		ArrayList<ArrayList<String>> answer = new ArrayList<ArrayList<String>>();
+		for(int i=0;i<ans.size();i++){
+			ArrayList<String> ans2 = (ArrayList<String>) ans.get(i).get("answer");
+			if(ans2.size()>0){
+				answer.add(ans2);
+			}
+		}
+		return answer;
+	}
+
+	@Override
+	public void answerRight(Object ans) {
+		try {
+			Thread.sleep(3000);
+			ArrayList<ArrayList<String>> answer = (ArrayList<ArrayList<String>>) ans;
+			for(int i=getBoxAnswer().size()-1;i>-1;i--){
+				int order = (int)(Math.random() * answer.get(i).size());
+				System.out.println(order);
+				System.out.println(answer.get(i).get(order));
+				getBoxAnswer().get(i).sendKeys(answer.get((getBoxAnswer().size()-1)-i).get(order));
+				if(i!=0){
+					getNextCard().click();
+				}
+				Thread.sleep(3000);
+			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+	@Override
+	public void answerWrong(Object answer) {
+		try {
+			Thread.sleep(3000);
+			ArrayList<ArrayList<String>> answer = (ArrayList<ArrayList<String>>) ans;
+			for(int i=getBoxAnswer().size()-1;i>-1;i--){
+				int order = (int)(Math.random() * answer.get(i).size());
+				System.out.println(order);
+				System.out.println(answer.get(i).get(order));
+				getBoxAnswer().get(i).sendKeys("aaa");
+				if(i!=0){
+					getNextCard().click();
+				}
+				Thread.sleep(3000);
+			}
+			getButtonCheck().click();
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+
+}

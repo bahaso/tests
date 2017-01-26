@@ -50,35 +50,21 @@ public class TrueFalseSentence extends ExcercisePage implements answerLesson{
 	
 	@Override
 	public void answerRight(Object ans) {
-		try {
-			boolean answer = (boolean)ans;
-			if(answer){
-				getTrueButton().click();
-			}else{
-				getFalseButton().click();
-			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		boolean answer = (boolean)ans;
+		if(answer){
+			getTrueButton().click();
+		}else{
+			getFalseButton().click();
 		}
 	}
 
 	@Override
 	public void answerWrong(Object ans) {
-		try {
-			boolean answer = (boolean)ans;
-			if(answer==false){
-				getTrueButton().click();
-			}else{
-				getFalseButton().click();
-			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		boolean answer = (boolean)ans;
+		if(answer==false){
+			getTrueButton().click();
+		}else{
+			getFalseButton().click();
 		}
 	}
 }

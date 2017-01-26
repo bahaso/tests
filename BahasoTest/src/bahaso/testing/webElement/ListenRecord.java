@@ -39,9 +39,7 @@ public class ListenRecord extends ExcercisePage implements answerLesson{
 			ArrayList<String> answer = (ArrayList<String>) ans;
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
-			getBoxAnswer().sendKeys(answer.get(0));
-			getButtonCheck().click();
-			Thread.sleep(3000);
+			getBoxAnswer().sendKeys(answer.get(0).trim());
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -57,8 +55,6 @@ public class ListenRecord extends ExcercisePage implements answerLesson{
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
 			getBoxAnswer().sendKeys("aaa");
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

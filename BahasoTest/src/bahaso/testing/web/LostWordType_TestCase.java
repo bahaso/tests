@@ -30,7 +30,7 @@ public class LostWordType_TestCase extends General{
   	public void before() {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
-	  LoginData.put("password","mahendralubis");
+	  LoginData.put("password","mahendra89");
 	  landingPage = new LandingPage(driver);
 	  lostWordType = new LostWordType(driver);
 	  landingPage.doLogin(LoginData);

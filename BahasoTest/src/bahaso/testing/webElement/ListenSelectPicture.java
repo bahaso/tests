@@ -41,14 +41,12 @@ public class ListenSelectPicture extends ExcercisePage implements answerLesson{
 			ArrayList<String> answer = (ArrayList<String>) ans;
 			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getChoices().size();j++){
-					if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+					if(answer.get(i).trim().equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -63,14 +61,14 @@ public class ListenSelectPicture extends ExcercisePage implements answerLesson{
 			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getChoices().size();j++){
 					if(wrong>0){
-						if(!answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+						if(!answer.get(i).trim().equals(getChoices().get(j).getAttribute("value"))){
 							getChoice(getChoices().get(j).getAttribute("id")).click();
 							wrong = 0;
 							Thread.sleep(2000);
 							break;
 						}
 					}
-					else if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+					else if(answer.get(i).trim().equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 						break;
@@ -78,8 +76,6 @@ public class ListenSelectPicture extends ExcercisePage implements answerLesson{
 				}
 				
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

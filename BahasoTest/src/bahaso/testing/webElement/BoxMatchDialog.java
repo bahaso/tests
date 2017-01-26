@@ -29,7 +29,12 @@ public class BoxMatchDialog extends ExcercisePage implements answerLesson{
 	
 	@Override
 	public Object getAnswerData(Document data) {
-		ArrayList<Document> answer = (ArrayList<Document>) data.get("choices");
+		ArrayList<Document> ans = (ArrayList<Document>) data.get("sentences");
+		ArrayList<String> answer = new ArrayList<String>();
+		for(int i=0;i<ans.size();i++){
+			ArrayList<String> ans2 = (ArrayList<String>) ans.get(i).get("answers");
+			if(ans2.size()>0)answer.add((String) ans2.get(0).trim());
+		}
 		return answer;
 	}
 	
@@ -49,8 +54,6 @@ public class BoxMatchDialog extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -84,8 +87,6 @@ public class BoxMatchDialog extends ExcercisePage implements answerLesson{
 					}
 				}
 			}
-			getButtonCheck().click();
-			Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

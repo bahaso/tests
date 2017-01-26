@@ -192,7 +192,7 @@ public class Sublesson extends General{
 					getTypes(cursor.get("type").toString(), driver);
 					answer = obj.getAnswerData(cursor);
 					obj.answerRight(answer);
-					Thread.sleep(3000);
+					Thread.sleep(5000);
 					if(i<buttonPage.size()-1)buttonNext.click();
 					else buttonFinish.click();
 				}

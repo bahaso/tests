@@ -32,7 +32,7 @@ public class TrueFalseSentence_TestCase extends General{
   	public void before() throws InterruptedException {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
-	  LoginData.put("password","mahendralubis");
+	  LoginData.put("password","mahendra89");
 	  TrueFalseSentence = new TrueFalseSentence(driver);
 	  landingPage = new LandingPage(driver);
 	  landingPage.doLogin(LoginData);

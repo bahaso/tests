@@ -30,7 +30,7 @@ public class Comprehension_TestCase extends General{
   	public void beforeMethod() {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
-	  LoginData.put("password","mahendralubis");
+	  LoginData.put("password","mahendra89");
 	  landingPage = new LandingPage(driver);
 	  comprehension = new Comprehension(driver);
 	  landingPage.doLogin(LoginData);

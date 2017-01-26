@@ -42,7 +42,7 @@ public class LostWordType extends ExcercisePage implements answerLesson{
 			ArrayList<ArrayList<String>> answer = (ArrayList<ArrayList<String>>) ans;
 			for(int i=0;i<answer.size();i++){
 				int order = (int)(Math.random() * answer.get(i).size());
-				getBoxAnswer().get(i).sendKeys(answer.get(i).get(order));
+				getBoxAnswer().get(i).sendKeys(answer.get(i).get(order).trim());
 				Thread.sleep(3000);
 			}
 			getButtonCheck().click();

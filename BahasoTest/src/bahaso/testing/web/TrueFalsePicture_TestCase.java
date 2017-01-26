@@ -33,7 +33,7 @@ public class TrueFalsePicture_TestCase extends General{
   	public void before() throws InterruptedException {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
-	  LoginData.put("password","mahendralubis");
+	  LoginData.put("password","mahendra89");
 	  TrueFalsePicture = new TrueFalsePicture(driver);
 	  landingPage = new LandingPage(driver);
 	  landingPage.doLogin(LoginData);

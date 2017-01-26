@@ -48,7 +48,7 @@ public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 			for(int i=0;i<getDroppable().size();i++){
 				for(int j=0;j<answer.get(i).size();j++){
 					for(int k=0;k<getDraggable().size();k++){
-						if(answer.get(i).get(j).equals(getDraggable().get(k).getText())){
+						if(answer.get(i).get(j).trim().equals(getDraggable().get(k).getText())){
 							action.dragAndDrop(getDraggable().get(k), getDroppable().get(i)).perform();
 							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 							Thread.sleep(2000);
@@ -75,7 +75,7 @@ public class BoxMatchDissappear extends ExcercisePage implements answerLesson{
 					for(int k=0;k<getDraggable().size();k++){
 						int move = i+(size-(size-1));
 						if(move==size)move = move - size;
-						if(answer.get(i).get(j).equals(getDraggable().get(k).getText())){
+						if(answer.get(i).get(j).trim().equals(getDraggable().get(k).getText())){
 							action.dragAndDrop(getDraggable().get(k), getDroppable().get(move)).perform();
 							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 							Thread.sleep(2000);

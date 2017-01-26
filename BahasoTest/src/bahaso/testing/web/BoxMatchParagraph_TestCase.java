@@ -32,7 +32,7 @@ public class BoxMatchParagraph_TestCase extends General{
   	public void beforeMethod() {
 	  driver = getDriver();
 	  LoginData.put("email","reddev");
-	  LoginData.put("password","mahendralubis");
+	  LoginData.put("password","mahendra89");
 	  landingPage = new LandingPage(driver);
 	  boxMatchParagraph = new BoxMatchParagraph(driver);
 	  landingPage.doLogin(LoginData);

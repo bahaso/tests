@@ -40,7 +40,7 @@ public class RecordASentence extends ExcercisePage implements answerLesson{
 			int order = (int)(Math.random() * answer.size());
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
-			getBoxAnswer().sendKeys(answer.get(order));
+			getBoxAnswer().sendKeys(answer.get(order).trim());
 			getButtonCheck().click();
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {

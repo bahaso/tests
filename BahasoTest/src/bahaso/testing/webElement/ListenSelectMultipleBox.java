@@ -38,7 +38,7 @@ public class ListenSelectMultipleBox extends ExcercisePage implements answerLess
 			ArrayList<String> answer = (ArrayList<String>) ans;
 			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getChoices().size();j++){
-					if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+					if(answer.get(i).trim().equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 					}
@@ -61,14 +61,14 @@ public class ListenSelectMultipleBox extends ExcercisePage implements answerLess
 			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getChoices().size();j++){
 					if(wrong>0){
-						if(!answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+						if(!answer.get(i).trim().equals(getChoices().get(j).getAttribute("value"))){
 							getChoice(getChoices().get(j).getAttribute("id")).click();
 							wrong = 0;
 							Thread.sleep(2000);
 							break;
 						}
 					}
-					else if(answer.get(i).equals(getChoices().get(j).getAttribute("value"))){
+					else if(answer.get(i).trim().equals(getChoices().get(j).getAttribute("value"))){
 						getChoice(getChoices().get(j).getAttribute("id")).click();
 						Thread.sleep(2000);
 						break;

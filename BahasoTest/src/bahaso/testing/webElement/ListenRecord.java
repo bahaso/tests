@@ -39,7 +39,7 @@ public class ListenRecord extends ExcercisePage implements answerLesson{
 			ArrayList<String> answer = (ArrayList<String>) ans;
 			getMicrophoneButton().click();
 			Thread.sleep(2000);
-			getBoxAnswer().sendKeys(answer.get(0));
+			getBoxAnswer().sendKeys(answer.get(0).trim());
 			getButtonCheck().click();
 			Thread.sleep(3000);
 		} catch (InterruptedException e) {

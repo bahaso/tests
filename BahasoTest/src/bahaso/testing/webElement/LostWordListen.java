@@ -47,7 +47,7 @@ public class LostWordListen extends ExcercisePage implements answerLesson{
 			Thread.sleep(3000);
 			ArrayList<String> answer= (ArrayList<String>) ans;
 			for(int i=0;i<answer.size();i++){
-				getBoxAnswer().get(i).sendKeys(answer.get(i));
+				getBoxAnswer().get(i).sendKeys(answer.get(i).trim());
 				Thread.sleep(3000);
 			}
 			getButtonCheck().click();

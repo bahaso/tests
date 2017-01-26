@@ -36,7 +36,7 @@ public class PictureMultipleChoice extends ExcercisePage implements answerLesson
 			Thread.sleep(3000);
 			String answer = (String)ans;
 			for(int i=0;i<getAllAnswer().size();i++){
-				if(answer.equals(getAllAnswer().get(i).getAttribute("value"))){
+				if(answer.trim().equals(getAllAnswer().get(i).getAttribute("value"))){
 					getAnswerLabel(getAllAnswer().get(i).getAttribute("id")).click();
 					Thread.sleep(3000);
 					break;
@@ -55,7 +55,7 @@ public class PictureMultipleChoice extends ExcercisePage implements answerLesson
 			Thread.sleep(3000);
 			String answer = (String)ans;
 			for(int i=0;i<getAllAnswer().size();i++){
-				if(!answer.equals(getAllAnswer().get(i).getAttribute("value"))){
+				if(!answer.trim().equals(getAllAnswer().get(i).getAttribute("value"))){
 					getAnswerLabel(getAllAnswer().get(i).getAttribute("id")).click();
 					Thread.sleep(3000);
 					break;

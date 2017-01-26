@@ -45,7 +45,7 @@ public class ListenType extends ExcercisePage implements answerLesson{
 			ArrayList<ArrayList<String>> answer = (ArrayList<ArrayList<String>>) ans;
 			for(int i=getBoxAnswer().size()-1;i>-1;i--){
 				int order = (int)(Math.random() * answer.get(i).size());
-				getBoxAnswer().get(i).sendKeys(answer.get((getBoxAnswer().size()-1)-i).get(order));
+				getBoxAnswer().get(i).sendKeys(answer.get((getBoxAnswer().size()-1)-i).get(order).trim());
 				if(i!=0){
 					getNextCard().click();
 				}

@@ -1,0 +1,23 @@
+package bahaso.testing.android;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import bahaso.testing.androidElement.SplashScreen;
+import bahaso.testing.general.mobileGeneral;
+
+public class SplashScreen_test extends mobileGeneral{
+	SplashScreen SplashScreen;
+	
+	
+	@BeforeMethod
+	public void beforeMethod(){
+		startEngine();
+		
+	}
+	
+	@Test
+	public void goToFBLoginPage(){
+		
+	}
+}

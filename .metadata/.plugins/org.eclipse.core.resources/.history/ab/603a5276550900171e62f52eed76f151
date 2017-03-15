@@ -1,0 +1,37 @@
+package bahaso.testing.androidElement;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class SplashScreen {
+	AndroidDriver driver;
+	public WebElement FB_Login_Button;
+	public WebElement GooglePlus_Login_Button;
+	public WebElement Sign_Up_Button;
+	public WebElement Login_Email_Button;
+	
+	public SplashScreen(AndroidDriver driver){
+		this.driver = driver;
+	}
+	
+	public WebElement FBLoginButton(){
+		FB_Login_Button = (WebElement) driver.findElementsById("com.bahaso:id/layout_btn_login_fb");
+		return FB_Login_Button;
+	}
+	
+	public WebElement GooglePlusLoginButton(){
+		FB_Login_Button = (WebElement) driver.findElementsById("com.bahaso:id/layout_btn_login_gplus");
+		return FB_Login_Button;
+	}
+	
+	public WebElement SignUpButton(){
+		FB_Login_Button = (WebElement) driver.findElementsById("com.bahaso:id/btn_daftar_baru");
+		return FB_Login_Button;
+	}
+	
+	public WebElement LoginEmailButton(){
+		FB_Login_Button = (WebElement) driver.findElementsById("com.bahaso:id/btn_email_login");
+		return FB_Login_Button;
+	}
+}

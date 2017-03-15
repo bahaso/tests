@@ -1,0 +1,54 @@
+package bahaso.testing.general;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+
+import io.appium.java_client.PerformsTouchActions;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+
+public class mobileGeneral {
+	AndroidDriver driver;
+	
+	@Test
+	public void testAppium() throws MalformedURLException, InterruptedException{
+		DesiredCapabilities cap = new DesiredCapabilities();
+		cap.setCapability("deviceName", "Galaxy j1 ace");
+		cap.setCapability("platformVersion", "5.1.1");
+		cap.setCapability("platformName", "Android");
+		cap.setCapability("appPackage", "com.bahaso");
+		cap.setCapability("appActivity", "com.bahaso.SplashScreen");
+		//File file = new File("E:\\java\\tests\\AppiumTest\\apk\\Gesture Tool_v1.3_apkpure.com.apk");
+		//cap.setCapability("app", file.getAbsolutePath());
+		
+		driver = new AndroidDriver(new URL("http://10.10.16.64:4723/wd/hub"), cap);
+        TouchAction action = new TouchAction((PerformsTouchActions)driver);
+//        ArrayList<WebElement> menu = (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/btn_daftar_baru");
+//        for(WebElement elem : menu){
+//        	System.out.println(elem.getText());
+//        }
+        try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        WebElement button = driver.findElementById("com.bahaso:id/btn_daftar_baru");
+        action.press(button).waitAction(10000).release().perform();
+//		driver.findElementById("com.davemac327.gesture.tool:id/gesture_name").sendKeys("test");
+        //driver.swipe(startx, starty, endx, endy, duration);
+        Thread.sleep(4000);
+		
+	}
+	
+	@AfterMethod
+	public void done(){
+		driver.quit();
+	}
+}

@@ -1,0 +1,14 @@
+package bahaso.testing.android;
+
+import org.testng.annotations.BeforeMethod;
+
+import bahaso.testing.general.mobileGeneral;
+
+public class SplashScreen_test extends mobileGeneral{
+	
+	@BeforeMethod
+	public void beforeMethod(){
+		driver = startEngine();
+		
+	}
+}

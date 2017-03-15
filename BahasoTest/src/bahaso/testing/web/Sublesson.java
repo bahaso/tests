@@ -151,9 +151,9 @@ public class Sublesson extends General{
 	@Test  
   	public void Simulation2(){
 		try {
-			Integer level = 1;
-			Integer lesson = 9;
-			Integer sublesson = 4;
+			Integer level = 2;
+			Integer lesson = 2;
+			Integer sublesson = 1;
 			int value = ((lesson-1)/3*2)+lesson;
 			loginPage.getLevelButton().get(level-1).click();
 			Thread.sleep(3000);

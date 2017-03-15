@@ -1,0 +1,7 @@
+package bahaso.testing.android;
+
+import bahaso.testing.general.mobileGeneral;
+
+public class SplashScreen_test extends mobileGeneral{
+	
+}

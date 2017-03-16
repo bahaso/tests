@@ -53,7 +53,7 @@ public class Sublesson extends General{
 		}else if(value==16){
 			obj = new ListenAndOrganize(driver);
 		}else if(value==19){
-			obj = new LittleBoxMultipleChoice(driver);
+			obj = new ListenTranslate(driver);
 		}else if(value==20){
 			obj = new BoxMatchDissappear(driver);
 		}else if(value==21){
@@ -151,9 +151,9 @@ public class Sublesson extends General{
 	@Test  
   	public void Simulation2(){
 		try {
-			Integer level = 1;
-			Integer lesson = 3;
-			Integer sublesson = 4;
+			Integer level = 2;
+			Integer lesson = 2;
+			Integer sublesson = 1;
 			int value = ((lesson-1)/3*2)+lesson;
 			loginPage.getLevelButton().get(level-1).click();
 			Thread.sleep(3000);

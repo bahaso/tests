@@ -33,7 +33,11 @@ public class BoxMatchDialog extends ExcercisePage implements answerLesson{
 		ArrayList<String> answer = new ArrayList<String>();
 		for(int i=0;i<ans.size();i++){
 			ArrayList<String> ans2 = (ArrayList<String>) ans.get(i).get("answers");
-			if(ans2.size()>0)answer.add((String) ans2.get(0).trim());
+			if(ans2.size()>0){
+				for(int j=0;j<ans2.size();j++){
+					answer.add((String) ans2.get(j).trim());
+				}
+			}
 		}
 		return answer;
 	}
@@ -46,7 +50,7 @@ public class BoxMatchDialog extends ExcercisePage implements answerLesson{
 			ArrayList<String> answer= (ArrayList<String>) ans;
 			for(int i=0;i<answer.size();i++){
 				for(int j=0;j<getDraggable().size();j++){
-					if(answer.get(i).equals(getDraggable().get(j).getText()) && getDraggable().get(j).getAttribute("answer-id").equals("666")){
+					if(answer.get(i).trim().equals(getDraggable().get(j).getText()) && getDraggable().get(j).getAttribute("answer-id").equals("666")){
 						action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 						//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 						Thread.sleep(2000);
@@ -70,7 +74,7 @@ public class BoxMatchDialog extends ExcercisePage implements answerLesson{
 			for(int i=0;i<getDroppable().size();i++){
 				for(int j=0;j<getDraggable().size();j++){
 					if(wrong>0){
-						if(answer.get(i).equals(getDraggable().get(j).getText())==false && getDraggable().get(i).getAttribute("answer-id").equals("666")){
+						if(answer.get(i).trim().equals(getDraggable().get(j).getText())==false && getDraggable().get(i).getAttribute("answer-id").equals("666")){
 							action.dragAndDrop(getDraggable().get(j), getDroppable().get(i)).perform();
 							//action.clickAndHold(getDraggable().get(j)).moveToElement(getDroppable().get(i)).release().build().perform();
 							wrong = 0;

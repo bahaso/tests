@@ -1,61 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="93517" started-at="2017-03-15T10:08:42Z" finished-at="2017-03-15T10:10:15Z">
+  <suite name="Default suite" duration-ms="53793" started-at="2017-03-16T09:47:32Z" finished-at="2017-03-16T09:48:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="93517" started-at="2017-03-15T10:08:42Z" finished-at="2017-03-15T10:10:15Z">
-      <class name="bahaso.testing.android.SplashScreen_test">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="12162" started-at="2017-03-15T17:08:42Z" finished-at="2017-03-15T17:08:54Z">
+    <test name="Default test" duration-ms="53793" started-at="2017-03-16T09:47:32Z" finished-at="2017-03-16T09:48:26Z">
+      <class name="bahaso.testing.android.Register_test">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Register_test@cb644e]" name="beforeMethod" is-config="true" duration-ms="17649" started-at="2017-03-16T16:47:32Z" finished-at="2017-03-16T16:47:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="goToFBLoginPage()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="goToFBLoginPage" duration-ms="7096" started-at="2017-03-15T17:08:54Z" finished-at="2017-03-15T17:09:01Z">
+        <test-method status="PASS" signature="register_succeed()[pri:0, instance:bahaso.testing.android.Register_test@cb644e]" name="register_succeed" duration-ms="35186" started-at="2017-03-16T16:47:49Z" finished-at="2017-03-16T16:48:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- goToFBLoginPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="944" started-at="2017-03-15T17:09:01Z" finished-at="2017-03-15T17:09:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="17118" started-at="2017-03-15T17:09:02Z" finished-at="2017-03-15T17:09:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="goToGPlusLoginPage()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="goToGPlusLoginPage" duration-ms="6656" started-at="2017-03-15T17:09:19Z" finished-at="2017-03-15T17:09:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToGPlusLoginPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="800" started-at="2017-03-15T17:09:26Z" finished-at="2017-03-15T17:09:26Z">
+        </test-method> <!-- register_succeed -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Register_test@cb644e]" name="afterMethod" is-config="true" duration-ms="944" started-at="2017-03-16T16:48:25Z" finished-at="2017-03-16T16:48:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="15531" started-at="2017-03-15T17:09:26Z" finished-at="2017-03-15T17:09:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="goToLoginEmailPage()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="goToLoginEmailPage" duration-ms="6549" started-at="2017-03-15T17:09:42Z" finished-at="2017-03-15T17:09:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToLoginEmailPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="801" started-at="2017-03-15T17:09:48Z" finished-at="2017-03-15T17:09:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="18501" started-at="2017-03-15T17:09:49Z" finished-at="2017-03-15T17:10:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="goToSignUpPage()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="goToSignUpPage" duration-ms="6525" started-at="2017-03-15T17:10:08Z" finished-at="2017-03-15T17:10:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- goToSignUpPage -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.SplashScreen_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="809" started-at="2017-03-15T17:10:14Z" finished-at="2017-03-15T17:10:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- bahaso.testing.android.SplashScreen_test -->
+      </class> <!-- bahaso.testing.android.Register_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -2,6 +2,7 @@ package bahaso.testing.general;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -22,6 +23,7 @@ public class mobileGeneral {
 		cap.setCapability("appActivity", "com.bahaso.SplashScreen");	
 		try {
 			driver = new AndroidDriver(new URL("http://10.10.16.64:4723/wd/hub"), cap);
+			driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

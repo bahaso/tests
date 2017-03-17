@@ -1,0 +1,43 @@
+package bahaso.testing.android;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import bahaso.testing.androidElement.Login;
+import bahaso.testing.androidElement.Register;
+import bahaso.testing.androidElement.SplashScreen;
+import bahaso.testing.general.mobileGeneral;
+
+public class Login_test extends mobileGeneral{
+	SplashScreen splashScreen;
+	Login login;
+	
+	@BeforeMethod
+	public void beforeMethod(){
+		try {
+		startEngine();
+		splashScreen = new SplashScreen(driver);
+		login = new Login(driver);
+		Thread.sleep(10000);
+		splashScreen.getSignUpButton().click();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	//firstname less then 3 character
+	@Test
+	public void firstname_fail_1(){
+		try {
+		login.getInputEmail().sendKeys("a");
+		driver.hideKeyboard();
+		Thread.sleep(4000);
+		action.press(login.btn_Login, 0, 0).release().perform();
+		Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

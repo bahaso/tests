@@ -1,0 +1,18 @@
+package bahaso.testing.androidElement;
+
+import org.openqa.selenium.WebElement;
+
+public class Login {
+	public WebElement input_email;
+	public WebElement input_Password;
+	
+	public WebElement getInputFirstname(){
+		input_email = driver.findElementById("com.bahaso:id/input_nama_depan");
+		return input_email;
+	}
+	
+	public WebElement getInputLastname(){
+		input_LastName = driver.findElementById("com.bahaso:id/input_nama_belakang");
+		return input_LastName;
+	}
+}

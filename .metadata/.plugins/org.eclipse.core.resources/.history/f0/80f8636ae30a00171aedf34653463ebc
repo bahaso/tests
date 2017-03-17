@@ -1,0 +1,10 @@
+package bahaso.testing.androidElement;
+
+import org.openqa.selenium.WebElement;
+
+public class Login {
+	public WebElement input_email;
+	public WebElement input_Password;
+	
+	
+}

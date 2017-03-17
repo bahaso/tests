@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListen"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchParagraph"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchPicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.ExcercisePage"/>
@@ -55,9 +54,10 @@
 <fullyQualifiedTypeName name="org.testng.annotations.AfterMethod"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="bahaso.testing.general.mobileGeneral"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.Register"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="bahaso.testing.general.mobileGeneral"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.Login"/>
 </qualifiedTypeNameHistroy>

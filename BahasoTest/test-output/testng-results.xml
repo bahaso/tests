@@ -1,45 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="103264" started-at="2017-03-17T08:04:09Z" finished-at="2017-03-17T08:05:52Z">
+  <suite name="Default suite" duration-ms="151283" started-at="2017-03-20T09:09:28Z" finished-at="2017-03-20T09:11:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="103264" started-at="2017-03-17T08:04:09Z" finished-at="2017-03-17T08:05:52Z">
+    <test name="Default test" duration-ms="151283" started-at="2017-03-20T09:09:28Z" finished-at="2017-03-20T09:11:59Z">
       <class name="bahaso.testing.android.Login_test">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="17646" started-at="2017-03-17T15:04:09Z" finished-at="2017-03-17T15:04:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="20782" started-at="2017-03-20T16:09:28Z" finished-at="2017-03-20T16:09:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="email_fail_1()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="email_fail_1" duration-ms="16399" started-at="2017-03-17T15:04:27Z" finished-at="2017-03-17T15:04:43Z">
+        <test-method status="PASS" signature="email_fail_1()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="email_fail_1" duration-ms="16388" started-at="2017-03-20T16:09:49Z" finished-at="2017-03-20T16:10:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- email_fail_1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="850" started-at="2017-03-17T15:04:43Z" finished-at="2017-03-17T15:04:44Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="851" started-at="2017-03-20T16:10:05Z" finished-at="2017-03-20T16:10:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="16779" started-at="2017-03-17T15:04:44Z" finished-at="2017-03-17T15:05:01Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="17013" started-at="2017-03-20T16:10:06Z" finished-at="2017-03-20T16:10:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="email_fail_2()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="email_fail_2" duration-ms="16487" started-at="2017-03-17T15:05:01Z" finished-at="2017-03-17T15:05:17Z">
+        <test-method status="PASS" signature="email_fail_2()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="email_fail_2" duration-ms="16733" started-at="2017-03-20T16:10:23Z" finished-at="2017-03-20T16:10:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- email_fail_2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="833" started-at="2017-03-17T15:05:17Z" finished-at="2017-03-17T15:05:18Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="829" started-at="2017-03-20T16:10:40Z" finished-at="2017-03-20T16:10:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="16890" started-at="2017-03-17T15:05:18Z" finished-at="2017-03-17T15:05:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="17207" started-at="2017-03-20T16:10:41Z" finished-at="2017-03-20T16:10:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="password_fail_1()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="password_fail_1" duration-ms="16490" started-at="2017-03-17T15:05:35Z" finished-at="2017-03-17T15:05:52Z">
+        <test-method status="PASS" signature="login_succeed_1()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="login_succeed_1" duration-ms="24029" started-at="2017-03-20T16:10:58Z" finished-at="2017-03-20T16:11:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_succeed_1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="838" started-at="2017-03-20T16:11:22Z" finished-at="2017-03-20T16:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="beforeMethod" is-config="true" duration-ms="19597" started-at="2017-03-20T16:11:23Z" finished-at="2017-03-20T16:11:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="password_fail_1()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="password_fail_1" duration-ms="16157" started-at="2017-03-20T16:11:42Z" finished-at="2017-03-20T16:11:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- password_fail_1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="870" started-at="2017-03-17T15:05:52Z" finished-at="2017-03-17T15:05:52Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Login_test@72d818d1]" name="afterMethod" is-config="true" duration-ms="837" started-at="2017-03-20T16:11:59Z" finished-at="2017-03-20T16:11:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

@@ -56,11 +56,28 @@ public class Login_test extends mobileGeneral{
 			e.printStackTrace();
 		}
 	}
+	
 	//password empty
 	@Test
 	public void password_fail_1(){
 		try {
 		login.getInputPassword().sendKeys(" ");
+		driver.hideKeyboard();
+		Thread.sleep(4000);
+		action.press(login.getBtnLogin(), 0, 0).release().perform();
+		Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	//password empty
+	@Test
+	public void login_succeed_1(){
+		try {
+		login.getInputEmail().sendKeys("ademahendra@gmail.com");
+		login.getInputPassword().sendKeys("mahendra89");
 		driver.hideKeyboard();
 		Thread.sleep(4000);
 		action.press(login.getBtnLogin(), 0, 0).release().perform();

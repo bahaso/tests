@@ -6,38 +6,44 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class Register {
 	AndroidDriver driver;
-	public WebElement input_Firstname;
-	public WebElement input_LastName;
-	public WebElement input_Email;
-	public WebElement input_Password;
-	public WebElement btn_Register;
 	
 	public Register(AndroidDriver driver){
 		this.driver = driver;
 	}
 	
 	public WebElement getInputFirstname(){
-		input_Firstname = driver.findElementById("com.bahaso:id/input_nama_depan");
-		return input_Firstname;
+		return driver.findElementById("com.bahaso:id/input_nama_depan");
+	}
+	
+	public WebElement getInputFirstnameErrorMessage(){
+		return driver.findElementById("com.bahaso:id/textinput_error");
 	}
 	
 	public WebElement getInputLastname(){
-		input_LastName = driver.findElementById("com.bahaso:id/input_nama_belakang");
-		return input_LastName;
+		return driver.findElementById("com.bahaso:id/input_nama_belakang");
+	}
+	
+	public WebElement getInputLastnameErrorMessage(){
+		return driver.findElementById("com.bahaso:id/textinput_error");
 	}
 	
 	public WebElement getInputEmail(){
-		input_Email = driver.findElementById("com.bahaso:id/input_email_username");
-		return input_Email;
+		return driver.findElementById("com.bahaso:id/input_email_username");
+	}
+	
+	public WebElement getInputEmailErrorMessage(){
+		return driver.findElementById("com.bahaso:id/textinput_error");
 	}
 	
 	public WebElement getInputPassword(){
-		input_Password = driver.findElementById("com.bahaso:id/input_password");
-		return input_Password;
+		return driver.findElementById("com.bahaso:id/input_password");
+	}
+	
+	public WebElement getInputPasswordErrorMessage(){
+		return driver.findElementById("com.bahaso:id/textinput_error");
 	}
 	
 	public WebElement getBtnRegister(){
-		btn_Register = driver.findElementById("com.bahaso:id/layout_btn_register");
-		return btn_Register;
+		return driver.findElementById("com.bahaso:id/layout_btn_register");
 	}
 }

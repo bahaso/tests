@@ -19,27 +19,22 @@ public class SplashScreen {
 	}
 	
 	public WebElement getFBLoginButton(){
-		FB_Login_Button = driver.findElementById("com.bahaso:id/layout_btn_login_fb");
-		return FB_Login_Button;
+		return driver.findElementById("com.bahaso:id/layout_btn_login_fb");
 	}
 	
 	public WebElement getGooglePlusLoginButton(){
-		GooglePlus_Login_Button = driver.findElementById("com.bahaso:id/layout_btn_login_gplus");
-		return GooglePlus_Login_Button;
+		return driver.findElementById("com.bahaso:id/layout_btn_login_gplus");
 	}
 	
 	public WebElement getSignUpButton(){
-		Sign_Up_Button = driver.findElementById("com.bahaso:id/btn_daftar_baru");
-		return Sign_Up_Button;
+		return driver.findElementById("com.bahaso:id/btn_daftar_baru");
 	}
 	
 	public WebElement getLoginEmailButton(){
-		Login_Email_Button = driver.findElementById("com.bahaso:id/btn_email_login");
-		return Login_Email_Button;
+		return driver.findElementById("com.bahaso:id/btn_email_login");
 	}
 	
 	public ArrayList<WebElement> getXButton(){
-		XButton = (ArrayList<WebElement>) driver.findElementsByClassName("android.widget.ImageView");
-		return XButton;
+		return (ArrayList<WebElement>) driver.findElementsByClassName("android.widget.ImageView");
 	}
 }

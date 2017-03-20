@@ -5,7 +5,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import bahaso.testing.androidElement.Login;
-import bahaso.testing.androidElement.Register;
 import bahaso.testing.androidElement.SplashScreen;
 import bahaso.testing.general.mobileGeneral;
 
@@ -72,11 +71,11 @@ public class Login_test extends mobileGeneral{
 		}
 	}
 	
-	//password empty
+
 	@Test
 	public void login_succeed_1(){
 		try {
-		login.getInputEmail().sendKeys("ademahendra@gmail.com");
+		login.getInputEmail().sendKeys("ademahendra@bahaso.com");
 		login.getInputPassword().sendKeys("mahendra89");
 		driver.hideKeyboard();
 		Thread.sleep(4000);

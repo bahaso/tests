@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.android.SplashScreen_test">
+      <class name="bahaso.testing.android.Home_test">
         <methods>
-          <include name="afterMethod"/>
-          <include name="goToSignUpPage"/>
-          <include name="goToLoginEmailPage"/>
+          <include name="home_tab_1"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- bahaso.testing.android.SplashScreen_test -->
+      </class> <!-- bahaso.testing.android.Home_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

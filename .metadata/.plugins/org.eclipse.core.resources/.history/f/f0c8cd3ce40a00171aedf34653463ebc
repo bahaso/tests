@@ -1,0 +1,7 @@
+package bahaso.testing.android;
+
+import bahaso.testing.androidElement.SplashScreen;
+
+public class Login_test {
+	SplashScreen splashScreen;
+}

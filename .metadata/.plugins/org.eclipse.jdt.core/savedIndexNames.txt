@@ -4,11 +4,11 @@ INDEX VERSION 1.127+E:\java\tests\.metadata\.plugins\org.eclipse.jdt.core
 1369784027.index
 882139543.index
 1910228820.index
-568632154.index
+3425486313.index
 2312566290.index
 1112233124.index
 2164376487.index
-3425486313.index
+568632154.index
 2481381301.index
 1728464307.index
 3297610943.index
@@ -25,7 +25,6 @@ INDEX VERSION 1.127+E:\java\tests\.metadata\.plugins\org.eclipse.jdt.core
 4066740923.index
 3998697424.index
 2246995404.index
-1237510210.index
 447325759.index
 1539523447.index
 834429912.index
@@ -36,7 +35,6 @@ INDEX VERSION 1.127+E:\java\tests\.metadata\.plugins\org.eclipse.jdt.core
 2445747412.index
 3721777236.index
 3383392487.index
-3659881745.index
 2960896380.index
 295721493.index
 18288864.index
@@ -49,8 +47,8 @@ INDEX VERSION 1.127+E:\java\tests\.metadata\.plugins\org.eclipse.jdt.core
 2212289900.index
 2741417311.index
 2534547304.index
-2521774294.index
 694604279.index
+2521774294.index
 3449170878.index
 910563728.index
 1522127699.index

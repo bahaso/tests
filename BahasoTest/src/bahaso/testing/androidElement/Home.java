@@ -15,4 +15,9 @@ public class Home {
 	public ArrayList<WebElement> getTab(){
 		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/tab");
 	}
+	
+	public WebElement getCourse(){
+		return driver.findElementById("com.bahaso:id/cv_lesson");
+	}
+	
 }

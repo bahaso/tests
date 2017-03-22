@@ -20,8 +20,17 @@ public class Home_test extends mobileGeneral{
 		splashScreen = new SplashScreen(driver);
 		login = new Login(driver);
 		home = new Home(driver);
-		Thread.sleep(10000);
-		splashScreen.getLoginEmailButton().click();
+		Thread.sleep(4000);
+//		splashScreen.getLoginEmailButton().click();
+//		Thread.sleep(4000);
+//		login.getInputEmail().sendKeys("ademahendra@bahaso.com");
+//		login.getInputPassword().sendKeys("mahendra89");
+//		driver.hideKeyboard();
+//		Thread.sleep(4000);
+//		action.press(login.getBtnLogin(), 0, 0).release().perform();
+//		Thread.sleep(4000);
+//		action.press(home.getCourse(), 0, 0).release().perform();
+//		Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -29,18 +38,10 @@ public class Home_test extends mobileGeneral{
 	}
 	
 	@Test
-	public void home_tab_1(){
+	public void go_to_choose_course_1(){
 		try {
-			login.getInputEmail().sendKeys("ademahendra@bahaso.com");
-			login.getInputPassword().sendKeys("mahendra89");
-			driver.hideKeyboard();
+			action.press(home.getCourse(), 0, 0).release().perform();
 			Thread.sleep(4000);
-			action.press(login.getBtnLogin(), 0, 0).release().perform();
-			Thread.sleep(4000);
-			for(int i=0;i<home.getTab().size();i++){
-				action.press(home.getTab().get(i), 0, 0).release().perform();
-				Thread.sleep(4000);
-			}
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

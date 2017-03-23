@@ -1,0 +1,26 @@
+package test;
+
+import java.util.Scanner;
+
+public class AndryushaandSocks {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int n,total=0,tot=0,num;
+		int[] angka = new int[100003];
+		n = in.nextInt();
+		for(int i=0;i<2*n;i++){
+			num = in.nextInt();
+			if(angka[num]==0){
+				tot++;
+				angka[num]++;
+			}
+			else{
+				tot--;
+				angka[num]--;
+			}
+			total = Math.max(total, tot);
+		}
+		System.out.println(total);
+	}
+}

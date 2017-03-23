@@ -1,0 +1,23 @@
+package test;
+
+import java.util.Scanner;
+
+public class AntonandPolyhedrons {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String str;
+		int n,total=0;
+		n= in.nextInt();
+		for(int i=0;i<n;i++){
+			str = in.next();
+			if(str.equals("Tetrahedron"))total+=4;
+			else if(str.equals("Cube"))total+=6;
+			else if(str.equals("Octahedron"))total+=8;
+			else if(str.equals("Dodecahedron"))total+=12;
+			else if(str.equals("Icosahedron"))total+=20;
+		}
+		System.out.println(total);
+	}
+
+}

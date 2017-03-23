@@ -1,5 +1,6 @@
 package bahaso.testing.android;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -46,5 +47,23 @@ public class Home_test extends mobileGeneral{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	@Test
+	public void choose_tab_1(){
+		try {
+			for(int i=0;i<home.getTab().size();i++){
+				action.press(home.getTab().get(2), 0, 0).release().perform();
+				Thread.sleep(4000);
+			}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	@AfterMethod
+	public void afterMethod(){	
+		driver.quit();
 	}
 }

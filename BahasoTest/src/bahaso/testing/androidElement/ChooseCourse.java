@@ -13,7 +13,9 @@ public class ChooseCourse {
 		this.driver = driver;
 	}
 	
-	public ArrayList<WebElement> getTabCourse(){
-		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/appCompatImageView2");
+	public WebElement getTabCourse(){
+		//String DESTINATION_ELEMENT_TEXT= "CINA";
+		return driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector().resourceId('com.bahaso:id/txtLessonItem')).scrollIntoView(new UiSelector().text('Cina'));");
+		//return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/txtLessonItem");
 	}
 }

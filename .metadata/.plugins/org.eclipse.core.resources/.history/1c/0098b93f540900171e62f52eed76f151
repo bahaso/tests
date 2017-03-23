@@ -1,8 +1,0 @@
-package bahaso.testing.androidElement;
-
-import org.openqa.selenium.WebElement;
-
-public class SplashScreen {
-	public WebElement FB_Login_Button;
-	public WebElement GooglePlus_Login_Button;
-}

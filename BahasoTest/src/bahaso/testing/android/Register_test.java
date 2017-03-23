@@ -134,23 +134,23 @@ public class Register_test extends mobileGeneral{
 		}
 	}
 	
-	//register succeed
-	@Test
-	public void register_succeed(){
-		try {
-		register.getInputFirstname().sendKeys("aaaa");
-		register.getInputLastname().sendKeys("bbb");
-		register.getInputEmail().sendKeys("bahasotest@mailinator.com");
-		register.getInputPassword().sendKeys("bahaso");
-		driver.hideKeyboard();
-		Thread.sleep(4000);
-		action.press(register.getBtnRegister(), 0, 0).release().perform();
-		Thread.sleep(4000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+//	//register succeed
+//	@Test
+//	public void register_succeed(){
+//		try {
+//		register.getInputFirstname().sendKeys("aaaa");
+//		register.getInputLastname().sendKeys("bbb");
+//		register.getInputEmail().sendKeys("bahasotest@mailinator.com");
+//		register.getInputPassword().sendKeys("bahaso");
+//		driver.hideKeyboard();
+//		Thread.sleep(4000);
+//		action.press(register.getBtnRegister(), 0, 0).release().perform();
+//		Thread.sleep(4000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
 	
 	@AfterMethod
 	public void afterMethod(){	

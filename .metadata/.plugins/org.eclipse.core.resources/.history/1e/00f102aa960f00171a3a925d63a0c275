@@ -1,0 +1,13 @@
+package test;
+
+import java.util.Scanner;
+
+public class AntonandPolyhedrons {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		String str;
+
+	}
+
+}

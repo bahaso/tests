@@ -53,7 +53,7 @@ public class Home_test extends mobileGeneral{
 	public void choose_tab_1(){
 		try {
 			for(int i=0;i<home.getTab().size();i++){
-				action.press(home.getTab().get(2), 0, 0).release().perform();
+				action.press(home.getTab().get(i), 0, 0).release().perform();
 				Thread.sleep(4000);
 			}
 		} catch (InterruptedException e) {

@@ -1,0 +1,12 @@
+package bahaso.testing.androidElement;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class Profile {
+	AndroidDriver driver;
+	
+	public Profile(AndroidDriver driver){
+		this.driver = driver;
+	}
+	
+}	

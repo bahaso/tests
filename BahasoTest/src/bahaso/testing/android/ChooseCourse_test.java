@@ -33,7 +33,8 @@ public class ChooseCourse_test extends mobileGeneral{
 	@Test
 	public void choose_tab_course_1(){
 		try {
-			chooseCourse.getTabCourse().click();
+			System.out.println(chooseCourse.getBtnPlacement().getText());
+//			chooseCourse.getTabCourse().click();
 			Thread.sleep(4000);
 //			for(int i=0;i<chooseCourse.getTabCourse().size();i++){
 //				chooseCourse.getTabCourse().get(i).click();

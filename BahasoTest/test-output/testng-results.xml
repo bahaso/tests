@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="18713" started-at="2017-03-29T11:13:24Z" finished-at="2017-03-29T11:13:42Z">
+  <suite name="Default suite" duration-ms="21396" started-at="2017-03-29T11:26:33Z" finished-at="2017-03-29T11:26:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="18713" started-at="2017-03-29T11:13:24Z" finished-at="2017-03-29T11:13:42Z">
+    <test name="Default test" duration-ms="21396" started-at="2017-03-29T11:26:33Z" finished-at="2017-03-29T11:26:55Z">
       <class name="bahaso.testing.android.Home_test">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Home_test@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="9250" started-at="2017-03-29T18:13:24Z" finished-at="2017-03-29T18:13:33Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Home_test@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="9260" started-at="2017-03-29T18:26:33Z" finished-at="2017-03-29T18:26:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="go_to_setting_page()[pri:0, instance:bahaso.testing.android.Home_test@5cb9f472]" name="go_to_setting_page" duration-ms="8615" started-at="2017-03-29T18:13:33Z" finished-at="2017-03-29T18:13:41Z">
+        <test-method status="PASS" signature="logout()[pri:0, instance:bahaso.testing.android.Home_test@5cb9f472]" name="logout" duration-ms="11220" started-at="2017-03-29T18:26:43Z" finished-at="2017-03-29T18:26:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- go_to_setting_page -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Home_test@5cb9f472]" name="afterMethod" is-config="true" duration-ms="833" started-at="2017-03-29T18:13:41Z" finished-at="2017-03-29T18:13:42Z">
+        </test-method> <!-- logout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Home_test@5cb9f472]" name="afterMethod" is-config="true" duration-ms="901" started-at="2017-03-29T18:26:54Z" finished-at="2017-03-29T18:26:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

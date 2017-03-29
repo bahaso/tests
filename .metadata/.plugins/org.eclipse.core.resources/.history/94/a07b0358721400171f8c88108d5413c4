@@ -16,13 +16,4 @@ public class Setting {
 	public ArrayList<WebElement> getMenu(){
 		return (ArrayList<WebElement>) driver.findElementsById("android:id/title");
 	}
-	
-	public WebElement getPopUpErrorMessage(){
-		return driver.findElementById("android:id/message");
-	}
-	
-	public WebElement getPopUpErrorMessageBtnYes(){
-		return driver.findElementById("android:id/button1");
-	}
-	
 }

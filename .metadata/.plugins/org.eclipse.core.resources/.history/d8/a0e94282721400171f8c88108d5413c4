@@ -22,7 +22,7 @@ public class Setting {
 	}
 	
 	public WebElement getPopUpErrorMessageBtnYes(){
-		return driver.findElementById("android:id/button1");
+		return driver.findElementById("android:id/message");
 	}
 	
 }

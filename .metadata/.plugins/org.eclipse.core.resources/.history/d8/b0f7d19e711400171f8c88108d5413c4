@@ -23,7 +23,6 @@ public class Home_test extends mobileGeneral{
 		splashScreen = new SplashScreen(driver);
 		login = new Login(driver);
 		home = new Home(driver);
-		setting = new Setting(driver);
 		Thread.sleep(4000);
 //		splashScreen.getLoginEmailButton().click();
 //		Thread.sleep(4000);
@@ -80,9 +79,6 @@ public class Home_test extends mobileGeneral{
 	@Test
 	public void logout(){
 		try {
-			home.getBtnSetting().click();
-			setting.getMenu().get(7).click();
-			setting.getPopUpErrorMessageBtnYes().click();
 			//action.press(home.getBtnSetting(), 0, 0).release().perform();
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {

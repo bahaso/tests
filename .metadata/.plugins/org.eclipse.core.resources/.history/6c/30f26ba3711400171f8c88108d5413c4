@@ -80,9 +80,6 @@ public class Home_test extends mobileGeneral{
 	@Test
 	public void logout(){
 		try {
-			home.getBtnSetting().click();
-			setting.getMenu().get(7).click();
-			setting.getPopUpErrorMessageBtnYes().click();
 			//action.press(home.getBtnSetting(), 0, 0).release().perform();
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {

@@ -11,7 +11,7 @@ import bahaso.testing.general.mobileGeneral;
 public class Register_test extends mobileGeneral{
 	SplashScreen splashScreen;
 	Register register;
-	 
+	
 	@BeforeMethod
 	public void beforeMethod(){
 		try {
@@ -85,7 +85,7 @@ public class Register_test extends mobileGeneral{
 			e.printStackTrace();
 		}
 	}
-	
+	 
 	//email format not valid
 	@Test
 	public void email_fail_1(){

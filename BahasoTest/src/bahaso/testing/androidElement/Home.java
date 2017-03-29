@@ -20,4 +20,8 @@ public class Home {
 		return driver.findElementById("com.bahaso:id/cv_lesson");
 	}
 	
+	public WebElement getBtnSetting(){
+		return driver.findElementById("com.bahaso:id/icon_setting");
+	}
+	
 }

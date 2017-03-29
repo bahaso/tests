@@ -62,6 +62,18 @@ public class Home_test extends mobileGeneral{
 		}
 	}
 	
+	@Test
+	public void go_to_setting_page(){
+		try {
+			home.getBtnSetting().click();
+			//action.press(home.getBtnSetting(), 0, 0).release().perform();
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
 	@AfterMethod
 	public void afterMethod(){	
 		driver.quit();

@@ -1,5 +1,6 @@
 package bahaso.testing.android;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -35,6 +36,7 @@ public class Register_test extends mobileGeneral{
 		Thread.sleep(4000);
 		action.press(register.getBtnRegister(), 0, 0).release().perform();
 		Thread.sleep(4000);
+		Assert.assertEquals(register.getErrorMessage().get(0).getText(), "Nama depan minimum 3 karakter", "Pesan error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -50,6 +52,7 @@ public class Register_test extends mobileGeneral{
 		Thread.sleep(4000);
 		action.press(register.getBtnRegister(), 0, 0).release().perform();
 		Thread.sleep(4000);
+		Assert.assertEquals(register.getErrorMessage().get(0).getText(), "Isian nama depan hanya boleh diisi huruf, spasi dan apostrof (')", "Pesan error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -65,6 +68,7 @@ public class Register_test extends mobileGeneral{
 		Thread.sleep(4000);
 		action.press(register.getBtnRegister(), 0, 0).release().perform();
 		Thread.sleep(4000);
+		Assert.assertEquals(register.getErrorMessage().get(1).getText(), "Nama belakang minimum 2 karakter", "Pesan error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -80,6 +84,7 @@ public class Register_test extends mobileGeneral{
 		Thread.sleep(4000);
 		action.press(register.getBtnRegister(), 0, 0).release().perform();
 		Thread.sleep(4000);
+		Assert.assertEquals(register.getErrorMessage().get(1).getText(), "Nama belakang hanya boleh diisi huruf, spasi, titik, apostrof (') dan tanda hubung (-)", "Pesan error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -95,6 +100,7 @@ public class Register_test extends mobileGeneral{
 		Thread.sleep(4000);
 		action.press(register.getBtnRegister(), 0, 0).release().perform();
 		Thread.sleep(4000);
+		Assert.assertEquals(register.getErrorMessage().get(2).getText(), "Email harus valid, contoh john@example.com", "Pesan error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -113,6 +119,7 @@ public class Register_test extends mobileGeneral{
 		Thread.sleep(4000);
 		action.press(register.getBtnRegister(), 0, 0).release().perform();
 		Thread.sleep(4000);
+		Assert.assertEquals(register.getPopUpErrorMessage().getText(), "Akun anda telah terdaftar, mohon periksa email yang anda masukkan.", "Pesan error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -128,6 +135,7 @@ public class Register_test extends mobileGeneral{
 		Thread.sleep(4000);
 		action.press(register.getBtnRegister(), 0, 0).release().perform();
 		Thread.sleep(4000);
+		Assert.assertEquals(register.getErrorMessage().get(3).getText(), "Kata sandi minimum 6 karakter", "Pesan error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

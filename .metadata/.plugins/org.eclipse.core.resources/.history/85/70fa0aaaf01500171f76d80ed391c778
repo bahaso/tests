@@ -1,0 +1,45 @@
+package bahaso.testing.androidElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class ChooseCourse {
+	AndroidDriver driver;
+	
+	public ChooseCourse(AndroidDriver driver){
+		this.driver = driver;
+	}
+	
+	public void getTabCourse(String lang){
+		ArrayList<WebElement> courses = (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/txtLessonItem");
+		boolean flag = true;
+		
+		while(flag){
+			for(WebElement element : courses){
+				if(element.getText().equals(lang)){
+					element.click();
+					flag = false;
+					break;
+				}
+			}
+			
+			if(flag == true){
+				WebElement last = courses.get(courses.size()-1);
+				
+				int xStart = last.getLocation().getX() + last.getSize().width/2;
+				int yStart = last.getLocation().getY() + last.getSize().height/2;
+				
+				driver.swipe(xStart, yStart, xStart, yStart-300, 3000);
+			}
+		}
+		
+		//return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/txtLessonItem");
+	}
+	
+	public WebElement getBtnPlacement(){
+		return driver.findElementById("com.bahaso:id/btnPlacement");
+	}
+}

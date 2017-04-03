@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.android.Home_test">
+      <class name="bahaso.testing.android.Profile_test">
         <methods>
-          <include name="home_tab_1"/>
           <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="check_about_me"/>
         </methods>
-      </class> <!-- bahaso.testing.android.Home_test -->
+      </class> <!-- bahaso.testing.android.Profile_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

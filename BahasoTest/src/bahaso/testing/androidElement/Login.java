@@ -1,5 +1,7 @@
 package bahaso.testing.androidElement;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterMethod;
 
@@ -26,6 +28,14 @@ public class Login {
 	
 	public WebElement getBtnLogin(){
 		return driver.findElementById("com.bahaso:id/layout_btn_login_email");
+	}
+	
+	public ArrayList<WebElement> getErrorMessage(){
+		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/textinput_error");
+	}
+	
+	public WebElement getPopUpErrorMessage(){
+		return driver.findElementById("android:id/message");
 	}
 	
 	@AfterMethod

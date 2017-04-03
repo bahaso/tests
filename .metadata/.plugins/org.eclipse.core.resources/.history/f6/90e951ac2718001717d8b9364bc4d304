@@ -1,0 +1,9 @@
+package bahaso.testing.android;
+
+import bahaso.testing.androidElement.Home;
+
+public class Profile_test {
+	Home home;
+	
+	
+}

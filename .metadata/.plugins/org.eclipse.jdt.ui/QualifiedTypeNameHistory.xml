@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.mongodb.DBCollection"/>
 <fullyQualifiedTypeName name="com.mongodb.DBCursor"/>
 <fullyQualifiedTypeName name="com.mongodb.MongoClient"/>
 <fullyQualifiedTypeName name="com.mongodb.client.MongoDatabase"/>
@@ -8,7 +7,6 @@
 <fullyQualifiedTypeName name="com.mongodb.client.MongoCollection"/>
 <fullyQualifiedTypeName name="com.mongodb.BasicDBObject"/>
 <fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
-<fullyQualifiedTypeName name="org.testng.Assert"/>
 <fullyQualifiedTypeName name="org.bson.types.ObjectId"/>
 <fullyQualifiedTypeName name="bahaso.testing.general.General"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchDialog"/>
@@ -29,7 +27,6 @@
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LittleBoxMultipleChoicePicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.TrueFalseSentence"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.TrueFalseListen"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="org.bson.Document"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.ListenTranslate"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
@@ -50,14 +47,17 @@
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.Login"/>
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.Home"/>
 <fullyQualifiedTypeName name="bahaso.testing.general.mobileGeneral"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.ChooseCourse"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="java.sql.Array"/>
 <fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.Setting"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
 </qualifiedTypeNameHistroy>

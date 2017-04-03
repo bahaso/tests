@@ -11,13 +11,18 @@ public class Profile {
 		this.driver = driver;
 	}
 	
+	//BUTTON
+	
+	public WebElement getBtnEditProfile(){
+		return driver.findElementById("com.bahaso:id/iv_edit_profile");
+	}
+	
+	//TEXTVIEW
+	
 	public WebElement getProfileImage(){
 		return driver.findElementById("com.bahaso:id/iv_profile_image");
 	}
 	
-	public WebElement getEditProfile(){
-		return driver.findElementById("com.bahaso:id/iv_edit_profile");
-	}
 	
 	public WebElement getFullName(){
 		return driver.findElementById("com.bahaso:id/tv_name");
@@ -29,6 +34,10 @@ public class Profile {
 	
 	public WebElement getPremiumStatus(){
 		return driver.findElementById("com.bahaso:id/tv_premium_status");
+	}
+	
+	public WebElement getPoints(){
+		return driver.findElementById("com.bahaso:id/tv_points");
 	}
 	
 	public WebElement getBirthDate(){
@@ -45,5 +54,9 @@ public class Profile {
 	
 	public WebElement getCountry(){
 		return driver.findElementById("com.bahaso:id/tv_country");
+	}
+	
+	public WebElement getAboutMe(){
+		return driver.findElementById("com.bahaso:id/tv_about");
 	}
 }	

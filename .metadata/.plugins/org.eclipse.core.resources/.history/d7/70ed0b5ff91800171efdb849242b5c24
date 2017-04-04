@@ -1,0 +1,27 @@
+package bahaso.testing.android;
+
+import org.testng.annotations.BeforeMethod;
+
+import bahaso.testing.androidElement.Home;
+import bahaso.testing.androidElement.Profile;
+import bahaso.testing.general.mobileGeneral;
+
+public class EditProfile_test extends mobileGeneral{
+	Home home;
+	Profile profile;
+	
+	@BeforeMethod
+	public void beforeMethod(){
+		try {
+		startEngine();
+		home = new Home(driver);
+		profile = new Profile(driver);
+		Thread.sleep(4000);
+		action.press(home.getTab().get(2), 0, 0).release().perform();
+		Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

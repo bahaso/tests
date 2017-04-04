@@ -57,7 +57,7 @@ public class Profile_test extends mobileGeneral{
 	@Test
 	public void check_username(){
 		try {
-			Assert.assertEquals(profile.getUsername().getText(), "reddeva", "Username tidak sama");
+			Assert.assertEquals(profile.getUsername().getText(), "reddev", "Username tidak sama");
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -112,6 +112,19 @@ public class Profile_test extends mobileGeneral{
 	@Test
 	public void check_country(){
 		try {
+			boolean notfind=true;
+			while(notfind){
+				ArrayList<WebElement> tv = (ArrayList<WebElement>) driver.findElementsByClassName("android.widget.TextView");
+				for(WebElement element : tv){
+					if(element.getText().equals("ID")){
+						notfind = false;
+						break;
+					}
+				}
+				int xStart = tv.get(tv.size()-1).getLocation().getX() + tv.get(tv.size()-1).getSize().width/2;
+				int yStart = tv.get(tv.size()-1).getLocation().getY() + tv.get(tv.size()-1).getSize().height/2;
+				driver.swipe(xStart, yStart, xStart, yStart-500, 3000);
+			}
 			Assert.assertEquals(profile.getCountry().getText(), "ID", "negara tidak sama");
 			Thread.sleep(2000);
 		} catch (InterruptedException e) {

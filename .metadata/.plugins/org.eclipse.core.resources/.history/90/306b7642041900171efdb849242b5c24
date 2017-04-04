@@ -1,0 +1,22 @@
+package bahaso.testing.androidElement;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class EditProfile {
+	AndroidDriver driver;
+	
+	public EditProfile(AndroidDriver driver){
+		this.driver = driver;
+	}
+	
+	public WebElement getInputFirstname(){
+		return driver.findElementById("com.bahaso:id/input_firstname");
+	}
+	
+	public WebElement getInputLastname(){
+		return driver.findElementById("com.bahaso:id/input_firstname");
+	}
+	
+}

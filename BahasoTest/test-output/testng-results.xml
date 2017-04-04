@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23336" started-at="2017-04-03T07:48:05Z" finished-at="2017-04-03T07:48:28Z">
+  <suite name="Default suite" duration-ms="41731" started-at="2017-04-04T10:23:41Z" finished-at="2017-04-04T10:24:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23336" started-at="2017-04-03T07:48:05Z" finished-at="2017-04-03T07:48:28Z">
-      <class name="bahaso.testing.android.Profile_test">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Profile_test@cb644e]" name="beforeMethod" is-config="true" duration-ms="14086" started-at="2017-04-03T14:48:05Z" finished-at="2017-04-03T14:48:19Z">
+    <test name="Default test" duration-ms="41731" started-at="2017-04-04T10:23:41Z" finished-at="2017-04-04T10:24:23Z">
+      <class name="bahaso.testing.android.EditProfile_test">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="20995" started-at="2017-04-04T17:23:41Z" finished-at="2017-04-04T17:24:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="check_about_me()[pri:0, instance:bahaso.testing.android.Profile_test@cb644e]" name="check_about_me" duration-ms="8352" started-at="2017-04-03T14:48:19Z" finished-at="2017-04-03T14:48:27Z">
+        <test-method status="PASS" signature="firstname_fail_1()[pri:0, instance:bahaso.testing.android.EditProfile_test@5cb9f472]" name="firstname_fail_1" duration-ms="20724" started-at="2017-04-04T17:24:02Z" finished-at="2017-04-04T17:24:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- check_about_me -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Profile_test@cb644e]" name="afterMethod" is-config="true" duration-ms="883" started-at="2017-04-03T14:48:27Z" finished-at="2017-04-03T14:48:28Z">
+        </test-method> <!-- firstname_fail_1 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@5cb9f472]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-04T17:24:23Z" finished-at="2017-04-04T17:24:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- bahaso.testing.android.Profile_test -->
+      </class> <!-- bahaso.testing.android.EditProfile_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

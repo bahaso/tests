@@ -1,0 +1,79 @@
+package bahaso.testing.androidElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class Profile {
+	AndroidDriver driver;
+	
+	public Profile(AndroidDriver driver){
+		this.driver = driver;
+	}
+	
+	public void scrollToById(String ID){
+		ArrayList<WebElement> Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+		while(Element.size()==0){
+			Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+			WebElement screen = driver.findElementByClassName("android.widget.FrameLayout");
+			int xStart = screen.getLocation().getX() + screen.getSize().width/2;
+			int yStart = screen.getLocation().getY() + screen.getSize().height-50;
+			driver.swipe(xStart, yStart, xStart, yStart-100, 3000);
+		}
+	}
+	
+	//BUTTON
+	
+	public WebElement getBtnEditProfile(){
+		String ID = "com.bahaso:id/iv_edit_profile";
+		scrollToById(ID);
+		return driver.findElementById(ID);
+	}
+	
+	//TEXTVIEW
+	
+	public WebElement getProfileImage(){
+		String ID = "com.bahaso:id/iv_profile_image";
+		scrollToById(ID);
+		return driver.findElementById(ID);
+	}
+	
+	
+	public WebElement getFullName(){
+		return driver.findElementById("com.bahaso:id/tv_name");
+	}
+	
+	public WebElement getUsername(){
+		return driver.findElementById("com.bahaso:id/tv_username");
+	}
+	
+	public WebElement getPremiumStatus(){
+		return driver.findElementById("com.bahaso:id/tv_premium_status");
+	}
+	
+	public WebElement getPoints(){
+		return driver.findElementById("com.bahaso:id/tv_points");
+	}
+	
+	public WebElement getBirthDate(){
+		return driver.findElementById("com.bahaso:id/tv_birthdate");
+	}
+	
+	public WebElement getEmail(){
+		return driver.findElementById("com.bahaso:id/tv_email");
+	}
+	
+	public WebElement getJob(){
+		return driver.findElementById("com.bahaso:id/tv_job");
+	}
+	
+	public WebElement getCountry(){
+		return driver.findElementById("com.bahaso:id/tv_country");
+	}
+	
+	public WebElement getAboutMe(){
+		return driver.findElementById("com.bahaso:id/tv_about");
+	}
+}	

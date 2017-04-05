@@ -37,9 +37,8 @@ public class EditProfile_test extends mobileGeneral{
 	public void firstname_fail_1(){
 		try {
 			editprofile.getInputFirstname().clear();
-			editprofile.getInputFirstname().sendKeys("mahendra1");
 			driver.hideKeyboard();
-			Thread.sleep(3000);
+			Thread.sleep(100);
 			editprofile.getButtonSave().click();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -49,6 +48,6 @@ public class EditProfile_test extends mobileGeneral{
 	
 	@AfterMethod
 	public void afterMethod(){	
-		//driver.quit();
+		driver.quit();
 	}
 }

@@ -14,64 +14,85 @@ public class EditProfile {
 		this.driver = driver;
 	}
 	
+	public void scrollToById(String ID){
+		ArrayList<WebElement> Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+		while(Element.size()==0){
+			Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+			WebElement screen = driver.findElementByClassName("android.widget.FrameLayout");
+			int xStart = screen.getLocation().getX() + screen.getSize().width/2;
+			int yStart = screen.getLocation().getY() + screen.getSize().height-50;
+			driver.swipe(xStart, yStart, xStart, yStart-100, 1000);
+		}
+	}
+	
 	//Button
 	
 	public WebElement getButtonSave(){
-		boolean flag = true;
-		while(flag){
-			ArrayList<WebElement> et = (ArrayList<WebElement>) driver.findElementsByClassName("android.widget.TextView");
-			for(WebElement element : et){
-				if(element.getText().equals("Simpan")){
-					flag=false;
-				}
-			}
-			int xStart = et.get(et.size()-1).getLocation().getX() + et.get(et.size()-1).getSize().width/2;
-			int yStart = et.get(et.size()-1).getLocation().getY() + et.get(et.size()-1).getSize().height/2;
-			driver.swipe(xStart, yStart, xStart, yStart-300, 3000);
-		}
-		return driver.findElementById("com.bahaso:id/layout_btn_simpan_edit_profile");
+		String ID = "com.bahaso:id/layout_btn_simpan_edit_profile";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	//Edit Text
 	
 	public WebElement getInputFirstname(){
-		return driver.findElementById("com.bahaso:id/input_firstname");
+		String ID = "com.bahaso:id/input_firstname";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getInputLastname(){
-		return driver.findElementById("com.bahaso:id/input_lastname");
+		String ID = "com.bahaso:id/input_lastname";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getRadioButtonMale(){
-		return driver.findElementById("com.bahaso:id/rb_male");
+		String ID = "com.bahaso:id/rb_male";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getRadioButtonFemale(){
-		return driver.findElementById("com.bahaso:id/rb_female");
+		String ID = "com.bahaso:id/rb_female";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getInputBirthdate(){
-		return driver.findElementById("com.bahaso:id/input_dob");
+		String ID = "com.bahaso:id/input_dob";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getInputCountry(){
-		return driver.findElementById("com.bahaso:id/tv_input_country");
+		String ID = "com.bahaso:id/tv_input_country";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getInputCallingCode(){
-		return driver.findElementById("com.bahaso:id/tv_calling_code");
+		String ID = "com.bahaso:id/tv_calling_code";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getInputPhoneNumber(){
-		return driver.findElementById("com.bahaso:id/et_phone_number");
+		String ID = "com.bahaso:id/et_phone_number";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getInputJob(){
-		return driver.findElementById("com.bahaso:id/input_job");
+		String ID = "com.bahaso:id/input_job";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getInputAboutMe(){
-		return driver.findElementById("com.bahaso:id/input_about_me");
+		String ID = "com.bahaso:id/input_about_me";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	

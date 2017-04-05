@@ -1,5 +1,7 @@
 package bahaso.testing.androidElement;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.WebElement;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -11,52 +13,85 @@ public class Profile {
 		this.driver = driver;
 	}
 	
+	public void scrollToById(String ID){
+		ArrayList<WebElement> Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+		while(Element.size()==0){
+			Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+			WebElement screen = driver.findElementByClassName("android.widget.FrameLayout");
+			int xStart = screen.getLocation().getX() + screen.getSize().width/2;
+			int yStart = screen.getLocation().getY() + screen.getSize().height-50;
+			driver.swipe(xStart, yStart, xStart, yStart-100, 3000);
+		}
+	}
+	
 	//BUTTON
 	
 	public WebElement getBtnEditProfile(){
-		return driver.findElementById("com.bahaso:id/iv_edit_profile");
+		String ID = "com.bahaso:id/iv_edit_profile";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	//TEXTVIEW
 	
 	public WebElement getProfileImage(){
-		return driver.findElementById("com.bahaso:id/iv_profile_image");
+		String ID = "com.bahaso:id/iv_profile_image";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	
 	public WebElement getFullName(){
-		return driver.findElementById("com.bahaso:id/tv_name");
+		String ID = "com.bahaso:id/tv_name";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getUsername(){
-		return driver.findElementById("com.bahaso:id/tv_username");
+		String ID = "com.bahaso:id/tv_username";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getPremiumStatus(){
-		return driver.findElementById("com.bahaso:id/tv_premium_status");
+		String ID = "com.bahaso:id/tv_premium_status";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getPoints(){
-		return driver.findElementById("com.bahaso:id/tv_points");
+		String ID = "com.bahaso:id/tv_points";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getBirthDate(){
-		return driver.findElementById("com.bahaso:id/tv_birthdate");
+		String ID = "com.bahaso:id/tv_birthdate";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getEmail(){
-		return driver.findElementById("com.bahaso:id/tv_email");
+		String ID = "com.bahaso:id/tv_email";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getJob(){
-		return driver.findElementById("com.bahaso:id/tv_job");
+		String ID = "com.bahaso:id/tv_job";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getCountry(){
-		return driver.findElementById("com.bahaso:id/tv_country");
+		String ID = "com.bahaso:id/tv_country";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getAboutMe(){
-		return driver.findElementById("com.bahaso:id/tv_about");
+		String ID = "com.bahaso:id/tv_about";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 }	

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58022" started-at="2017-04-05T11:47:34Z" finished-at="2017-04-05T11:48:32Z">
+  <suite name="Default suite" duration-ms="23983" started-at="2017-04-07T11:45:33Z" finished-at="2017-04-07T11:45:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58022" started-at="2017-04-05T11:47:34Z" finished-at="2017-04-05T11:48:32Z">
+    <test name="Default test" duration-ms="23983" started-at="2017-04-07T11:45:33Z" finished-at="2017-04-07T11:45:57Z">
       <class name="bahaso.testing.android.EditProfile_test">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@5cb9f472]" name="beforeMethod" is-config="true" duration-ms="21375" started-at="2017-04-05T18:47:34Z" finished-at="2017-04-05T18:47:55Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@59494225]" name="beforeMethod" is-config="true" duration-ms="19276" started-at="2017-04-07T18:45:33Z" finished-at="2017-04-07T18:45:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="firstname_fail_1()[pri:0, instance:bahaso.testing.android.EditProfile_test@5cb9f472]" name="firstname_fail_1" duration-ms="35793" started-at="2017-04-05T18:47:55Z" finished-at="2017-04-05T18:48:31Z">
+        <test-method status="PASS" signature="validate_data_to_edit_profile()[pri:0, instance:bahaso.testing.android.EditProfile_test@59494225]" name="validate_data_to_edit_profile" duration-ms="4021" started-at="2017-04-07T18:45:53Z" finished-at="2017-04-07T18:45:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- firstname_fail_1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@5cb9f472]" name="afterMethod" is-config="true" duration-ms="840" started-at="2017-04-05T18:48:31Z" finished-at="2017-04-05T18:48:32Z">
+        </test-method> <!-- validate_data_to_edit_profile -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@59494225]" name="afterMethod" is-config="true" duration-ms="668" started-at="2017-04-07T18:45:57Z" finished-at="2017-04-07T18:45:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

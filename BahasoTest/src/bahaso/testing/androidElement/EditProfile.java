@@ -1,5 +1,6 @@
 package bahaso.testing.androidElement;
 
+import java.lang.reflect.Array;
 import java.time.temporal.WeekFields;
 import java.util.ArrayList;
 
@@ -23,6 +24,16 @@ public class EditProfile {
 			int yStart = screen.getLocation().getY() + screen.getSize().height-50;
 			driver.swipe(xStart, yStart, xStart, yStart-100, 1000);
 		}
+	}
+	
+	public ArrayList<WebElement> searcErrorMessage(String ID){
+			ArrayList<WebElement> Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+			return Element;
+			//System.out.println(Element.size());
+			//break;
+//			int xStart = screen.getLocation().getX() + screen.getSize().width/2;
+//			int yStart = screen.getLocation().getY() + screen.getSize().height-50;
+//			driver.swipe(xStart, yStart, xStart, yStart-100, 1000);
 	}
 	
 	//Button
@@ -93,6 +104,18 @@ public class EditProfile {
 		String ID = "com.bahaso:id/input_about_me";
 		scrollToById(ID);
 		return driver.findElementById(ID);
+	}
+	
+	public WebElement getMessageError(){
+		String ID = "com.bahaso:id/textinput_error";
+		scrollToById(ID);
+		return driver.findElementById(ID);
+	}
+	
+	public ArrayList<WebElement> getMessagesError(){
+		String ID = "com.bahaso:id/textinput_error";
+		scrollToById(ID);
+		return (ArrayList<WebElement>) driver.findElementsById(ID);
 	}
 	
 	

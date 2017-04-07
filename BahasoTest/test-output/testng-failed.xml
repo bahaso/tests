@@ -6,7 +6,7 @@
       <class name="bahaso.testing.android.EditProfile_test">
         <methods>
           <include name="beforeMethod"/>
-          <include name="firstname_fail_1"/>
+          <include name="validate_data_to_edit_profile"/>
         </methods>
       </class> <!-- bahaso.testing.android.EditProfile_test -->
     </classes>

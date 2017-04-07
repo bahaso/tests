@@ -1,5 +1,7 @@
 package bahaso.testing.androidElement;
 
+import java.util.ArrayList;
+
 import org.openqa.selenium.WebElement;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -11,23 +13,56 @@ public class Gold {
 		this.driver = driver;
 	}
 	
+	public void scrollToById(String ID){
+		ArrayList<WebElement> Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+		while(Element.size()==0){
+			Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+			WebElement screen = driver.findElementByClassName("android.widget.FrameLayout");
+			int xStart = screen.getLocation().getX() + screen.getSize().width/2;
+			int yStart = screen.getLocation().getY() + screen.getSize().height-50;
+			driver.swipe(xStart, yStart, xStart, yStart-100, 1000);
+		}
+	}
+	
 	public WebElement getGold(){
-		return driver.findElementById("com.bahaso:id/tv_gold");
+		String ID = "com.bahaso:id/tv_gold";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getPaymentHistory(){
-		return driver.findElementById("com.bahaso:id/tv_gold");
+		String ID = "com.bahaso:id/layout_payment_history";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
-	public WebElement getUseVoucher(){
-		return driver.findElementById("com.bahaso:id/pny_kode_voucher");
+	public WebElement getCheckButton(){
+		String ID = "com.bahaso:id/checkbox_voucher";
+		scrollToById(ID);
+		return driver.findElementById(ID);
+	}
+	
+	public WebElement getVoucherForm(){
+		String ID = "com.bahaso:id/et_voucher";
+		scrollToById(ID);
+		return driver.findElementById(ID);
+	}
+	
+	public WebElement getVoucherButton(){
+		String ID = "com.bahaso:id/layout_btn_redeem_voucher";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getAddGold(){
-		return driver.findElementById("com.bahaso:id/et_gold");
+		String ID = "com.bahaso:id/et_gold";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 	
 	public WebElement getBtnPayment(){
-		return driver.findElementById("com.bahaso:id/layout_btn_payment_method");
+		String ID = "com.bahaso:id/layout_btn_payment_method";
+		scrollToById(ID);
+		return driver.findElementById(ID);
 	}
 }

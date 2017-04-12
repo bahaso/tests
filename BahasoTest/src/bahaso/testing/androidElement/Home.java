@@ -16,6 +16,20 @@ public class Home {
 		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/tab");
 	}
 	
+	public WebElement searchMenu(String menu){
+		ArrayList<WebElement> Element = (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/title");
+		for(int i=0;i<Element.size();i++){
+			if(Element.get(i).getText().equals(menu)){
+				return Element.get(i);
+			}
+		}
+		return null;
+	}
+	
+	public WebElement getMenuOverflow(){
+		return driver.findElementById("com.bahaso:id/menu_overflow");
+	}
+	
 	public WebElement getCourse(){
 		return driver.findElementById("com.bahaso:id/cv_lesson");
 	}

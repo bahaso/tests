@@ -1,0 +1,42 @@
+package bahaso.testing.androidElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class Home {
+	AndroidDriver driver;
+	
+	public Home(AndroidDriver driver){
+		this.driver = driver;
+	}
+	public ArrayList<WebElement> getTab(){
+		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/tab");
+	}
+	
+	public void scrollToById(String ID){
+		ArrayList<WebElement> Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+		while(Element.size()==0){
+			Element = (ArrayList<WebElement>) driver.findElementsById(ID);
+			WebElement screen = driver.findElementByClassName("android.widget.FrameLayout");
+			int xStart = screen.getLocation().getX() + screen.getSize().width/2;
+			int yStart = screen.getLocation().getY() + screen.getSize().height-50;
+			driver.swipe(xStart, yStart, xStart, yStart-100, 3000);
+		}
+	}
+	
+	public WebElement getMenuOverflow(){
+		return driver.findElementById("com.bahaso:id/menu_overflow");
+	}
+	
+	public WebElement getCourse(){
+		return driver.findElementById("com.bahaso:id/cv_lesson");
+	}
+	
+	public WebElement getBtnSetting(){
+		return driver.findElementById("com.bahaso:id/icon_setting");
+	}
+	
+}

@@ -1,21 +1,196 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="10" failed="0" total="10" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23983" started-at="2017-04-07T11:45:33Z" finished-at="2017-04-07T11:45:57Z">
+  <suite name="Default suite" duration-ms="27902" started-at="2017-04-12T09:28:06Z" finished-at="2017-04-12T09:28:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23983" started-at="2017-04-07T11:45:33Z" finished-at="2017-04-07T11:45:57Z">
+    <test name="Default test" duration-ms="27902" started-at="2017-04-12T09:28:06Z" finished-at="2017-04-12T09:28:34Z">
       <class name="bahaso.testing.android.EditProfile_test">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@59494225]" name="beforeMethod" is-config="true" duration-ms="19276" started-at="2017-04-07T18:45:33Z" finished-at="2017-04-07T18:45:53Z">
+        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:06Z" finished-at="2017-04-12T16:28:06Z">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[A new session could not be created. (Original error: Could not find a connected Android device.) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'BahasoComputer', ip: '10.10.16.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: driver.version: AndroidDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find a connected Android device.) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: 'unknown', revision: '1969d75', time: '2016-10-18 09:43:45 -0700'
+System info: host: 'BahasoComputer', ip: '10.10.16.64', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_73'
+Driver info: driver.version: AndroidDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:161)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:64)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:141)
+	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:90)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:128)
+	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:72)
+	at bahaso.testing.general.mobileGeneral.startEngine(mobileGeneral.java:28)
+	at bahaso.testing.android.EditProfile_test.beforeMethod(EditProfile_test.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="validate_data_to_edit_profile()[pri:0, instance:bahaso.testing.android.EditProfile_test@59494225]" name="validate_data_to_edit_profile" duration-ms="4021" started-at="2017-04-07T18:45:53Z" finished-at="2017-04-07T18:45:57Z">
+        <test-method status="SKIP" signature="birthdate_fail_1()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="birthdate_fail_1" duration-ms="1" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_data_to_edit_profile -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@59494225]" name="afterMethod" is-config="true" duration-ms="668" started-at="2017-04-07T18:45:57Z" finished-at="2017-04-07T18:45:57Z">
+        </test-method> <!-- birthdate_fail_1 -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="country_fail_1()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="country_fail_1" duration-ms="1" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- country_fail_1 -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="firstname_fail_1()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="firstname_fail_1" duration-ms="1" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstname_fail_1 -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="firstname_fail_2()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="firstname_fail_2" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstname_fail_2 -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="firstname_fail_3()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="firstname_fail_3" duration-ms="1" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstname_fail_3 -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="gender_fail_1()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="gender_fail_1" duration-ms="3" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gender_fail_1 -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="lastname_fail_1()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="lastname_fail_1" duration-ms="1" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastname_fail_1 -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="lastname_fail_2()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="lastname_fail_2" duration-ms="1" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastname_fail_2 -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="lastname_fail_3()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="lastname_fail_3" duration-ms="1" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lastname_fail_3 -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="phone_number_fail_1()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="phone_number_fail_1" duration-ms="1" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- phone_number_fail_1 -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:bahaso.testing.android.EditProfile_test@27c20538]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-04-12T16:28:34Z" finished-at="2017-04-12T16:28:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

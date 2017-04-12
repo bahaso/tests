@@ -23,8 +23,9 @@ public class Profile_test extends mobileGeneral{
 		profile = new Profile(driver);
 		editprofile = new EditProfile(driver);
 		Thread.sleep(4000);
-		action.press(home.getTab().get(2), 0, 0).release().perform();
-		Thread.sleep(8000);
+		home.getMenuOverflow().click();
+		home.searchMenu("Profil").click();
+		Thread.sleep(2000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -23,15 +23,16 @@ public class EditProfile_test extends mobileGeneral{
 		profile = new Profile(driver);
 		editprofile = new EditProfile(driver);
 		Thread.sleep(4000);
-		action.press(home.getTab().get(2), 0, 0).release().perform();
-		Thread.sleep(3000);
+		home.getMenuOverflow().click();
+		home.searchMenu("Profil").click();
+		Thread.sleep(4000);
 		profile.getBtnEditProfile().click();
-		Thread.sleep(3000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+	
 	
 	//Firstname is empty
 	@Test
@@ -39,10 +40,10 @@ public class EditProfile_test extends mobileGeneral{
 		try {
 			editprofile.getInputFirstname().clear();
 			driver.hideKeyboard();
-			Thread.sleep(100);
+			Thread.sleep(1000);
 			editprofile.getButtonSave().click();
-			Thread.sleep(2000);
-			Assert.assertEquals(editprofile.getMessageError().getText(), "Nama depan harus diisi" , "Message Error tidak sama");
+			editprofile.getInputFirstname();
+			Assert.assertEquals(editprofile.getMessageError("Nama depan harus diisi"), "Nama depan harus diisi" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -58,7 +59,8 @@ public class EditProfile_test extends mobileGeneral{
 			driver.hideKeyboard();
 			Thread.sleep(100);
 			editprofile.getButtonSave().click();
-			Assert.assertEquals(editprofile.getMessageError().getText(), "Isian nama depan hanya boleh diisi huruf, spasi dan apostrof (')" , "Message Error tidak sama");
+			editprofile.getInputFirstname();
+			Assert.assertEquals(editprofile.getMessageError("Isian nama depan hanya boleh diisi huruf, spasi dan apostrof (')"), "Isian nama depan hanya boleh diisi huruf, spasi dan apostrof (')" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -74,7 +76,8 @@ public class EditProfile_test extends mobileGeneral{
 			driver.hideKeyboard();
 			Thread.sleep(100);
 			editprofile.getButtonSave().click();
-			Assert.assertEquals(editprofile.getMessageError().getText(), "Nama depan minimum 3 karakter" , "Message Error tidak sama");
+			editprofile.getInputFirstname();
+			Assert.assertEquals(editprofile.getMessageError("Nama depan minimum 3 karakter"), "Nama depan minimum 3 karakter" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -89,7 +92,8 @@ public class EditProfile_test extends mobileGeneral{
 			driver.hideKeyboard();
 			Thread.sleep(100);
 			editprofile.getButtonSave().click();
-			Assert.assertEquals(editprofile.getMessageError().getText(), "Nama belakang harus diisi" , "Message Error tidak sama");
+			editprofile.getInputLastname();
+			Assert.assertEquals(editprofile.getMessageError("Nama belakang harus diisi"), "Nama belakang harus diisi" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -105,7 +109,8 @@ public class EditProfile_test extends mobileGeneral{
 			driver.hideKeyboard();
 			Thread.sleep(100);
 			editprofile.getButtonSave().click();
-			Assert.assertEquals(editprofile.getMessageError().getText(), "Nama belakang hanya boleh diisi huruf, spasi, titik, apostrof (') dan tanda hubung (-)" , "Message Error tidak sama");
+			editprofile.getInputLastname();
+			Assert.assertEquals(editprofile.getMessageError("Nama belakang hanya boleh diisi huruf, spasi, titik, apostrof (') dan tanda hubung (-)"), "Nama belakang hanya boleh diisi huruf, spasi, titik, apostrof (') dan tanda hubung (-)" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -121,7 +126,8 @@ public class EditProfile_test extends mobileGeneral{
 			driver.hideKeyboard();
 			Thread.sleep(100);
 			editprofile.getButtonSave().click();
-			Assert.assertEquals(editprofile.getMessageError().getText(), "Nama belakang minimum 2 karakter" , "Message Error tidak sama");
+			editprofile.getInputLastname();
+			Assert.assertEquals(editprofile.getMessageError("Nama belakang minimum 2 karakter"), "Nama belakang minimum 2 karakter" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -134,7 +140,8 @@ public class EditProfile_test extends mobileGeneral{
 		try {
 			Thread.sleep(100);
 			editprofile.getButtonSave().click();
-			Assert.assertEquals(editprofile.getMessageError().getText(), "Mohon pilih jenis kelamin anda" , "Message Error tidak sama");
+			editprofile.getRadioButtonMale();
+			Assert.assertEquals(editprofile.getMessageError("Mohon pilih jenis kelamin anda"), "Mohon pilih jenis kelamin anda" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -145,10 +152,10 @@ public class EditProfile_test extends mobileGeneral{
 	@Test
 	public void birthdate_fail_1(){
 		try {
-			editprofile.getRadioButtonMale().click();
 			Thread.sleep(100);
 			editprofile.getButtonSave().click();
-			Assert.assertEquals(editprofile.getMessageError().getText(), "Mohon isi tanggal lahir anda" , "Message Error tidak sama");
+			editprofile.getInputBirthdate();
+			Assert.assertEquals(editprofile.getMessageError("Mohon isi tanggal lahir anda"), "Mohon isi tanggal lahir anda" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -159,11 +166,10 @@ public class EditProfile_test extends mobileGeneral{
 	@Test
 	public void country_fail_1(){
 		try {
-			editprofile.getRadioButtonMale().click();
-			editprofile.getInputBirthdate().sendKeys("17/1/1990");
 			Thread.sleep(100);
 			editprofile.getButtonSave().click();
-			Assert.assertEquals(editprofile.getMessagesError().get(1).getText(), "Mohon untuk pilih negara anda" , "Message Error tidak sama");
+			editprofile.getInputCountry();
+			Assert.assertEquals(editprofile.getMessageError("Mohon untuk pilih negara anda"), "Mohon untuk pilih negara anda" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -174,41 +180,40 @@ public class EditProfile_test extends mobileGeneral{
 	@Test
 	public void phone_number_fail_1(){
 		try {
-			editprofile.getRadioButtonMale().click();
-			editprofile.getInputBirthdate().sendKeys("17/1/1990");
 			Thread.sleep(100);
 			editprofile.getButtonSave().click();
-			Assert.assertEquals(editprofile.getMessagesError().get(2).getText(), "Nomor telepon tidak benar" , "Message Error tidak sama");
+			editprofile.getInputPhoneNumber();
+			Assert.assertEquals(editprofile.getMessageError("Nomor telepon tidak benar"), "Nomor telepon tidak benar" , "Message Error tidak sama");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	
-	@Test
-	public void validate_data_to_edit_profile(){
-		String editprofile_fullname = editprofile.getInputFirstname().getText() + " " + editprofile.getInputLastname().getText();
-		String editprofile_birthdate = editprofile.getInputBirthdate().getText();
-		String editprofile_job = editprofile.getInputJob().getText();
-		String editprofile_country = editprofile.getInputCountry().getText();
-		String editprofile_aboutme = editprofile.getInputAboutMe().getText();
-		
-		editprofile.getButtonSave().click();
-		
-		String profile_fullname = profile.getFullName().getText();
-		String profile_birthdate = profile.getBirthDate().getText();
-		String profile_job = profile.getJob().getText();
-		String profile_country = profile.getCountry().getText();
-		String profile_aboutme = profile.getAboutMe().getText();
-		
-		
-		
-		Assert.assertEquals(editprofile_fullname, profile_fullname, "FullName tidak sama");
-		Assert.assertEquals(editprofile_birthdate, profile_birthdate, "Birth Date tidak sama");
-		Assert.assertEquals(editprofile_job, profile_job, "Job tidak sama");
-		//Assert.assertEquals(profile_country, editprofile_country, "Country tidak sama");
-		Assert.assertEquals(editprofile_aboutme,profile_aboutme, "About Me tidak sama");
-	}
+//	@Test
+//	public void validate_data_to_edit_profile(){
+//		String editprofile_fullname = editprofile.getInputFirstname().getText() + " " + editprofile.getInputLastname().getText();
+//		String editprofile_birthdate = editprofile.getInputBirthdate().getText();
+//		String editprofile_job = editprofile.getInputJob().getText();
+//		String editprofile_country = editprofile.getInputCountry().getText();
+//		String editprofile_aboutme = editprofile.getInputAboutMe().getText();
+//		
+//		editprofile.getButtonSave().click();
+//		
+//		String profile_fullname = profile.getFullName().getText();
+//		String profile_birthdate = profile.getBirthDate().getText();
+//		String profile_job = profile.getJob().getText();
+//		String profile_country = profile.getCountry().getText();
+//		String profile_aboutme = profile.getAboutMe().getText();
+//		
+//		
+//		
+//		Assert.assertEquals(editprofile_fullname, profile_fullname, "FullName tidak sama");
+//		Assert.assertEquals(editprofile_birthdate, profile_birthdate, "Birth Date tidak sama");
+//		Assert.assertEquals(editprofile_job, profile_job, "Job tidak sama");
+//		//Assert.assertEquals(profile_country, editprofile_country, "Country tidak sama");
+//		Assert.assertEquals(editprofile_aboutme,profile_aboutme, "About Me tidak sama");
+//	}
 	
 	
 	

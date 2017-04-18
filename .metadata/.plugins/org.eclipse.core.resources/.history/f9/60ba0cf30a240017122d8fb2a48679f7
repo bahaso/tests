@@ -1,0 +1,33 @@
+package bahaso.testing.android;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import bahaso.testing.androidElement.EditProfile;
+import bahaso.testing.androidElement.Home;
+import bahaso.testing.androidElement.Profile;
+import bahaso.testing.general.mobileGeneral;
+
+public class Voucher_test extends mobileGeneral{
+	Home home;
+	
+	@BeforeMethod
+	public void beforeMethod(){
+		try {
+		startEngine();
+		home = new Home(driver);
+		Thread.sleep(4000);
+		home.getTab().get(2).click();
+		Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	//
+	@Test
+	public void inputVoucher_fail_1(){
+		
+	}
+}

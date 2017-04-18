@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/10</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Apr 12 16:28:06 ICT 2017</td>
+<td>Started on:</td><td>Tue Apr 18 15:20:41 ICT 2017</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27902 ms)</td>
+<tr><td>Total time:</td><td>24 seconds (24554 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,50 +68,27 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td><div><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find a connected Android device.) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;unknown&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:43:45 -0700&apos;
-System info: host: &apos;BahasoComputer&apos;, ip: &apos;10.10.16.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
-Driver info: driver.version: AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:161)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:64)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:128)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:72)
-	at bahaso.testing.general.mobileGeneral.startEngine(mobileGeneral.java:28)
-	at bahaso.testing.android.EditProfile_test.beforeMethod(EditProfile_test.java:21)
+<td title='bahaso.testing.android.Voucher_test.inputVoucher_is_alphanumeric()'><b>inputVoucher_is_alphanumeric</b><br>Test class: bahaso.testing.android.Voucher_test</td>
+<td><div><pre>java.lang.AssertionError: input voucher code tidak alphanumeric expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at bahaso.testing.android.Voucher_test.inputVoucher_is_alphanumeric(Voucher_test.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -131,43 +108,20 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1898155970", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1898155970'><pre>org.openqa.selenium.SessionNotCreatedException: A new session could not be created. (Original error: Could not find a connected Android device.) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;unknown&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:43:45 -0700&apos;
-System info: host: &apos;BahasoComputer&apos;, ip: &apos;10.10.16.64&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_73&apos;
-Driver info: driver.version: AndroidDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:161)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:64)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:141)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:69)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:241)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:141)
-	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:90)
-	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:128)
-	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:72)
-	at bahaso.testing.general.mobileGeneral.startEngine(mobileGeneral.java:28)
-	at bahaso.testing.android.EditProfile_test.beforeMethod(EditProfile_test.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1704237553", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1704237553'><pre>java.lang.AssertionError: input voucher code tidak alphanumeric expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:305)
+	at bahaso.testing.android.Voucher_test.inputVoucher_is_alphanumeric(Voucher_test.java:37)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
@@ -188,169 +142,8 @@ Driver info: driver.version: AndroidDriver
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.beforeMethod()'><b>beforeMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.afterMethod()'><b>afterMethod</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.birthdate_fail_1()'><b>birthdate_fail_1</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.country_fail_1()'><b>country_fail_1</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.firstname_fail_1()'><b>firstname_fail_1</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.firstname_fail_2()'><b>firstname_fail_2</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.firstname_fail_3()'><b>firstname_fail_3</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.gender_fail_1()'><b>gender_fail_1</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.lastname_fail_1()'><b>lastname_fail_1</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.lastname_fail_2()'><b>lastname_fail_2</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.lastname_fail_3()'><b>lastname_fail_3</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
-<tr>
-<td title='bahaso.testing.android.EditProfile_test.phone_number_fail_1()'><b>phone_number_fail_1</b><br>Test class: bahaso.testing.android.EditProfile_test</td>
-<td></td>
-<td>0</td>
-<td>bahaso.testing.android.EditProfile_test@27c20538</td></tr>
+<td>6</td>
+<td>bahaso.testing.android.Voucher_test@59494225</td></tr>
 </table><p>
 </body>
 </html>

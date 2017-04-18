@@ -3,21 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.android.EditProfile_test">
+      <class name="bahaso.testing.android.Voucher_test">
         <methods>
           <include name="beforeMethod"/>
-          <include name="firstname_fail_1"/>
-          <include name="firstname_fail_2"/>
-          <include name="lastname_fail_2"/>
-          <include name="country_fail_1"/>
-          <include name="birthdate_fail_1"/>
-          <include name="gender_fail_1"/>
-          <include name="lastname_fail_1"/>
-          <include name="firstname_fail_3"/>
-          <include name="lastname_fail_3"/>
-          <include name="phone_number_fail_1"/>
+          <include name="inputVoucher_is_alphanumeric"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- bahaso.testing.android.EditProfile_test -->
+      </class> <!-- bahaso.testing.android.Voucher_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

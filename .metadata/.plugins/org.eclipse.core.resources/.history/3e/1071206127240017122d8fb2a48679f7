@@ -1,0 +1,11 @@
+package bahaso.testing.android;
+
+import bahaso.testing.androidElement.Gold;
+import bahaso.testing.androidElement.Home;
+
+public class Gold_test {
+	Home home;
+	Gold gold;
+	
+	
+}

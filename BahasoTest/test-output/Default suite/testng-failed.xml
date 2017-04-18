@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.android.Voucher_test">
+      <class name="bahaso.testing.android.Gold_test">
         <methods>
           <include name="beforeMethod"/>
-          <include name="inputVoucher_is_alphanumeric"/>
-          <include name="afterMethod"/>
+          <include name="check_price"/>
         </methods>
-      </class> <!-- bahaso.testing.android.Voucher_test -->
+      </class> <!-- bahaso.testing.android.Gold_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

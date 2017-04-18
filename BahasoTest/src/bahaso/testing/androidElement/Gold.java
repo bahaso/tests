@@ -60,6 +60,12 @@ public class Gold {
 		return driver.findElementById(ID);
 	}
 	
+	public WebElement getPrice(){
+		String ID = "com.bahaso:id/tv_price";
+		scrollToById(ID);
+		return driver.findElementById(ID);
+	}
+	
 	public WebElement getBtnPayment(){
 		String ID = "com.bahaso:id/layout_btn_payment_method";
 		scrollToById(ID);

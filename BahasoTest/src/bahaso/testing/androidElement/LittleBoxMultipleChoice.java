@@ -21,4 +21,12 @@ public class LittleBoxMultipleChoice {
 		return (ArrayList<WebElement>) driver.findElementsByXPath("//*[@id='com.bahaso:id/layoutCaseLittleBoxSelectionItem']["+ i +"]//*[@id='com.bahaso:id/btnSelectionLittleBox']");
 	}
 	
+	public void answerRight(){
+		
+	}
+	
+	public void answerWrong(){
+		
+	}
+	
 }

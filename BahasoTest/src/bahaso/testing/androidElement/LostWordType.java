@@ -6,11 +6,24 @@ import org.openqa.selenium.WebElement;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class LostWordType {
-	AndroidDriver driver;
+public class LostWordType extends ExercisePage{
 	
 	public LostWordType(AndroidDriver driver){
 		this.driver = driver;
+	}
+	
+	public void scroll(){
+		ArrayList<WebElement> layouts = this.getLayout();
+			
+		WebElement firstElement = layouts.get(0);
+		WebElement lastElement = layouts.get(layouts.size()-1);
+		
+		int xFrom = lastElement.getLocation().getX()+ lastElement.getSize().getWidth()/2;
+		int yFrom = lastElement.getLocation().getY()+ lastElement.getSize().getHeight()/2;
+		
+		int xTo = firstElement.getLocation().getX() + firstElement.getSize().getWidth()/2;
+		int yTo = firstElement.getLocation().getY() + firstElement.getSize().getHeight()/2;
+		driver.swipe(xFrom, yFrom, xTo, yTo, 2000);
 	}
 	
 	public ArrayList<WebElement> getLayout(){
@@ -18,11 +31,36 @@ public class LostWordType {
 	}
 	
 	public ArrayList<WebElement> getAnswerBoxes(){
-		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/editTextLostWordType");
+		return (ArrayList<WebElement>) driver.findElementsByClassName("android.widget.EditText");
 	}
 	
-	public void answerRight(){
-		
+	public void answerRight(ArrayList<String> answers){
+		int n=0;
+		this.scrollTo("23");
+		ArrayList<WebElement> answerBoxes = this.getAnswerBoxes();
+		try{
+			while(n<answers.size()){
+				for(int i=0;i<answerBoxes.size();i++){
+					answerBoxes.get(i).click();
+					System.out.println(i);
+					if(answerBoxes.get(i).getText().equals("")){
+						answerBoxes.get(i).clear();
+						answerBoxes.get(i).sendKeys(answers.get(n));
+						driver.hideKeyboard();
+						n++;
+					}
+				}
+				if(n<answers.size()){
+					this.scroll();
+					answerBoxes = this.getAnswerBoxes();
+				}
+			}
+			Thread.sleep(3000);
+			this.getBtnCheck().click();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	public void answerWrong(){

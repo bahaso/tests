@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29318" started-at="2017-04-18T11:22:46Z" finished-at="2017-04-18T11:23:15Z">
+  <suite name="Default suite" duration-ms="133298" started-at="2017-05-09T12:21:10Z" finished-at="2017-05-09T12:23:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29318" started-at="2017-04-18T11:22:46Z" finished-at="2017-04-18T11:23:15Z">
-      <class name="bahaso.testing.android.Gold_test">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.Gold_test@59494225]" name="beforeMethod" is-config="true" duration-ms="20210" started-at="2017-04-18T18:22:46Z" finished-at="2017-04-18T18:23:06Z">
+    <test name="Default test" duration-ms="133298" started-at="2017-05-09T12:21:10Z" finished-at="2017-05-09T12:23:23Z">
+      <class name="bahaso.testing.android.LostWordType_test">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.LostWordType_test@cb644e]" name="beforeMethod" is-config="true" duration-ms="22922" started-at="2017-05-09T19:21:10Z" finished-at="2017-05-09T19:21:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="check_price()[pri:0, instance:bahaso.testing.android.Gold_test@59494225]" name="check_price" duration-ms="8226" started-at="2017-04-18T18:23:06Z" finished-at="2017-04-18T18:23:14Z">
+        <test-method status="PASS" signature="test1()[pri:0, instance:bahaso.testing.android.LostWordType_test@cb644e]" name="test1" duration-ms="110361" started-at="2017-05-09T19:21:33Z" finished-at="2017-05-09T19:23:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- check_price -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.Gold_test@59494225]" name="afterMethod" is-config="true" duration-ms="869" started-at="2017-04-18T18:23:14Z" finished-at="2017-04-18T18:23:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- bahaso.testing.android.Gold_test -->
+        </test-method> <!-- test1 -->
+      </class> <!-- bahaso.testing.android.LostWordType_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

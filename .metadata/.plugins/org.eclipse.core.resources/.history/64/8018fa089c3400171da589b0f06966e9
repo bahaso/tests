@@ -1,0 +1,49 @@
+package bahaso.testing.androidElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class LostWordType extends ExercisePage{
+	
+	public LostWordType(AndroidDriver driver){
+		this.driver = driver;
+	}
+	
+	public void scroll(String number){
+		ArrayList<WebElement> layouts = this.getLayout();
+		Boolean notfound = true;
+			
+		WebElement firstElement = layouts.get(0);
+		WebElement lastElement = layouts.get(layouts.size()-1);
+		
+		int xFrom = lastElement.getLocation().getX()+ lastElement.getSize().getWidth()/2;
+		int yFrom = lastElement.getLocation().getY()+ lastElement.getSize().getHeight()/2;
+		
+		int xTo = firstElement.getLocation().getX() + firstElement.getSize().getWidth()/2;
+		int yTo = firstElement.getLocation().getY() + firstElement.getSize().getHeight()/2;
+		driver.swipe(xFrom, yFrom, xTo, yTo, 2000);
+	}
+	
+	public ArrayList<WebElement> getLayout(){
+		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/layoutCaseLostWordTypeItem");
+	}
+	
+	public ArrayList<WebElement> getAnswerBoxes(){
+		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/editTextLostWordType");
+	}
+	
+	public void answerRight(ArrayList<String> answers){
+		int n=0;
+		ArrayList<WebElement> answerBoxes = this.getLayout();
+		for(int i=0;i<)
+		this.scrollTo("23");
+		System.out.println(getAnswerBoxes().size());
+	}
+	
+	public void answerWrong(){
+		
+	}
+}

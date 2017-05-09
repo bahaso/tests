@@ -22,7 +22,8 @@ public class mobileGeneral {
 		cap.setCapability("platformVersion", "5.1.1");
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("appPackage", "com.bahaso");
-		cap.setCapability("appActivity", "com.bahaso.SplashScreen");	
+		cap.setCapability("appActivity", "com.bahaso.SplashScreen");
+		cap.setCapability("noReset", true);
 		try {
 			//driver = new AndroidDriver(new URL("http://192.168.1.3:4723/wd/hub"), cap);
 			driver = new AndroidDriver(new URL("http://10.10.16.64:4723/wd/hub"), cap);

@@ -38,4 +38,8 @@ public class Home {
 		return driver.findElementById("com.bahaso:id/icon_setting");
 	}
 	
+	public WebElement getAllTypeCase(){
+		return driver.findElementById("com.bahaso:id/cv_type_case");
+	}
+	
 }

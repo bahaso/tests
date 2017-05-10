@@ -1,8 +1,10 @@
 package bahaso.testing.androidElement;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -38,14 +40,43 @@ public class LostWordType extends ExercisePage{
 		int n=0;
 		this.scrollTo("23");
 		ArrayList<WebElement> answerBoxes = this.getAnswerBoxes();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		try{
+			while(n<answers.size()){
+				for(int i=0;i<answerBoxes.size();i++){
+					if(answerBoxes.get(i).getText().equals("")){
+						answerBoxes.get(i).sendKeys(answers.get(n));
+						driver.hideKeyboard();
+						driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+						n++;
+					}
+				}
+				if(n<answers.size()){
+					this.scroll();
+					answerBoxes = this.getAnswerBoxes();
+				}
+			}
+			Thread.sleep(3000);
+			this.getBtnCheck().click();
+			Thread.sleep(3000);
+			Assert.assertEquals(this.getLessonStatus().getText(), "Benar", "Hasil seharusnya Benar");
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void answerWrong(ArrayList<String> answers){
+		int n=0;
+		this.scrollTo("23");
+		ArrayList<WebElement> answerBoxes = this.getAnswerBoxes();
 		try{
 			while(n<answers.size()){
 				for(int i=0;i<answerBoxes.size();i++){
 					answerBoxes.get(i).click();
-					System.out.println(i);
 					if(answerBoxes.get(i).getText().equals("")){
 						answerBoxes.get(i).clear();
-						answerBoxes.get(i).sendKeys(answers.get(n));
+						answerBoxes.get(i).sendKeys("aaaa");
 						driver.hideKeyboard();
 						n++;
 					}
@@ -57,13 +88,11 @@ public class LostWordType extends ExercisePage{
 			}
 			Thread.sleep(3000);
 			this.getBtnCheck().click();
+			Thread.sleep(3000);
+			Assert.assertEquals(this.getLessonStatus().getText(), "Salah", "Hasil seharusnya Salah");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
-	
-	public void answerWrong(){
-		
 	}
 }

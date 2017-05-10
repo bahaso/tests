@@ -16,10 +16,10 @@ public class mobileGeneral {
 	
 	public AndroidDriver startEngine(){
 		DesiredCapabilities cap = new DesiredCapabilities();
-		//cap.setCapability("deviceName", "ASUS_Z010D");
-		//cap.setCapability("platformVersion", "5.0.2");
-		cap.setCapability("deviceName", "Galaxy J1 ace");
-		cap.setCapability("platformVersion", "5.1.1");
+		cap.setCapability("deviceName", "ASUS_Z010D");
+		cap.setCapability("platformVersion", "5.0.2");
+		//cap.setCapability("deviceName", "Galaxy J1 ace");
+		//cap.setCapability("platformVersion", "5.1.1");
 		cap.setCapability("platformName", "Android");
 		cap.setCapability("appPackage", "com.bahaso");
 		cap.setCapability("appActivity", "com.bahaso.SplashScreen");

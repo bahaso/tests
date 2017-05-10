@@ -1,6 +1,7 @@
 package bahaso.testing.androidElement;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 
@@ -14,6 +15,7 @@ public class ExercisePage {
 		Boolean notfound = true;
 		
 		while(notfound){
+			btnNumbers = this.getBtnNumber();
 			for(WebElement btn : btnNumbers){
 				if(btn.getText().equals(number)){
 					btn.click();
@@ -24,14 +26,15 @@ public class ExercisePage {
 			
 			if(notfound){
 				WebElement firstElement = btnNumbers.get(0);
-				WebElement lastElement = btnNumbers.get(btnNumbers.size()-1);
+				WebElement lastElement = btnNumbers.get(btnNumbers.size()-2);
 				
 				int xFrom = lastElement.getLocation().getX()+ lastElement.getSize().getWidth()/2;
 				int yFrom = lastElement.getLocation().getY()+ lastElement.getSize().getHeight()/2;
 				
 				int xTo = firstElement.getLocation().getX() + firstElement.getSize().getWidth()/2;
 				int yTo = firstElement.getLocation().getY() + firstElement.getSize().getHeight()/2;
-				driver.swipe(xFrom, yFrom, xTo, yTo, 3000);
+				driver.swipe(xFrom, yFrom, xTo, yTo, 1000);
+				driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			}
 		}
 		try {
@@ -48,6 +51,10 @@ public class ExercisePage {
 	
 	public WebElement getBtnCheck(){
 		return driver.findElementById("com.bahaso:id/btnCaseCheck");
+	}
+	
+	public WebElement getLessonStatus(){
+		return driver.findElementById("com.bahaso:id/textView2");
 	}
 	
 }

@@ -6,6 +6,7 @@
       <class name="bahaso.testing.android.LostWordType_test">
         <methods>
           <include name="beforeMethod"/>
+          <include name="beforeclass"/>
           <include name="test1"/>
         </methods>
       </class> <!-- bahaso.testing.android.LostWordType_test -->

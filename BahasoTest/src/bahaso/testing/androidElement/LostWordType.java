@@ -46,7 +46,11 @@ public class LostWordType extends ExercisePage{
 				for(int i=0;i<answerBoxes.size();i++){
 					if(answerBoxes.get(i).getText().equals("")){
 						answerBoxes.get(i).sendKeys(answers.get(n));
-						driver.hideKeyboard();
+						try {
+							driver.hideKeyboard();
+				        }catch(Exception e) {
+				                
+				        }
 						driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 						n++;
 					}

@@ -1,0 +1,37 @@
+package bahaso.testing.androidElement;
+
+import java.util.ArrayList;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.android.AndroidDriver;
+
+public class BoxMatchList extends ExercisePage{
+	AndroidDriver driver;
+	
+	public BoxMatchList(AndroidDriver driver){
+		this.driver = driver;
+	}
+	
+	public ArrayList<WebElement> getLayout(){
+		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/layoutCaseBoxMatchListItem");
+	}
+	
+	public ArrayList<WebElement> getDraggable(){
+		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/buttonBoxMatchListChoiceItemFront");
+	}
+	
+	public ArrayList<WebElement> getDroppable(){
+		return (ArrayList<WebElement>) driver.findElementsById("com.bahaso:id/relativeLayoutCaseContainer");
+	}
+	
+	public void answerRight(ArrayList<String> answers){
+		this.scrollTo("7");
+		ArrayList<WebElement> answerBoxes = this.getDraggable();
+		
+	}
+	
+	public void answerWrong(ArrayList<String> answers){
+		
+	}
+}

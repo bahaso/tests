@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\bahasopc-2\Downloads\selenium-java-3.0.1\lib" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="E:\testing\driver" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="org.eclipse.ltk.ui.refactoring.settings">
 		<item value="false" key="renameSubpackages"/>
 		<item value="false" key="updateQualifiedNames"/>

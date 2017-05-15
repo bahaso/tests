@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="bahaso.testing.android.BoxMatchSentence_test">
+      <class name="bahaso.testing.android.PictureMultipleChoice_test">
         <methods>
           <include name="test1"/>
           <include name="beforeclass"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- bahaso.testing.android.BoxMatchSentence_test -->
+      </class> <!-- bahaso.testing.android.PictureMultipleChoice_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

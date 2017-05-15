@@ -1,41 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78037" started-at="2017-05-15T10:56:31Z" finished-at="2017-05-15T10:57:49Z">
+  <suite name="Default suite" duration-ms="42098" started-at="2017-05-15T11:42:59Z" finished-at="2017-05-15T11:43:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78037" started-at="2017-05-15T10:56:31Z" finished-at="2017-05-15T10:57:49Z">
-      <class name="bahaso.testing.android.ListenSelectSingleBox_test">
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:bahaso.testing.android.ListenSelectSingleBox_test@56ac3a89]" name="beforeclass" is-config="true" duration-ms="6" started-at="2017-05-15T17:56:31Z" finished-at="2017-05-15T17:56:31Z">
+    <test name="Default test" duration-ms="42098" started-at="2017-05-15T11:42:59Z" finished-at="2017-05-15T11:43:41Z">
+      <class name="bahaso.testing.android.TrueFalsePicture_test">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:bahaso.testing.android.TrueFalsePicture_test@59494225]" name="beforeclass" is-config="true" duration-ms="9" started-at="2017-05-15T18:42:59Z" finished-at="2017-05-15T18:42:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.ListenSelectSingleBox_test@56ac3a89]" name="beforeMethod" is-config="true" duration-ms="23130" started-at="2017-05-15T17:56:31Z" finished-at="2017-05-15T17:56:54Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.TrueFalsePicture_test@59494225]" name="beforeMethod" is-config="true" duration-ms="23387" started-at="2017-05-15T18:42:59Z" finished-at="2017-05-15T18:43:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1()[pri:0, instance:bahaso.testing.android.ListenSelectSingleBox_test@56ac3a89]" name="test1" duration-ms="14270" started-at="2017-05-15T17:56:54Z" finished-at="2017-05-15T17:57:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.ListenSelectSingleBox_test@56ac3a89]" name="afterMethod" is-config="true" duration-ms="1947" started-at="2017-05-15T17:57:09Z" finished-at="2017-05-15T17:57:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.ListenSelectSingleBox_test@56ac3a89]" name="beforeMethod" is-config="true" duration-ms="22597" started-at="2017-05-15T17:57:11Z" finished-at="2017-05-15T17:57:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:bahaso.testing.android.ListenSelectSingleBox_test@56ac3a89]" name="test2" duration-ms="14081" started-at="2017-05-15T17:57:33Z" finished-at="2017-05-15T17:57:47Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:bahaso.testing.android.TrueFalsePicture_test@59494225]" name="test2" duration-ms="16691" started-at="2017-05-15T18:43:23Z" finished-at="2017-05-15T18:43:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.ListenSelectSingleBox_test@56ac3a89]" name="afterMethod" is-config="true" duration-ms="1985" started-at="2017-05-15T17:57:47Z" finished-at="2017-05-15T17:57:49Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.TrueFalsePicture_test@59494225]" name="afterMethod" is-config="true" duration-ms="1995" started-at="2017-05-15T18:43:39Z" finished-at="2017-05-15T18:43:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- bahaso.testing.android.ListenSelectSingleBox_test -->
+      </class> <!-- bahaso.testing.android.TrueFalsePicture_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

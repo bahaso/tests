@@ -25,8 +25,9 @@ public class mobileGeneral {
 		cap.setCapability("appActivity", "com.bahaso.SplashScreen");
 		cap.setCapability("noReset", true);
 		try {
+			driver = new AndroidDriver(new URL("http://0.0.0.0:4723/wd/hub"), cap);
 			//driver = new AndroidDriver(new URL("http://192.168.1.3:4723/wd/hub"), cap);
-			driver = new AndroidDriver(new URL("http://10.10.16.64:4723/wd/hub"), cap);
+			//driver = new AndroidDriver(new URL("http://10.10.16.64:4723/wd/hub"), cap);
 			driver.manage().timeouts().implicitlyWait(8, TimeUnit.SECONDS);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block

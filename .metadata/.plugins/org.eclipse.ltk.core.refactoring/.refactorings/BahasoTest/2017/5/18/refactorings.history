@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;bahaso.testing.android.LittleBoxMultipleChoice.java&apos; to &apos;LittleBoxMultipleChoice_test.java&apos;&#x0D;&#x0A;- Original project: &apos;BahasoTest&apos;&#x0D;&#x0A;- Original element: &apos;bahaso.testing.android.LittleBoxMultipleChoice.java&apos;&#x0D;&#x0A;- Renamed element: &apos;bahaso.testing.android.LittleBoxMultipleChoice_test.java&apos;" description="Rename compilation unit &apos;LittleBoxMultipleChoice.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;bahaso.testing.android{LittleBoxMultipleChoice.java" name="LittleBoxMultipleChoice_test.java" references="false" stamp="1493971756579" version="1.0"/>
+</session>

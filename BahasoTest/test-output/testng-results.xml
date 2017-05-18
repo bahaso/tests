@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57615" started-at="2017-05-15T11:55:25Z" finished-at="2017-05-15T11:56:23Z">
+  <suite name="Default suite" duration-ms="53020" started-at="2017-05-18T10:48:38Z" finished-at="2017-05-18T10:49:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57615" started-at="2017-05-15T11:55:25Z" finished-at="2017-05-15T11:56:23Z">
-      <class name="bahaso.testing.android.TrueFalseSentence_test">
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:bahaso.testing.android.TrueFalseSentence_test@59494225]" name="beforeclass" is-config="true" duration-ms="6" started-at="2017-05-15T18:55:25Z" finished-at="2017-05-15T18:55:25Z">
+    <test name="Default test" duration-ms="53020" started-at="2017-05-18T10:48:38Z" finished-at="2017-05-18T10:49:31Z">
+      <class name="bahaso.testing.android.BoxMatchListPicture_test">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:bahaso.testing.android.BoxMatchListPicture_test@56ef9176]" name="beforeclass" is-config="true" duration-ms="6" started-at="2017-05-18T17:48:38Z" finished-at="2017-05-18T17:48:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.TrueFalseSentence_test@59494225]" name="beforeMethod" is-config="true" duration-ms="23455" started-at="2017-05-15T18:55:25Z" finished-at="2017-05-15T18:55:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.BoxMatchListPicture_test@56ef9176]" name="beforeMethod" is-config="true" duration-ms="23460" started-at="2017-05-18T17:48:38Z" finished-at="2017-05-18T17:49:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:bahaso.testing.android.TrueFalseSentence_test@59494225]" name="test2" duration-ms="32023" started-at="2017-05-15T18:55:49Z" finished-at="2017-05-15T18:56:21Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:bahaso.testing.android.BoxMatchListPicture_test@56ef9176]" name="test2" duration-ms="27387" started-at="2017-05-18T17:49:02Z" finished-at="2017-05-18T17:49:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.TrueFalseSentence_test@59494225]" name="afterMethod" is-config="true" duration-ms="2113" started-at="2017-05-15T18:56:21Z" finished-at="2017-05-15T18:56:23Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.BoxMatchListPicture_test@56ef9176]" name="afterMethod" is-config="true" duration-ms="2151" started-at="2017-05-18T17:49:29Z" finished-at="2017-05-18T17:49:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- bahaso.testing.android.TrueFalseSentence_test -->
+      </class> <!-- bahaso.testing.android.BoxMatchListPicture_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

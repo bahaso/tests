@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51083" started-at="2017-05-24T07:43:49Z" finished-at="2017-05-24T07:44:40Z">
+  <suite name="Default suite" duration-ms="52803" started-at="2017-05-24T08:13:01Z" finished-at="2017-05-24T08:13:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51083" started-at="2017-05-24T07:43:49Z" finished-at="2017-05-24T07:44:40Z">
-      <class name="bahaso.testing.android.BoxMatchDialog_test">
-        <test-method status="PASS" signature="beforeclass()[pri:0, instance:bahaso.testing.android.BoxMatchDialog_test@56ef9176]" name="beforeclass" is-config="true" duration-ms="8" started-at="2017-05-24T14:43:49Z" finished-at="2017-05-24T14:43:49Z">
+    <test name="Default test" duration-ms="52803" started-at="2017-05-24T08:13:01Z" finished-at="2017-05-24T08:13:54Z">
+      <class name="bahaso.testing.android.BoxMatchListen_test">
+        <test-method status="PASS" signature="beforeclass()[pri:0, instance:bahaso.testing.android.BoxMatchListen_test@56ef9176]" name="beforeclass" is-config="true" duration-ms="6" started-at="2017-05-24T15:13:01Z" finished-at="2017-05-24T15:13:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeclass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.BoxMatchDialog_test@56ef9176]" name="beforeMethod" is-config="true" duration-ms="22676" started-at="2017-05-24T14:43:49Z" finished-at="2017-05-24T14:44:12Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:bahaso.testing.android.BoxMatchListen_test@56ef9176]" name="beforeMethod" is-config="true" duration-ms="22987" started-at="2017-05-24T15:13:01Z" finished-at="2017-05-24T15:13:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test2()[pri:0, instance:bahaso.testing.android.BoxMatchDialog_test@56ef9176]" name="test2" duration-ms="26350" started-at="2017-05-24T14:44:12Z" finished-at="2017-05-24T14:44:38Z">
+        <test-method status="PASS" signature="test2()[pri:0, instance:bahaso.testing.android.BoxMatchListen_test@56ef9176]" name="test2" duration-ms="27767" started-at="2017-05-24T15:13:24Z" finished-at="2017-05-24T15:13:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.BoxMatchDialog_test@56ef9176]" name="afterMethod" is-config="true" duration-ms="2029" started-at="2017-05-24T14:44:38Z" finished-at="2017-05-24T14:44:40Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:bahaso.testing.android.BoxMatchListen_test@56ef9176]" name="afterMethod" is-config="true" duration-ms="2025" started-at="2017-05-24T15:13:52Z" finished-at="2017-05-24T15:13:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- bahaso.testing.android.BoxMatchDialog_test -->
+      </class> <!-- bahaso.testing.android.BoxMatchListen_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

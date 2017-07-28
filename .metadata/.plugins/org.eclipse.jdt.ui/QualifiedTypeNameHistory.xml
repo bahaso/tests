@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="bahaso.testing.web.answerLesson"/>
-<fullyQualifiedTypeName name="java.lang.Override"/>
-<fullyQualifiedTypeName name="bahaso.testing.webElement.LoginPage"/>
-<fullyQualifiedTypeName name="java.awt.print.Printable"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.ListenType"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.TrueFalsePicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.RecordASentence"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.VideoAnswerCase"/>
-<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListPicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LittleBoxMultipleChoice"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.LittleBoxMultipleChoicePicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.TrueFalseSentence"/>
@@ -45,19 +39,25 @@
 <fullyQualifiedTypeName name="com.gargoylesoftware.htmlunit.javascript.host.Element"/>
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.Voucher"/>
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.Gold"/>
-<fullyQualifiedTypeName name="java.lang.Integer"/>
 <fullyQualifiedTypeName name="bahaso.testing.android.LittleBoxMultipleChoice"/>
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.LittleBoxMultipleChoice"/>
-<fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
-<fullyQualifiedTypeName name="bahaso.testing.general.mobileGeneral"/>
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.LostWordType"/>
-<fullyQualifiedTypeName name="bahaso.testing.androidElement.ExercisePage"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.testng.annotations.BeforeClass"/>
-<fullyQualifiedTypeName name="java.lang.Thread"/>
 <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.BoxMatchList"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListPicture"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.BoxMatchListPicture"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.LittleBoxMultipleChoicePicture"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.BoxMatchDialog"/>
+<fullyQualifiedTypeName name="bahaso.testing.general.mobileGeneral"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.BoxMatchListen"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.ExercisePage"/>
 </qualifiedTypeNameHistroy>

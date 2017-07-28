@@ -40,15 +40,15 @@ public class LittleBoxMultipleChoice_test extends mobileGeneral{
 	
 	@Test
 	public void test1(){
-		try {
+//		try {
 //			System.out.println(littleBoxMultipleChoice.getBtnSelection().size());
 //			for(int i=0;i<littleBoxMultipleChoice.getBtnSelection().size();i++){
 //				littleBoxMultipleChoice.getBtnSelection().get(i).click();
-			}
-			Thread.sleep(4000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//			}
+//			Thread.sleep(4000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 	}
 }

@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.awt.print.Printable"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.ListenType"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.TrueFalsePicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.RecordASentence"/>
@@ -55,9 +53,11 @@
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.BoxMatchList"/>
 <fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="bahaso.testing.webElement.BoxMatchListPicture"/>
-<fullyQualifiedTypeName name="bahaso.testing.androidElement.ExercisePage"/>
-<fullyQualifiedTypeName name="bahaso.testing.general.mobileGeneral"/>
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.BoxMatchListPicture"/>
 <fullyQualifiedTypeName name="bahaso.testing.androidElement.LittleBoxMultipleChoicePicture"/>
 <fullyQualifiedTypeName name="org.testng.Assert"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.BoxMatchDialog"/>
+<fullyQualifiedTypeName name="bahaso.testing.general.mobileGeneral"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.BoxMatchListen"/>
+<fullyQualifiedTypeName name="bahaso.testing.androidElement.ExercisePage"/>
 </qualifiedTypeNameHistroy>

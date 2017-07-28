@@ -1,7 +1,0 @@
-package bahaso.testing.android;
-
-import bahaso.testing.general.mobileGeneral;
-
-public class LittleBoxMultipleChoicePicture_test extends mobileGeneral{
-	
-}
